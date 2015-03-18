@@ -22,7 +22,6 @@
 # use can't replace both actual and foreseen use
 <GeographicCoverageClassification> dct:replaces msxml:geographicCoverageInfo .
 <TimeCoverageClassification> dct:replaces msxml:timeCoverageInfo .
-# I don't see this in the XSD:
 <amount> dct:replaces msxml:size .
 
 # B.1
