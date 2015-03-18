@@ -1,0 +1,265 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix msxml: <http://www.ilsp.gr/META-XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrc: <http://swrc.ontoware.org/ontology#> .
+
+# A.2
+<LanguageResource> dct:replaces msxml:resourceInfo .
+<ConditionsOfUse> dct:replaces msxml:restrictionsOfUse .
+<availableThroughOtherDistributor> dct:replaces msxml:notAvailableThroughMetashare .
+<frameNet> dct:replaces msxml:framenet .
+<wordNet> dct:replaces msxml:wordnet .
+
+# A.3
+<Use> dct:replaces msxml:actualUse .
+<use> dct:replaces msxml:use .
+<CharacterEncodingSet> dct:replaces msxml:characterEncoding .
+<DomainClassification> dct:replaces msxml:domainInfo .
+# use can't replace both actual and foreseen use
+<GeographicCoverageClassification> dct:replaces msxml:geographicCoverageInfo .
+<TimeCoverageClassification> dct:replaces msxml:timeCoverageInfo .
+# I don't see this in the XSD:
+<amount> dct:replaces msxml:size .
+
+# B.1
+<Actor> owl:equivalentClass foaf:Actor .
+<DistributionInfo> owl:equivalentClass dcat:Distribution .
+<MetadataInfo> owl:equivalentClass dcat:CatalogRecord .
+<Organization> owl:equivalentClass foaf:Organization .
+<Person> owl:equivalentClass foaf:Actor .
+<Project> owl:equivalentClass foaf:Project .
+# My suggestion:
+<Document> owl:equivalentClass swrc:Publication .
+
+# B.2 -- Don't get it 
+
+# C.1a
+<Corpus> a owl:Class ;
+  rdfs:subClassOf <LanguageResource> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusInfo> ;
+    owl:someValuesFrom <CorpusInfo> 
+  ] .
+
+<ToolService> a owl:Class ;
+  rdfs:subClassOf <LanguageResource> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <toolServiceInfo> ;
+    owl:someValuesFrom <ToolServiceInfo> 
+  ] .
+
+<LanguageDescription> a owl:Class ;
+  rdfs:subClassOf <LanguageResource> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <languageDescriptionInfo> ;
+    owl:someValuesFrom <languageDescriptionInfo> 
+  ] .
+
+<LexicalConceptualResource> a owl:Class ;
+  rdfs:subClassOf <LanguageResource> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <lexicalConceptualResourceInfo> ;
+    owl:someValuesFrom <LexicalConceptualResourceInfo> 
+  ] .
+
+# C.1b
+<CorpusAudio> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusAudioInfo> ;
+    owl:someValuesFrom <CorpusAudioInfo>
+  ] .
+
+<CorpusImage> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusImageInfo> ;
+    owl:someValuesFrom <CorpusImageInfo>
+  ] .
+
+<CorpusText> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusTextInfo> ;
+    owl:someValuesFrom <CorpusTextInfo>
+  ] .
+
+<CorpusTextNgram> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusTextNgramInfo> ;
+    owl:someValuesFrom <CorpusTextNgramInfo>
+  ] .
+
+<CorpusTextNumerical> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusTextNumericalInfo> ;
+    owl:someValuesFrom <CorpusTextNumericalInfo>
+  ] .
+
+<CorpusVideo> a owl:Class ;
+  rdfs:subclassOf <CorpusInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <corpusVideoInfo> ;
+    owl:someValuesFrom <CorpusVideoInfo>
+  ] .
+
+# C.1c
+<LanguageDescriptionImage> a owl:Class ;
+  rdfs:subclassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <languageDescriptionImageInfo> ;
+    owl:someValuesFrom <LanguageDescriptionImageInfo>
+  ] .
+
+<LanguageDescriptionText> a owl:Class ;
+  rdfs:subclassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <languageDescriptionTextInfo> ;
+    owl:someValuesFrom <LanguageDescriptionTextInfo>
+  ] .
+
+
+<LanguageDescriptionVideo> a owl:Class ;
+  rdfs:subclassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty <languageDescriptionVideoInfo> ;
+    owl:someValuesFrom <LanguageDescriptionVideoInfo>
+  ] .
+
+# C -- Also should be done for consistency
+<LexicalConceptualResourceAudio> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <lexicalConceptualResourceAudioInfo> ;
+   owl:someValuesFrom <LexicalConceptualResourceAudioInfo> 
+  ] .
+
+<LexicalConceptualResourceImage> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <lexicalConceptualResourceImageInfo> ;
+   owl:someValuesFrom <LexicalConceptualResourceImageInfo> 
+  ] .
+
+
+<LexicalConceptualResourceText> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <lexicalConceptualResourceTextInfo> ;
+   owl:someValuesFrom <LexicalConceptualResourceTextInfo> 
+  ] .
+
+
+<LexicalConceptualResourceVideo> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <lexicalConceptualResourceVideoInfo> ;
+   owl:someValuesFrom <LexicalConceptualResourceVideoInfo> 
+  ] .
+
+<LanguageDescriptionImage> a owl:Class ;
+  rdfs:subClassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <languageDescriptionImageInfo> ;
+   owl:someValuesFrom <LanguageDescriptionImageInfo> 
+  ] .
+
+<LanguageDescriptionText> a owl:Class ;
+  rdfs:subClassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <languageDescriptionTextInfo> ;
+   owl:someValuesFrom <LanguageDescriptionTextInfo> 
+  ] .
+
+
+<LanguageDescriptionVideo> a owl:Class ;
+  rdfs:subClassOf <LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <languageDescriptionVideoInfo> ;
+   owl:someValuesFrom <LanguageDescriptionVideoInfo> 
+  ] .
+
+# C.2
+<WordList> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <wordList> 
+  ] .
+
+<ComputationalLexicon> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <computationalLexicon> 
+  ] .
+
+<Ontology> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <ontology> 
+  ] .
+
+<WordNet> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <wordNet> 
+  ] .
+
+<FrameNet> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <frameNet> 
+  ] .
+
+<TerminologicalResource> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <terminologicalResource> 
+  ] .
+
+<MachineReadableDictionary> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <machineReadableDictionary> 
+  ] .
+
+
+<Lexicon> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <lexicon> 
+  ] .
+
+
+<Thesaurus> a owl:Class ;
+  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <lexicalConcepturalResourceType> ;
+    owl:hasValue <thesaurus> 
+  ] .
