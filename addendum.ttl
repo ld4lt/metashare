@@ -1,3 +1,4 @@
+@base <http://purl.org/net/def/metashare> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -8,358 +9,358 @@
 @prefix swrc: <http://swrc.ontoware.org/ontology#> .
 
 # A.2
-<LanguageResource> dct:replaces msxml:resourceInfo .
-<ConditionsOfUse> dct:replaces msxml:restrictionsOfUse .
-<availableThroughOtherDistributor> dct:replaces msxml:notAvailableThroughMetashare .
-<frameNet> dct:replaces msxml:framenet .
-<wordNet> dct:replaces msxml:wordnet .
+<#LanguageResource> dct:replaces msxml:resourceInfo .
+<#ConditionsOfUse> dct:replaces msxml:restrictionsOfUse .
+<#availableThroughOtherDistributor> dct:replaces msxml:notAvailableThroughMetashare .
+<#frameNet> dct:replaces msxml:framenet .
+<#wordNet> dct:replaces msxml:wordnet .
 
 # A.3
-<Use> dct:replaces msxml:actualUse .
-<use> dct:replaces msxml:actualUse .
-<Use> dct:replaces msxml:foreseenUse .
-<use> dct:replaces msxml:foreseenUse .
-<CharacterEncodingSet> dct:replaces msxml:characterEncoding .
-<DomainClassification> dct:replaces msxml:domainInfo .
-<GeographicCoverageClassification> dct:replaces msxml:geographicCoverageInfo .
-<TimeCoverageClassification> dct:replaces msxml:timeCoverageInfo .
-<amount> dct:replaces msxml:size .
+<#Use> dct:replaces msxml:actualUse .
+<#use> dct:replaces msxml:actualUse .
+<#Use> dct:replaces msxml:foreseenUse .
+<#use> dct:replaces msxml:foreseenUse .
+<#CharacterEncodingSet> dct:replaces msxml:characterEncoding .
+<#DomainClassification> dct:replaces msxml:domainInfo .
+<#GeographicCoverageClassification> dct:replaces msxml:geographicCoverageInfo .
+<#TimeCoverageClassification> dct:replaces msxml:timeCoverageInfo .
+<#amount> dct:replaces msxml:size .
 
 # B.1
-<Actor> owl:equivalentClass foaf:Actor .
-<DistributionInfo> owl:equivalentClass dcat:Distribution .
-<MetadataInfo> owl:equivalentClass dcat:CatalogRecord .
-<Organization> owl:equivalentClass foaf:Organization .
-<Person> owl:equivalentClass foaf:Actor .
-<Project> owl:equivalentClass foaf:Project .
-<Document> owl:equivalentClass swrc:Publication .
+<#Actor> owl:equivalentClass foaf:Actor .
+<#DistributionInfo> owl:equivalentClass dcat:Distribution .
+<#MetadataInfo> owl:equivalentClass dcat:CatalogRecord .
+<#Organization> owl:equivalentClass foaf:Organization .
+<#Person> owl:equivalentClass foaf:Actor .
+<#Project> owl:equivalentClass foaf:Project .
+<#Document> owl:equivalentClass swrc:Publication .
 
 # C.1a
-<Corpus> a owl:Class ;
-  rdfs:subClassOf <LanguageResource> ;
+<#Corpus> a owl:Class ;
+  rdfs:subClassOf <#LanguageResource> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusInfo> ;
-    owl:someValuesFrom <CorpusInfo> 
+    owl:onProperty <#corpusInfo> ;
+    owl:someValuesFrom <#CorpusInfo> 
   ] .
 
-<ToolService> a owl:Class ;
-  rdfs:subClassOf <LanguageResource> ;
+<#ToolService> a owl:Class ;
+  rdfs:subClassOf <#LanguageResource> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <toolServiceInfo> ;
-    owl:someValuesFrom <ToolServiceInfo> 
+    owl:onProperty <#toolServiceInfo> ;
+    owl:someValuesFrom <#ToolServiceInfo> 
   ] .
 
-<LanguageDescription> a owl:Class ;
-  rdfs:subClassOf <LanguageResource> ;
+<#LanguageDescription> a owl:Class ;
+  rdfs:subClassOf <#LanguageResource> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <languageDescriptionInfo> ;
-    owl:someValuesFrom <languageDescriptionInfo> 
+    owl:onProperty <#languageDescriptionInfo> ;
+    owl:someValuesFrom <#LanguageDescriptionInfo> 
   ] .
 
-<LexicalConceptualResource> a owl:Class ;
-  rdfs:subClassOf <LanguageResource> ;
+<#LexicalConceptualResource> a owl:Class ;
+  rdfs:subClassOf <#LanguageResource> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <lexicalConceptualResourceInfo> ;
-    owl:someValuesFrom <LexicalConceptualResourceInfo> 
+    owl:onProperty <#lexicalConceptualResourceInfo> ;
+    owl:someValuesFrom <#LexicalConceptualResourceInfo> 
   ] .
 
 # C.1b
-<CorpusAudio> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusAudio> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusAudioInfo> ;
-    owl:someValuesFrom <CorpusAudioInfo>
+    owl:onProperty <#corpusAudioInfo> ;
+    owl:someValuesFrom <#CorpusAudioInfo>
   ] .
 
-<CorpusImage> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusImage> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusImageInfo> ;
-    owl:someValuesFrom <CorpusImageInfo>
+    owl:onProperty <#corpusImageInfo> ;
+    owl:someValuesFrom <#CorpusImageInfo>
   ] .
 
-<CorpusText> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusText> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusTextInfo> ;
-    owl:someValuesFrom <CorpusTextInfo>
+    owl:onProperty <#corpusTextInfo> ;
+    owl:someValuesFrom <#CorpusTextInfo>
   ] .
 
-<CorpusTextNgram> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusTextNgram> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusTextNgramInfo> ;
-    owl:someValuesFrom <CorpusTextNgramInfo>
+    owl:onProperty <#corpusTextNgramInfo> ;
+    owl:someValuesFrom <#CorpusTextNgramInfo>
   ] .
 
-<CorpusTextNumerical> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusTextNumerical> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusTextNumericalInfo> ;
-    owl:someValuesFrom <CorpusTextNumericalInfo>
+    owl:onProperty <#corpusTextNumericalInfo> ;
+    owl:someValuesFrom <#CorpusTextNumericalInfo>
   ] .
 
-<CorpusVideo> a owl:Class ;
-  rdfs:subclassOf <CorpusInfo> ;
+<#CorpusVideo> a owl:Class ;
+  rdfs:subclassOf <#CorpusInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <corpusVideoInfo> ;
-    owl:someValuesFrom <CorpusVideoInfo>
+    owl:onProperty <#corpusVideoInfo> ;
+    owl:someValuesFrom <#CorpusVideoInfo>
   ] .
 
 # C.1c
-<LanguageDescriptionImage> a owl:Class ;
-  rdfs:subclassOf <LanguageDescriptionInfo> ;
+<#LanguageDescriptionImage> a owl:Class ;
+  rdfs:subclassOf <#LanguageDescriptionInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <languageDescriptionImageInfo> ;
-    owl:someValuesFrom <LanguageDescriptionImageInfo>
+    owl:onProperty <#languageDescriptionImageInfo> ;
+    owl:someValuesFrom <#LanguageDescriptionImageInfo>
   ] .
 
-<LanguageDescriptionText> a owl:Class ;
-  rdfs:subclassOf <LanguageDescriptionInfo> ;
+<#LanguageDescriptionText> a owl:Class ;
+  rdfs:subclassOf <#LanguageDescriptionInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <languageDescriptionTextInfo> ;
-    owl:someValuesFrom <LanguageDescriptionTextInfo>
+    owl:onProperty <#languageDescriptionTextInfo> ;
+    owl:someValuesFrom <#LanguageDescriptionTextInfo>
   ] .
 
 
-<LanguageDescriptionVideo> a owl:Class ;
-  rdfs:subclassOf <LanguageDescriptionInfo> ;
+<#LanguageDescriptionVideo> a owl:Class ;
+  rdfs:subclassOf <#LanguageDescriptionInfo> ;
   owl:equivalentClass [
     a owl:Restriction ;
-    owl:onProperty <languageDescriptionVideoInfo> ;
-    owl:someValuesFrom <LanguageDescriptionVideoInfo>
+    owl:onProperty <#languageDescriptionVideoInfo> ;
+    owl:someValuesFrom <#LanguageDescriptionVideoInfo>
   ] .
 
 # C -- Also should be done for consistency
-<LexicalConceptualResourceAudio> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#LexicalConceptualResourceAudio> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-   owl:onProperty <lexicalConceptualResourceAudioInfo> ;
-   owl:someValuesFrom <LexicalConceptualResourceAudioInfo> 
+   owl:onProperty <#lexicalConceptualResourceAudioInfo> ;
+   owl:someValuesFrom <#LexicalConceptualResourceAudioInfo> 
   ] .
 
-<LexicalConceptualResourceImage> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#LexicalConceptualResourceImage> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-   owl:onProperty <lexicalConceptualResourceImageInfo> ;
-   owl:someValuesFrom <LexicalConceptualResourceImageInfo> 
-  ] .
-
-
-<LexicalConceptualResourceText> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
-  owl:equivalentClass [
-   owl:onProperty <lexicalConceptualResourceTextInfo> ;
-   owl:someValuesFrom <LexicalConceptualResourceTextInfo> 
+   owl:onProperty <#lexicalConceptualResourceImageInfo> ;
+   owl:someValuesFrom <#LexicalConceptualResourceImageInfo> 
   ] .
 
 
-<LexicalConceptualResourceVideo> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#LexicalConceptualResourceText> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-   owl:onProperty <lexicalConceptualResourceVideoInfo> ;
-   owl:someValuesFrom <LexicalConceptualResourceVideoInfo> 
-  ] .
-
-<LanguageDescriptionImage> a owl:Class ;
-  rdfs:subClassOf <LanguageDescriptionInfo> ;
-  owl:equivalentClass [
-   owl:onProperty <languageDescriptionImageInfo> ;
-   owl:someValuesFrom <LanguageDescriptionImageInfo> 
-  ] .
-
-<LanguageDescriptionText> a owl:Class ;
-  rdfs:subClassOf <LanguageDescriptionInfo> ;
-  owl:equivalentClass [
-   owl:onProperty <languageDescriptionTextInfo> ;
-   owl:someValuesFrom <LanguageDescriptionTextInfo> 
+   owl:onProperty <#lexicalConceptualResourceTextInfo> ;
+   owl:someValuesFrom <#LexicalConceptualResourceTextInfo> 
   ] .
 
 
-<LanguageDescriptionVideo> a owl:Class ;
-  rdfs:subClassOf <LanguageDescriptionInfo> ;
+<#LexicalConceptualResourceVideo> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-   owl:onProperty <languageDescriptionVideoInfo> ;
-   owl:someValuesFrom <LanguageDescriptionVideoInfo> 
+   owl:onProperty <#lexicalConceptualResourceVideoInfo> ;
+   owl:someValuesFrom <#LexicalConceptualResourceVideoInfo> 
+  ] .
+
+<#LanguageDescriptionImage> a owl:Class ;
+  rdfs:subClassOf <#LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <#languageDescriptionImageInfo> ;
+   owl:someValuesFrom <#LanguageDescriptionImageInfo> 
+  ] .
+
+<#LanguageDescriptionText> a owl:Class ;
+  rdfs:subClassOf <#LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <#languageDescriptionTextInfo> ;
+   owl:someValuesFrom <#LanguageDescriptionTextInfo> 
+  ] .
+
+
+<#LanguageDescriptionVideo> a owl:Class ;
+  rdfs:subClassOf <#LanguageDescriptionInfo> ;
+  owl:equivalentClass [
+   owl:onProperty <#languageDescriptionVideoInfo> ;
+   owl:someValuesFrom <#LanguageDescriptionVideoInfo> 
   ] .
 
 # C.2
-<WordList> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#WordList> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <wordList> 
+    owl:onProperty <#lexicalConceptualResourceType> ;
+    owl:hasValue <#wordList> 
   ] .
 
-<ComputationalLexicon> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#ComputationalLexicon> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <computationalLexicon> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#computationalLexicon> 
   ] .
 
-<Ontology> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#Ontology> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <ontology> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#ontology> 
   ] .
 
-<WordNet> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#WordNet> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <wordNet> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#wordNet> 
   ] .
 
-<FrameNet> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#FrameNet> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <frameNet> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#frameNet> 
   ] .
 
-<TerminologicalResource> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#TerminologicalResource> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <terminologicalResource> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#terminologicalResource> 
   ] .
 
-<MachineReadableDictionary> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#MachineReadableDictionary> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <machineReadableDictionary> 
-  ] .
-
-
-<Lexicon> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
-  owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <lexicon> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#machineReadableDictionary> 
   ] .
 
 
-<Thesaurus> a owl:Class ;
-  rdfs:subClassOf <LexicalConceptualResourceInfo> ;
+<#Lexicon> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
   owl:equivalentClass [
-    owl:onProperty <lexicalConcepturalResourceType> ;
-    owl:hasValue <thesaurus> 
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#lexicon> 
+  ] .
+
+
+<#Thesaurus> a owl:Class ;
+  rdfs:subClassOf <#LexicalConceptualResourceInfo> ;
+  owl:equivalentClass [
+    owl:onProperty <#lexicalConcepturalResourceType> ;
+    owl:hasValue <#thesaurus> 
   ] .
 
 # Annotation groupings
-<DiscourseAnnotation> rdfs:subClassOf <AnnotationType> .
-<ModalityAnnotation> rdfs:subClassOf <AnnotationType> .
-<MorphosyntacticAnnotation> rdfs:subClassOf <AnnotationType> .
-<SemanticAnnotation> rdfs:subClassOf <AnnotationType> .
-<SpeechAnnotation> rdfs:subClassOf <AnnotationType> .
-<SyntacticAnnotation> rdfs:subClassOf <AnnotationType> .
+<#DiscourseAnnotation> rdfs:subClassOf <#AnnotationType> .
+<#ModalityAnnotation> rdfs:subClassOf <#AnnotationType> .
+<#MorphosyntacticAnnotation> rdfs:subClassOf <#AnnotationType> .
+<#SemanticAnnotation> rdfs:subClassOf <#AnnotationType> .
+<#SpeechAnnotation> rdfs:subClassOf <#AnnotationType> .
+<#SyntacticAnnotation> rdfs:subClassOf <#AnnotationType> .
 
-<discourseAnnotation> a <DiscourseAnnotation> .
-<discourseAnnotation-audienceReactions> a <DiscourseAnnotation> .
-<discourseAnnotation-coreference> a <DiscourseAnnotation> .
-<discourseAnnotation-dialogueActs> a <DiscourseAnnotation> .
-<discourseAnnotation-discourseRelations> a <DiscourseAnnotation> .
-<modalityAnnotation-bodyMovements> a <ModalityAnnotation> .
-<modalityAnnotation-facialExpressions> a <ModalityAnnotation> .
-<modalityAnnotation-gazeEyeMovements> a <ModalityAnnotation> .
-<modalityAnnotation-handArmGestures> a <ModalityAnnotation> .
-<modalityAnnotation-handManipulationOfObjects> a <ModalityAnnotation> .
-<modalityAnnotation-headMovements> a <ModalityAnnotation> .
-<modalityAnnotation-lipMovements> a <ModalityAnnotation> .
-<morphosyntacticAnnotation-bPosTagging> a <MorphosyntacticAnnotation> .
-<morphosyntacticAnnotation-posTagging> a <MorphosyntacticAnnotation> .
-<semanticAnnotation> a <SemanticAnnotation> .
-<semanticAnnotation-certaintyLevel> a <SemanticAnnotation> .
-<semanticAnnotation-emotions> a <SemanticAnnotation> .
-<semanticAnnotation-entityMentions> a <SemanticAnnotation> .
-<semanticAnnotation-events> a <SemanticAnnotation> .
-<semanticAnnotation-namedEntities> a <SemanticAnnotation> .
-<semanticAnnotation-polarity> a <SemanticAnnotation> .
-<semanticAnnotation-questionTopicalTarget> a <SemanticAnnotation> .
-<semanticAnnotation-semanticClasses> a <SemanticAnnotation> .
-<semanticAnnotation-semanticRelations> a <SemanticAnnotation> .
-<semanticAnnotation-semanticRoles> a <SemanticAnnotation> .
-<semanticAnnotation-speechActs> a <SemanticAnnotation> .
-<semanticAnnotation-temporalExpressions> a <SemanticAnnotation> .
-<semanticAnnotation-textualEntailment> a <SemanticAnnotation> .
-<semanticAnnotation-wordSenses> a <SemanticAnnotation> .
-<speechAnnotation> a <SpeechAnnotation> .
-<speechAnnotation-orthographicTranscription> a <SpeechAnnotation> .
-<speechAnnotation-paralanguageAnnotation> a <SpeechAnnotation> .
-<speechAnnotation-phoneticTranscription> a <SpeechAnnotation> .
-<speechAnnotation-prosodicAnnotation> a <SpeechAnnotation> .
-<speechAnnotation-soundEvents> a <SpeechAnnotation> .
-<speechAnnotation-soundToTextAlignment> a <SpeechAnnotation> .
-<speechAnnotation-speakerIdentification> a <SpeechAnnotation> .
-<speechAnnotation-speakerTurns> a <SpeechAnnotation> .
-<syntacticAnnotation-shallowParsing> a <SyntacticAnnotation> .
-<syntacticAnnotation-subcategorizationFrames> a <SyntacticAnnotation> .
-<syntacticAnnotation-treebanks> a <SyntacticAnnotation> .
-<syntacticosemanticAnnotation-links> a <SyntacticAnnotation> .
+<#discourseAnnotation> a <#DiscourseAnnotation> .
+<#discourseAnnotation-audienceReactions> a <#DiscourseAnnotation> .
+<#discourseAnnotation-coreference> a <#DiscourseAnnotation> .
+<#discourseAnnotation-dialogueActs> a <#DiscourseAnnotation> .
+<#discourseAnnotation-discourseRelations> a <#DiscourseAnnotation> .
+<#modalityAnnotation-bodyMovements> a <#ModalityAnnotation> .
+<#modalityAnnotation-facialExpressions> a <#ModalityAnnotation> .
+<#modalityAnnotation-gazeEyeMovements> a <#ModalityAnnotation> .
+<#modalityAnnotation-handArmGestures> a <#ModalityAnnotation> .
+<#modalityAnnotation-handManipulationOfObjects> a <#ModalityAnnotation> .
+<#modalityAnnotation-headMovements> a <#ModalityAnnotation> .
+<#modalityAnnotation-lipMovements> a <#ModalityAnnotation> .
+<#morphosyntacticAnnotation-bPosTagging> a <#MorphosyntacticAnnotation> .
+<#morphosyntacticAnnotation-posTagging> a <#MorphosyntacticAnnotation> .
+<#semanticAnnotation> a <#SemanticAnnotation> .
+<#semanticAnnotation-certaintyLevel> a <#SemanticAnnotation> .
+<#semanticAnnotation-emotions> a <#SemanticAnnotation> .
+<#semanticAnnotation-entityMentions> a <#SemanticAnnotation> .
+<#semanticAnnotation-events> a <#SemanticAnnotation> .
+<#semanticAnnotation-namedEntities> a <#SemanticAnnotation> .
+<#semanticAnnotation-polarity> a <#SemanticAnnotation> .
+<#semanticAnnotation-questionTopicalTarget> a <#SemanticAnnotation> .
+<#semanticAnnotation-semanticClasses> a <#SemanticAnnotation> .
+<#semanticAnnotation-semanticRelations> a <#SemanticAnnotation> .
+<#semanticAnnotation-semanticRoles> a <#SemanticAnnotation> .
+<#semanticAnnotation-speechActs> a <#SemanticAnnotation> .
+<#semanticAnnotation-temporalExpressions> a <#SemanticAnnotation> .
+<#semanticAnnotation-textualEntailment> a <#SemanticAnnotation> .
+<#semanticAnnotation-wordSenses> a <#SemanticAnnotation> .
+<#speechAnnotation> a <#SpeechAnnotation> .
+<#speechAnnotation-orthographicTranscription> a <#SpeechAnnotation> .
+<#speechAnnotation-paralanguageAnnotation> a <#SpeechAnnotation> .
+<#speechAnnotation-phoneticTranscription> a <#SpeechAnnotation> .
+<#speechAnnotation-prosodicAnnotation> a <#SpeechAnnotation> .
+<#speechAnnotation-soundEvents> a <#SpeechAnnotation> .
+<speechAnnotation-soundToTextAlignment> a <#SpeechAnnotation> .
+<#speechAnnotation-speakerIdentification> a <#SpeechAnnotation> .
+<#speechAnnotation-speakerTurns> a <#SpeechAnnotation> .
+<#syntacticAnnotation-shallowParsing> a <#SyntacticAnnotation> .
+<#syntacticAnnotation-subcategorizationFrames> a <#SyntacticAnnotation> .
+<#syntacticAnnotation-treebanks> a <#SyntacticAnnotation> .
+<#syntacticosemanticAnnotation-links> a <#SyntacticAnnotation> .
 
 # Novel properties
-<userManual> a owl:ObjectProperty ;
-  rdfs:domain <LanguageResource> ;
-  rdfs:range <DocumentInfo> ;
+<#userManual> a owl:ObjectProperty ;
+  rdfs:domain <#LanguageResource> ;
+  rdfs:range <#DocumentInfo> ;
   rdfs:comment "Points to the User Manual."@en .
 
-<distributionAccessMedium> a owl:ObjectProperty ;
-  rdfs:domain <LanguageResource> ;
-  rdfs:range <DistributionAccessMedium> ;
+<#distributionAccessMedium> a owl:ObjectProperty ;
+  rdfs:domain <#LanguageResource> ;
+  rdfs:range <#DistributionAccessMedium> ;
   rdfs:comment "Specifies the medium (channel) used for delivery or providing access to the resource."@en .
 
-<DistributionAccessMedium> a owl:Class ;
+<#DistributionAccessMedium> a owl:Class ;
   rdfs:comment "Specifies the medium (channel) used for delivery or providing access to the resource."@en .
 
-<metadataSource> a owl:DatatypeProperty ;
-  rdfs:domain <LanguageResource> ;
+<#metadataSource> a owl:DatatypeProperty ;
+  rdfs:domain <#LanguageResource> ;
   rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI> ;
   rdfs:comment "Refers to the catalogue or repository from which the metadata has been originated."@en .
 
-<publications> a owl:ObjectProperty ;
-  rdfs:domain <Actor> ;
+<#publications> a owl:ObjectProperty ;
+  rdfs:domain <#Actor> ;
   rdfs:comment "Takes publications from DBLP."@en .
 
-<genre> a owl:DatatypeProperty ;
-  rdfs:domain <ClassificationInfo> ;
+<#genre> a owl:DatatypeProperty ;
+  rdfs:domain <#ClassificationInfo> ;
   rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
 
-<audioGenre> rdfs:subPropertyOf <genre> .
-<imageGenre> rdfs:subPropertyOf <genre> .
-<speechGenre> rdfs:subPropertyOf <genre> .
-<textGenre> rdfs:subPropertyOf <genre> .
-<videoGenre> rdfs:subPropertyOf <genre> .
+<#audioGenre> rdfs:subPropertyOf <#genre> .
+<#imageGenre> rdfs:subPropertyOf <#genre> .
+<#speechGenre> rdfs:subPropertyOf <#genre> .
+<#textGenre> rdfs:subPropertyOf <#genre> .
+<#videoGenre> rdfs:subPropertyOf <#genre> .
 
-<ClassificationInfo> a owl:Class .
+<#ClassificationInfo> a owl:Class .
 
-<AudioClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
-<ImageClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
-<TextClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
-<VideoClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
+<#AudioClassificationInfo> rdfs:subClassOf <#ClassificationInfo> .
+<#ImageClassificationInfo> rdfs:subClassOf <#ClassificationInfo> .
+<#TextClassificationInfo> rdfs:subClassOf <#ClassificationInfo> .
+<#VideoClassificationInfo> rdfs:subClassOf <#ClassificationInfo> .
 
-<memberOfELRA> a <UserNature> .
-<memberOfLDC> a <UserNature> .
-<memberOfTST-Centrale> a <UserNature> .
-<webExecutable> a <DistributionAccessMedium> .
-<paperCopy> a <DistributionAccessMedium> .
-<hardDisk> a <DistributionAccessMedium> .
-<bluRay> a <DistributionAccessMedium> .
-<DVD-R> a <DistributionAccessMedium> .
-<CD-ROM> a <DistributionAccessMedium> .
-<downloadable> a <DistributionAccessMedium> .
-<accessibleThroughInterface> a <DistributionAccessMedium> .
+<#memberOfELRA> a <#UserNature> .
+<#memberOfLDC> a <#UserNature> .
+<#memberOfTST-Centrale> a <#UserNature> .
+<#webExecutable> a <#DistributionAccessMedium> .
+<#paperCopy> a <#DistributionAccessMedium> .
+<#hardDisk> a <#DistributionAccessMedium> .
+<#bluRay> a <#DistributionAccessMedium> .
+<#DVD-R> a <#DistributionAccessMedium> .
+<#CD-ROM> a <#DistributionAccessMedium> .
+<#downloadable> a <#DistributionAccessMedium> .
+<#accessibleThroughInterface> a <#DistributionAccessMedium> .
