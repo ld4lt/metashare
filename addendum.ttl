@@ -16,10 +16,11 @@
 
 # A.3
 <Use> dct:replaces msxml:actualUse .
-<use> dct:replaces msxml:use .
+<use> dct:replaces msxml:actualUse .
+<Use> dct:replaces msxml:foreseenUse .
+<use> dct:replaces msxml:foreseenUse .
 <CharacterEncodingSet> dct:replaces msxml:characterEncoding .
 <DomainClassification> dct:replaces msxml:domainInfo .
-# use can't replace both actual and foreseen use
 <GeographicCoverageClassification> dct:replaces msxml:geographicCoverageInfo .
 <TimeCoverageClassification> dct:replaces msxml:timeCoverageInfo .
 <amount> dct:replaces msxml:size .
@@ -31,10 +32,7 @@
 <Organization> owl:equivalentClass foaf:Organization .
 <Person> owl:equivalentClass foaf:Actor .
 <Project> owl:equivalentClass foaf:Project .
-# My suggestion:
 <Document> owl:equivalentClass swrc:Publication .
-
-# B.2 -- Don't get it 
 
 # C.1a
 <Corpus> a owl:Class ;
@@ -262,3 +260,106 @@
     owl:onProperty <lexicalConcepturalResourceType> ;
     owl:hasValue <thesaurus> 
   ] .
+
+# Annotation groupings
+<DiscourseAnnotation> rdfs:subClassOf <AnnotationType> .
+<ModalityAnnotation> rdfs:subClassOf <AnnotationType> .
+<MorphosyntacticAnnotation> rdfs:subClassOf <AnnotationType> .
+<SemanticAnnotation> rdfs:subClassOf <AnnotationType> .
+<SpeechAnnotation> rdfs:subClassOf <AnnotationType> .
+<SyntacticAnnotation> rdfs:subClassOf <AnnotationType> .
+
+<discourseAnnotation> a <DiscourseAnnotation> .
+<discourseAnnotation-audienceReactions> a <DiscourseAnnotation> .
+<discourseAnnotation-coreference> a <DiscourseAnnotation> .
+<discourseAnnotation-dialogueActs> a <DiscourseAnnotation> .
+<discourseAnnotation-discourseRelations> a <DiscourseAnnotation> .
+<modalityAnnotation-bodyMovements> a <ModalityAnnotation> .
+<modalityAnnotation-facialExpressions> a <ModalityAnnotation> .
+<modalityAnnotation-gazeEyeMovements> a <ModalityAnnotation> .
+<modalityAnnotation-handArmGestures> a <ModalityAnnotation> .
+<modalityAnnotation-handManipulationOfObjects> a <ModalityAnnotation> .
+<modalityAnnotation-headMovements> a <ModalityAnnotation> .
+<modalityAnnotation-lipMovements> a <ModalityAnnotation> .
+<morphosyntacticAnnotation-bPosTagging> a <MorphosyntacticAnnotation> .
+<morphosyntacticAnnotation-posTagging> a <MorphosyntacticAnnotation> .
+<semanticAnnotation> a <SemanticAnnotation> .
+<semanticAnnotation-certaintyLevel> a <SemanticAnnotation> .
+<semanticAnnotation-emotions> a <SemanticAnnotation> .
+<semanticAnnotation-entityMentions> a <SemanticAnnotation> .
+<semanticAnnotation-events> a <SemanticAnnotation> .
+<semanticAnnotation-namedEntities> a <SemanticAnnotation> .
+<semanticAnnotation-polarity> a <SemanticAnnotation> .
+<semanticAnnotation-questionTopicalTarget> a <SemanticAnnotation> .
+<semanticAnnotation-semanticClasses> a <SemanticAnnotation> .
+<semanticAnnotation-semanticRelations> a <SemanticAnnotation> .
+<semanticAnnotation-semanticRoles> a <SemanticAnnotation> .
+<semanticAnnotation-speechActs> a <SemanticAnnotation> .
+<semanticAnnotation-temporalExpressions> a <SemanticAnnotation> .
+<semanticAnnotation-textualEntailment> a <SemanticAnnotation> .
+<semanticAnnotation-wordSenses> a <SemanticAnnotation> .
+<speechAnnotation> a <SpeechAnnotation> .
+<speechAnnotation-orthographicTranscription> a <SpeechAnnotation> .
+<speechAnnotation-paralanguageAnnotation> a <SpeechAnnotation> .
+<speechAnnotation-phoneticTranscription> a <SpeechAnnotation> .
+<speechAnnotation-prosodicAnnotation> a <SpeechAnnotation> .
+<speechAnnotation-soundEvents> a <SpeechAnnotation> .
+<speechAnnotation-soundToTextAlignment> a <SpeechAnnotation> .
+<speechAnnotation-speakerIdentification> a <SpeechAnnotation> .
+<speechAnnotation-speakerTurns> a <SpeechAnnotation> .
+<syntacticAnnotation-shallowParsing> a <SyntacticAnnotation> .
+<syntacticAnnotation-subcategorizationFrames> a <SyntacticAnnotation> .
+<syntacticAnnotation-treebanks> a <SyntacticAnnotation> .
+<syntacticosemanticAnnotation-links> a <SyntacticAnnotation> .
+
+# Novel properties
+<userManual> a owl:ObjectProperty ;
+  rdfs:domain <LanguageResource> ;
+  rdfs:range <DocumentInfo> ;
+  rdfs:comment "Points to the User Manual."@en .
+
+<distributionAccessMedium> a owl:ObjectProperty ;
+  rdfs:domain <LanguageResource> ;
+  rdfs:range <DistributionAccessMedium> ;
+  rdfs:comment "Specifies the medium (channel) used for delivery or providing access to the resource."@en .
+
+<DistributionAccessMedium> a owl:Class ;
+  rdfs:comment "Specifies the medium (channel) used for delivery or providing access to the resource."@en .
+
+<metadataSource> a owl:DatatypeProperty ;
+  rdfs:domain <LanguageResource> ;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI> ;
+  rdfs:comment "Refers to the catalogue or repository from which the metadata has been originated."@en .
+
+<publications> a owl:ObjectProperty ;
+  rdfs:domain <Actor> ;
+  rdfs:comment "Takes publications from DBLP."@en .
+
+<genre> a owl:DatatypeProperty ;
+  rdfs:domain <ClassificationInfo> ;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<audioGenre> rdfs:subPropertyOf <genre> .
+<imageGenre> rdfs:subPropertyOf <genre> .
+<speechGenre> rdfs:subPropertyOf <genre> .
+<textGenre> rdfs:subPropertyOf <genre> .
+<videoGenre> rdfs:subPropertyOf <genre> .
+
+<ClassificationInfo> a owl:Class .
+
+<AudioClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
+<ImageClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
+<TextClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
+<VideoClassificationInfo> rdfs:subClassOf <ClassificationInfo> .
+
+<memberOfELRA> a <UserNature> .
+<memberOfLDC> a <UserNature> .
+<memberOfTST-Centrale> a <UserNature> .
+<webExecutable> a <DistributionAccessMedium> .
+<paperCopy> a <DistributionAccessMedium> .
+<hardDisk> a <DistributionAccessMedium> .
+<bluRay> a <DistributionAccessMedium> .
+<DVD-R> a <DistributionAccessMedium> .
+<CD-ROM> a <DistributionAccessMedium> .
+<downloadable> a <DistributionAccessMedium> .
+<accessibleThroughInterface> a <DistributionAccessMedium> .
