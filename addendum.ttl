@@ -28,6 +28,7 @@
 
 # B.1
 <#Actor> owl:equivalentClass foaf:Actor .
+<#LanguageResource> owl:equivalentClass dcat:Dataset .
 <#DistributionInfo> owl:equivalentClass dcat:Distribution .
 <#MetadataInfo> owl:equivalentClass dcat:CatalogRecord .
 <#Organization> owl:equivalentClass foaf:Organization .
