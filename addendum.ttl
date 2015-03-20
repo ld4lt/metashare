@@ -8,6 +8,24 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix swrc: <http://swrc.ontoware.org/ontology#> .
 
+# About this vocabulary
+
+<> <http://purl.org/dc/terms/creator> "Marta Villegas" .
+<> <http://purl.org/dc/terms/creator> "Penny Labropoulou" .
+<> <http://purl.org/dc/terms/creator> "Victor Rodriguez Doncel" .
+<> <http://purl.org/dc/terms/creator> <http://john.mccr.ae/> .
+<> <http://purl.org/dc/terms/creator> "John P. McCrae" .
+<> <http://purl.org/dc/terms/creator> "Philipp Cimiano" .
+<> <http://purl.org/dc/terms/creator> "Jorge Gracia" .
+<> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<> <http://purl.org/dc/terms/modified> "2015-03-20" .
+<> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ms" .
+<> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://purl.org/net/def/metashare#> .
+<> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Information for Language Resources"@en .
+<> <http://www.w3.org/2002/07/owl#priorVersion> <http://purl.org/ms-lod/MetaShareRights.ttl#> .
+<> <http://www.w3.org/2002/07/owl#priorVersion> <http://lodserver.iula.upf.edu/Metashare/ontology/> .
+
 # A.2
 <#LanguageResource> dct:replaces msxml:resourceInfo .
 <#ConditionsOfUse> dct:replaces msxml:restrictionsOfUse .
@@ -365,3 +383,225 @@
 <#CD-ROM> a <#DistributionAccessMedium> .
 <#downloadable> a <#DistributionAccessMedium> .
 <#accessibleThroughInterface> a <#DistributionAccessMedium> .
+
+<#duration> a owl:DatatypeProperty .
+<#durationOfEffectiveSpeechInfo> rdfs:subPropertyOf <#duration> .
+<#durationOfAudioInfo> rdfs:subPropertyOf <#duration> .
+<#durationUnit> a owl:DatatypeProperty .
+<#durationOfEffectiveSpeechInfoUnit> rdfs:subPropertyOf <#durationUnit> .
+<#durationOfAudioInfoUnit> rdfs:subPropertyOf <#durationUnit> .
+
+<#MediaPart> a owl:Class .
+
+<#CorpusMediaPart> a owl:Class ;
+  rdfs:subClassOf <#MediaPart> .
+
+<#CorpusAudio> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#CorpusImage> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#CorpusText> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#CorpusTextNgram> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#CorpusTextNumerical> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#CorpusVideo> rdfs:subClassOf <#CorpusMediaPart> .
+
+<#LanguageDescriptionMediaPart> a owl:Class ;
+  rdfs:subClassOf <#MediaPart> .
+
+<#LanguageDescriptionImage> rdfs:subClassOf <#LanguageDescriptionMediaPart> .
+<#LanguageDescriptionText> rdfs:subClassOf <#LanguageDescriptionMediaPart> .
+<#LanguageDescriptionVideo> rdfs:subClassOf <#LanguageDescriptionMediaPart> .
+
+<#LexicalConceptualResourceMediaPart> a owl:Class ;
+  rdfs:subClassOf <#MediaPart> .
+
+<#LexicalConceptualResourceAudio> rdfs:subClassOf <#LexicalConceptualResourceMediaPart> .
+<#LexicalConceptualResourceImage> rdfs:subClassOf <#LexicalConceptualResourceMediaPart> .
+<#LexicalConceptualResourceText> rdfs:subClassOf <#LexicalConceptualResourceMediaPart> .
+<#LexicalConceptualResourceVideo> rdfs:subClassOf <#LexicalConceptualResourceMediaPart> .
+
+<#mediaPartInfo> a owl:ObjectProperty .
+
+<#corpusMediaPartInfo> a owl:ObjectProperty ;
+  rdfs:subPropertyOf <#mediaPartInfo> ;
+  rdfs:domain <#CorpusInfo> ;
+  rdfs:range <#CorpusMediaPart> .
+
+<#corpusAudioInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+<#corpusImageInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+<#corpusTextInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+<#corpusTextNgramInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+<#corpusTextNumericalInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+<#corpusVideoInfo> rdfs:subPropertyOf <#corpusMediaPartInfo> .
+
+<#languageDescriptionMediaPartInfo> a owl:ObjectProperty ;
+  rdfs:subClassOf <#mediaPartInfo> ;
+  rdfs:domain <#LanguageDescriptionInfo> ;
+  rdfs:range <#LanguageDescriptionMediaPart> .
+
+<#languageDescriptionImageInfo> rdfs:subPropertyOf <#languageDescriptionMediaPartInfo> .
+<#languageDescriptionTextInfo> rdfs:subPropertyOf <#languageDescriptionMediaPartInfo> .
+<#languageDescriptionVideoInfo> rdfs:subPropertyOf <#languageDescriptionMediaPartInfo> .
+
+<#lexicalConceptualResourceMediaPartInfo> a owl:ObjectProperty ;
+  rdfs:subPropertyOf <#mediaPartInfo> ;
+  rdfs:domain <#LexicalConceptualResourceInfo> ;
+  rdfs:range <#LexicalConceptualResourceMediaPart> .
+
+<#lexicalConceptualResourceAudioInfo> rdfs:subPropertyOf <#lexicalConceptualResourceMediaPartInfo> .
+<#lexicalConceptualResourceImageInfo> rdfs:subPropertyOf <#lexicalConceptualResourceMediaPartInfo> .
+<#lexicalConceptualResourceTextInfo> rdfs:subPropertyOf <#lexicalConceptualResourceMediaPartInfo> .
+<#lexicalConceptualResourceVideoInfo> rdfs:subPropertyOf <#lexicalConceptualResourceMediaPartInfo> .
+
+<#LexicalConceptualResourceType> owl:equivalentClass <#CompatibleLexiconType> .
+
+
+# License modelling in ODRL
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+<#informLicensor> a odrl:Set ;
+   odrl:permission [
+     odrl:duty [ 
+       odrl:action cc:Notify 
+     ] 
+   ] .
+
+<#redeposit> a odrl:Set; odrl:permission [ odrl:duty [ odrl:action <#redeposit> ] ] .
+<#onlyMSmembers> a odrl:Set; odrl:permission [ odrl:constraint [ odrl:operator odrl:eq ; odrl:recipient <#onlyMSmembers> ] ] .
+<#academic-nonCommercialUse> a odrl:Set; odrl:permission [ odrl:constraint [ odrl:operator odrl:eq ; odrl:purpose <#academic> ] ] ; odrl:prohibition [ odrl:action cc:CommericalUse , cc:Distribution ] .
+# <#evaluationUse> a odrl:Set; odrl:permission [ odrl:constraint [ ?? ] ] .
+<#commericalUse> a odrl:Set; odrl:permission [ odrl:action cc:CommercialUse ] .
+<#attribution> a odrl:Set; odrl:permission [ odrl:duty [ odrl:action cc:Attribution ] ] .
+<#shareAlike> a odrl:Set; odrl:permission [ odrl:duty [ odrl:action cc:ShareALike ] ] .
+<#noDerivatives> a odrl:Set; odrl:prohibition [ odrl:action cc:DerivativeWorks ] .
+<#noRedistriubtion> a odrl:Set; odrl:prohibition [ odrl:action cc:Reproduction ] .
+
+# From Distribution
+
+<#authenticated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<#authenticated> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies if the user has been identified/authenticated."@en .
+<#authenticated> <http://www.w3.org/2000/01/rdf-schema#label> "Authenticated"@en .
+<#authenticated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<#availabilityEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the Availability End Date of the resource."@en .
+
+<#Availability> <http://www.w3.org/2000/01/rdf-schema#comment> "Availability status of the resource; conditionsOfUse can be further used to indicate the specific terms of availability"@en .
+
+<#availabilityStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the Availability Start Date of the resource."@en .
+
+<#available-restrictedUse> <http://www.w3.org/2000/01/rdf-schema#comment> "For resources available but with conditions of use imposed by the type of licence."@en .
+
+<#availableThroughOtherDistributor> <http://www.w3.org/2000/01/rdf-schema#comment> "For resources that are documented in the catalogue but the contents of which can only be accessed through other distribution channels."@en .
+<#availableThroughOtherDistributor> <http://www.w3.org/2000/01/rdf-schema#label> "Available Through Other Distributor"@en .
+<#available-unrestrictedUse> <http://www.w3.org/2000/01/rdf-schema#comment> "For resources available with no restrictions of use (e.g. public domain resources)."@en .
+<#bluRay> <http://www.w3.org/2000/01/rdf-schema#comment> "bluRay refers to a kind of distribution/access medium used for delivering a language resource; intended for resources delivered on bluRay disks"@en .
+<#CD-ROM> <http://www.w3.org/2000/01/rdf-schema#comment> "CD-ROM refers to a kind of distribution/access medium used for delivering a language resource; intended for resources delivered on CD-ROM"@en .
+<#commercial> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to resource users affiliated with a commercial institution"@en .
+
+<#communicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#concept> .
+<#communicate> <http://www.w3.org/2000/01/rdf-schema#comment> "The Assigner permits/prohibits the Assignees to communicate the Asset to the public"@en .
+<#communicate> <http://www.w3.org/2000/01/rdf-schema#label> "communicate"@en .
+<#communicate> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/ns/odrl/2/present> .
+
+<#ConditionsOfUse> <http://www.w3.org/2000/01/rdf-schema#comment> "The conditionsOfUse optional element in the metadata is only to be taken as providing brief human readable information on the fact that the LR is provided under a specific set of conditions. These correspond to the most frequently used conditions imposed by the licensor of the LR (via the specified licence). The proper exposition of all conditions and possible exceptions is to be found inside the licence text. LR depositors should, hence, carefully choose the values of this field to match the licence chosen and users should carefully read that licence before using the LR."@en .
+
+<#DistributionAccessMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the medium (channel) used for delivery or providing access to the resource"@en .
+<#distributionAccessMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the medium (channel) used for delivery or providing access to the resource"@en .
+
+<#distributionRightsHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies a person or an organization that holds the distribution rights. The range and scope of distribution rights is defined in the distribution agreement. The distributor in most cases only has a limited licence to distribute the work and collect royalties on behalf of the licensor or the IPR holder and cannot give to any recipient of the work permissions that exceed the scope of the distribution agreement (e.g. to allow uses of the work that are not defined in the distribution agreement)"@en .
+
+<#education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#education> <http://www.w3.org/2000/01/rdf-schema#comment> "Education refers to a kind of 'ConditionsOfUse' imposed by the licence; the resource can only be used for educational purposes."@en .
+<#education> <http://www.w3.org/2000/01/rdf-schema#label> "Education"@en .
+
+<#evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation refers to a kind of 'ConditionsOfUse' imposed by the licence; use for evaluation purposes (cf. ELRA_EVALUATION license)"@en .
+<#evaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation"@en .
+
+<#LicenseCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<#licenseCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<#licenseCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A way of categorising licences into three main categories: PUB, ACA or RES, according to CLARIN recommendations (cf. https://kitwiki.csc.fi/twiki/bin/view/FinCLARIN/ClarinLC)"@en .
+<#LicenseCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A way of classifying licences according to their conditions of use (CLARIN recommendation)"@en .
+<#licenseCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/def/metashare#License> .
+<#licenseCategory> <http://www.w3.org/2000/01/rdf-schema#label> "License Category"@en .
+<#LicenseCategory> <http://www.w3.org/2000/01/rdf-schema#label> "License Category"@en .
+<#licenseCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/def/metashare#LicenseCategory> .
+
+<#licenseInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a resource to the licence under which it is distributed; values are taken from a list of standard licences"@en .
+<#LicenseInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a resource to the licence under which it is distributed; values are taken from a list of standard licences"@en .
+
+<#licensor> <http://www.w3.org/2000/01/rdf-schema#comment> "The person who is legally eligible to license and actually licenses the resource. The licensor could be different from the creator, the distributor or the IPR holder. The licensor has the necessary rights or licences to license the work and is the party that actually licenses the resource that is distributed via the specific channel. She will have obtained the necessary rights or licences from the IPR holder and she may have a distribution agreement with a distributor that disseminates the work under a set of conditions defined in the specific  licence and collects revenue on the licensor's behalf. The attribution of the creator, separately from the attribution of the licensor, may be part of the licence under which the resource is distributed (as e.g. is the case with Creative Commons Licences)."@en .
+
+<#memberOfELRA> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for stating pricing privileges for members of ELRA with regard to the distribution of a resource"@en .
+
+<#memberOfLDC> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for stating pricing privileges for members of LDC with regard to the distribution of a resource"@en .
+
+<#memberOfTST-Centrale> <http://www.w3.org/2000/01/rdf-schema#comment> "Used for stating pricing privileges for members of TST-Centrale with regard to the distribution of a resource"@en .
+
+<#incorporate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#concept> .
+<#incorporate> <http://www.w3.org/2000/01/rdf-schema#comment> "The Assigner permits/prohibits the Assignees to incorporate the Asset unmodified into a Collective Work."@en .
+<#incorporate> <http://www.w3.org/2000/01/rdf-schema#label> "incorporate"@en .
+<#incorporate> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/use> .
+
+<#informLicensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Inform Licensor refers to a kind of 'ConditionsOfUse' imposed by the licence; users must inform the licensor as to the kind of use they make of the resource"@en .
+
+<#iprHolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or an organization who holds the full Intellectual Property Rights (Copyright, trademark etc) that subsist in the resource. The IPR holder could be different from the creator that may have assigned the rights to the IPR holder (e.g. an author as a creator assigns her rights to the publisher who is the IPR holder) and the distributor that holds a specific licence (i.e. a permission) to distribute the work via a specific distributor."@en .
+
+<#languageEngineeringResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#languageEngineeringResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#languageEngineeringResearch> <http://www.w3.org/2000/01/rdf-schema#comment> "Language engineering research refers to a kind of 'ConditionsOfUse' imposed by the licence; the resource can only be used for research purposes in the Language Enginnering / Language Technology domain."@en .
+<#languageEngineeringResearch> <http://www.w3.org/2000/01/rdf-schema#label> "Language Engineering Research"@en .
+
+<#noDerivatives> <http://www.w3.org/2000/01/rdf-schema#comment> "No Derivatives refers to a kind of 'ConditionsOfUse' imposed by the licence; users are not allow to share derivatives of the resource"@en .
+
+<#nonCommercialUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Non-commercial use refers to a kind of 'ConditionsOfUse' imposed by the licence; use for non commercial purposes, such as research and education by academic users"@en .
+
+<#noRedistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "No Redistribution refers to a kind of 'ConditionsOfUse' imposed by the licence; users are not allowed to redistribute the resource"@en .
+
+<#onlyMSmembers> <http://www.w3.org/2000/01/rdf-schema#comment> "Only Meta Share members refers to a kind of 'ConditionsOfUse' imposed by the licence; the resource can only be used by members of the MetaShare network"@en .
+
+<#openForReuseWithRestrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#License> .
+<#openForReuseWithRestrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#openForReuseWithRestrictions> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to any kind of license that governs the use of a resource permitting certain automatic processing procedures but with specific restrictions; the end user is advised to check the conditionsOfUse metadata element for a quick overview of the rights granted for the use of the resource and to read carefully the full license text"@en .
+<#openForReuseWithRestrictions> <http://www.w3.org/2000/01/rdf-schema#label> "Open For Reuse With Restrictions"@en .
+
+<#personalDataIncluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#personalDataIncluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#personalDataIncluded> <http://www.w3.org/2000/01/rdf-schema#comment> "PersonalDataIncluded refers to a kind of 'ConditionsOfUse' imposed by the licence; it's a privacy warning for resources that include personal data."@en .
+<#personalDataIncluded> <http://www.w3.org/2000/01/rdf-schema#label> "Personal Data Included"@en .
+
+<#proprietary> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to any kind of proprietary license meant to govern the use of a resource; the rights holder has exclusive legal rights over the license itself; the end user is advised to check the conditionsOfUse metadata element for a quick overview of the rights granted for the use of the resource and pay attention to the full license text; "@en .
+
+<#redeposit> <http://www.w3.org/2000/01/rdf-schema#comment> "Redeposit refers to a kind of 'ConditionsOfUse' imposed by the licence; users are encouraged to deposit any modified versions of the resource they make to the distribution channel through which they have acquired the resource"@en .
+
+<#requestPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#requestPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#requestPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "RequestPlan refers to a kind of 'ConditionsOfUse' imposed by the licence; the licensor requires a research plan for granting access."@en .
+<#requestPlan> <http://www.w3.org/2000/01/rdf-schema#label> "Request Plan"@en .
+
+<#research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#research> <http://www.w3.org/2000/01/rdf-schema#comment> "Research refers to a kind of 'ConditionsOfUse' imposed by the licence; the resource can only be used for research purposes."@en .
+<#research> <http://www.w3.org/2000/01/rdf-schema#label> "Research"@en .
+
+<#spatialConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#spatialConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#spatialConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial constraint refers to a kind of 'ConditionsOfUse' imposed by the licence; used for resources with spatial restrictions, e.g. the content is available or can be used only at a single location, center, or site."@en .
+<#spatialConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Constraint"@en .
+
+<#underNegotiation> <http://www.w3.org/2000/01/rdf-schema#comment> "For resources whose availability is still pending."@en .
+
+<#userIdentified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/def/metashare#ConditionsOfUse> .
+<#userIdentified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<#userIdentified> <http://www.w3.org/2000/01/rdf-schema#comment> "UserIdentified refers to a kind of 'ConditionsOfUse' imposed by the licence; the resource can only be accessed by users that are identified/authenticated."@en .
+<#userIdentified> <http://www.w3.org/2000/01/rdf-schema#label> "User Identified"@en .
+
+<#UserNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the type of user of the resource (e.g. affiliated with a commercial vs. academic institution, member of an organisation/network etc.); the user type may have implications on the licensing or pricing of a resource"@en .
+<#userNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to identify the type of user of the resource (affiliated with a commercial vs. academic institution)"@en .
+
