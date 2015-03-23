@@ -104,7 +104,7 @@ creationStartDate	The date in which the creation process was started
 creationTool	The name, the identifier or the url of the tool used in the creation process
 departmentName	The name of the department or unit (e.g. specific university faculty/department, department/unit of a research organization or private company etc.)
 derivedResource	The name, the identifier or the url of the outcome or product of the resource.
-description	Provides the description of the resource in prose; the element can be repeated for the different language versions using the "lang" attribute to specify the language.
+description	Provides the description of the resource in prose; the element can be repeated for the different language versions using the 'lang' attribute to specify the language.
 descriptionType	The descriptionType is used for the description element in Identify and for setDescription element in ListSets. Content must be compliant with an XML Schema defined by a  community.
 dialectAccentOfPersons	Provides information on the dialect of the group of participants
 dialectAccent	Provides information on the dialect of the participant
