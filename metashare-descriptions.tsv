@@ -1,4 +1,4 @@
-aboutType	Data "about" the record must be expressed in XML that is compliant with an XML Schema defined by a community.
+aboutType	Data about the record must be expressed in XML that is compliant with an XML Schema defined by a community.
 accessTool	The name or the identifier or the url of the tool used to access a resource (e.g. a corpus workbench)
 actorInfoType	Used to bring persons and organizations (in whatever role they may have with regard to the resource, e.g., resource creator, IPR holder, etc.)
 actualUse	Classification of the actual use of the resource
