@@ -39,6 +39,10 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Penny Labropoulou</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meta-Share ontology v2 with imported OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/). The ontology caters for the description of Language resources  (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs.</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
         <IRI>http://john.mccr.ae/</IRI>
     </Annotation>
@@ -55,10 +59,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Petr Knoth</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meta-Share ontology v2 with imported OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/)</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Marta Villegas</Literal>
     </Annotation>
@@ -72,11 +72,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Claire Nedellec</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sophie Aubin</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sophie Aubin</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Claire Nedellec</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
@@ -119,6 +119,10 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Marta Villegas</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MS-OWL Ontology</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
         <IRI>http://lodserver.iula.upf.edu/Metashare/ontology/</IRI>
     </Annotation>
@@ -129,10 +133,6 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Penny Labropoulou</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MS-OWL Ontology for Language Resources</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="omtd:Coreference"/>
@@ -156,10 +156,10 @@
         <Class abbreviatedIRI="omtd:ExtractionOfFundingInformation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Disambiguator"/>
+        <Class IRI="#TimeCoverageInfo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TimeCoverageInfo"/>
+        <Class abbreviatedIRI="omtd:Disambiguator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#textIncludedInImage"/>
