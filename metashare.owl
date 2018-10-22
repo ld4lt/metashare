@@ -603,6 +603,9 @@
         <Class abbreviatedIRI="omtd:Topic"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#iOS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp930"/>
     </Declaration>
     <Declaration>
@@ -1014,6 +1017,9 @@
         <NamedIndividual IRI="#bodyGesture"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#webServiceType"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ISO1987"/>
     </Declaration>
     <Declaration>
@@ -1027,6 +1033,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#windows-1258"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOAP"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Tool"/>
@@ -1311,6 +1320,9 @@
         <ObjectProperty IRI="#sizePerTextFormat"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#copyrightStatement"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PAROLE_topicClassification"/>
     </Declaration>
     <Declaration>
@@ -1386,6 +1398,9 @@
         <DataProperty IRI="#numberOfTrainedSpeakers"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WebServiceType"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#fee"/>
     </Declaration>
     <Declaration>
@@ -1453,6 +1468,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#domainClassificationScheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#REST"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
@@ -2019,10 +2037,10 @@
         <NamedIndividual IRI="#temporalExpressionRecognition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#geographicCoverageInfo"/>
+        <ObjectProperty IRI="#imageClassificationInfo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#imageClassificationInfo"/>
+        <ObjectProperty IRI="#geographicCoverageInfo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#profession"/>
@@ -2272,6 +2290,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#textNgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetadataRecord"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#eventDescription"/>
@@ -2697,6 +2718,9 @@
         <Class abbreviatedIRI="omtd:ContradictionDetection"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#googleChromeOS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
     </Declaration>
     <Declaration>
@@ -2779,6 +2803,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#requiredSoftware"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#metadataLastDateUpdated"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Big5"/>
@@ -3534,6 +3561,9 @@
         <Class IRI="#ModalityType"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#restrictedAccess"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#daylight"/>
     </Declaration>
     <Declaration>
@@ -3634,6 +3664,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rightsStatement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#voice"/>
@@ -3840,6 +3873,9 @@
         <DataProperty IRI="#synchronizedWithImage"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#metadataSchema"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BodyParts"/>
     </Declaration>
     <Declaration>
@@ -3949,6 +3985,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#interactivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#command"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:AnnotationOfMultiWordUnits"/>
@@ -4128,6 +4167,9 @@
         <NamedIndividual IRI="#openPublicPlace"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RightsStatement"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="omtd:Summarization"/>
     </Declaration>
     <Declaration>
@@ -4177,6 +4219,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp918"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#metadataRecordIdentifier"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#creationEndDate"/>
@@ -4272,10 +4317,10 @@
         <Class IRI="#SceneIllumination"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#evaluationDetails"/>
+        <DataProperty IRI="#ageRangeEnd"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ageRangeEnd"/>
+        <DataProperty IRI="#evaluationDetails"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:EmotionRecognizer"/>
@@ -4408,6 +4453,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:InformationFilteringByRecommenderSystems"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#metadataCreator"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticAnnotation-semanticRoles"/>
@@ -4941,10 +4989,10 @@
         <NamedIndividual IRI="#bluRay"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#morphosyntacticAnnotation-bPosTagging"/>
+        <NamedIndividual IRI="#machineReadableDictionary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#machineReadableDictionary"/>
+        <NamedIndividual IRI="#morphosyntacticAnnotation-bPosTagging"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#flash"/>
@@ -5139,6 +5187,9 @@
         <Class abbreviatedIRI="omtd:Regularisation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#versionType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="omtd:hasAnnotationType"/>
     </Declaration>
     <Declaration>
@@ -5323,6 +5374,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_uima_binary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#function"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sizePerAudioFormat"/>
@@ -5967,6 +6021,9 @@
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.xml-asl"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#metadataCreationDate"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#multimodalInteractionFramework"/>
     </Declaration>
     <Declaration>
@@ -6004,6 +6061,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#2D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#android"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#operatingSystem"/>
@@ -6061,6 +6121,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#placeOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#openAccess"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TEI_P4"/>
@@ -6254,7 +6317,7 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MetadataInfo"/>
+        <Class IRI="#MetadataRecord"/>
         <Class abbreviatedIRI="dcat:CatalogRecord"/>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -6535,6 +6598,10 @@
     <SubClassOf>
         <Class IRI="#MachineReadableDictionary"/>
         <Class IRI="#LexicalConceptualResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetadataInfo"/>
+        <Class IRI="#DeprecatedClasses"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ModalityAnnotation"/>
@@ -11396,6 +11463,10 @@
         <NamedIndividual IRI="#RDF"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#WebServiceType"/>
+        <NamedIndividual IRI="#REST"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ColourSpace"/>
         <NamedIndividual IRI="#RGB"/>
     </ClassAssertion>
@@ -11410,6 +11481,10 @@
     <ClassAssertion>
         <Class IRI="#AudioQualityMeasuresIncluded"/>
         <NamedIndividual IRI="#SNR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WebServiceType"/>
+        <NamedIndividual IRI="#SOAP"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ConformanceToStandardsBestPractices"/>
@@ -11614,6 +11689,10 @@
     <ClassAssertion>
         <Class IRI="#Task"/>
         <NamedIndividual IRI="#anaphoraResolution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingSystem"/>
+        <NamedIndividual IRI="#android"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#RecordingEnvironment"/>
@@ -12172,6 +12251,10 @@
         <NamedIndividual IRI="#glassBox"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OperatingSystem"/>
+        <NamedIndividual IRI="#googleChromeOS"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#LanguageDescriptionType"/>
         <NamedIndividual IRI="#grammar"/>
     </ClassAssertion>
@@ -12262,6 +12345,10 @@
     <ClassAssertion>
         <Class IRI="#SpeechInfluences"/>
         <NamedIndividual IRI="#hyperbaric"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OperatingSystem"/>
+        <NamedIndividual IRI="#iOS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SizeUnit"/>
@@ -13160,6 +13247,10 @@
         <NamedIndividual IRI="#ontology"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#RightsStatement"/>
+        <NamedIndividual IRI="#openAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#RecordingEnvironment"/>
         <NamedIndividual IRI="#openPublicPlace"/>
     </ClassAssertion>
@@ -13574,6 +13665,10 @@
     <ClassAssertion>
         <Class IRI="#ConditionsOfUse"/>
         <NamedIndividual IRI="#research"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RightsStatement"/>
+        <NamedIndividual IRI="#restrictedAccess"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ScenarioType"/>
@@ -14984,6 +15079,14 @@
         <ObjectProperty IRI="#deprecatedObjectProperties"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#metadataCreator"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#metadataRecordIdentifier"/>
+        <ObjectProperty abbreviatedIRI="dc:identifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#modalityInfo"/>
         <ObjectProperty IRI="#deprecatedObjectProperties"/>
     </SubObjectPropertyOf>
@@ -15435,6 +15538,13 @@
         <Class IRI="#LanguageResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#function"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#fundingProject"/>
         <Class IRI="#LanguageResource"/>
     </ObjectPropertyDomain>
@@ -15655,6 +15765,14 @@
         <Class IRI="#MembershipInfo"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#metadataCreator"/>
+        <Class IRI="#MetadataRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#metadataRecordIdentifier"/>
+        <Class IRI="#MetadataRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#modality"/>
         <Class IRI="#MediaPart"/>
     </ObjectPropertyDomain>
@@ -15728,7 +15846,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#operatingSystem"/>
-        <Class IRI="#ToolServiceInfo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#organizationInfo"/>
@@ -15856,6 +15977,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resourceType"/>
+        <Class IRI="#LanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rightsStatement"/>
         <Class IRI="#LanguageResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -16178,6 +16303,10 @@
         <Class IRI="#Validation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#versionType"/>
+        <Class IRI="#LanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#videoClassificationInfo"/>
         <Class IRI="#CorpusVideoInfo"/>
     </ObjectPropertyDomain>
@@ -16195,6 +16324,10 @@
             <Class IRI="#ImageFormatInfo"/>
             <Class IRI="#VideoFormatInfo"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#webServiceType"/>
+        <Class IRI="#WebService"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="omtd:deployedInDomain"/>
@@ -16477,6 +16610,10 @@
         <Class IRI="#ForeseenUseInfo"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#function"/>
+        <Class abbreviatedIRI="omtd:Operation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#fundingProject"/>
         <Class IRI="#Project"/>
     </ObjectPropertyRange>
@@ -16629,6 +16766,10 @@
         <Class IRI="#MembershipInstitution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#metadataCreator"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#modality"/>
         <Class IRI="#Modality"/>
     </ObjectPropertyRange>
@@ -16763,6 +16904,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#resourceType"/>
         <Class IRI="#ResourceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rightsStatement"/>
+        <Class IRI="#RightsStatement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#scenarioType"/>
@@ -16993,6 +17138,10 @@
         <Class IRI="#Actor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#versionType"/>
+        <Class IRI="#VersionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#videoClassificationInfo"/>
         <Class IRI="#VideoClassificationInfo"/>
     </ObjectPropertyRange>
@@ -17003,6 +17152,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#visualModelling"/>
         <Class IRI="#VisualModelling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#webServiceType"/>
+        <Class IRI="#WebServiceType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="omtd:deployedInDomain"/>
@@ -17206,6 +17359,13 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#command"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#compression"/>
         <ObjectUnionOf>
             <Class IRI="#AudioFormatInfo"/>
@@ -17220,6 +17380,10 @@
             <Class IRI="#ImageFormatInfo"/>
             <Class IRI="#VideoFormatInfo"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#copyrightStatement"/>
+        <Class IRI="#LanguageResource"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#country"/>
@@ -17514,8 +17678,20 @@
         <Class IRI="#LanguageResource"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#metadataCreationDate"/>
+        <Class IRI="#MetadataRecord"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#metadataLastDateUpdated"/>
+        <Class IRI="#MetadataRecord"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#metadataSchema"/>
+        <Class IRI="#MetadataRecord"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#metadataSource"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#MetadataRecord"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#mimeType"/>
@@ -17728,7 +17904,7 @@
         <DataProperty IRI="#revision"/>
         <ObjectUnionOf>
             <Class IRI="#LanguageResource"/>
-            <Class IRI="#MetadataInfo"/>
+            <Class IRI="#MetadataRecord"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -18058,12 +18234,20 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#command"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#compression"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#compressionLoss"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#copyrightStatement"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#country"/>
@@ -18312,6 +18496,18 @@
     <DataPropertyRange>
         <DataProperty IRI="#metaShareId"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metadataCreationDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metadataLastDateUpdated"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#metadataSchema"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#metadataSource"/>
@@ -20046,6 +20242,26 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups information on the metadata record itself</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#MetadataInfo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:replaces"/>
+        <IRI>#MetadataRecord</IRI>
+        <IRI>#MetadataInfo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetadataRecord</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of formalised structured information used  to describe the contents, structure, function, etc., of a resource, usually according to a specific set of rules (metadata schema)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MetadataRecord</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Metadata record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
         <IRI>#Modality</IRI>
         <IRI>#ModalityInfo</IRI>
@@ -20366,6 +20582,21 @@ If it&apos;s a class it can&apos;t be a string, correct? So, how do we add the s
 I have not added anything for tool/service before discussing the label (cf. component and application for OpenMinTeD)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name (identifier) of a formal statement indicative of licensing terms for the use of a resource (e.g. open access, free to read etc.); its semantics should be clear, preferrably formally expressed and stored at a URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rights statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#RightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from omtd-share</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#S</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">replace with DVB-S</Literal>
@@ -20462,6 +20693,11 @@ also check omtd and elrc for more values</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SoftwareDistributionMedium</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software distribution medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#SoftwareDistributionMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">add dockerImage and workflowFile, and check for other values</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20796,6 +21032,21 @@ values from CLARIN
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#WebService</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from OpenMinTeD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WebServiceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification of web services based on the protocol used for accessing them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WebServiceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Web service type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#WebServiceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">not added yet other</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21364,6 +21615,16 @@ under DurationUnit, there are two new elements: DurationOfEffectIveSpeechInfoUni
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#command</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies a command line used to invoke a software component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#command</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">command</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#commercial</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;user type&apos; reserved for individuals affiliated with a commercial institution and the respective organisations</Literal>
     </AnnotationAssertion>
@@ -21487,7 +21748,9 @@ change BLM to BML</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#contactPerson</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">decide on treatment in general for roles of persons and organisations</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">decide on treatment in general for roles of persons and organisations
+
+maybe property contact with range contactPerson, contactGroup, landingPage??</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21503,6 +21766,16 @@ change BLM to BML</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#conversationalType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the conversational type of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#copyrightStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a free text statement that may be included with the resource, usually containing the name(s) of copyright holders and licensing terms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#copyrightStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">copyright statement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21784,7 +22057,7 @@ also add dataFormats from OMTD-SHARE and see how to handle audio video etc. spec
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#documentation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">made it more general; discuss its name</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">made it more general; documentation or resourceDocumentation?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22168,6 +22441,28 @@ also add dataFormats from OMTD-SHARE and see how to handle audio video etc. spec
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#function</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the operation/function/task that an application or component performs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#function</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#function</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">decide on name: task, function or operation? all the others are altLabels
+
+check domain in the end</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#function</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from omtd-share</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#funder</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The full name of the funder of the project </Literal>
     </AnnotationAssertion>
@@ -22415,6 +22710,16 @@ When decided, think how we want to add
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the intra-annotator agreement and the methods/metrics applied  </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#iprHolder</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">intellectual property rights holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#iprHolder</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rights holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#iprHolder</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A person or an organization who holds the full Intellectual Property Rights (Copyright, trademark etc) that subsist in the resource. The IPR holder could be different from the creator that may have assigned the rights to the IPR holder (e.g. an author as a creator assigns her rights to the publisher who is the IPR holder) and the distributor that holds a specific licence (i.e. a permission) to distribute the work via a specific distributor.</Literal>
@@ -22423,6 +22728,11 @@ When decided, think how we want to add
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#iprHolder</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">IPR holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#iprHolder</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in omtd-share, rightsHolder - holding IPR and SGDB rights, but otherwise the same definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22861,9 +23171,84 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An unambiguous referent to the resource within META-SHARE; it reflects to the unique system id provided automatically by the MetaShare software</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#metaShareId</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">must be deprecated and replaced by a specific identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metadataCreationDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The date when the metadata record was first created</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataCreationDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata creation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#metadataCreationDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">used xsd:date but most systems would generate dateTime; is this ok?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataCreator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metadataLastDateUpdated</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the date when the last update of the metadata record was made</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataLastDateUpdated</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata last date updated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metadataRecordIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates a metadata record to an identifier (e.g. PID, URL, etc.), i.e. a string used to uniquely identify it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataRecordIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata record identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#metadataRecordIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It should be noted that the same resource may have more than one metadata records and (their respective) identifiers, given the different descriptions it may have in different repositories and archives
+
+I have not added yet a class for the Identifier and IdentifierScheme itself until we discuss further how this is to be handled.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata schema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#metadataSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the schema to which the record complies
+uri, identifier, enumeration?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#metadataSource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the catalogue or repository from which the metadata has been originated.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the catalogue or repository from which the metadata record has been harvested</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataSource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#metadataSource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rename metadataRecordSource? range: identifier or uri?
+
+decide on relation between metadata records - through the resource? between them? take into account that we might want to identify relation between more than two metadata records, and pinpoint the metadata record that a repo has harvested.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23132,6 +23517,26 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#openAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The free and online availability of literature, which allows to read, download, copy, distribute, print, search, or link to the ful text, crawl articles for indexing, pass them as data to software, or use them for any other useful purpose. An availability that is granted without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself, and those related to giving authors control over the integrity of their work and the right to be properly acknowledged and cited.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#openAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">open access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#openAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">close match to http://purl.org/eprint/accessRights/OpenAccess and check again COAR vocabularies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#openAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from OMTD-SHARE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#openForReuseWithRestrictions</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It refers to any kind of license that governs the use of a resource permitting certain automatic processing procedures but with specific restrictions; the end user is advised to check the conditionsOfUse metadata element for a quick overview of the rights granted for the use of the resource and to read carefully the full license text</Literal>
     </AnnotationAssertion>
@@ -23143,7 +23548,12 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#operatingSystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The operating system on which the tool will be running</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the operating system on which the tool can run</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#operatingSystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">operating system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23199,6 +23609,11 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#originalMetadataSchema</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the metadata schema originally used for the description of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#originalMetadataSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deprecate? better to think of metadata records coming from other metadata records</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23707,6 +24122,21 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restrictedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access is subject to restrictions or controls regarding users (e.g. limited to researchers or members of a specific group) or use (e.g. for research only, noncommercial use etc.); subscription or registration may also be required and access may incur financial costs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restrictedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#restrictedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">close match to http://purl.org/eprint/accessRights/RestrictedAccess and check again COAR vocabularies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#revision</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides an account of the revisions in free text or a link to a document with revisions</Literal>
     </AnnotationAssertion>
@@ -23719,6 +24149,21 @@ not adding subproperties (e.g.g corpusMediaPart and corpusTextPart for now; are 
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#revision</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maybe rename as revisionText or revisionAccount to indicate what this is about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the accessing rights for a language resource in accordance to a formalised vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rights statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#rightsStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">maybe access rights statement?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24607,6 +25052,11 @@ Note that if I cannot create a new validationTool as object property with the sa
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I have also added the VersionType class but without a property yet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#versionType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">version type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#video</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;Media type&apos; for the audiovisual form of a resource (part)</Literal>
@@ -24655,6 +25105,16 @@ Note that if I cannot create a new validationTool as object property with the sa
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#voice</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Voice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#webServiceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the type of a web services in accordance to a specific classification vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#webServiceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">web service type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
