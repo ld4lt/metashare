@@ -150,16 +150,16 @@
         <ObjectProperty IRI="#audience"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#staticElementInfo"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:ExtractionOfFundingInformation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TimeCoverageInfo"/>
+        <ObjectProperty IRI="#staticElementInfo"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Disambiguator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeCoverageInfo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#textIncludedInImage"/>
@@ -171,10 +171,10 @@
         <Class IRI="#Origin"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#robustness"/>
+        <ObjectProperty IRI="#membershipInstitution"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#membershipInstitution"/>
+        <DataProperty IRI="#robustness"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:SupportOperationForKnowledgeResources"/>
@@ -184,6 +184,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#authenticated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Framework"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:PreOrPostProcessor"/>
@@ -234,10 +237,10 @@
         <NamedIndividual IRI="#Cp970"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#bytes"/>
+        <ObjectProperty IRI="#naturality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#naturality"/>
+        <NamedIndividual IRI="#bytes"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#YUV"/>
@@ -252,19 +255,19 @@
         <NamedIndividual IRI="#ADPCM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#shallowness"/>
+        <ObjectProperty IRI="#sizePerCharacterEncoding"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerCharacterEncoding"/>
+        <DataProperty IRI="#shallowness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#morpho-Degree"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:AnnotationFormat"/>
+        <Class abbreviatedIRI="omtd:DataMerging"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:DataMerging"/>
+        <Class abbreviatedIRI="omtd:AnnotationFormat"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#licensor"/>
@@ -273,10 +276,10 @@
         <NamedIndividual IRI="#wordNet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#languageEngineeringResearch"/>
+        <Class abbreviatedIRI="omtd:GateFormat"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:GateFormat"/>
+        <NamedIndividual IRI="#languageEngineeringResearch"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#documentInfo"/>
@@ -300,13 +303,13 @@
         <ObjectProperty IRI="#visualModelling"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:KnowledgeRepresentation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SyntacticAnnotation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="omtd:KnowledgeRepresentation"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:LanguageIdentifier"/>
@@ -342,13 +345,13 @@
         <Class IRI="#DataDistributionMedium"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#synchronizedWithTextNumerical"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#scene"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#paperCopy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#synchronizedWithTextNumerical"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#manual"/>
@@ -363,10 +366,10 @@
         <NamedIndividual IRI="#speakerNoise"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Writer"/>
+        <Class abbreviatedIRI="omtd:Tcf"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Tcf"/>
+        <Class abbreviatedIRI="omtd:Writer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#languageModelling"/>
@@ -387,16 +390,16 @@
         <Class IRI="http://vocab.lappsgrid.org/NamedEntity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerGeographicCoverage"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#keywords"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UTF-8"/>
+        <ObjectProperty IRI="#sizePerGeographicCoverage"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CharacterEncoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UTF-8"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:CorpusViewer"/>
@@ -414,10 +417,10 @@
         <Class IRI="#LexicalConceptualResourceInfo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semantics-CrossReferences"/>
+        <Class abbreviatedIRI="omtd:Uima_json"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Uima_json"/>
+        <NamedIndividual IRI="#semantics-CrossReferences"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#soundRecordings"/>
@@ -436,6 +439,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#evaluation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Galaxy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#industrial"/>
@@ -489,6 +495,9 @@
         <Class abbreviatedIRI="omtd:FlowController"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProcessingResourceType"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:modified"/>
     </Declaration>
     <Declaration>
@@ -519,13 +528,16 @@
         <Class abbreviatedIRI="omtd:ParagraphSplitting"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#mlModel"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#humanoidAgentSynthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FrameNet"/>
+        <Class IRI="#LanguageDescriptionTextInfo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionTextInfo"/>
+        <Class IRI="#FrameNet"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BaseItem"/>
@@ -567,6 +579,9 @@
         <NamedIndividual abbreviatedIRI="omtd:Application_xXces_xml"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#raster"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#documentUnstructured"/>
     </Declaration>
     <Declaration>
@@ -576,13 +591,10 @@
         <NamedIndividual IRI="#TIS-620"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#raster"/>
+        <NamedIndividual IRI="#isContinuationOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#speechAnnotation-soundEvents"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#isContinuationOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#frame"/>
@@ -600,10 +612,10 @@
         <ObjectProperty IRI="#dataFormat"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Topic"/>
+        <NamedIndividual IRI="#iOS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#iOS"/>
+        <Class abbreviatedIRI="omtd:Topic"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp930"/>
@@ -618,10 +630,10 @@
         <NamedIndividual IRI="#openForReuseWithRestrictions"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#textGenre"/>
+        <NamedIndividual IRI="#lexicalTypes"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lexicalTypes"/>
+        <DataProperty IRI="#textGenre"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#interactive"/>
@@ -636,16 +648,16 @@
         <Class abbreviatedIRI="omtd:SemanticSearch"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#wholeBody"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:Blikiwikipedia"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:SoftwareDevelopmentEnvironment"/>
+        <NamedIndividual IRI="#wholeBody"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:LexiconAcquisitionFromCorpora"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="omtd:SoftwareDevelopmentEnvironment"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Naf"/>
@@ -714,6 +726,9 @@
         <DataProperty IRI="#metaShareId"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#annotationResource"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp1148"/>
     </Declaration>
     <Declaration>
@@ -741,10 +756,10 @@
         <Class IRI="#MorphosyntacticAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
+        <Class abbreviatedIRI="omtd:Json_genia"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Json_genia"/>
+        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.imscwb-asl"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -792,13 +807,16 @@
         <Class abbreviatedIRI="omtd:ScholarlyCommunicationAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#included"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:NegraExport"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#included"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#conditionsOfUse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlvisNLP"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LanguageDescriptionMediaPart"/>
@@ -819,28 +837,28 @@
         <Class IRI="#LanguageDescriptionType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SoftwareDistributionMedium"/>
+        <Class IRI="#AnnotationInfo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AnnotationInfo"/>
+        <Class IRI="#SoftwareDistributionMedium"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Media"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#partial"/>
+        <NamedIndividual abbreviatedIRI="omtd:Application_postscript"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_postscript"/>
+        <NamedIndividual IRI="#partial"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Owl_xml"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:MorphologicalTagger"/>
+        <ObjectProperty IRI="#languageVariety"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#languageVariety"/>
+        <Class abbreviatedIRI="omtd:MorphologicalTagger"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PAROLE_genreClassification"/>
@@ -849,10 +867,10 @@
         <Class abbreviatedIRI="omtd:WebAnnotationFormat"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#downloadLocation"/>
+        <Class abbreviatedIRI="omtd:Lemma"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Lemma"/>
+        <DataProperty IRI="#downloadLocation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#academic-nonCommercialUse"/>
@@ -885,19 +903,19 @@
         <ObjectProperty IRI="#sizePerSubset"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#resourceCreator"/>
+        <Class IRI="http://vocab.lappsgrid.org/Dependency"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://vocab.lappsgrid.org/Dependency"/>
+        <ObjectProperty IRI="#resourceCreator"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Text_x_org_dkpro_conll2012"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EvaluationType"/>
+        <Class abbreviatedIRI="omtd:MachineAndStatisticalLearningMethod"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:MachineAndStatisticalLearningMethod"/>
+        <Class IRI="#EvaluationType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#high"/>
@@ -930,10 +948,10 @@
         <Class IRI="#AnnotatedElements"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#letter"/>
+        <NamedIndividual IRI="#phoneticUnits"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneticUnits"/>
+        <NamedIndividual IRI="#letter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.bincas-asl"/>
@@ -951,25 +969,25 @@
         <NamedIndividual IRI="#elderly"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Audience"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Text_csv"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EvaluationMeasure"/>
+        <Class IRI="#Audience"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.text-asl"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EvaluationMeasure"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#annotationEndDate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syntacticosemanticAnnotation-links"/>
+        <ObjectProperty IRI="#domainIdentifier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#domainIdentifier"/>
+        <NamedIndividual IRI="#syntacticosemanticAnnotation-links"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isReplacedWith"/>
@@ -996,10 +1014,10 @@
         <NamedIndividual IRI="#semanticAnnotation-polarity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Rdf_xml"/>
+        <Class IRI="http://purl.org/olia/olia-top.owl#SemanticRole"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/olia/olia-top.owl#SemanticRole"/>
+        <Class abbreviatedIRI="omtd:Rdf_xml"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#accentuation"/>
@@ -1020,25 +1038,25 @@
         <ObjectProperty IRI="#webServiceType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO1987"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:Paraphrasing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp937"/>
+        <NamedIndividual IRI="#ISO1987"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#discourseAnalysis"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cp937"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#windows-1258"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SOAP"/>
+        <Class IRI="#Tool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tool"/>
+        <NamedIndividual IRI="#SOAP"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticAnnotation-textualEntailment"/>
@@ -1056,10 +1074,10 @@
         <NamedIndividual IRI="#utterances"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#modalityAnnotation-handArmGestures"/>
+        <NamedIndividual IRI="#npStructure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#npStructure"/>
+        <NamedIndividual IRI="#modalityAnnotation-handArmGestures"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DiscourseAnnotation"/>
@@ -1104,10 +1122,10 @@
         <Class IRI="#Use"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
+        <Class IRI="#LanguageDescriptionImagePart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionImagePart"/>
+        <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#availabilityEndDate"/>
@@ -1137,6 +1155,9 @@
         <Class IRI="#WebService"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#UIMA"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp939"/>
     </Declaration>
     <Declaration>
@@ -1152,10 +1173,10 @@
         <NamedIndividual IRI="#telephoneNumbers"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
+        <NamedIndividual abbreviatedIRI="omtd:Text_sgml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Text_sgml"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemanticArgument"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#downloadable"/>
@@ -1170,10 +1191,10 @@
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#commericalUse"/>
+        <NamedIndividual IRI="#human"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#human"/>
+        <NamedIndividual IRI="#commericalUse"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isArchivedBy"/>
@@ -1197,6 +1218,9 @@
         <Class abbreviatedIRI="omtd:Html5Microdata"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#tdmMethod"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#monologue"/>
     </Declaration>
     <Declaration>
@@ -1209,19 +1233,19 @@
         <Class abbreviatedIRI="omtd:Visualization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#License"/>
+        <NamedIndividual IRI="#signLanguageRecognition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#signLanguageRecognition"/>
+        <Class IRI="#License"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISBN"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ageOfPersons"/>
+        <DataProperty IRI="#organizationName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#organizationName"/>
+        <ObjectProperty IRI="#ageOfPersons"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Graf"/>
@@ -1242,10 +1266,10 @@
         <ObjectProperty IRI="#timeCoverageInfo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#distribution"/>
+        <NamedIndividual IRI="#clause"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#clause"/>
+        <ObjectProperty IRI="#distribution"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:SemanticAnnotator"/>
@@ -1269,13 +1293,13 @@
         <Class abbreviatedIRI="omtd:Viewing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#publication"/>
+        <NamedIndividual IRI="#lexiconAcquisitionFromCorpora"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#attachedLexiconPosition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lexiconAcquisitionFromCorpora"/>
+        <NamedIndividual IRI="#publication"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#windows-1254"/>
@@ -1297,6 +1321,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#LexicalConceptualResourceTextPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typesystem"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#creationMode"/>
@@ -1371,19 +1398,19 @@
         <NamedIndividual IRI="#shot"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#moneyAmounts"/>
+        <NamedIndividual abbreviatedIRI="omtd:Application_vnd_xmi_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_vnd_xmi_xml"/>
+        <NamedIndividual IRI="#moneyAmounts"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/olia/olia-top.owl#Frame"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#available-unrestrictedUse"/>
+        <NamedIndividual IRI="#linux"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#linux"/>
+        <NamedIndividual IRI="#available-unrestrictedUse"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MacRoman"/>
@@ -1395,13 +1422,13 @@
         <Class IRI="#Wordlist"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#numberOfTrainedSpeakers"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#WebServiceType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#fee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfTrainedSpeakers"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EAGLES"/>
@@ -1410,10 +1437,13 @@
         <DataProperty IRI="#accessLocation"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:TemporalExpressionRecognition"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="omtd:BelowPosTagging"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:TemporalExpressionRecognition"/>
+        <NamedIndividual IRI="#userInputText"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:AnnotatorOfSemanticRoleLabels"/>
@@ -1440,10 +1470,10 @@
         <Class abbreviatedIRI="omtd:Bayesian"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#rasterOrVectorGraphics"/>
+        <Class abbreviatedIRI="omtd:Segmenter"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Segmenter"/>
+        <ObjectProperty IRI="#rasterOrVectorGraphics"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#graphicCard"/>
@@ -1467,10 +1497,10 @@
         <NamedIndividual IRI="#windows-1250"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#domainClassificationScheme"/>
+        <NamedIndividual IRI="#REST"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#REST"/>
+        <ObjectProperty IRI="#domainClassificationScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.aclanthology-asl"/>
@@ -1506,19 +1536,22 @@
         <NamedIndividual IRI="#EMMA"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:InformationExtraction"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#evaluator"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:InformationExtraction"/>
+        <NamedIndividual IRI="#keep"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticRoleLabelling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TEI"/>
+        <NamedIndividual IRI="#applicationWords"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#applicationWords"/>
+        <NamedIndividual IRI="#TEI"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#technological"/>
@@ -1626,10 +1659,10 @@
         <ObjectProperty IRI="#license"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ResourceIdentifier"/>
+        <NamedIndividual IRI="#TMX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TMX"/>
+        <Class IRI="#ResourceIdentifier"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/olia/olia-top.owl#SyntacticCategory"/>
@@ -1656,10 +1689,10 @@
         <NamedIndividual abbreviatedIRI="omtd:Application_emma_xml"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EvaluationCriteria"/>
+        <Class abbreviatedIRI="omtd:Readability"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Readability"/>
+        <Class IRI="#EvaluationCriteria"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Conll2003"/>
@@ -1675,6 +1708,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#humanUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InputContentResource"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#textMining"/>
@@ -1698,16 +1734,16 @@
         <NamedIndividual IRI="#online"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Conll2006"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MorphologicalLexicon"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#creationModeDetails"/>
+        <Class abbreviatedIRI="omtd:Conll2006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#modalityAnnotation-headMovements"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationModeDetails"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HamNoSys"/>
@@ -1764,10 +1800,10 @@
         <Class abbreviatedIRI="omtd:Clause"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semiPlanned"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.sentiment.type.StanfordSentimentAnnotation"/>
+        <NamedIndividual IRI="#semiPlanned"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="IANA:application/pdf"/>
@@ -1809,6 +1845,9 @@
         <Class IRI="#Relation"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#document"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SemAF_SRL"/>
     </Declaration>
     <Declaration>
@@ -1833,13 +1872,13 @@
         <DataProperty IRI="#interaction"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:AclAnthologyCorpusFormat"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="omtd:TigerXml"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#underNegotiation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="omtd:AclAnthologyCorpusFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExtraTextualInformationUnit"/>
@@ -1923,10 +1962,10 @@
         <Class abbreviatedIRI="omtd:Csv"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:LinkedDataFormat"/>
+        <Class IRI="#ToolService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ToolService"/>
+        <Class abbreviatedIRI="omtd:LinkedDataFormat"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#crossTalk"/>
@@ -1935,13 +1974,13 @@
         <Class abbreviatedIRI="omtd:Phenotype"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#resourceIdentifier"/>
+        <Class IRI="#GrammaticalPhenomenaCoverage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GrammaticalPhenomenaCoverage"/>
+        <ObjectProperty IRI="#resourceIdentifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp855"/>
@@ -1959,13 +1998,13 @@
         <NamedIndividual IRI="#video"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Html"/>
+        <Class IRI="#SignalEncoding"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Normalization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SignalEncoding"/>
+        <Class abbreviatedIRI="omtd:Html"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Organism"/>
@@ -1989,10 +2028,10 @@
         <NamedIndividual IRI="#full"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacGreek"/>
+        <NamedIndividual IRI="#phrase"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phrase"/>
+        <NamedIndividual IRI="#MacGreek"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#languageVarietyType"/>
@@ -2037,10 +2076,10 @@
         <NamedIndividual IRI="#temporalExpressionRecognition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#imageClassificationInfo"/>
+        <ObjectProperty IRI="#geographicCoverageInfo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#geographicCoverageInfo"/>
+        <ObjectProperty IRI="#imageClassificationInfo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#profession"/>
@@ -2115,10 +2154,10 @@
         <Class abbreviatedIRI="omtd:StatisticalLearningMethod"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#speakingImpairmentOfPersons"/>
+        <Class IRI="#AnnotationType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AnnotationType"/>
+        <ObjectProperty IRI="#speakingImpairmentOfPersons"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1026"/>
@@ -2127,10 +2166,10 @@
         <Class abbreviatedIRI="omtd:Conll2000"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AudioSizeInfo"/>
+        <NamedIndividual IRI="#freeSpeech"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#freeSpeech"/>
+        <Class IRI="#AudioSizeInfo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#OAXAL"/>
@@ -2157,10 +2196,10 @@
         <ObjectProperty IRI="#segmentationLevel"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Crawler"/>
+        <NamedIndividual IRI="#morpho-Derivation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#morpho-Derivation"/>
+        <Class abbreviatedIRI="omtd:Crawler"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Processor"/>
@@ -2199,10 +2238,10 @@
         <NamedIndividual IRI="#bilingualLexiconInduction"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#formalism"/>
+        <NamedIndividual IRI="#comparable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#comparable"/>
+        <DataProperty IRI="#formalism"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SemAF_DS"/>
@@ -2232,10 +2271,10 @@
         <NamedIndividual abbreviatedIRI="omtd:Text_turtle"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneticallyRichWords"/>
+        <Class abbreviatedIRI="omtd:ConstituencyTree"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:ConstituencyTree"/>
+        <NamedIndividual IRI="#phoneticallyRichWords"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#tokens"/>
@@ -2247,16 +2286,16 @@
         <Class IRI="#ValidationMode"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Term"/>
+        <NamedIndividual IRI="#framenet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#synsets"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Text_tabSeparatedValues"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#framenet"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#synsets"/>
+        <Class abbreviatedIRI="omtd:Term"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticAnnotation-questionTopicalTarget"/>
@@ -2292,10 +2331,10 @@
         <NamedIndividual IRI="#textNgram"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MetadataRecord"/>
+        <DataProperty IRI="#eventDescription"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#eventDescription"/>
+        <Class IRI="#MetadataRecord"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#faceViews"/>
@@ -2310,22 +2349,25 @@
         <NamedIndividual IRI="#Cp1025"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#size"/>
+        <Class abbreviatedIRI="omtd:TheoreticalFrame"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:TheoreticalFrame"/>
+        <ObjectProperty IRI="#size"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#personRecognition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:IonicChannel"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#userType"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:IonicChannel"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#ageRangeStart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#framework"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#research"/>
@@ -2367,10 +2409,10 @@
         <ObjectProperty IRI="#usageReport"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:MediaWikiMarkup"/>
+        <Class IRI="#LexicalConceptualResourceText"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceText"/>
+        <Class abbreviatedIRI="omtd:MediaWikiMarkup"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MultilingualityType"/>
@@ -2382,10 +2424,10 @@
         <Class abbreviatedIRI="omtd:EntityMentionRecognition"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Turtle"/>
+        <NamedIndividual IRI="#Cp948"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp948"/>
+        <Class abbreviatedIRI="omtd:Turtle"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Text_x_org_dkpro_reuters21578"/>
@@ -2406,19 +2448,19 @@
         <DataProperty IRI="#domain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacCentralEurope"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#licenseCategory"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#languageScript"/>
+        <NamedIndividual IRI="#MacCentralEurope"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#projectEndDate"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#languageScript"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#anaphoraResolution"/>
@@ -2439,22 +2481,25 @@
         <Class IRI="#ComputationalLexicon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#readSpeech"/>
+        <NamedIndividual IRI="#GATE"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:DecisionTrees"/>
+        <NamedIndividual IRI="#readSpeech"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#telephoneIP"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:DecisionTrees"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="omtd:LexiconEnhancement"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#structuralAnnotation"/>
+        <NamedIndividual IRI="#morpho-Aspect"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#morpho-Aspect"/>
+        <NamedIndividual IRI="#structuralAnnotation"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:LexicalSemanticRelation"/>
@@ -2499,10 +2544,13 @@
         <DataProperty IRI="#recordingPlatformSoftware"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#formalism"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SemAF_DA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#memberOfTST-Centrale"/>
+        <NamedIndividual IRI="#isElicitedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ontology"/>
@@ -2511,7 +2559,7 @@
         <NamedIndividual abbreviatedIRI="omtd:Application_vnd_msExcel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#isElicitedBy"/>
+        <NamedIndividual IRI="#memberOfTST-Centrale"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#neologisms"/>
@@ -2523,16 +2571,16 @@
         <Class abbreviatedIRI="omtd:DocumentSection"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Jdbc"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#content"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO12620"/>
+        <Class abbreviatedIRI="omtd:Jdbc"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#sensorTechnology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ISO12620"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TextIncludedInImage"/>
@@ -2622,10 +2670,10 @@
         <Class IRI="#ValidationExtent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InputInfo"/>
+        <NamedIndividual IRI="#articles"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#articles"/>
+        <Class IRI="#InputInfo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#incorporate"/>
@@ -2637,13 +2685,13 @@
         <DataProperty IRI="#revision"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Pls"/>
+        <NamedIndividual IRI="#corpus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:GateXml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#corpus"/>
+        <Class abbreviatedIRI="omtd:Pls"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#syntax"/>
@@ -2658,10 +2706,10 @@
         <NamedIndividual IRI="#lemma-Compounds"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#wizardOfOz"/>
+        <Class abbreviatedIRI="omtd:RegressionAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:RegressionAnalysis"/>
+        <NamedIndividual IRI="#wizardOfOz"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#files"/>
@@ -2712,19 +2760,19 @@
         <NamedIndividual IRI="#predicates"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:InstanceBasedLearning"/>
+        <Class abbreviatedIRI="omtd:ContradictionDetection"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:ContradictionDetection"/>
+        <Class abbreviatedIRI="omtd:InstanceBasedLearning"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#googleChromeOS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
+        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-Reuters21578Txt"/>
+        <NamedIndividual IRI="https://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.conll-asl"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#evaluationMeasure"/>
@@ -2745,10 +2793,10 @@
         <NamedIndividual IRI="#onlineEducationalGame"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#languageDescriptionType"/>
+        <Class abbreviatedIRI="omtd:Matching"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Matching"/>
+        <ObjectProperty IRI="#languageDescriptionType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="skos:closeMatch"/>
@@ -2805,13 +2853,13 @@
         <DataProperty IRI="#requiredSoftware"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#metadataLastDateUpdated"/>
+        <ObjectProperty IRI="#useNLPSpecific"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Big5"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#useNLPSpecific"/>
+        <DataProperty IRI="#metadataLastDateUpdated"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="IANA:application/x-msaccess"/>
@@ -2829,22 +2877,25 @@
         <NamedIndividual IRI="#music"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImageClassificationInfo"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#littleEndian"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#jargon"/>
+        <Class IRI="#ImageClassificationInfo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GrAF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jargon"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dct:source"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#idiomaticExpressions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modify"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EUC-JP"/>
@@ -2865,28 +2916,28 @@
         <NamedIndividual IRI="#personalDataIncluded"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#externalRef"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#variable"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Simplifier"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#externalRef"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#LexicalConceptualResourceAudioPart"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_tgrep2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#rb"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#characterEncodingInfo"/>
+        <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_tgrep2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Text_x_org_dkpro_imscwb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characterEncodingInfo"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:WikipediaRevisionPair"/>
@@ -2934,6 +2985,9 @@
         <DataProperty IRI="#annotationTool"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#processingResourceType"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#texts"/>
     </Declaration>
     <Declaration>
@@ -2946,10 +3000,10 @@
         <NamedIndividual IRI="#GSM"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#frameRate"/>
+        <Class abbreviatedIRI="odrl:Set"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="odrl:Set"/>
+        <DataProperty IRI="#frameRate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#medium"/>
@@ -2964,19 +3018,19 @@
         <Class abbreviatedIRI="omtd:SpectralData"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerValidation"/>
+        <NamedIndividual IRI="#GBK"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GBK"/>
+        <ObjectProperty IRI="#sizePerValidation"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#organizationDescription"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacArabic"/>
+        <ObjectProperty IRI="#annotator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#annotator"/>
+        <NamedIndividual IRI="#MacArabic"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="omtd:documentationUrl"/>
@@ -2997,10 +3051,10 @@
         <Class abbreviatedIRI="omtd:Chunk"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#projectIdentifier"/>
+        <NamedIndividual IRI="#BLM"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BLM"/>
+        <ObjectProperty IRI="#projectIdentifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semantics-EventType"/>
@@ -3018,10 +3072,10 @@
         <DataProperty IRI="#headMovement"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
+        <DataProperty IRI="#isFactored"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isFactored"/>
+        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#discourseAnnotation-coreference"/>
@@ -3048,10 +3102,10 @@
         <Class abbreviatedIRI="omtd:WikipediaPage"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:ContentMining"/>
+        <NamedIndividual IRI="#natural"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#natural"/>
+        <Class abbreviatedIRI="omtd:ContentMining"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:InformationExtractor"/>
@@ -3093,10 +3147,10 @@
         <NamedIndividual IRI="#parallel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DAT"/>
+        <NamedIndividual IRI="#nlpApplications"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#nlpApplications"/>
+        <NamedIndividual IRI="#DAT"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isDisplayedBy"/>
@@ -3153,28 +3207,28 @@
         <NamedIndividual IRI="#education"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semanticAnnotation-events"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_negra3"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:WordSenseDisambiguation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Obo"/>
+        <NamedIndividual IRI="#semanticAnnotation-events"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionTextPart"/>
+        <Class abbreviatedIRI="omtd:Obo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CorpusVideoInfo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#turns"/>
+        <Class IRI="#LanguageDescriptionTextPart"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#turns"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#capturingDeviceType"/>
@@ -3231,13 +3285,13 @@
         <ObjectProperty IRI="#durationOfAudioInfoUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RequiredHardware"/>
+        <NamedIndividual IRI="#shorten"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp861"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#shorten"/>
+        <Class IRI="#RequiredHardware"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#durationOfEffectiveSpeechInfo"/>
@@ -3273,10 +3327,10 @@
         <NamedIndividual IRI="#Cp775"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Reuters21578Sgml"/>
+        <NamedIndividual IRI="#items"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#items"/>
+        <Class abbreviatedIRI="omtd:Reuters21578Sgml"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp424"/>
@@ -3342,22 +3396,22 @@
         <Class abbreviatedIRI="omtd:TrainerOfMachineLearningModels"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:ConstituencyParsing"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:Converter"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="omtd:ConstituencyParsing"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#OAI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#corpusTextNgramInfo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LexicalConceptualResourceMediaPart"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="owl:equivalentClass"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#sentimentAnalysis"/>
@@ -3459,13 +3513,10 @@
         <NamedIndividual IRI="#lexicon"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Lemmatizer"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#characterEncoding"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EncodingLevel"/>
+        <Class abbreviatedIRI="omtd:Lemmatizer"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#mediaType"/>
@@ -3474,13 +3525,16 @@
         <Class abbreviatedIRI="omtd:WikipediaTemplateFilteredArticle"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EncodingLevel"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#StaticElementInfo"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Tmx"/>
+        <ObjectProperty IRI="#grammaticalPhenomenaCoverage"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#grammaticalPhenomenaCoverage"/>
+        <Class abbreviatedIRI="omtd:Tmx"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NgramInfo"/>
@@ -3492,31 +3546,31 @@
         <Class IRI="#ContactPerson"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semantics-Relations-Meronyms"/>
+        <Class abbreviatedIRI="omtd:Xml"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Xml"/>
+        <NamedIndividual IRI="#semantics-Relations-Meronyms"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#lexiconFormatConversion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp864"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#mimeType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#eyeMovement"/>
+        <NamedIndividual IRI="#Cp864"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#writtenLanguage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Text_html"/>
+        <DataProperty IRI="#eyeMovement"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:WikipediaQuery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="omtd:Text_html"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#factors"/>
@@ -3555,13 +3609,13 @@
         <NamedIndividual IRI="#ISCII91"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#creditCardNumbers"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ModalityType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#restrictedAccess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#creditCardNumbers"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#daylight"/>
@@ -3606,10 +3660,10 @@
         <ObjectProperty IRI="#bodyParts"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#userManual"/>
+        <ObjectProperty IRI="#extratextualInformation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#extratextualInformation"/>
+        <ObjectProperty IRI="#userManual"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Domain"/>
@@ -3618,13 +3672,16 @@
         <NamedIndividual IRI="#linguisticResearch"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#inputContentResource"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#userNature"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp866"/>
+        <NamedIndividual IRI="#modalityAnnotation-lipMovements"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#modalityAnnotation-lipMovements"/>
+        <NamedIndividual IRI="#Cp866"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#projectStartDate"/>
@@ -3645,10 +3702,10 @@
         <NamedIndividual IRI="#communicate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacSymbol"/>
+        <NamedIndividual IRI="#dv"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#dv"/>
+        <NamedIndividual IRI="#MacSymbol"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Imscwb"/>
@@ -3696,10 +3753,10 @@
         <Class abbreviatedIRI="omtd:DataSplitter"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp869"/>
+        <ObjectProperty IRI="#sizePerDomain"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerDomain"/>
+        <NamedIndividual IRI="#Cp869"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Availability"/>
@@ -3771,6 +3828,9 @@
         <NamedIndividual IRI="#MeSH_classification"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#complex"/>
     </Declaration>
     <Declaration>
@@ -3798,16 +3858,16 @@
         <NamedIndividual IRI="#usage-Frequency"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#isAccessedBy"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#SemAF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#microphone"/>
+        <NamedIndividual IRI="#isAccessedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#lexicalConceptualResourceVideoInfo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#microphone"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1124"/>
@@ -3837,10 +3897,10 @@
         <NamedIndividual IRI="#mapTask"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
+        <Class abbreviatedIRI="omtd:SentenceSplitting"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:SentenceSplitting"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-MalletTopicProportions"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp737"/>
@@ -3945,10 +4005,10 @@
         <Class abbreviatedIRI="omtd:DependencyConversion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lemma-Variants"/>
+        <NamedIndividual IRI="#frameNet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#frameNet"/>
+        <NamedIndividual IRI="#lemma-Variants"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#sentence"/>
@@ -3966,10 +4026,10 @@
         <ObjectProperty IRI="#inputInfo"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Annotation"/>
+        <NamedIndividual IRI="#videos"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#videos"/>
+        <Class abbreviatedIRI="omtd:Annotation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#definitionsParsing"/>
@@ -3978,10 +4038,10 @@
         <NamedIndividual IRI="#anaphora"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/olia/olia-top.owl#NamedEntity"/>
+        <NamedIndividual IRI="#glassBox"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#glassBox"/>
+        <Class IRI="http://purl.org/olia/olia-top.owl#NamedEntity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#interactivity"/>
@@ -3996,13 +4056,13 @@
         <Class abbreviatedIRI="omtd:TopicExtractor"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ISO-8859-7"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#docker"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#spatialConstraint"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ISO-8859-7"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DocumentInfo"/>
@@ -4047,10 +4107,10 @@
         <NamedIndividual IRI="#speakerVerification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#x-EUC-TW"/>
+        <Class abbreviatedIRI="omtd:XcesIlspVariant"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:XcesIlspVariant"/>
+        <NamedIndividual IRI="#x-EUC-TW"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semantics-Relations-Hyponyms"/>
@@ -4098,10 +4158,10 @@
         <NamedIndividual IRI="#ISO704"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#speechAnnotation-soundToTextAlignment"/>
+        <NamedIndividual IRI="#lexiconExtractionFromLexica"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lexiconExtractionFromLexica"/>
+        <NamedIndividual IRI="#speechAnnotation-soundToTextAlignment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#foreseenUseInfo"/>
@@ -4119,10 +4179,10 @@
         <NamedIndividual IRI="#head"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#inCar"/>
+        <DataProperty IRI="#order"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#order"/>
+        <NamedIndividual IRI="#inCar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LingualityType"/>
@@ -4155,16 +4215,16 @@
         <Class IRI="http://purl.org/olia/olia-top.owl#Constituent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#npRecognition"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#multilingualSingleText"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Xces"/>
+        <NamedIndividual IRI="#npRecognition"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#openPublicPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="omtd:Xces"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RightsStatement"/>
@@ -4179,13 +4239,16 @@
         <DataProperty IRI="#validationDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#posesPerSubject"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#funder"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#posesPerSubject"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#languageDependent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drop"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#textGeneration"/>
@@ -4212,10 +4275,10 @@
         <Class abbreviatedIRI="omtd:PersuasiveExpressionMiner"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#usage-Examples"/>
+        <DataProperty IRI="#zipCode"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#zipCode"/>
+        <NamedIndividual IRI="#usage-Examples"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp918"/>
@@ -4251,10 +4314,10 @@
         <NamedIndividual IRI="#units"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#closeTalkMicrophone"/>
+        <Class abbreviatedIRI="omtd:KeywordExtractor"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:KeywordExtractor"/>
+        <NamedIndividual IRI="#closeTalkMicrophone"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#faceRecognition"/>
@@ -4266,10 +4329,10 @@
         <NamedIndividual IRI="#office"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DDC_classification"/>
+        <Class IRI="#UserType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UserType"/>
+        <NamedIndividual IRI="#DDC_classification"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#scenarioType"/>
@@ -4317,10 +4380,10 @@
         <Class IRI="#SceneIllumination"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ageRangeEnd"/>
+        <DataProperty IRI="#evaluationDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#evaluationDetails"/>
+        <DataProperty IRI="#ageRangeEnd"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:EmotionRecognizer"/>
@@ -4329,10 +4392,13 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.constituent.Constituent"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ISO-8859-2"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#semantics-Traits"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-2"/>
+        <NamedIndividual IRI="#speechVerification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LDC"/>
@@ -4341,22 +4407,19 @@
         <ObjectProperty IRI="#recordingQuality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#speechVerification"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#questions"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#placeOfChildhood"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#durationOfAudioInfo"/>
+        <Class abbreviatedIRI="omtd:BiologicalActivity"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:SentimentAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:BiologicalActivity"/>
+        <DataProperty IRI="#durationOfAudioInfo"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:MethodOfResearch"/>
@@ -4479,10 +4542,10 @@
         <NamedIndividual IRI="#ISO-8859-5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syllables"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"/>
+        <NamedIndividual IRI="#syllables"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#interactiveMedia"/>
@@ -4515,10 +4578,10 @@
         <Class IRI="#NoiseLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#helpFunctions"/>
+        <NamedIndividual IRI="#x-windows-950"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#x-windows-950"/>
+        <NamedIndividual IRI="#helpFunctions"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LanguageDescriptionImageInfo"/>
@@ -4545,16 +4608,16 @@
         <NamedIndividual IRI="#vector"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:comment"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#sizePerTextNumericalFormat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AnnotationMode"/>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#extraTextualInformationUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotationMode"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticUnits"/>
@@ -4569,10 +4632,10 @@
         <NamedIndividual IRI="#telephone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpeechItems"/>
+        <ObjectProperty IRI="#lexicalConceptualResourceImageInfo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#lexicalConceptualResourceImageInfo"/>
+        <Class IRI="#SpeechItems"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Subjectivity"/>
@@ -4608,10 +4671,10 @@
         <NamedIndividual IRI="#draft"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semanticAnnotation-semanticRelations"/>
+        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div"/>
+        <NamedIndividual IRI="#semanticAnnotation-semanticRelations"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#country"/>
@@ -4632,10 +4695,10 @@
         <NamedIndividual IRI="#monolingual"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/olia/olia-top.owl#Token"/>
+        <NamedIndividual IRI="#speechAnnotation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#speechAnnotation"/>
+        <Class IRI="http://purl.org/olia/olia-top.owl#Token"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sourceChannel"/>
@@ -4668,10 +4731,10 @@
         <Class abbreviatedIRI="omtd:Sgml"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#lexicalConceptualResourceMediaPartInfo"/>
+        <Class IRI="#LexicalConceptualResourceImagePart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceImagePart"/>
+        <ObjectProperty IRI="#lexicalConceptualResourceMediaPartInfo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#resourceName"/>
@@ -4689,10 +4752,10 @@
         <NamedIndividual IRI="#publicationForCitation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-4"/>
+        <Class abbreviatedIRI="omtd:InformationFiltering"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:InformationFiltering"/>
+        <NamedIndividual IRI="#ISO-8859-4"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DomainInfo"/>
@@ -4740,10 +4803,10 @@
         <NamedIndividual IRI="#CMYK"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#images"/>
+        <Class abbreviatedIRI="omtd:Tokenizer"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Tokenizer"/>
+        <NamedIndividual IRI="#images"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#lexiconAccess"/>
@@ -4768,6 +4831,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#visualSceneUnderstanding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#previousAnnotationTypesPolicy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#transliteration"/>
@@ -4884,10 +4950,10 @@
         <DataProperty IRI="#telephoneNumber"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Tgrep2"/>
+        <Class abbreviatedIRI="omtd:IonicConductance"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:IonicConductance"/>
+        <Class abbreviatedIRI="omtd:Tgrep2"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:KnowledgeAcquisition"/>
@@ -4902,16 +4968,16 @@
         <NamedIndividual IRI="#MacUkraine"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:DatabaseFormat"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="omtd:Domain-specificAnnotation"/>
+        <Class abbreviatedIRI="omtd:DataSplitting"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#toolService"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:DataSplitting"/>
+        <Class abbreviatedIRI="omtd:DatabaseFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="omtd:Domain-specificAnnotation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSubset"/>
@@ -4923,10 +4989,10 @@
         <NamedIndividual IRI="#spokenLanguage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp874"/>
+        <ObjectProperty IRI="#toolDocumentationType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#toolDocumentationType"/>
+        <NamedIndividual IRI="#Cp874"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isEvaluatedBy"/>
@@ -4983,10 +5049,10 @@
         <NamedIndividual IRI="#unknown"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#noise"/>
+        <NamedIndividual IRI="#bluRay"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#bluRay"/>
+        <NamedIndividual IRI="#noise"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#machineReadableDictionary"/>
@@ -5007,10 +5073,10 @@
         <NamedIndividual IRI="#semantics-Domain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#questionAnswering"/>
+        <Class IRI="#Task"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#questionAnswering"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Emma"/>
@@ -5073,10 +5139,10 @@
         <NamedIndividual IRI="#terminologicalResource"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Big5_Solaris"/>
+        <AnnotationProperty abbreviatedIRI="odrl:permission"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:permission"/>
+        <NamedIndividual IRI="#Big5_Solaris"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="omtd:Application_json_ld"/>
@@ -5100,10 +5166,10 @@
         <NamedIndividual IRI="#Cp964"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lemmatization"/>
+        <NamedIndividual abbreviatedIRI="omtd:Application_tei_xml"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_tei_xml"/>
+        <NamedIndividual IRI="#lemmatization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1006"/>
@@ -5142,10 +5208,10 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/typesystem-reference.html#de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#tv"/>
+        <Class abbreviatedIRI="omtd:ScriptBasedAnalyser"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:ScriptBasedAnalyser"/>
+        <NamedIndividual IRI="#tv"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:GrammarChecker"/>
@@ -5178,10 +5244,10 @@
         <Class abbreviatedIRI="omtd:BilingualLexiconInduction"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Matcher"/>
+        <Class abbreviatedIRI="omtd:Cadixe_json"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Cadixe_json"/>
+        <Class abbreviatedIRI="omtd:Matcher"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Regularisation"/>
@@ -5229,10 +5295,10 @@
         <NamedIndividual IRI="#multimediaDevelopment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CES"/>
+        <NamedIndividual IRI="#TBX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TBX"/>
+        <NamedIndividual IRI="#CES"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Viewer"/>
@@ -5250,16 +5316,16 @@
         <Class IRI="#CharacterEncodingInfo"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:SemanticRole"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#usageProject"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_pls_xml"/>
+        <Class abbreviatedIRI="omtd:SemanticRole"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="omtd:Application_pls_xml"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#embeddedMicrophone"/>
@@ -5289,16 +5355,19 @@
         <Class abbreviatedIRI="omtd:DataFormat"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#annotationSchema"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SpeakingImpairmentOfPersons"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#stemming"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#memberOfELRA"/>
+        <DataProperty IRI="#email"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#memberOfELRA"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:CorpusFormat"/>
@@ -5361,19 +5430,19 @@
         <NamedIndividual IRI="#conferenceRoom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#annotatedElements"/>
+        <NamedIndividual IRI="#modalityAnnotation-handManipulationOfObjects"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#modalityAnnotation-handManipulationOfObjects"/>
+        <ObjectProperty IRI="#annotatedElements"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#frogStory"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#actorType"/>
+        <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_uima_binary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="omtd:Application_x_org_dkpro_uima_binary"/>
+        <ObjectProperty IRI="#actorType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#function"/>
@@ -5466,10 +5535,10 @@
         <DataProperty IRI="#creationDetails"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semantics-SemanticRoles"/>
+        <NamedIndividual IRI="#speakerIdentification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#speakerIdentification"/>
+        <NamedIndividual IRI="#semantics-SemanticRoles"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
@@ -5481,10 +5550,10 @@
         <NamedIndividual IRI="#textCategorisation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:GrapeVariety"/>
+        <NamedIndividual IRI="#URN"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#URN"/>
+        <Class abbreviatedIRI="omtd:GrapeVariety"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AudioClassificationInfo"/>
@@ -5544,10 +5613,10 @@
         <NamedIndividual IRI="#lexicalConceptualResource"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacRomania"/>
+        <NamedIndividual IRI="#Cp838"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp838"/>
+        <NamedIndividual IRI="#MacRomania"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#morpho-Reflexivity"/>
@@ -5589,10 +5658,10 @@
         <Class abbreviatedIRI="omtd:I2b2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#unix"/>
+        <NamedIndividual IRI="#machineTranslation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#machineTranslation"/>
+        <NamedIndividual IRI="#unix"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#URL"/>
@@ -5622,31 +5691,31 @@
         <NamedIndividual IRI="#morpho-Number"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LinkToOtherMediaInfo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#speechInfluences"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#TextClassificationInfo"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:EnsembleMethod"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerLanguageVariety"/>
+        <ObjectProperty IRI="#speechInfluences"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:MalletLdaTopicProportionsSorted"/>
+        <Class IRI="#LinkToOtherMediaInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sizePerLanguageVariety"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#hasAnnotatedVersion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResource"/>
+        <Class abbreviatedIRI="omtd:MalletLdaTopicProportionsSorted"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalConceptualResource"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Keyword"/>
@@ -5682,10 +5751,10 @@
         <Class IRI="#Validation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#speechUnderstanding"/>
+        <NamedIndividual IRI="#studio"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#studio"/>
+        <NamedIndividual IRI="#speechUnderstanding"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISLRN"/>
@@ -5700,16 +5769,16 @@
         <DataProperty IRI="#smoothing"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:Postscript"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#diphones"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syllable"/>
+        <Class abbreviatedIRI="omtd:FlowControl"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:FlowControl"/>
+        <Class abbreviatedIRI="omtd:Postscript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#syllable"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:UimaCasFormat"/>
@@ -5763,10 +5832,10 @@
         <NamedIndividual IRI="#knowledgeDiscovery"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceType"/>
+        <NamedIndividual IRI="#ANC_domainClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ANC_domainClassification"/>
+        <Class IRI="#LexicalConceptualResourceType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#languageDescriptionInfo"/>
@@ -5787,10 +5856,10 @@
         <NamedIndividual IRI="#discourseAnnotation-dialogueActs"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#published"/>
+        <DataProperty IRI="#videoGenre"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#videoGenre"/>
+        <NamedIndividual IRI="#published"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ResourceIdentifierScheme"/>
@@ -5811,10 +5880,10 @@
         <NamedIndividual IRI="#aac"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceAudioInfo"/>
+        <Class IRI="#CorpusTextNumerical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CorpusTextNumerical"/>
+        <Class IRI="#LexicalConceptualResourceAudioInfo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#available-restrictedUse"/>
@@ -5865,10 +5934,10 @@
         <NamedIndividual IRI="http://dkpro.github.io/dkpro-core/releases/1.8.0/docs/format-reference.html#format-de.tudarmstadt.ukp.dkpro.core.io.tiger-asl"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sizeWidth"/>
+        <NamedIndividual IRI="#semantics-Relations-Antonyms"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semantics-Relations-Antonyms"/>
+        <DataProperty IRI="#sizeWidth"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#annotationFormat"/>
@@ -5922,10 +5991,10 @@
         <NamedIndividual IRI="#VOIP"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="rdf:langString"/>
+        <Class IRI="#HearingImpairmentOfPersons"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HearingImpairmentOfPersons"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#morpho-Person"/>
@@ -5934,10 +6003,10 @@
         <NamedIndividual IRI="#mispronunciations"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DomainIdentifier"/>
+        <Class IRI="#ValidationInfo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ValidationInfo"/>
+        <Class IRI="#DomainIdentifier"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:SpellingChecker"/>
@@ -6030,10 +6099,10 @@
         <NamedIndividual IRI="#mu-law"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#avi"/>
+        <DataProperty IRI="#validationExtentDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#validationExtentDetails"/>
+        <NamedIndividual IRI="#avi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1097"/>
@@ -6078,16 +6147,19 @@
         <NamedIndividual IRI="#TEI_P3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ByteOrder"/>
+        <Class abbreviatedIRI="omtd:RecognizingTextualEntailment"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:RecognizingTextualEntailment"/>
+        <Class IRI="#ByteOrder"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#unsignedInteger"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#naturalLanguageUnderstanding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutputResource"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:AudienceReaction"/>
@@ -6120,10 +6192,10 @@
         <NamedIndividual IRI="#emotionRecognition"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#placeOfBirth"/>
+        <NamedIndividual IRI="#openAccess"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#openAccess"/>
+        <DataProperty IRI="#placeOfBirth"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TEI_P4"/>
@@ -6144,10 +6216,10 @@
         <Class abbreviatedIRI="omtd:Annotator"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hasPart"/>
+        <NamedIndividual IRI="#UTF-16BE"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UTF-16BE"/>
+        <NamedIndividual IRI="#hasPart"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticAnnotation-speechActs"/>
@@ -6156,16 +6228,16 @@
         <Class abbreviatedIRI="omtd:DocumentFormat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lexiconVisualization"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#overlapping"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:BrainRegion"/>
+        <NamedIndividual IRI="#lexiconVisualization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="omtd:BrainRegion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InkML"/>
@@ -6183,10 +6255,10 @@
         <Class IRI="#CorpusTextNumericalInfo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#computationalLexicon"/>
+        <Class abbreviatedIRI="foaf:Project"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Project"/>
+        <NamedIndividual IRI="#computationalLexicon"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Contradiction"/>
@@ -10795,6 +10867,10 @@
         <NamedIndividual IRI="#ARK"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#AlvisNLP"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ConformanceToStandardsBestPractices"/>
         <NamedIndividual IRI="#BLM"/>
     </ClassAssertion>
@@ -11195,6 +11271,10 @@
         <NamedIndividual IRI="#EUC-KR"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#GATE"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#CharacterEncoding"/>
         <NamedIndividual IRI="#GB18030"/>
     </ClassAssertion>
@@ -11209,6 +11289,10 @@
     <ClassAssertion>
         <Class IRI="#SourceChannelType"/>
         <NamedIndividual IRI="#GSM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#Galaxy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ConformanceToStandardsBestPractices"/>
@@ -11565,6 +11649,10 @@
     <ClassAssertion>
         <Class IRI="#ConformanceToClassificationScheme"/>
         <NamedIndividual IRI="#UDC_classification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Framework"/>
+        <NamedIndividual IRI="#UIMA"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ResourceIdentifierScheme"/>
@@ -11959,6 +12047,10 @@
         <NamedIndividual IRI="#coreferenceResolution"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ProcessingResourceType"/>
+        <NamedIndividual IRI="#corpus"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ResourceType"/>
         <NamedIndividual IRI="#corpus"/>
     </ClassAssertion>
@@ -12063,6 +12155,10 @@
         <NamedIndividual IRI="#docker"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ProcessingResourceType"/>
+        <NamedIndividual IRI="#document"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#UseNLPSpecific"/>
         <NamedIndividual IRI="#documentClassification"/>
     </ClassAssertion>
@@ -12077,6 +12173,10 @@
     <ClassAssertion>
         <Class IRI="#VersionType"/>
         <NamedIndividual IRI="#draft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+        <NamedIndividual IRI="#drop"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#RecordingDeviceType"/>
@@ -12543,6 +12643,10 @@
         <NamedIndividual IRI="#kb"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+        <NamedIndividual IRI="#keep"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SizeUnit"/>
         <NamedIndividual IRI="#keywords"/>
     </ClassAssertion>
@@ -12553,6 +12657,10 @@
     <ClassAssertion>
         <Class IRI="#UseNLPSpecific"/>
         <NamedIndividual IRI="#knowledgeRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessingResourceType"/>
+        <NamedIndividual IRI="#languageDescription"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ResourceType"/>
@@ -12641,6 +12749,10 @@
     <ClassAssertion>
         <Class IRI="#BaseItem"/>
         <NamedIndividual IRI="#letter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessingResourceType"/>
+        <NamedIndividual IRI="#lexicalConceptualResource"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ResourceType"/>
@@ -12917,6 +13029,10 @@
     <ClassAssertion>
         <Class IRI="#ModalityAnnotation"/>
         <NamedIndividual IRI="#modalityAnnotation-lipMovements"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+        <NamedIndividual IRI="#modify"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SpeechItems"/>
@@ -14479,6 +14595,10 @@
         <NamedIndividual IRI="#userIdentified"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ProcessingResourceType"/>
+        <NamedIndividual IRI="#userInputText"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DocumentationType"/>
         <NamedIndividual IRI="#userManual"/>
     </ClassAssertion>
@@ -15255,10 +15375,30 @@
         <Class abbreviatedIRI="omtd:Annotation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#annotationResource"/>
+        <ObjectUnionOf>
+            <Class IRI="#InputContentResource"/>
+            <Class IRI="#OutputResource"/>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+            <Class abbreviatedIRI="omtd:Annotation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#annotationSchema"/>
+        <ObjectUnionOf>
+            <Class IRI="#InputContentResource"/>
+            <Class IRI="#OutputResource"/>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+            <Class abbreviatedIRI="omtd:Annotation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#annotationType"/>
         <ObjectUnionOf>
-            <Class IRI="#InputInfo"/>
-            <Class IRI="#OutputInfo"/>
+            <Class IRI="#InputContentResource"/>
+            <Class IRI="#OutputResource"/>
             <Class abbreviatedIRI="omtd:Annotation"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -15331,7 +15471,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#characterEncoding"/>
-        <Class IRI="#Distribution"/>
+        <ObjectUnionOf>
+            <Class IRI="#Distribution"/>
+            <Class IRI="#InputContentResource"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#characterEncodingInfo"/>
@@ -15402,7 +15545,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#dataFormat"/>
-        <Class IRI="#Distribution"/>
+        <ObjectUnionOf>
+            <Class IRI="#Distribution"/>
+            <Class IRI="#InputContentResource"/>
+            <Class IRI="#OutputResource"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#distribution"/>
@@ -15596,6 +15743,13 @@
             <Class IRI="#CorpusImageInfo"/>
             <Class IRI="#LanguageDescriptionImageInfo"/>
             <Class IRI="#LexicalConceptualResourceImageInfo"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inputContentResource"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -15890,6 +16044,20 @@
         <Class IRI="#Actor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#previousAnnotationTypesPolicy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processingResourceType"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#projectIdentifier"/>
         <Class IRI="#Project"/>
     </ObjectPropertyDomain>
@@ -16180,6 +16348,13 @@
         <Class IRI="#LanguageDescriptionInfo"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tdmMethod"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#textClassificationInfo"/>
         <ObjectUnionOf>
             <Class IRI="#CorpusTextInfo"/>
@@ -16243,6 +16418,16 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#toolServiceType"/>
         <Class IRI="#ToolServiceInfo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typesystem"/>
+        <ObjectUnionOf>
+            <Class IRI="#InputContentResource"/>
+            <Class IRI="#OutputResource"/>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+            <Class abbreviatedIRI="omtd:Annotation"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#usageProject"/>
@@ -16384,6 +16569,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#annotationMode"/>
         <Class IRI="#AnnotationMode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#annotationResource"/>
+        <Class IRI="#LexicalConceptualResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#annotationType"/>
@@ -16646,6 +16835,10 @@
         <Class IRI="#ImageFormatInfo"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#inputContentResource"/>
+        <Class IRI="#InputContentResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#inputInfo"/>
         <Class IRI="#InputInfo"/>
     </ObjectPropertyRange>
@@ -16834,8 +17027,16 @@
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#previousAnnotationTypesPolicy"/>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#processMode"/>
         <Class IRI="#ProcessMode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processingResourceType"/>
+        <Class IRI="#ProcessingResourceType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#projectIdentifier"/>
@@ -17048,6 +17249,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#task"/>
         <Class IRI="#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tdmMethod"/>
+        <Class abbreviatedIRI="omtd:TdmMethod"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#textClassificationInfo"/>
@@ -17533,12 +17738,20 @@
         <DataProperty IRI="#formalism"/>
         <ObjectUnionOf>
             <Class IRI="#LanguageDescription"/>
-            <Class IRI="#ToolServiceInfo"/>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#frameRate"/>
         <Class IRI="#VideoFormatInfo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#framework"/>
+        <ObjectUnionOf>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#funder"/>
@@ -17885,7 +18098,8 @@
         <DataProperty IRI="#requiredSoftware"/>
         <ObjectUnionOf>
             <Class IRI="#LanguageDescriptionInfo"/>
-            <Class IRI="#ToolServiceInfo"/>
+            <Class IRI="#Software"/>
+            <Class IRI="#ToolService"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -18382,6 +18596,10 @@
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#framework"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#funder"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -18679,7 +18897,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#samplesLocation"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#sensorTechnology"/>
@@ -19679,6 +19897,21 @@ should they be separated from the sizeUnit values?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The implementation framework used for developing and running a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#Framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">not added other</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#FundingType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification of the funding of a project with regard to the source of the funds</Literal>
     </AnnotationAssertion>
@@ -19748,9 +19981,36 @@ should they be separated from the sizeUnit values?</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups together information on the format of the image part of a resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:replaces"/>
+        <IRI>#InputContentResource</IRI>
+        <IRI>#InputInfo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InputContentResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of requirements posed on the resource that is input for processing by a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InputContentResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Input content resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#InputContentResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">improve the definition
+
+Basically, this is a specific type of resource that takes as features the ones required by the tool/service; is this the best way to represent it?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#InputInfo</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups together information on the requirements set on the input resource of a tool or service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#InputInfo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20400,6 +20660,26 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups together information on the requirements set on the output of a tool or service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#OutputInfo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:replaces"/>
+        <IRI>#OutputResource</IRI>
+        <IRI>#OutputInfo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OutputResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of features that characterise the output resource of a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OutputResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Output resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PURL</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for resourceIdentifierScheme referring to PURL (Persistent URL, https://archive.org/services/purl/help)</Literal>
@@ -20416,6 +20696,11 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreviousAnnotationTypesPolicy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Policy types that a tool/service has with respect to the annotation types included in the annotated resource that it takes as input (i.e. whether it keeps, modifies or drops them in the output resource)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ProcessMode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classification of the mode of operation applied when processing a resource</Literal>
     </AnnotationAssertion>
@@ -20428,6 +20713,21 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#ProcessMode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">from OpenMinTeD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProcessingResourceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The type of the resource that a tool/service takes as input or produces as output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProcessingResourceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processing resource type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#ProcessingResourceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">I have used as values the ones from resourceType but I&apos;m not sure this is correct</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21287,6 +21587,36 @@ values from CLARIN
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#annotationModeDetails</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides further information on annotation process </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#annotationResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the annotation resource used for annotating a corpus or that has been used for the input annotated resource of a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#annotationResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#annotationResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">added here also the tool/service without an intermediary componentDependency; as a general idea, would it be better to have a relation &apos;componentDependency&apos; and then have these as range?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#annotationSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The annotation schema used for annotating a resource or for the input resource (if annotated) of a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#annotationSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation schema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#annotationSchema</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">range?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22422,7 +22752,7 @@ also add dataFormats from OMTD-SHARE and see how to handle audio video etc. spec
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#formalism</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reference (name, bibliographic reference or link to url) for the formalism used for the creation/enrichment of the resource (grammar or tool/service)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the formalism used for the creation/enrichment of the resource (grammar or tool/service) through an identifier or URL</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
@@ -22438,6 +22768,21 @@ also add dataFormats from OMTD-SHARE and see how to handle audio video etc. spec
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#framenet</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">can the label be FrameNet although an instance?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the implementation framewok used for developing and running a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#framework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">change to object property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22665,9 +23010,29 @@ When decided, think how we want to add
         <AnonymousIndividual nodeID="_:genid5"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dct:replaces"/>
+        <IRI>#inputContentResource</IRI>
+        <IRI>#InputInfo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inputContentResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the requirements set by a tool/service for the (content) resource that it processes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inputContentResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">input content resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#inputInfo</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups together information on the requirements set on the input resource of a tool or service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#inputInfo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23762,6 +24127,16 @@ decide on relation between metadata records - through the resource? between them
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#previousAnnotationTypesPolicy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the policy that a tool/service has with respect to the annotation types included in the annotated resource that it takes as input (i.e. whether it keeps, modifies or drops them in the output resource)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#previousAnnotationTypesPolicy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">previous annotation types policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#processMode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of processing performed on a language resource</Literal>
     </AnnotationAssertion>
@@ -23774,6 +24149,16 @@ decide on relation between metadata records - through the resource? between them
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#processMode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">discuss if we would like to add a &apos;processing operation&apos; class and put validation, annotation etc. under it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#processingResourceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the resource type the a tool/service takes as input or produces as output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#processingResourceType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">processing resource  type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24023,7 +24408,12 @@ decide on relation between metadata records - through the resource? between them
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#requiredSoftware</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Additional software required for running a tool and/or computational grammar</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies any additional software required for running a tool and/or computational grammar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#requiredSoftware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in omtd-share requiresSoftware</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24193,7 +24583,9 @@ decide on relation between metadata records - through the resource? between them
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#samplesLocation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mixed with data property; must be replaced by an individual for DocumentationType and change definition</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mixed with data property; must be replaced by an individual for DocumentationType and change definition
+
+used also for inputContentResource - see if it&apos;s needed to be duplicated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24602,6 +24994,16 @@ also since omtd, the size is on the distribution - might also need to add a data
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tdmMethod</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the TDM method associated with a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tdmMethod</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TDM method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#telephoneNumber</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The telephone number of a person or an organization; recommended format: +_international code_city code_number</Literal>
     </AnnotationAssertion>
@@ -24754,6 +25156,21 @@ also since omtd, the size is on the distribution - might also need to add a data
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#typeOfTextNumericalContent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the content that is represented in the textNumerical part of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typesystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the typesystem (preferrably through an identifier or URL) that has been used for the annotation of a resource or that is required for the input resource of a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#typesystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">typesystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#typesystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">range: a resource (subclass of lexical/conceptual) or a url?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
