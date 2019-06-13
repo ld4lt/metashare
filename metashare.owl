@@ -64,11 +64,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Claire Nedellec</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sophie Aubin</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sophie Aubin</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Claire Nedellec</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
@@ -130,10 +130,10 @@
         <ObjectProperty IRI="#isPartWith"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#languageVarietyName"/>
+        <NamedIndividual IRI="#MS_SpeechGenreClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MS_SpeechGenreClassification"/>
+        <DataProperty IRI="#languageVarietyName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#member"/>
@@ -151,10 +151,10 @@
         <Class IRI="#Origin"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#membershipInstitution"/>
+        <DataProperty IRI="#robustness"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#robustness"/>
+        <ObjectProperty IRI="#membershipInstitution"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#annotationStandoff"/>
@@ -193,10 +193,10 @@
         <NamedIndividual IRI="#creditCardNumber"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#licenceCategory"/>
+        <DataProperty IRI="#url"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#url"/>
+        <ObjectProperty IRI="#licenceCategory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#veryHigh"/>
@@ -208,10 +208,10 @@
         <DataProperty IRI="#educationLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#class"/>
+        <ObjectProperty IRI="#multilingualityType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#multilingualityType"/>
+        <NamedIndividual IRI="#class"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#availabilityStartDate"/>
@@ -250,10 +250,10 @@
         <Class IRI="#RequiredHardware"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#shorten"/>
+        <NamedIndividual IRI="#Cp861"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp861"/>
+        <NamedIndividual IRI="#shorten"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO16642"/>
@@ -274,10 +274,10 @@
         <NamedIndividual IRI="#sourceCode"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#shallowness"/>
+        <ObjectProperty IRI="#sizePerCharacterEncoding"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerCharacterEncoding"/>
+        <DataProperty IRI="#shallowness"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UTF-16LE"/>
@@ -286,10 +286,10 @@
         <NamedIndividual IRI="#ISO26162"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#recordingDeviceType"/>
+        <NamedIndividual IRI="#multiWordUnit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multiWordUnit"/>
+        <ObjectProperty IRI="#recordingDeviceType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#licensor"/>
@@ -301,10 +301,10 @@
         <DataProperty IRI="#versionDate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp424"/>
+        <NamedIndividual IRI="#technicalText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#technicalText"/>
+        <NamedIndividual IRI="#Cp424"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ownFunds"/>
@@ -325,10 +325,10 @@
         <NamedIndividual IRI="#WordNet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#discourseMarker"/>
+        <NamedIndividual IRI="#degree"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#degree"/>
+        <NamedIndividual IRI="#discourseMarker"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NLM_classification"/>
@@ -343,10 +343,10 @@
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#keyword"/>
+        <ObjectProperty IRI="#quality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#quality"/>
+        <DataProperty IRI="#keyword"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8860-13"/>
@@ -355,16 +355,16 @@
         <NamedIndividual IRI="#KOI8-R"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneticallyRichWord"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#linkToOtherMedia"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#phoneticallyRichWord"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#placeOfLiving"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#libraryOfCongress_domainClassification"/>
@@ -385,28 +385,31 @@
         <ObjectProperty IRI="#conversationalType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Document"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#measure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#veryHigh1"/>
+        <Class IRI="#Document"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#extrinsic"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#veryHigh1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LanguageResourceTechnology"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#scene"/>
+        <DataProperty IRI="#synchronizedWithTextNumerical"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#paperCopy"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#synchronizedWithTextNumerical"/>
+        <NamedIndividual IRI="#scene"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Evaluation"/>
@@ -424,6 +427,9 @@
         <NamedIndividual IRI="#captureTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LexicalConceptualResourceMediaPart"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#compound"/>
     </Declaration>
     <Declaration>
@@ -431,9 +437,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#speakerNoise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LexicalConceptualResourceMediaPart"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#low2"/>
@@ -454,10 +457,10 @@
         <NamedIndividual IRI="#song"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp862"/>
+        <NamedIndividual IRI="#multilingual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multilingual"/>
+        <NamedIndividual IRI="#Cp862"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#yesH"/>
@@ -469,10 +472,10 @@
         <ObjectProperty IRI="#sizePerGeographicCoverage"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="dct:title"/>
+        <NamedIndividual IRI="#UTF-8"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UTF-8"/>
+        <DataProperty abbreviatedIRI="dct:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CharacterEncoding"/>
@@ -481,25 +484,25 @@
         <NamedIndividual IRI="#planned"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#validationReport"/>
+        <NamedIndividual IRI="#utterance"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#utterance"/>
+        <ObjectProperty IRI="#validationReport"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#digest"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multipleSources"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Interactivity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#interpolated"/>
+        <NamedIndividual IRI="#multipleSources"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#neologism"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#interpolated"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#minute1"/>
@@ -514,19 +517,19 @@
         <Class IRI="#Register"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cp950"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#documentationBibliographicData"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp950"/>
+        <NamedIndividual IRI="#irregularForm"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp865"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#x-windows-949"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#irregularForm"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#workflowFile"/>
@@ -562,13 +565,13 @@
         <DataProperty IRI="#algorithm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semantics"/>
+        <NamedIndividual IRI="#industrial"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#bodyPart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#industrial"/>
+        <NamedIndividual IRI="#semantics"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#grammaticalPhenomenaCoverage"/>
@@ -619,10 +622,10 @@
         <NamedIndividual IRI="#x-mswin-936"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SemAF-DA"/>
+        <NamedIndividual IRI="#applicationWord"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#applicationWord"/>
+        <NamedIndividual IRI="#SemAF-DA"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#relationType"/>
@@ -640,19 +643,19 @@
         <NamedIndividual IRI="#ISCII91"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModalityType"/>
+        <NamedIndividual IRI="#signedInteger"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#restrictedAccess"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#signedInteger"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#runningEnvironmentDetails"/>
+        <Class IRI="#ModalityType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#daylight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runningEnvironmentDetails"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#webCam"/>
@@ -700,10 +703,10 @@
         <Class IRI="#RightsStatementOrg"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#bilingual"/>
+        <DataProperty IRI="#thingDescription"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#thingDescription"/>
+        <NamedIndividual IRI="#bilingual"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#extratextualInformation"/>
@@ -718,10 +721,10 @@
         <Class abbreviatedIRI="omtd:TDMMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MetadataRecordIdentifierScheme"/>
+        <ObjectProperty IRI="#inputContentResource"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#inputContentResource"/>
+        <Class IRI="#MetadataRecordIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isolatedWord"/>
@@ -736,10 +739,10 @@
         <Class IRI="#VersionType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#projectStartDate"/>
+        <NamedIndividual IRI="#elicited"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#elicited"/>
+        <DataProperty IRI="#projectStartDate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#frequency"/>
@@ -751,9 +754,6 @@
         <NamedIndividual IRI="#vcvSequence"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mood"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#child"/>
     </Declaration>
     <Declaration>
@@ -763,16 +763,19 @@
         <ObjectProperty IRI="#sourceMetadataRecord"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#mood"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Affiliation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#communicate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TIS-620"/>
+        <NamedIndividual IRI="#raster"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#raster"/>
+        <NamedIndividual IRI="#TIS-620"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#frame"/>
@@ -862,16 +865,16 @@
         <Class IRI="#DurationOfEffectiveSpeech"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp869"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#sizePerDomain"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="xsd:date"/>
+        <NamedIndividual IRI="#Cp869"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRelatedToDocument"/>
@@ -895,10 +898,10 @@
         <Class IRI="#SubjectClassificationScheme"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ClarinLicenceCategory"/>
+        <DataProperty IRI="#capturingDeviceTypeDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#capturingDeviceTypeDetails"/>
+        <Class IRI="#ClarinLicenceCategory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="foaf:primaryTopic"/>
@@ -931,10 +934,10 @@
         <NamedIndividual IRI="#MULTEXT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MediaType"/>
+        <NamedIndividual IRI="#pragueTreebank"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#pragueTreebank"/>
+        <Class IRI="#MediaType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#distributionLocation"/>
@@ -946,10 +949,10 @@
         <NamedIndividual IRI="#second1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#Cp1123"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1123"/>
+        <Class IRI="#Annotation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#guidelines"/>
@@ -967,10 +970,10 @@
         <Class IRI="#Tagset"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#sourceAndExecutableCode"/>
+        <NamedIndividual IRI="#Cp1147"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1147"/>
+        <NamedIndividual IRI="#sourceAndExecutableCode"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#US-ASCII"/>
@@ -982,10 +985,10 @@
         <Class IRI="#PreviousAnnotationTypesPolicy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#academic"/>
+        <NamedIndividual IRI="#complex"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#complex"/>
+        <NamedIndividual IRI="#academic"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#commercial1"/>
@@ -997,10 +1000,10 @@
         <NamedIndividual IRI="#mb"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#mpg"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mpg"/>
+        <DataProperty IRI="#age"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#backgroundNoise1"/>
@@ -1027,10 +1030,10 @@
         <NamedIndividual IRI="#SemAF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#private"/>
+        <NamedIndividual IRI="#microphone"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#microphone"/>
+        <NamedIndividual IRI="#private"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1124"/>
@@ -1048,10 +1051,10 @@
         <NamedIndividual IRI="#Cp1148"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#languageEngineeringResearchUse"/>
+        <DataProperty IRI="#dialectAccent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#dialectAccent"/>
+        <NamedIndividual IRI="#languageEngineeringResearchUse"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CD-ROM"/>
@@ -1102,25 +1105,25 @@
         <DataProperty IRI="#synchronizedWithAudio"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#recordingEnvironment"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="datacite:FunderIdentifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#automatic1"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#recordingEnvironment"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#MTBF"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#sentence1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#noDerivatives"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#updated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#float"/>
@@ -1132,10 +1135,10 @@
         <NamedIndividual IRI="#pmid"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#formal"/>
+        <DataProperty IRI="#algorithmDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#algorithmDetails"/>
+        <NamedIndividual IRI="#formal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SynAF"/>
@@ -1159,16 +1162,16 @@
         <NamedIndividual IRI="#included"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#none4"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#AlvisNLP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionMediaPart"/>
+        <NamedIndividual IRI="#none4"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="skos:broadMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LanguageDescriptionMediaPart"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#synchronizedWithImage"/>
@@ -1216,10 +1219,10 @@
         <DataProperty IRI="#anonymized"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-31j"/>
+        <DataProperty IRI="#modalityTypeDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#modalityTypeDetails"/>
+        <NamedIndividual IRI="#windows-31j"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-9"/>
@@ -1297,10 +1300,10 @@
         <NamedIndividual IRI="#MDTV"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#letter"/>
+        <NamedIndividual IRI="#definitionsParsing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#definitionsParsing"/>
+        <NamedIndividual IRI="#letter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp935"/>
@@ -1312,10 +1315,10 @@
         <NamedIndividual IRI="#glassBox"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#command"/>
+        <ObjectProperty IRI="#interactivity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#interactivity"/>
+        <DataProperty IRI="#command"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#elderly"/>
@@ -1327,10 +1330,10 @@
         <NamedIndividual IRI="#document1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-7"/>
+        <NamedIndividual IRI="#spatialConstraint"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#spatialConstraint"/>
+        <NamedIndividual IRI="#ISO-8859-7"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#lexicalType"/>
@@ -1384,10 +1387,10 @@
         <ObjectProperty IRI="#evaluationReport"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GB18030"/>
+        <NamedIndividual IRI="#ISO-8859-8"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-8"/>
+        <NamedIndividual IRI="#GB18030"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#document2"/>
@@ -1402,22 +1405,22 @@
         <ObjectProperty IRI="#relatedResource"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#x-EUC-TW"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#isolatedDigit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#noise1"/>
+        <NamedIndividual IRI="#x-EUC-TW"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DVB-C"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#accentuation"/>
+        <NamedIndividual IRI="#noise1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SoftwareDistribution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#accentuation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MacIceland"/>
@@ -1447,10 +1450,10 @@
         <NamedIndividual IRI="#ISO1987"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp937"/>
+        <NamedIndividual IRI="#frame1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#frame1"/>
+        <NamedIndividual IRI="#Cp937"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#windows-1258"/>
@@ -1486,25 +1489,25 @@
         <NamedIndividual IRI="#languageDescription"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#aLaw"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#mailingListName"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="dct:alternative"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#instruction"/>
+        <DataProperty abbreviatedIRI="dct:alternative"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#npStructure"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#utterance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#instruction"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO704"/>
@@ -1522,13 +1525,13 @@
         <NamedIndividual IRI="#head"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MTSA"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#order"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#inCar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MTSA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LingualityType"/>
@@ -1537,19 +1540,19 @@
         <NamedIndividual IRI="#broadcastNews"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#bodyMovement"/>
+        <NamedIndividual IRI="#literaryText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#literaryText"/>
+        <DataProperty IRI="#bodyMovement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#emailText"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SemanticType"/>
+        <NamedIndividual IRI="#shot1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#shot1"/>
+        <Class IRI="#SemanticType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sizePerImageFormat"/>
@@ -1570,19 +1573,19 @@
         <ObjectProperty IRI="#audioFormat"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
+        <Class IRI="#LanguageDescriptionImagePart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionImagePart"/>
+        <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="datacite:purl"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#availabilityEndDate"/>
+        <NamedIndividual IRI="#OpenAIRE"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#OpenAIRE"/>
+        <DataProperty IRI="#availabilityEndDate"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hearingImpairment"/>
@@ -1591,10 +1594,10 @@
         <NamedIndividual IRI="#signLanguage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#npRecognition"/>
+        <NamedIndividual IRI="#multilingualSingleText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multilingualSingleText"/>
+        <NamedIndividual IRI="#npRecognition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#durationOfEffectiveSpeech"/>
@@ -1615,28 +1618,28 @@
         <DataProperty IRI="#validationDetails"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp939"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#languageDependent"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#posesPerSubject"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#drop"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#dynamicElement"/>
+        <DataProperty IRI="#languageDependent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cp939"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isExactMatchWith"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp037"/>
+        <ObjectProperty IRI="#dynamicElement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cp037"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MembershipInstitution"/>
@@ -1657,16 +1660,16 @@
         <DataProperty IRI="#contactPoint"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#human"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#dentalProsthesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#commericalUse"/>
+        <NamedIndividual IRI="#human"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#zipCode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#commericalUse"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#url1"/>
@@ -1714,10 +1717,10 @@
         <NamedIndividual IRI="#oggVorbis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SemAF-NE"/>
+        <NamedIndividual IRI="#office"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#office"/>
+        <NamedIndividual IRI="#SemAF-NE"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpeakingImpairmentOfParticipants"/>
@@ -1729,16 +1732,16 @@
         <Class IRI="#UserType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#scenarioType"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#nonFiction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mouth"/>
+        <ObjectProperty IRI="#scenarioType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#licenceTermsName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mouth"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#updateFrequency"/>
@@ -1768,13 +1771,13 @@
         <NamedIndividual IRI="#dockerImage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#subtitle2"/>
+        <NamedIndividual IRI="#high1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LinkToOtherMedia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#high1"/>
+        <NamedIndividual IRI="#subtitle2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#libraryofCongressSubjectHeadings_classification"/>
@@ -1792,13 +1795,13 @@
         <NamedIndividual IRI="#grid"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#distribution"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#telephoneConversation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#clause"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#distribution"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#onLineHelpURL"/>
@@ -1816,13 +1819,13 @@
         <NamedIndividual IRI="#omtdDocker"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#publication"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#attachedLexiconPosition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#windows-1254"/>
@@ -1834,22 +1837,25 @@
         <NamedIndividual IRI="#Big5-HKSCS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SceneIllumination"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#high2"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ageRangeEnd"/>
+        <Class IRI="#SceneIllumination"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#evaluationDetails"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#vocalTractCondition"/>
+        <DataProperty IRI="#ageRangeEnd"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#subtitle1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vocalTractCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="datacite:isbn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#parameterType"/>
@@ -1858,16 +1864,16 @@
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-RUU/1.0/"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="datacite:isbn"/>
+        <Class IRI="#LexicalConceptualResourceTextPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceTextPart"/>
+        <ObjectProperty IRI="#typesystem"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-2"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#typesystem"/>
+        <ObjectProperty IRI="#recordingQuality"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LDC"/>
@@ -1876,16 +1882,10 @@
         <ObjectProperty IRI="#creationMode"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#recordingQuality"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#analysis"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#lexicalUnit"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#describes"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#islrn"/>
@@ -1894,25 +1894,28 @@
         <DataProperty IRI="#placeOfChildhood"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#describes"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#output"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProjectIdentifier"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#morphology"/>
+        <ObjectProperty IRI="#sizePerTextFormat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerTextFormat"/>
+        <NamedIndividual IRI="#morphology"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DatasetDistributionForm"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#copyrightStatement"/>
+        <DataProperty IRI="#sensitiveDataDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sensitiveDataDetails"/>
+        <DataProperty IRI="#copyrightStatement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PAROLE_topicClassification"/>
@@ -1972,10 +1975,10 @@
         <NamedIndividual IRI="#evaluationUse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#unknown1"/>
+        <AnnotationProperty abbreviatedIRI="skos:broaderTransitive"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:broaderTransitive"/>
+        <NamedIndividual IRI="#unknown1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MachineReadableDictionary"/>
@@ -1984,10 +1987,10 @@
         <NamedIndividual IRI="#telephoneFixed"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#availability"/>
+        <NamedIndividual IRI="#multilogue"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multilogue"/>
+        <ObjectProperty IRI="#availability"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#attribution"/>
@@ -1999,25 +2002,25 @@
         <NamedIndividual IRI="#face"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SyntacticType"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#spontaneous"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#shot"/>
+        <Class IRI="#SyntacticType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#attributionText"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#shot"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LicenceTerms"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#linux"/>
+        <NamedIndividual IRI="#available-unrestrictedUse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#available-unrestrictedUse"/>
+        <NamedIndividual IRI="#linux"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MacRoman"/>
@@ -2038,16 +2041,16 @@
         <NamedIndividual IRI="#word2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#semanticFeature"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#fee"/>
+        <DataProperty IRI="#numberOfTrainedSpeakers"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WebServiceType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#numberOfTrainedSpeakers"/>
+        <NamedIndividual IRI="#semanticFeature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fee"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#expression"/>
@@ -2056,10 +2059,10 @@
         <NamedIndividual IRI="#generalDocumenation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TextGenre"/>
+        <NamedIndividual IRI="#EAGLES"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EAGLES"/>
+        <Class IRI="#TextGenre"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-15"/>
@@ -2077,16 +2080,16 @@
         <ObjectProperty IRI="#sizePerAudioClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-1255"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Dictionary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#webService"/>
+        <NamedIndividual IRI="#windows-1255"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#chatText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#webService"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MediaPart"/>
@@ -2095,10 +2098,10 @@
         <DataProperty IRI="#typeOfImageContent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-5"/>
+        <ObjectProperty IRI="#textType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#textType"/>
+        <NamedIndividual IRI="#ISO-8859-5"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISDN"/>
@@ -2110,10 +2113,10 @@
         <NamedIndividual IRI="#syllable1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#graphicCard"/>
+        <ObjectProperty IRI="#rasterOrVectorGraphics"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#rasterOrVectorGraphics"/>
+        <NamedIndividual IRI="#graphicCard"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#word1"/>
@@ -2131,10 +2134,10 @@
         <Class IRI="#VisualModelling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#trigram"/>
+        <Class IRI="#NGramCorpus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NGramCorpus"/>
+        <NamedIndividual IRI="#trigram"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#statisticalProperty"/>
@@ -2149,16 +2152,16 @@
         <Class IRI="#NoiseLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-1250"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#x-windows-950"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="datacite:OrganizationIdentifier"/>
+        <NamedIndividual IRI="#windows-1250"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#REST"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="datacite:OrganizationIdentifier"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#domainClassificationScheme"/>
@@ -2185,16 +2188,16 @@
         <NamedIndividual IRI="#vector"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:comment"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#sizePerTextNumericalFormat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#extraTextualInformationUnit"/>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#nonSpeechItem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#extraTextualInformationUnit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mov"/>
@@ -2218,10 +2221,10 @@
         <Class IRI="#LanguageDescriptionVideoPart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#issueTracker"/>
+        <ObjectProperty IRI="#evaluator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#evaluator"/>
+        <NamedIndividual IRI="#issueTracker"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#fundingProject"/>
@@ -2242,10 +2245,10 @@
         <NamedIndividual IRI="#lecture"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#airTrafficControl"/>
+        <NamedIndividual IRI="#phonology"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phonology"/>
+        <NamedIndividual IRI="#airTrafficControl"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#windows"/>
@@ -2257,10 +2260,10 @@
         <NamedIndividual IRI="#draft"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OperatingSystem"/>
+        <ObjectProperty IRI="#videoFormat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#videoFormat"/>
+        <Class IRI="#OperatingSystem"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#country"/>
@@ -2269,10 +2272,10 @@
         <Class IRI="#LanguageVarietyType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-3"/>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <NamedIndividual IRI="#ISO-8859-3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#XCES"/>
@@ -2320,16 +2323,16 @@
         <Class IRI="#LexicalConceptualResourceImagePart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#sound"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#resourceName"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syllable2"/>
+        <NamedIndividual IRI="#sound"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ScenarioType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#syllable2"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LanguageModel"/>
@@ -2344,10 +2347,10 @@
         <NamedIndividual IRI="#teenager"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hand"/>
+        <NamedIndividual IRI="#publicationForCitation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#publicationForCitation"/>
+        <NamedIndividual IRI="#hand"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-4"/>
@@ -2356,19 +2359,19 @@
         <ObjectProperty IRI="#isRelatedTo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#image"/>
+        <ObjectProperty IRI="#isEvaluatedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isEvaluatedBy"/>
+        <NamedIndividual IRI="#image"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#validationMode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-1251"/>
+        <NamedIndividual IRI="#flac"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#flac"/>
+        <NamedIndividual IRI="#windows-1251"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mixed"/>
@@ -2377,10 +2380,10 @@
         <NamedIndividual IRI="#os-independent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#script"/>
+        <NamedIndividual IRI="#note1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#note1"/>
+        <NamedIndividual IRI="#script"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
@@ -2407,25 +2410,22 @@
         <ObjectProperty IRI="#validationType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#discussion"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#sizeHeight"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CMYK"/>
+        <NamedIndividual IRI="#discussion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CMYK"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TwoD"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAnnotatedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Software"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#recordingDeviceTypeDetails"/>
@@ -2437,10 +2437,10 @@
         <NamedIndividual IRI="#linearPCM"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#conformsTo"/>
+        <NamedIndividual IRI="#researchUse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#researchUse"/>
+        <ObjectProperty IRI="#conformsTo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#commercial"/>
@@ -2464,25 +2464,25 @@
         <NamedIndividual IRI="#term"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp870"/>
+        <DataProperty IRI="#projectShortName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#projectShortName"/>
+        <NamedIndividual IRI="#Cp870"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#audio"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ThreeD"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#projectName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LRTIdentifierScheme"/>
+        <NamedIndividual IRI="#ThreeD"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#geographicCoverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LRTIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#paragraph"/>
@@ -2521,13 +2521,13 @@
         <Class IRI="#AudioGenre"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sourceChannelDetails"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#internet"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#goldStandardLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceChannelDetails"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UsageType"/>
@@ -2539,10 +2539,10 @@
         <Class IRI="#Resolution"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#lingualityType"/>
+        <Class IRI="#MorphologicalLexicon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MorphologicalLexicon"/>
+        <ObjectProperty IRI="#lingualityType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#creationModeDetails"/>
@@ -2581,10 +2581,10 @@
         <NamedIndividual IRI="#letter1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#synset"/>
+        <ObjectProperty IRI="#isContinuationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isContinuationOf"/>
+        <NamedIndividual IRI="#synset"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#studioEquipment"/>
@@ -2614,13 +2614,13 @@
         <NamedIndividual IRI="#semiPlanned"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ldTask"/>
+        <NamedIndividual IRI="#DVB-S"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#string"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DVB-S"/>
+        <ObjectProperty IRI="#ldTask"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#informLicensor"/>
@@ -2653,10 +2653,10 @@
         <NamedIndividual IRI="#encyclopaedicText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#gender"/>
+        <ObjectProperty IRI="#compressionName"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#compressionName"/>
+        <NamedIndividual IRI="#gender"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VGA"/>
@@ -2674,10 +2674,10 @@
         <NamedIndividual IRI="#MacUkraine"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#typeOfElement"/>
+        <ObjectProperty IRI="#isConvertedVersionOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isConvertedVersionOf"/>
+        <DataProperty IRI="#typeOfElement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Relation"/>
@@ -2710,6 +2710,9 @@
         <NamedIndividual IRI="#Cp850"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LanguageTechnologySofware"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#plain"/>
     </Declaration>
     <Declaration>
@@ -2734,13 +2737,13 @@
         <ObjectProperty IRI="#durationOfAudio"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="datacite:url"/>
+        <ObjectProperty IRI="#sourceChannelType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semanticRelation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sourceChannelType"/>
+        <NamedIndividual abbreviatedIRI="datacite:url"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GMX"/>
@@ -2755,10 +2758,10 @@
         <NamedIndividual IRI="#unknown"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MappingOfResources"/>
+        <NamedIndividual IRI="#noise"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#noise"/>
+        <Class IRI="#MappingOfResources"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#bluRay"/>
@@ -2821,10 +2824,10 @@
         <ObjectProperty IRI="#baseItem"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UDC_classification"/>
+        <NamedIndividual IRI="#lemma1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lemma1"/>
+        <NamedIndividual IRI="#UDC_classification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#administrativeText"/>
@@ -2875,19 +2878,19 @@
         <NamedIndividual IRI="#tapeVHS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#medium1"/>
+        <DataProperty IRI="#timeCoverage"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#landingPage"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#timeCoverage"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#compressed"/>
+        <NamedIndividual IRI="#medium1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#webcam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#compressed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#corpora"/>
@@ -2920,10 +2923,10 @@
         <NamedIndividual IRI="#crossTalk"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BNC_textTypeClassification"/>
+        <DataProperty IRI="#address"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#BNC_textTypeClassification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semiInteractive"/>
@@ -2944,25 +2947,25 @@
         <ObjectProperty IRI="#ageGroupOfParticipants"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp964"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isRelatedToLT"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#yesNoQuestion"/>
+        <NamedIndividual IRI="#Cp964"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#shareAlike"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#yesNoQuestion"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1006"/>
+        <ObjectProperty IRI="#organization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#organization"/>
+        <NamedIndividual IRI="#Cp1006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#video"/>
@@ -3010,19 +3013,16 @@
         <Class IRI="#CorpusMediaPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProjectIdentifierScheme"/>
+        <Class IRI="#StaticElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StaticElement"/>
+        <Class IRI="#ProjectIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#none"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#faceToFaceConversation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#medication"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#phrase"/>
@@ -3032,6 +3032,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#full"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medication"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#languageVarietyType"/>
@@ -3088,16 +3091,16 @@
         <NamedIndividual IRI="#noRedistribution"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#naturalNumber"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#4:2:24four_2_2"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#wordGroup"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isCompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#naturalNumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4:2:24four_2_2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp942"/>
@@ -3118,13 +3121,13 @@
         <NamedIndividual IRI="#CES"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AudioGenreClassificationScheme"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#singleSource"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#profession"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AudioGenreClassificationScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#executableCode"/>
@@ -3133,10 +3136,10 @@
         <ObjectProperty IRI="#usageProject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isAnnotatedVersionOf"/>
+        <NamedIndividual IRI="#Cp857"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp857"/>
+        <ObjectProperty IRI="#isAnnotatedVersionOf"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#colourDepth"/>
@@ -3169,31 +3172,31 @@
         <NamedIndividual IRI="#realAudio"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:DataFormat"/>
+        <ObjectProperty IRI="#annotationSchema"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#annotationSchema"/>
+        <Class abbreviatedIRI="omtd:DataFormat"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mixedH"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ColourSpace"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#EvaluationLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneticallyBalancedSentence"/>
+        <Class IRI="#ColourSpace"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasConvertedVersion"/>
+        <NamedIndividual IRI="#phoneticallyBalancedSentence"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp856"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConvertedVersion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#annotatedElement"/>
@@ -3214,10 +3217,10 @@
         <Class abbreviatedIRI="datacite:AgentIdentifier"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#optional"/>
+        <NamedIndividual IRI="#Cp1026"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1026"/>
+        <DataProperty IRI="#optional"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#review"/>
@@ -3241,10 +3244,10 @@
         <Class IRI="#EvaluationCriterion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#instrumentalMusic"/>
+        <NamedIndividual IRI="#lsid"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lsid"/>
+        <NamedIndividual IRI="#instrumentalMusic"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
@@ -3271,10 +3274,10 @@
         <NamedIndividual IRI="#dialogue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RecordingDeviceType"/>
+        <NamedIndividual IRI="#MacDingbat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacDingbat"/>
+        <Class IRI="#RecordingDeviceType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1112"/>
@@ -3313,16 +3316,16 @@
         <ObjectProperty IRI="#isReviewedBy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MLModel"/>
+        <NamedIndividual IRI="#Cp858"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#frogStory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp858"/>
+        <ObjectProperty IRI="#isCreatedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isCreatedBy"/>
+        <Class IRI="#MLModel"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#actorType"/>
@@ -3346,10 +3349,10 @@
         <NamedIndividual IRI="#token1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#byte"/>
+        <ObjectProperty IRI="#register"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#register"/>
+        <NamedIndividual IRI="#byte"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#metaShare"/>
@@ -3382,16 +3385,16 @@
         <Class IRI="#DurationUnit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#nonNative"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#textIncludedInVideo"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#eventDescription"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#nonNative"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MetadataRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#textIncludedInVideo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#requiresSoftware"/>
@@ -3400,16 +3403,16 @@
         <NamedIndividual IRI="#Cp921"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#assisted"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#implementationLanguage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#laryngograph1"/>
+        <NamedIndividual IRI="#assisted"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#evaluationLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laryngograph1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1025"/>
@@ -3436,19 +3439,19 @@
         <DataProperty IRI="#creationDetails"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#evaluation"/>
+        <NamedIndividual IRI="#meetingProceedings"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#meetingProceedings"/>
+        <ObjectProperty IRI="#evaluation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#second"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#parameterName"/>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <DataProperty IRI="#parameterName"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#imageFormat"/>
@@ -3457,10 +3460,10 @@
         <NamedIndividual IRI="#x-MS950-HKSCS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp285"/>
+        <DataProperty IRI="#landscapePart"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#landscapePart"/>
+        <NamedIndividual IRI="#Cp285"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Subject"/>
@@ -3484,22 +3487,22 @@
         <Class IRI="#Quality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#LAF"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#example1"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LAF"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#impact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#telephoneNumber"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#usageReport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Metric"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#telephoneNumber"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MultilingualityType"/>
@@ -3526,28 +3529,28 @@
         <NamedIndividual IRI="#MacCentralEurope"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#languageScript"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:closeMatch"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#projectEndDate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#anaphoraResolution"/>
+        <DataProperty IRI="#languageScript"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NonSpeechItem"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#anaphoraResolution"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp1144"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#resolutionStandard"/>
+        <NamedIndividual IRI="#turn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#turn"/>
+        <ObjectProperty IRI="#resolutionStandard"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp284"/>
@@ -3571,10 +3574,10 @@
         <NamedIndividual IRI="#GATE"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#telephoneIP"/>
+        <NamedIndividual IRI="#advertising"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#advertising"/>
+        <NamedIndividual IRI="#telephoneIP"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#scopusId"/>
@@ -3622,10 +3625,10 @@
         <NamedIndividual IRI="#transcription"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SemAF-SR"/>
+        <NamedIndividual IRI="#HD.1080"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#HD.1080"/>
+        <NamedIndividual IRI="#SemAF-SR"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#unix"/>
@@ -3661,13 +3664,13 @@
         <Class IRI="#Project"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RecordingQuality"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LanguageVariety"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MetadataRecordIdentifier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RecordingQuality"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#element"/>
@@ -3688,10 +3691,10 @@
         <DataProperty IRI="#sensorTechnology"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO12620"/>
+        <NamedIndividual IRI="#MS_audioGenreClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MS_audioGenreClassification"/>
+        <NamedIndividual IRI="#ISO12620"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#phoneticUnit"/>
@@ -3784,10 +3787,10 @@
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneme1"/>
+        <NamedIndividual IRI="#eissn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#eissn"/>
+        <NamedIndividual IRI="#phoneme1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LDTask"/>
@@ -3799,10 +3802,10 @@
         <Class IRI="#COARRightsStatement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isSimilarTo"/>
+        <NamedIndividual IRI="#mac-OS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mac-OS"/>
+        <ObjectProperty IRI="#isSimilarTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ValidationExtent"/>
@@ -3832,13 +3835,13 @@
         <ObjectProperty IRI="#noiseLevel"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#revision"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#corpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#revision"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MacCroatian"/>
@@ -3856,10 +3859,10 @@
         <NamedIndividual IRI="#published"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#wizardOfOz"/>
+        <NamedIndividual IRI="#file1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#file1"/>
+        <NamedIndividual IRI="#wizardOfOz"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#compressionLoss"/>
@@ -3901,10 +3904,10 @@
         <Class IRI="#Genre"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
+        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#integer"/>
@@ -3946,10 +3949,10 @@
         <NamedIndividual IRI="#soundBlasterCard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#onlineEducationalGame"/>
+        <NamedIndividual IRI="#boolean"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#boolean"/>
+        <NamedIndividual IRI="#onlineEducationalGame"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#durationUnit"/>
@@ -3985,10 +3988,10 @@
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#nationalFunds"/>
+        <DataProperty IRI="#samplesLocation"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#samplesLocation"/>
+        <NamedIndividual IRI="#nationalFunds"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#placeOfSecondEducation"/>
@@ -4000,10 +4003,10 @@
         <Class IRI="#LRTIdentifier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SizeUnit"/>
+        <Class IRI="#MetadataSchema"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MetadataSchema"/>
+        <Class IRI="#SizeUnit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VOIP"/>
@@ -4024,37 +4027,37 @@
         <Class IRI="#ExtratextualInformation"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#faxNumber"/>
+        <ObjectProperty IRI="#audioQualityMeasureIncluded"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#audioQualityMeasureIncluded"/>
+        <DataProperty IRI="#faxNumber"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#eventType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Big5"/>
+        <DataProperty IRI="#metadataLastDateUpdated"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#metadataLastDateUpdated"/>
+        <NamedIndividual IRI="#Big5"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="datacite:Identifier"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#specialHardwareEquipment"/>
+        <DataProperty IRI="#evaluated"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#evaluated"/>
+        <NamedIndividual IRI="#specialHardwareEquipment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ValidationType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#weightedGrammar"/>
+        <NamedIndividual IRI="#narrative"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#narrative"/>
+        <DataProperty IRI="#weightedGrammar"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#music"/>
@@ -4078,10 +4081,10 @@
         <NamedIndividual IRI="#modify"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#animalVocalization"/>
+        <NamedIndividual IRI="#EUC-JP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EUC-JP"/>
+        <NamedIndividual IRI="#animalVocalization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#text"/>
@@ -4099,10 +4102,10 @@
         <NamedIndividual IRI="#concept"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#coordination"/>
+        <NamedIndividual IRI="#samples"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#samples"/>
+        <NamedIndividual IRI="#coordination"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#backgroundNoise"/>
@@ -4120,10 +4123,10 @@
         <NamedIndividual IRI="#variable"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#speechItem"/>
+        <Class IRI="#LexicalConceptualResourceAudioPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LexicalConceptualResourceAudioPart"/>
+        <ObjectProperty IRI="#speechItem"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="datacite:usesIdentifierScheme"/>
@@ -4138,10 +4141,10 @@
         <DataProperty IRI="#region"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phoneme2"/>
+        <NamedIndividual IRI="#debate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#debate"/>
+        <NamedIndividual IRI="#phoneme2"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#fundingCountry"/>
@@ -4159,10 +4162,10 @@
         <DataProperty IRI="#metadataCreationDate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mu-law"/>
+        <NamedIndividual IRI="#accepted"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#accepted"/>
+        <NamedIndividual IRI="#mu-law"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EML"/>
@@ -4198,22 +4201,19 @@
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#method"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#processingResourceType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageResource"/>
+        <ObjectProperty IRI="#method"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#text1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GSM"/>
+        <ObjectProperty IRI="#isRelatedToProject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isRelatedToProject"/>
+        <NamedIndividual IRI="#GSM"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#frameRate"/>
@@ -4252,13 +4252,13 @@
         <NamedIndividual IRI="#android"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacArabic"/>
+        <NamedIndividual IRI="#file"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#annotator"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#file"/>
+        <NamedIndividual IRI="#MacArabic"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#operatingSystem"/>
@@ -4279,19 +4279,19 @@
         <NamedIndividual IRI="#semanticUnit"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#TEI_P3"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#externalReference"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#TEI_P3"/>
+        <Class IRI="#ByteOrder"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isReplacedWith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#staticElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ByteOrder"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#unsignedInteger"/>
@@ -4303,10 +4303,10 @@
         <NamedIndividual IRI="#few"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#handManipulation"/>
+        <ObjectProperty IRI="#parameter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#parameter"/>
+        <DataProperty IRI="#handManipulation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sizePerVideoFormat"/>
@@ -4315,10 +4315,10 @@
         <DataProperty IRI="#headMovement"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
+        <DataProperty IRI="#isFactored"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isFactored"/>
+        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#mediaTypeDetails"/>
@@ -4363,28 +4363,31 @@
         <DataProperty IRI="#placeOfBirth"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HearingImpairmentOfParticipants"/>
+        <NamedIndividual IRI="#transport"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#transport"/>
+        <Class IRI="#HearingImpairmentOfParticipants"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TEI_P4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#example"/>
+        <NamedIndividual IRI="#mp3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#mp3"/>
+        <NamedIndividual IRI="#example"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAnalysedBy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#UTF-16BE"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Grammar"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UTF-16BE"/>
+        <NamedIndividual IRI="#tb"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#galaxyWorkflow"/>
@@ -4393,16 +4396,13 @@
         <DataProperty IRI="#languageName"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#tb"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#blackBox"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#overlapping"/>
+        <Class IRI="#Typesystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Typesystem"/>
+        <NamedIndividual IRI="#overlapping"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#evaluationCriterion"/>
@@ -4435,10 +4435,10 @@
         <DataProperty IRI="#sensitiveDataIncluded"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp420"/>
+        <NamedIndividual IRI="#alcohol"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#alcohol"/>
+        <NamedIndividual IRI="#Cp420"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#low"/>
@@ -4462,19 +4462,19 @@
         <NamedIndividual IRI="#maven"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DatasetDistribution"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ean13"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TEI_P5"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#legend"/>
+        <Class IRI="#DatasetDistribution"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#euFunds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#legend"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#MetadataRecord"/>
@@ -4502,7 +4502,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Application"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#LanguageTechnologySofware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AudioGenre"/>
@@ -4540,7 +4540,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Component"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#LanguageTechnologySofware"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ComputationalLexicon"/>
@@ -4583,7 +4583,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DataLanguageResource"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DatasetDistribution"/>
@@ -4703,18 +4703,22 @@
         <Class IRI="#LanguageDescription"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#conformsTo"/>
             <Class IRI="#StandardBestPractice"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
         <ObjectAllValuesFrom>
             <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
             <Class IRI="#LRTIdentifier"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LanguageTechnologySofware"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LemmaType"/>
@@ -4906,17 +4910,6 @@
     <SubClassOf>
         <Class IRI="#SemanticType"/>
         <Class IRI="#ContentType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Software"/>
-        <Class IRI="#LanguageResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Software"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#distribution"/>
-            <Class IRI="#SoftwareDistribution"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoftwareDistribution"/>
@@ -9439,7 +9432,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#actualUse"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#affiliation"/>
@@ -9465,26 +9458,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#annotation"/>
         <Class IRI="#CorpusMediaPart"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#annotationResource"/>
-        <ObjectUnionOf>
-            <Class IRI="#Annotation"/>
-            <Class IRI="#InputContentResource"/>
-            <Class IRI="#MLModel"/>
-            <Class IRI="#OutputResource"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#annotationSchema"/>
-        <ObjectUnionOf>
-            <Class IRI="#Annotation"/>
-            <Class IRI="#InputContentResource"/>
-            <Class IRI="#MLModel"/>
-            <Class IRI="#OutputResource"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#annotationType"/>
@@ -9594,7 +9567,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#contact"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#conversationalType"/>
@@ -9621,7 +9594,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#dependsOn"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#describes"/>
@@ -9629,7 +9602,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#distribution"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#distributionForm"/>
@@ -9647,7 +9620,7 @@
         <ObjectProperty IRI="#domain"/>
         <ObjectUnionOf>
             <Class IRI="#InputContentResource"/>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#OutputResource"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -9686,10 +9659,6 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#evaluation"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#evaluationCriterion"/>
         <Class IRI="#Evaluation"/>
     </ObjectPropertyDomain>
@@ -9726,20 +9695,12 @@
         <Class IRI="#LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#framework"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#function"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#funder"/>
         <Class IRI="#Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#fundingProject"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#fundingType"/>
@@ -9767,12 +9728,12 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMetadata"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOriginalSource"/>
         <ObjectUnionOf>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#MediaPart"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -9782,7 +9743,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPart"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSubset"/>
@@ -9790,7 +9751,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasVersion"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hearingImpairmentOfParticipants"/>
@@ -9806,12 +9767,8 @@
         <Class IRI="#DatasetDistribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inputContentResource"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#intendedApplication"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#interactivity"/>
@@ -9822,7 +9779,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#iprHolder"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAccessedBy"/>
@@ -9852,23 +9809,23 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCitedBy"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCombinedWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCompatibleWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isContinuationOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isContinuedBy"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isConvertedVersionOf"/>
@@ -9883,7 +9840,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDescribedBy"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDisplayedBy"/>
@@ -9894,7 +9851,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDocumentedBy"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isEditedBy"/>
@@ -9916,15 +9873,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isExactMatchWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isQueriedBy"/>
@@ -9941,22 +9898,22 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedTo"/>
         <ObjectUnionOf>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#MediaPart"/>
             <Class IRI="#Project"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToActor"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToDocument"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToLR"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToLT"/>
@@ -9965,21 +9922,21 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToMDRecord"/>
         <ObjectUnionOf>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#MetadataRecord"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRelatedToProject"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isReplacedWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSimilarTo"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isValidatedBy"/>
@@ -9987,7 +9944,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isVersionOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#languageVarietyType"/>
@@ -10026,7 +9983,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#mediaPart"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#mediaType"/>
@@ -10041,19 +9998,8 @@
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#method"/>
-        <ObjectUnionOf>
-            <Class IRI="#MLModel"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#metric"/>
         <Class IRI="#PerformanceIndicator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#mlModel"/>
-        <Class IRI="#Software"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#modalityType"/>
@@ -10093,10 +10039,6 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#operatingSystem"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#organization"/>
         <ObjectUnionOf>
             <Class IRI="#Actor"/>
@@ -10121,10 +10063,6 @@
         <Class IRI="#LinkToOtherMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#parameter"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#parameterType"/>
         <Class IRI="#Parameter"/>
     </ObjectPropertyDomain>
@@ -10140,10 +10078,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#performanceIndicator"/>
         <Class IRI="#Evaluation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#previousAnnotationTypesPolicy"/>
-        <Class IRI="#Software"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#processingResourceType"/>
@@ -10202,25 +10136,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#relation"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#replaces"/>
-        <Class IRI="#LanguageResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requiredHardware"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requiresLR"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resolution"/>
@@ -10235,11 +10155,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resourceCreator"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resourceProvider"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#scenarioType"/>
@@ -10376,16 +10296,6 @@
         <Class IRI="#CorpusMediaPart"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#tagset"/>
-        <ObjectUnionOf>
-            <Class IRI="#Annotation"/>
-            <Class IRI="#InputContentResource"/>
-            <Class IRI="#MLModel"/>
-            <Class IRI="#OutputResource"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#textIncludedInImage"/>
         <ObjectUnionOf>
             <Class IRI="#CorpusImagePart"/>
@@ -10410,16 +10320,6 @@
         <Class IRI="#CorpusTextPart"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#typesystem"/>
-        <ObjectUnionOf>
-            <Class IRI="#Annotation"/>
-            <Class IRI="#InputContentResource"/>
-            <Class IRI="#MLModel"/>
-            <Class IRI="#OutputResource"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#usageProject"/>
         <Class IRI="#ActualUse"/>
     </ObjectPropertyDomain>
@@ -10437,7 +10337,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#validation"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#validationExtent"/>
@@ -10463,7 +10363,7 @@
         <ObjectProperty IRI="#versionType"/>
         <ObjectUnionOf>
             <Class IRI="#Document"/>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -10622,14 +10522,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#dependsOn"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#describes"/>
         <ObjectUnionOf>
             <Class IRI="#Actor"/>
             <Class IRI="#Document"/>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#LicenceTerms"/>
             <Class IRI="#Project"/>
         </ObjectUnionOf>
@@ -10764,15 +10664,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOriginalSource"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOutcome"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPart"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSubset"/>
@@ -10780,7 +10680,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasVersion"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hearingImpairmentOfParticipants"/>
@@ -10807,24 +10707,8 @@
         <Class IRI="#Actor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isAccessedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isAnalysedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isAnnotatedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isAnnotatedVersionOf"/>
         <Class IRI="#Corpus"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isArchivedBy"/>
-        <Class IRI="#Software"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isCitedBy"/>
@@ -10832,78 +10716,50 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isCombinedWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isCompatibleWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isContinuationOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isContinuedBy"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isConvertedVersionOf"/>
         <Class IRI="#DataLanguageResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isCreatedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isDescribedBy"/>
         <Class IRI="#Document"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isDisplayedBy"/>
-        <Class IRI="#Software"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isDocumentedBy"/>
         <Class IRI="#Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isEditedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isElicitedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isEvaluatedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isExactMatchWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartWith"/>
-        <Class IRI="#LanguageResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isQueriedBy"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isRecordedBy"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRelatedTo"/>
         <ObjectUnionOf>
             <Class IRI="#Actor"/>
             <Class IRI="#Document"/>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -10916,11 +10772,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRelatedToLR"/>
-        <Class IRI="#LanguageResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isRelatedToLT"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRelatedToProject"/>
@@ -10928,19 +10780,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isReplacedWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSimilarTo"/>
-        <Class IRI="#LanguageResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isValidatedBy"/>
-        <Class IRI="#Software"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isVersionOf"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#languageVariety"/>
@@ -11112,7 +10960,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#relatedResource"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#relation"/>
@@ -11120,7 +10968,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#replaces"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiredHardware"/>
@@ -11586,7 +11434,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#citationText"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#city"/>
@@ -11624,7 +11472,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#contactPoint"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#copyrightStatement"/>
@@ -11643,7 +11491,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#creationEndDate"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#creationModeDetails"/>
@@ -11651,7 +11499,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#creationStartDate"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#defaultValue"/>
@@ -11663,7 +11511,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#description"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#dialectAccent"/>
@@ -11677,10 +11525,6 @@
             <Class IRI="#CorpusTextNumericalPart"/>
             <Class IRI="#CorpusVideoPart"/>
         </ObjectUnionOf>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#digest"/>
-        <Class IRI="#Software"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#distractor"/>
@@ -11708,10 +11552,6 @@
             <Class IRI="#Organization"/>
             <Class IRI="#Person"/>
         </ObjectUnionOf>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#evaluated"/>
-        <Class IRI="#Software"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#evaluationDetails"/>
@@ -11761,13 +11601,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#fidelity"/>
         <Class IRI="#VideoFormat"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#formalism"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#frameRate"/>
@@ -11822,10 +11655,6 @@
         <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#implementationLanguage"/>
-        <Class IRI="#Software"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#interaction"/>
         <ObjectUnionOf>
             <Class IRI="#CorpusAudioPart"/>
@@ -11854,19 +11683,15 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#keyword"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#landingPage"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#landscapePart"/>
         <Class IRI="#StaticElement"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#languageDependent"/>
-        <Class IRI="#Software"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#legend"/>
@@ -11886,7 +11711,7 @@
     <DataPropertyDomain>
         <DataProperty IRI="#logo"/>
         <ObjectUnionOf>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#LicenceTerms"/>
             <Class IRI="#Organization"/>
             <Class IRI="#Project"/>
@@ -11894,7 +11719,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#mailingListName"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#measure"/>
@@ -12054,7 +11879,7 @@
         <DataProperty IRI="#publicationDate"/>
         <ObjectUnionOf>
             <Class IRI="#Distribution"/>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -12081,48 +11906,27 @@
         <Class IRI="#Relation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#requiresSoftware"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#resourceAssociatedWith"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#resourceName"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#resourceShortName"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#revision"/>
         <ObjectUnionOf>
-            <Class IRI="#LanguageResource"/>
+            <Class IRI="#LanguageResourceTechnology"/>
             <Class IRI="#MetadataRecord"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#robustness"/>
         <Class IRI="#LanguageDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#runningEnvironmentDetails"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#runningTime"/>
-        <ObjectUnionOf>
-            <Class IRI="#LanguageDescription"/>
-            <Class IRI="#Software"/>
-        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#samplesLocation"/>
@@ -12279,7 +12083,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#updateFrequency"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#url"/>
@@ -12287,7 +12091,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#validated"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#validationDetails"/>
@@ -12299,11 +12103,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#version"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#versionDate"/>
-        <Class IRI="#LanguageResource"/>
+        <Class IRI="#LanguageResourceTechnology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#weight"/>
@@ -13699,6 +13503,11 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for data distribution medium, used for language resources delivered on a DVD-R</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataLanguageResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A resource composed of linguistic material used to assist and augment language processing applications, but also, in a broader sense, in language and language-mediated research studies and applications; examples include data sets (textual, multimodal/multimedia and lexical data, grammars, language models, etc.) in machine readable form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DataLanguageResource</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data language resource</Literal>
@@ -14344,14 +14153,34 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LanguageResourceTechnology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LRT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#LanguageResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A resource composed of linguistic material used to assist and augment language processing applications, but also, in a broader sense, in language and language-mediated research studies and applications; language resources encompass (a) data sets (textual, multimodal/multimedia and lexical data, grammars, language models, etc.) in machine readable form, and (b) tools/technologies/services used for their processing.</Literal>
+        <IRI>#LanguageResourceTechnology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A resource composed of linguistic material used to assist and augment language processing applications, but also, in a broader sense, in language and language-mediated research studies and applications; language resources and technologies encompass (a) data sets (textual, multimodal/multimedia and lexical data, grammars, language models, etc.) in machine readable form, and (b) tools/technologies/services used for their processing and management.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LanguageResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language resource</Literal>
+        <IRI>#LanguageResourceTechnology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Resource/Technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LanguageTechnologySofware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LanguageTechnologySofware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A tool/service/any piece of software that performs language processing and/or any Language Technology related operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LanguageTechnologySofware</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Technology Software</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -15389,16 +15218,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SizeUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Size unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Software</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A computer program in source code (text) or compiled form.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Software</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
