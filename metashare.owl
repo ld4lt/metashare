@@ -12291,7 +12291,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#amount"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#annotationEndDate"/>
@@ -12611,7 +12611,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#measure"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#mediaTypeDetails"/>
@@ -12695,7 +12695,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#perplexity"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#personDescription"/>
