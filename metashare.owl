@@ -12759,7 +12759,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#quantization"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#recordingDeviceTypeDetails"/>
@@ -12807,7 +12807,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#samplingRate"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#sensitiveDataDetails"/>
