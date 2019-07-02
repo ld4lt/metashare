@@ -3301,6 +3301,9 @@
         <NamedIndividual IRI="#conferenceRoom"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#surname"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#annotationMode"/>
     </Declaration>
     <Declaration>
@@ -3871,6 +3874,9 @@
         <NamedIndividual IRI="#reflexivity"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#givenName"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#dialectAccentOfParticipants"/>
     </Declaration>
     <Declaration>
@@ -3898,10 +3904,10 @@
         <Class IRI="#Genre"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
+        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#integer"/>
@@ -4403,6 +4409,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#InkML"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DAT"/>
@@ -11747,6 +11756,10 @@
         <Class IRI="#DynamicElement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#givenName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#goldStandardLocation"/>
         <Class IRI="#Evaluation"/>
     </DataPropertyDomain>
@@ -12130,6 +12143,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#speakingImpairment"/>
         <Class IRI="#Participant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#surname"/>
+        <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#synchronizedWithAudio"/>
@@ -12518,6 +12535,10 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#givenName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#goldStandardLocation"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
@@ -12859,6 +12880,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#speakingImpairment"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#surname"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -14290,7 +14315,7 @@ add definitions to all instances</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>#LanguageResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LRT</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18294,6 +18319,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#gesture</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gesture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#givenName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the given name (first name) of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#givenName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">given name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#givenName</IRI>
+        <IRI>http://schema.org/givenName</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22406,6 +22446,21 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#subtitle2</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subtitle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#surname</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the surname (family name/last name) of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#surname</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">surname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#surname</IRI>
+        <IRI>http://schema.org/familyName</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
