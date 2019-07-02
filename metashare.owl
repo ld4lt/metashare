@@ -209,6 +209,9 @@
         <DataProperty IRI="#availabilityStartDate"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#honorificPrefix"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#automatic"/>
     </Declaration>
     <Declaration>
@@ -246,6 +249,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#shorten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#branch"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO16642"/>
@@ -377,16 +383,25 @@
         <ObjectProperty IRI="#conversationalType"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#measure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Document"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#measure"/>
+        <NamedIndividual IRI="#veryHigh1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#extrinsic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#veryHigh1"/>
+        <NamedIndividual IRI="#github"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#linkedIn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
@@ -446,10 +461,10 @@
         <NamedIndividual IRI="#song"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp862"/>
+        <NamedIndividual IRI="#multilingual"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#multilingual"/>
+        <NamedIndividual IRI="#Cp862"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#yesH"/>
@@ -494,10 +509,16 @@
         <DataProperty IRI="#interpolated"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#organizationRole"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#minute1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ConversationalType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shortBio"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="datacite:arxiv"/>
@@ -521,13 +542,16 @@
         <NamedIndividual IRI="#x-windows-949"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hyperonym"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#workflowFile"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#hyperonym"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laboratory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#oai"/>
@@ -536,10 +560,10 @@
         <ObjectProperty IRI="#characterEncoding"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#personalDataIncluded"/>
+        <ObjectProperty IRI="#otherMedia"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#otherMedia"/>
+        <DataProperty IRI="#personalDataIncluded"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EncodingLevel"/>
@@ -554,25 +578,28 @@
         <DataProperty IRI="#algorithm"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#industrial"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#bodyPart"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semantics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#industrial"/>
+        <ObjectProperty IRI="#grammaticalPhenomenaCoverage"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#grammaticalPhenomenaCoverage"/>
+        <NamedIndividual IRI="#facebook"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp864"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#writtenLanguage"/>
+        <DataProperty IRI="#eyeMovement"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#eyeMovement"/>
+        <NamedIndividual IRI="#writtenLanguage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#tense"/>
@@ -632,19 +659,19 @@
         <NamedIndividual IRI="#ISCII91"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#signedInteger"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#restrictedAccess"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ModalityType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#signedInteger"/>
+        <NamedIndividual IRI="#daylight"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#runningEnvironmentDetails"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#daylight"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#webCam"/>
@@ -662,10 +689,10 @@
         <Class IRI="#Corpus"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#amount"/>
+        <DataProperty IRI="#intraannotatorAgreement"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#intraannotatorAgreement"/>
+        <DataProperty IRI="#amount"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LMF"/>
@@ -683,10 +710,10 @@
         <Class IRI="#BaseItem"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#lectureRoom"/>
+        <NamedIndividual IRI="#wordGame"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#wordGame"/>
+        <NamedIndividual IRI="#lectureRoom"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RightsStatementOrg"/>
@@ -719,10 +746,10 @@
         <NamedIndividual IRI="#isolatedWord"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#fiction"/>
+        <NamedIndividual IRI="#Cp866"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp866"/>
+        <NamedIndividual IRI="#fiction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#VersionType"/>
@@ -746,13 +773,13 @@
         <NamedIndividual IRI="#child"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="datacite:bibcode"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#sourceMetadataRecord"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mood"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="datacite:bibcode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Affiliation"/>
@@ -779,7 +806,13 @@
         <Class IRI="#Distribution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DivisionCategory"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Thesaurus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#department"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ParameterType"/>
@@ -863,10 +896,10 @@
         <Class IRI="#Availability"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isRelatedToDocument"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="xsd:date"/>
+        <ObjectProperty IRI="#isRelatedToDocument"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO30042"/>
@@ -884,6 +917,9 @@
         <ObjectProperty IRI="#sexOfParticipants"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#network"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SubjectClassificationScheme"/>
     </Declaration>
     <Declaration>
@@ -894,6 +930,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="foaf:primaryTopic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#systemEvaluator"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#geographicDistributionOfParticipants"/>
@@ -908,6 +947,9 @@
         <NamedIndividual IRI="#bigEndian"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#association"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#phoneme"/>
     </Declaration>
     <Declaration>
@@ -917,16 +959,16 @@
         <ObjectProperty IRI="#distributionForm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MULTEXT"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Cp868"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MediaType"/>
+        <NamedIndividual IRI="#MULTEXT"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#pragueTreebank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#distributionLocation"/>
@@ -968,10 +1010,10 @@
         <NamedIndividual IRI="#US-ASCII"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PreviousAnnotationTypesPolicy"/>
+        <NamedIndividual IRI="#MeSH_classification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MeSH_classification"/>
+        <Class IRI="#PreviousAnnotationTypesPolicy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#complex"/>
@@ -1019,6 +1061,9 @@
         <NamedIndividual IRI="#SemAF"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#fundingAuthority"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#microphone"/>
     </Declaration>
     <Declaration>
@@ -1026,6 +1071,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LTSupplier"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#annotationResource"/>
@@ -1052,13 +1100,13 @@
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MAF"/>
+        <NamedIndividual IRI="#intrinsic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Size"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#intrinsic"/>
+        <NamedIndividual IRI="#MAF"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO2022_CN_CNS"/>
@@ -1073,19 +1121,25 @@
         <NamedIndividual IRI="#Cp737"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#organizationBio"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DistributionForm"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LTUser"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#lavalierMicrophone"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#unit"/>
+        <NamedIndividual IRI="#Cp1145"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1145"/>
+        <NamedIndividual IRI="#unit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#chunking"/>
@@ -1106,10 +1160,10 @@
         <NamedIndividual IRI="#MTBF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#updated"/>
+        <NamedIndividual IRI="#noDerivatives"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#noDerivatives"/>
+        <NamedIndividual IRI="#updated"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#sentence1"/>
@@ -1136,10 +1190,10 @@
         <NamedIndividual IRI="#mpeg"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LicenceCategory"/>
+        <NamedIndividual IRI="#pennTreeBank"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#pennTreeBank"/>
+        <Class IRI="#LicenceCategory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#none2"/>
@@ -1148,19 +1202,19 @@
         <NamedIndividual IRI="#included"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#none4"/>
+        <NamedIndividual IRI="#AlvisNLP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#AlvisNLP"/>
+        <NamedIndividual IRI="#none4"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="skos:broadMatch"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#synchronizedWithImage"/>
+        <Class IRI="#LanguageDescriptionMediaPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LanguageDescriptionMediaPart"/>
+        <DataProperty IRI="#synchronizedWithImage"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#nGramFeature"/>
@@ -1227,6 +1281,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp273"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#languageServiceProvider"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1046"/>
@@ -1463,10 +1520,13 @@
         <NamedIndividual IRI="#Cp277"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CDMA"/>
+        <Class IRI="#Division"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#troponym"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CDMA"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#logo"/>
@@ -1478,13 +1538,16 @@
         <NamedIndividual IRI="#aLaw"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#mailingListName"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
         <DataProperty abbreviatedIRI="dct:alternative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#standardizationBody"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#npStructure"/>
@@ -1535,10 +1598,10 @@
         <NamedIndividual IRI="#emailText"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SemanticType"/>
+        <NamedIndividual IRI="#shot1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#shot1"/>
+        <Class IRI="#SemanticType"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#sizePerImageFormat"/>
@@ -1574,19 +1637,22 @@
         <DataProperty IRI="#availabilityEndDate"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hearingImpairment"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#fundingCountry"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#signLanguage"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hearingImpairment"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#multilingualSingleText"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#npRecognition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startup"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#durationOfEffectiveSpeech"/>
@@ -1623,6 +1689,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#dynamicElement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sme"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ontology"/>
@@ -1679,6 +1748,9 @@
         <NamedIndividual IRI="#Cp278"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#institute"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#creationEndDate"/>
     </Declaration>
     <Declaration>
@@ -1694,7 +1766,7 @@
         <NamedIndividual IRI="#closeTalkMicrophone"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#monologue"/>
+        <NamedIndividual IRI="#unit1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#female"/>
@@ -1703,13 +1775,16 @@
         <Class IRI="#ContentType"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#monologue"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#oggVorbis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SemAF-NE"/>
+        <NamedIndividual IRI="#office"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#office"/>
+        <NamedIndividual IRI="#SemAF-NE"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpeakingImpairmentOfParticipants"/>
@@ -1721,10 +1796,10 @@
         <Class IRI="#UserType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#scenarioType"/>
+        <NamedIndividual IRI="#nonFiction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#nonFiction"/>
+        <ObjectProperty IRI="#scenarioType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#licenceTermsName"/>
@@ -1740,6 +1815,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#person1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#countyOfRegistration"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#academicText"/>
@@ -1808,6 +1886,12 @@
         <NamedIndividual IRI="#omtdDocker"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#publication"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attachedLexiconPosition"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
     </Declaration>
     <Declaration>
@@ -1817,22 +1901,19 @@
         <ObjectProperty IRI="#replaces"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#publication"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#attachedLexiconPosition"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Big5-HKSCS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SceneIllumination"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#high2"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SceneIllumination"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#evaluationDetails"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publicOrganization"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ageRangeEnd"/>
@@ -1856,10 +1937,10 @@
         <Class IRI="#LexicalConceptualResourceTextPart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ISO-8859-2"/>
+        <ObjectProperty IRI="#typesystem"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#typesystem"/>
+        <NamedIndividual IRI="#ISO-8859-2"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#recordingQuality"/>
@@ -1901,10 +1982,10 @@
         <Class IRI="#DatasetDistributionForm"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#copyrightStatement"/>
+        <DataProperty IRI="#sensitiveDataDetails"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sensitiveDataDetails"/>
+        <DataProperty IRI="#copyrightStatement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PAROLE_topicClassification"/>
@@ -1917,6 +1998,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requiredHardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMediaAccountType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#definition"/>
@@ -2018,10 +2102,10 @@
         <ObjectProperty IRI="#speakingImpairmentOfParticipants"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#unitOfMeasureMetric"/>
+        <ObjectProperty IRI="#participant"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#participant"/>
+        <DataProperty IRI="#unitOfMeasureMetric"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Wordlist"/>
@@ -2030,7 +2114,7 @@
         <NamedIndividual IRI="#word2"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#fee"/>
+        <DataProperty IRI="#numberOfTrainedSpeakers"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WebServiceType"/>
@@ -2039,7 +2123,7 @@
         <NamedIndividual IRI="#semanticFeature"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#numberOfTrainedSpeakers"/>
+        <DataProperty IRI="#fee"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#expression"/>
@@ -2048,10 +2132,10 @@
         <NamedIndividual IRI="#generalDocumenation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TextGenre"/>
+        <NamedIndividual IRI="#EAGLES"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EAGLES"/>
+        <Class IRI="#TextGenre"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-15"/>
@@ -2096,10 +2180,16 @@
         <NamedIndividual IRI="#ISDN"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#discipline"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#resolution"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#syllable1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDivision"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#rasterOrVectorGraphics"/>
@@ -2132,6 +2222,9 @@
         <NamedIndividual IRI="#statisticalProperty"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#OrganizationLegalStatus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BodyPart"/>
     </Declaration>
     <Declaration>
@@ -2141,19 +2234,19 @@
         <Class IRI="#NoiseLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-1250"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#x-windows-950"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#domainClassificationScheme"/>
+        <NamedIndividual IRI="#windows-1250"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#REST"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="datacite:OrganizationIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#domainClassificationScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#microphone1"/>
@@ -2222,6 +2315,9 @@
         <NamedIndividual IRI="#keep"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LTIntegrator"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#speech"/>
     </Declaration>
     <Declaration>
@@ -2288,10 +2384,10 @@
         <NamedIndividual IRI="#data"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#annotationModeDetails"/>
+        <NamedIndividual IRI="#Shift_JIS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Shift_JIS"/>
+        <DataProperty IRI="#annotationModeDetails"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mixedS"/>
@@ -2315,10 +2411,10 @@
         <NamedIndividual IRI="#sound"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syllable2"/>
+        <Class IRI="#ScenarioType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ScenarioType"/>
+        <NamedIndividual IRI="#syllable2"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LanguageModel"/>
@@ -2333,16 +2429,22 @@
         <NamedIndividual IRI="#teenager"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#hand"/>
+        <NamedIndividual IRI="#publicationForCitation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#publicationForCitation"/>
+        <NamedIndividual IRI="#hand"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-4"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#homepage"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#consultingFirm"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isEvaluatedBy"/>
@@ -2354,13 +2456,16 @@
         <ObjectProperty IRI="#validationMode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#windows-1251"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#flac"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#windows-1251"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#mixed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMediaAccount"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#os-independent"/>
@@ -2384,10 +2489,10 @@
         <NamedIndividual IRI="#auxiliary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp871"/>
+        <NamedIndividual IRI="#syntacticUnit1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#syntacticUnit1"/>
+        <NamedIndividual IRI="#Cp871"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#hardDisk"/>
@@ -2396,10 +2501,10 @@
         <ObjectProperty IRI="#validationType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#discussion"/>
+        <DataProperty IRI="#sizeHeight"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sizeHeight"/>
+        <NamedIndividual IRI="#discussion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isDescribedBy"/>
@@ -2516,10 +2621,10 @@
         <DataProperty IRI="#sourceChannelDetails"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="skos:concept"/>
+        <Class IRI="#UsageType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UsageType"/>
+        <Class abbreviatedIRI="skos:concept"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Resolution"/>
@@ -2555,10 +2660,10 @@
         <NamedIndividual IRI="#information"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#prompted"/>
+        <ObjectProperty IRI="#capturingEnvironment"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#capturingEnvironment"/>
+        <NamedIndividual IRI="#prompted"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRelatedToActor"/>
@@ -2759,9 +2864,6 @@
         <NamedIndividual IRI="#trainingUse"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#departmentName"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#flash"/>
     </Declaration>
     <Declaration>
@@ -2816,10 +2918,10 @@
         <NamedIndividual IRI="#administrativeText"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SegmentationLevel"/>
+        <NamedIndividual IRI="#attached"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#attached"/>
+        <Class IRI="#SegmentationLevel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DVD-R"/>
@@ -2861,13 +2963,13 @@
         <NamedIndividual IRI="#tapeVHS"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#timeCoverage"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#landingPage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#medium1"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#timeCoverage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#webcam"/>
@@ -2891,10 +2993,10 @@
         <NamedIndividual IRI="#Big5_Solaris"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isCombinedWith"/>
+        <NamedIndividual abbreviatedIRI="datacite:urn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="datacite:urn"/>
+        <ObjectProperty IRI="#isCombinedWith"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SpeechInfluence"/>
@@ -2906,16 +3008,19 @@
         <Class IRI="#ToolService"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BNC_textTypeClassification"/>
+        <NamedIndividual IRI="#crossTalk"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#address"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#crossTalk"/>
+        <NamedIndividual IRI="#BNC_textTypeClassification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#semiInteractive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memberOfAssociation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#modalityType"/>
@@ -2963,6 +3068,9 @@
         <NamedIndividual IRI="#issn"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#academicInstitution"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnnotatedVersion"/>
     </Declaration>
     <Declaration>
@@ -2999,10 +3107,10 @@
         <Class IRI="#CorpusMediaPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProjectIdentifierScheme"/>
+        <Class IRI="#StaticElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StaticElement"/>
+        <Class IRI="#ProjectIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#none"/>
@@ -3011,10 +3119,10 @@
         <NamedIndividual IRI="#faceToFaceConversation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacGreek"/>
+        <NamedIndividual IRI="#phrase"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#phrase"/>
+        <NamedIndividual IRI="#MacGreek"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#full"/>
@@ -3048,6 +3156,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#VocalTractCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#faculty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isDisplayedBy"/>
@@ -3132,6 +3243,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organizationLegalStatus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#syntacticUnit"/>
@@ -3257,10 +3371,10 @@
         <NamedIndividual IRI="#dialogue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RecordingDeviceType"/>
+        <NamedIndividual IRI="#MacDingbat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MacDingbat"/>
+        <Class IRI="#RecordingDeviceType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1112"/>
@@ -3281,10 +3395,10 @@
         <NamedIndividual IRI="#titlesParsing"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#formalism"/>
+        <NamedIndividual IRI="#comparable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#comparable"/>
+        <DataProperty IRI="#formalism"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AnnotatedElement"/>
@@ -3302,10 +3416,10 @@
         <ObjectProperty IRI="#isReviewedBy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#frogStory"/>
+        <NamedIndividual IRI="#Cp858"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp858"/>
+        <NamedIndividual IRI="#frogStory"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isCreatedBy"/>
@@ -3329,16 +3443,19 @@
         <NamedIndividual IRI="#veryLow1"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#image3"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#mispronunciation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#token1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#byte"/>
+        <ObjectProperty IRI="#register"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#register"/>
+        <NamedIndividual IRI="#byte"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#metaShare"/>
@@ -3374,16 +3491,22 @@
         <DataProperty IRI="#eventDescription"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#nonNative"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MetadataRecord"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#textIncludedInVideo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#nonNative"/>
+        <DataProperty IRI="#requiresSoftware"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#requiresSoftware"/>
+        <NamedIndividual IRI="#school"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#divisionName"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp921"/>
@@ -3395,10 +3518,10 @@
         <NamedIndividual IRI="#assisted"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#laryngograph1"/>
+        <ObjectProperty IRI="#evaluationLevel"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#evaluationLevel"/>
+        <NamedIndividual IRI="#laryngograph1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1025"/>
@@ -3473,22 +3596,25 @@
         <Class IRI="#Quality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#LAF"/>
+        <NamedIndividual IRI="#example1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#example1"/>
+        <NamedIndividual IRI="#LAF"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#impact"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#usageReport"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#telephoneNumber"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#usageReport"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Metric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#researcher"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MultilingualityType"/>
@@ -3497,7 +3623,13 @@
         <NamedIndividual IRI="#SemAF-DS"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#gitlab"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp948"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#socialMediaAccount"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#parsing"/>
@@ -3530,13 +3662,13 @@
         <NamedIndividual IRI="#anaphoraResolution"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cp1144"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#turn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#resolutionStandard"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Cp1144"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp284"/>
@@ -3548,10 +3680,10 @@
         <NamedIndividual IRI="#RGB"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComputationalLexicon"/>
+        <NamedIndividual IRI="#dialect"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#dialect"/>
+        <Class IRI="#ComputationalLexicon"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#readSpeech"/>
@@ -3650,10 +3782,10 @@
         <Class IRI="#Project"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MetadataRecordIdentifier"/>
+        <Class IRI="#RecordingQuality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RecordingQuality"/>
+        <Class IRI="#MetadataRecordIdentifier"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LanguageVariety"/>
@@ -3674,10 +3806,10 @@
         <NamedIndividual IRI="#content"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MS_audioGenreClassification"/>
+        <DataProperty IRI="#sensorTechnology"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#sensorTechnology"/>
+        <NamedIndividual IRI="#MS_audioGenreClassification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO12620"/>
@@ -3692,10 +3824,10 @@
         <NamedIndividual IRI="#collocation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#relation"/>
+        <Class IRI="#AccessRightsStatement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AccessRightsStatement"/>
+        <ObjectProperty IRI="#relation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp1142"/>
@@ -3705,6 +3837,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Validation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#divisionCategory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#studio"/>
@@ -3729,6 +3864,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#voice1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#twitter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MS874"/>
@@ -3809,10 +3947,10 @@
         <Class abbreviatedIRI="datacite:FunderIdentifierScheme"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#incorporate"/>
+        <NamedIndividual IRI="#Cp1140"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp1140"/>
+        <NamedIndividual IRI="#incorporate"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="datacite:doi"/>
@@ -3821,13 +3959,13 @@
         <ObjectProperty IRI="#noiseLevel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#corpus"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#revision"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#corpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MacCroatian"/>
@@ -3902,6 +4040,9 @@
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#subsidiary"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#integer"/>
     </Declaration>
     <Declaration>
@@ -3926,10 +4067,13 @@
         <NamedIndividual IRI="#case"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isCitedBy"/>
+        <NamedIndividual IRI="#dataEvaluator"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCitedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#evaluationMeasure"/>
@@ -3944,16 +4088,19 @@
         <NamedIndividual IRI="#boolean"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#durationUnit"/>
+        <NamedIndividual IRI="#onlineEducationalGame"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#onlineEducationalGame"/>
+        <ObjectProperty IRI="#durationUnit"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#conditionOfUse"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#questionAnswer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#socialMediaAccountType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#syntacticoSemanticLink"/>
@@ -4004,10 +4151,10 @@
         <ObjectProperty IRI="#encodingLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#foot"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="rdf:langString"/>
+        <NamedIndividual IRI="#foot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DomainIdentifier"/>
@@ -4025,6 +4172,9 @@
         <NamedIndividual IRI="#eventType"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#LTArea"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#metadataLastDateUpdated"/>
     </Declaration>
     <Declaration>
@@ -4032,6 +4182,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="datacite:Identifier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#society"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#evaluated"/>
@@ -4070,10 +4223,10 @@
         <NamedIndividual IRI="#modify"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#animalVocalization"/>
+        <NamedIndividual IRI="#EUC-JP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EUC-JP"/>
+        <NamedIndividual IRI="#animalVocalization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#text"/>
@@ -4091,10 +4244,10 @@
         <NamedIndividual IRI="#concept"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#coordination"/>
+        <NamedIndividual IRI="#samples"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#samples"/>
+        <NamedIndividual IRI="#coordination"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#backgroundNoise"/>
@@ -4199,10 +4352,13 @@
         <NamedIndividual IRI="#text1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#GSM"/>
+        <NamedIndividual IRI="#group"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRelatedToProject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GSM"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#frameRate"/>
@@ -4220,10 +4376,13 @@
         <NamedIndividual IRI="#TST-CENTRALE"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sizePerValidation"/>
+        <ObjectProperty IRI="#isDivisionOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GBK"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sizePerValidation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RelatedLexiconType"/>
@@ -4236,6 +4395,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#organizationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#serviceOffered"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#android"/>
@@ -4254,6 +4416,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#trainingCorpusDetails"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#website"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#country"/>
@@ -4379,13 +4544,19 @@
         <NamedIndividual IRI="#tb"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#languageName"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#galaxyWorkflow"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#languageName"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#blackBox"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#largeCompany"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Typesystem"/>
@@ -4394,22 +4565,22 @@
         <NamedIndividual IRI="#overlapping"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#InkML"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#evaluationCriterion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#parallel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#InkML"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#blogText"/>
+        <NamedIndividual IRI="#DAT"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DAT"/>
+        <NamedIndividual IRI="#blogText"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#quantization"/>
@@ -5699,6 +5870,18 @@
         <NamedIndividual IRI="#LMF"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#LTIntegrator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#LTSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#LTUser"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Metric"/>
         <NamedIndividual IRI="#MAD"/>
     </ClassAssertion>
@@ -6003,6 +6186,10 @@
         <NamedIndividual IRI="#academic"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#academicInstitution"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TextType"/>
         <NamedIndividual IRI="#academicText"/>
     </ClassAssertion>
@@ -6099,6 +6286,10 @@
         <NamedIndividual IRI="#assisted"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#association"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#CompressionName"/>
         <NamedIndividual IRI="#atrac"/>
     </ClassAssertion>
@@ -6185,6 +6376,10 @@
     <ClassAssertion>
         <Class IRI="#ParameterType"/>
         <NamedIndividual IRI="#boolean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#branch"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SpeechGenre"/>
@@ -6315,6 +6510,10 @@
         <NamedIndividual IRI="#conferenceRoom"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#consultingFirm"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ValidationType"/>
         <NamedIndividual IRI="#content"/>
     </ClassAssertion>
@@ -6351,6 +6550,10 @@
         <NamedIndividual IRI="#data"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#dataEvaluator"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SceneIllumination"/>
         <NamedIndividual IRI="#daylight"/>
     </ClassAssertion>
@@ -6377,6 +6580,10 @@
     <ClassAssertion>
         <Class IRI="#VocalTractCondition"/>
         <NamedIndividual IRI="#dentalProsthesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#department"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#MorphologicalType"/>
@@ -6523,8 +6730,16 @@
         <NamedIndividual IRI="#faceToFaceConversation"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
+        <NamedIndividual IRI="#facebook"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ModalityType"/>
         <NamedIndividual IRI="#facialExpression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#faculty"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CapturingDeviceType"/>
@@ -6615,6 +6830,10 @@
         <NamedIndividual IRI="#full"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#fundingAuthority"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SoftwareDistributionForm"/>
         <NamedIndividual IRI="#galaxyWorkflow"/>
     </ClassAssertion>
@@ -6635,6 +6854,14 @@
         <NamedIndividual IRI="#generation"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
+        <NamedIndividual IRI="#github"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
+        <NamedIndividual IRI="#gitlab"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EvaluationType"/>
         <NamedIndividual IRI="#glassBox"/>
     </ClassAssertion>
@@ -6649,6 +6876,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="datacite:OrganizationIdentifierScheme"/>
         <NamedIndividual IRI="#grid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#group"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#DocumentationType"/>
@@ -6771,6 +7002,10 @@
         <NamedIndividual IRI="#installationManual"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#institute"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TextGenre"/>
         <NamedIndividual IRI="#instruction"/>
     </ClassAssertion>
@@ -6859,12 +7094,24 @@
         <NamedIndividual IRI="#keyword1"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#laboratory"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ProcessingResourceType"/>
         <NamedIndividual IRI="#languageDescription"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ConditionOfUse"/>
         <NamedIndividual IRI="#languageEngineeringResearchUse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#languageServiceProvider"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#largeCompany"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CapturingDeviceType"/>
@@ -6937,6 +7184,10 @@
     <ClassAssertion>
         <Class IRI="#SignalEncoding"/>
         <NamedIndividual IRI="#linearPCM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
+        <NamedIndividual IRI="#linkedIn"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OperatingSystem"/>
@@ -7163,6 +7414,10 @@
         <NamedIndividual IRI="#neologism"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#network"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SpeakingImpairmentOfParticipants"/>
         <NamedIndividual IRI="#no"/>
     </ClassAssertion>
@@ -7355,6 +7610,10 @@
         <NamedIndividual IRI="#other"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#other"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DomainClassificationScheme"/>
         <NamedIndividual IRI="#other"/>
     </ClassAssertion>
@@ -7427,6 +7686,14 @@
         <NamedIndividual IRI="#other"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#other"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ParameterType"/>
         <NamedIndividual IRI="#other"/>
     </ClassAssertion>
@@ -7464,6 +7731,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SizeUnit"/>
+        <NamedIndividual IRI="#other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
         <NamedIndividual IRI="#other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7659,6 +7930,10 @@
         <NamedIndividual IRI="#prosodicBoundary"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#publicOrganization"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DocumentationType"/>
         <NamedIndividual IRI="#publication"/>
     </ClassAssertion>
@@ -7723,6 +7998,10 @@
         <NamedIndividual IRI="#researchUse"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#researcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#OMTDShareRightsStatement"/>
         <NamedIndividual IRI="#restrictedAccess"/>
     </ClassAssertion>
@@ -7749,6 +8028,10 @@
     <ClassAssertion>
         <Class IRI="#SegmentationLevel"/>
         <NamedIndividual IRI="#scene"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#school"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="datacite:PersonalIdentifierScheme"/>
@@ -7851,6 +8134,14 @@
         <NamedIndividual IRI="#sleepDeprivation"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#sme"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationLegalStatus"/>
+        <NamedIndividual IRI="#society"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Audience"/>
         <NamedIndividual IRI="#some"/>
     </ClassAssertion>
@@ -7903,6 +8194,10 @@
         <NamedIndividual IRI="#spontaneous"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#standardizationBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ContentType"/>
         <NamedIndividual IRI="#statisticalProperty"/>
     </ClassAssertion>
@@ -7925,6 +8220,10 @@
     <ClassAssertion>
         <Class IRI="#VersionType"/>
         <NamedIndividual IRI="#submitted"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#subsidiary"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#TextType"/>
@@ -7973,6 +8272,10 @@
     <ClassAssertion>
         <Class IRI="#EncodingLevel"/>
         <NamedIndividual IRI="#syntax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrganizationRole"/>
+        <NamedIndividual IRI="#systemEvaluator"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#RecordingDeviceType"/>
@@ -8099,6 +8402,10 @@
         <NamedIndividual IRI="#tweet"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SocialMediaAccountType"/>
+        <NamedIndividual IRI="#twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Availability"/>
         <NamedIndividual IRI="#underNegotiation"/>
     </ClassAssertion>
@@ -8109,6 +8416,10 @@
     <ClassAssertion>
         <Class IRI="#SizeUnit"/>
         <NamedIndividual IRI="#unit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DivisionCategory"/>
+        <NamedIndividual IRI="#unit1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#OperatingSystem"/>
@@ -9386,6 +9697,10 @@
         <ObjectProperty IRI="#isConvertedVersionOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDivision"/>
+        <ObjectProperty IRI="#isDivisionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasOriginalSource"/>
         <ObjectProperty IRI="#hasOutcome"/>
     </InverseObjectProperties>
@@ -9406,6 +9721,14 @@
         <ObjectProperty IRI="#replaces"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LTArea"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#accessRightsStatement"/>
         <Class IRI="#Distribution"/>
     </ObjectPropertyDomain>
@@ -9416,6 +9739,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#actualUse"/>
         <Class IRI="#LanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class IRI="#Affiliation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#affiliation"/>
@@ -9568,6 +9895,13 @@
         <Class IRI="#Actor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#countyOfRegistration"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#creationMode"/>
         <ObjectUnionOf>
             <Class IRI="#LexicalConceptualResource"/>
@@ -9604,15 +9938,22 @@
         <Class IRI="#Distribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#divisionCategory"/>
+        <Class IRI="#Division"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#documentationType"/>
         <Class IRI="#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#domain"/>
         <ObjectUnionOf>
+            <Class IRI="#Division"/>
             <Class IRI="#InputContentResource"/>
             <Class IRI="#LanguageResource"/>
+            <Class IRI="#Organization"/>
             <Class IRI="#OutputResource"/>
+            <Class IRI="#Person"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -9732,6 +10073,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasConvertedVersion"/>
         <Class IRI="#DataLanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDivision"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMetadata"/>
@@ -9859,6 +10204,10 @@
             <Class IRI="#DataLanguageResource"/>
             <Class IRI="#MediaPart"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDivisionOf"/>
+        <Class IRI="#Division"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDocumentedBy"/>
@@ -10009,6 +10358,14 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memberOfAssociation"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#metadataCreator"/>
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyDomain>
@@ -10066,6 +10423,20 @@
         <ObjectUnionOf>
             <Class IRI="#Actor"/>
             <Class IRI="#Affiliation"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organizationLegalStatus"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organizationRole"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -10281,6 +10652,18 @@
         <Class IRI="#Size"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#socialMediaAccount"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#socialMediaAccountType"/>
+        <Class IRI="#SocialMediaAccount"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#sourceChannel"/>
         <ObjectUnionOf>
             <Class IRI="#CorpusAudioPart"/>
@@ -10452,6 +10835,10 @@
         <Class IRI="#ActualUse"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#affiliatedOrganization"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#affiliation"/>
         <Class IRI="#Affiliation"/>
     </ObjectPropertyRange>
@@ -10567,6 +10954,10 @@
         <Class IRI="#Country"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#countyOfRegistration"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#creationMode"/>
         <Class IRI="#ProcessMode"/>
     </ObjectPropertyRange>
@@ -10599,6 +10990,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#distributionRightsHolder"/>
         <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#divisionCategory"/>
+        <Class IRI="#DivisionCategory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#documentationType"/>
@@ -10717,6 +11112,10 @@
         <Class IRI="#DataLanguageResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDivision"/>
+        <Class IRI="#Division"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasMetadata"/>
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyRange>
@@ -10819,6 +11218,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isDisplayedBy"/>
         <Class IRI="#ToolService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDivisionOf"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isDocumentedBy"/>
@@ -10953,6 +11356,10 @@
         <Class IRI="#MediaType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#memberOfAssociation"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#membershipInstitution"/>
         <Class IRI="#MembershipInstitution"/>
     </ObjectPropertyRange>
@@ -11003,6 +11410,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#organization"/>
         <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organizationLegalStatus"/>
+        <Class IRI="#OrganizationLegalStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organizationRole"/>
+        <Class IRI="#OrganizationRole"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#origin"/>
@@ -11228,6 +11643,14 @@
         <Class IRI="#SizeUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#socialMediaAccount"/>
+        <Class IRI="#SocialMediaAccount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#socialMediaAccountType"/>
+        <Class IRI="#SocialMediaAccountType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#sourceChannel"/>
         <Class IRI="#SourceChannel"/>
     </ObjectPropertyRange>
@@ -11380,6 +11803,10 @@
         <DataProperty IRI="#url"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#homepage"/>
+        <DataProperty IRI="#url"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#landingPage"/>
         <DataProperty IRI="#url"/>
     </SubDataPropertyOf>
@@ -11390,6 +11817,10 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#licenceTermsURL"/>
         <DataProperty IRI="#url"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#organizationBio"/>
+        <DataProperty abbreviatedIRI="dct:description"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#organizationName"/>
@@ -11424,8 +11855,16 @@
         <DataProperty IRI="#url"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#shortBio"/>
+        <DataProperty abbreviatedIRI="dct:description"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#version"/>
         <DataProperty abbreviatedIRI="dct:hasVersion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#website"/>
+        <DataProperty IRI="#url"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#accessLocation"/>
@@ -11617,10 +12056,6 @@
         <Class IRI="#Parameter"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#departmentName"/>
-        <Class IRI="#Organization"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#description"/>
         <Class IRI="#LanguageResource"/>
     </DataPropertyDomain>
@@ -11642,12 +12077,23 @@
         <Class IRI="#ToolService"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#discipline"/>
+        <ObjectUnionOf>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#distractor"/>
         <Class IRI="#DynamicElement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#distributionLocation"/>
         <Class IRI="#Distribution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#divisionName"/>
+        <Class IRI="#Division"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#documentationBibliographicData"/>
@@ -11664,6 +12110,8 @@
     <DataPropertyDomain>
         <DataProperty IRI="#email"/>
         <ObjectUnionOf>
+            <Class IRI="#Affiliation"/>
+            <Class IRI="#Division"/>
             <Class IRI="#Organization"/>
             <Class IRI="#Person"/>
         </ObjectUnionOf>
@@ -11709,6 +12157,7 @@
     <DataPropertyDomain>
         <DataProperty IRI="#faxNumber"/>
         <ObjectUnionOf>
+            <Class IRI="#Division"/>
             <Class IRI="#Organization"/>
             <Class IRI="#Person"/>
         </ObjectUnionOf>
@@ -11776,6 +12225,18 @@
         <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#homepage"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#honorificPrefix"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image3"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#implementationLanguage"/>
         <Class IRI="#ToolService"/>
     </DataPropertyDomain>
@@ -11808,7 +12269,12 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#keyword"/>
-        <Class IRI="#LanguageResource"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#LanguageResource"/>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#landingPage"/>
@@ -12097,8 +12563,20 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#serviceOffered"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#shallowness"/>
         <Class IRI="#LanguageDescription"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shortBio"/>
+        <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#sizeHeight"/>
@@ -12137,6 +12615,13 @@
         <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#startup"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#surname"/>
         <Class IRI="#Person"/>
     </DataPropertyDomain>
@@ -12163,6 +12648,7 @@
     <DataPropertyDomain>
         <DataProperty IRI="#telephoneNumber"/>
         <ObjectUnionOf>
+            <Class IRI="#Division"/>
             <Class IRI="#Organization"/>
             <Class IRI="#Person"/>
         </ObjectUnionOf>
@@ -12254,6 +12740,13 @@
     <DataPropertyDomain>
         <DataProperty IRI="#versionDate"/>
         <Class IRI="#LanguageResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#website"/>
+        <ObjectUnionOf>
+            <Class IRI="#Division"/>
+            <Class IRI="#Organization"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#weight"/>
@@ -12419,10 +12912,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#departmentName"/>
-        <Datatype abbreviatedIRI="rdf:langString"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#description"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -12445,6 +12934,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#distributionLocation"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#divisionName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#documentationBibliographicData"/>
@@ -12553,6 +13046,18 @@
     <DataPropertyRange>
         <DataProperty IRI="#height"/>
         <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#homepage"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#honorificPrefix"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#image3"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#implementationLanguage"/>
@@ -12843,7 +13348,15 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#serviceOffered"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#shallowness"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shortBio"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -12873,6 +13386,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#speakingImpairment"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startup"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#surname"/>
@@ -12969,6 +13486,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#versionDate"/>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#website"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#weight"/>
@@ -13116,6 +13637,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ActualUse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Actual use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Affiliation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information the organization that a person works for (e.g. a company) or is affiliated with (e.g. university, etc.) and the data that are specific to this relation (e.g. position, professional contact information, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Affiliation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#Affiliation</IRI>
+        <IRI>http://schema.org/affiliation</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13716,6 +14252,21 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Division</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A section of a larger organization (e.g. school, faculty, department of a university, department or branch of a company, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DivisionCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A controlled vocabulary used for classifying divisions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DivisionCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Division category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Document</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A piece of written, printed, or electronic matter that is primarily intended for reading</Literal>
     </AnnotationAssertion>
@@ -14238,6 +14789,51 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LRTIdentifierScheme</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LRT identifier scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LTArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Technology area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LTArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a Language Technology-related area that a person or organization is involved or active in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LTArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LT area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LTIntegrator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Technology integrator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LTIntegrator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LT integrator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LTSupplier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Technology supplier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LTSupplier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LT supplier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#LTUser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Technology user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LTUser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LT user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14898,6 +15494,26 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationLegalStatus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification vocabulary for organizations as legal entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OrganizationLegalStatus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organization legal status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrganizationRole</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A vocabulary for classifying organizations according to their role in relation to Language Technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OrganizationRole</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organization role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Origin</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation of the language of the group of participants with respect to the acquisition stage</Literal>
     </AnnotationAssertion>
@@ -15355,6 +15971,26 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SizeUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Size unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialMediaAccount</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The details for the social media account of a person or organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialMediaAccount</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Social media account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialMediaAccountType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A list of social media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialMediaAccountType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Social media account type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -15978,6 +16614,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#academicInstitution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">academic institution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#academicText</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">academic text</Literal>
     </AnnotationAssertion>
@@ -16077,6 +16718,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">address</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#address</IRI>
+        <IRI>http://schema.org/streetAddress</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#administrativeText</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">administrative text</Literal>
@@ -16090,6 +16736,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#advertising</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">advertising</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#affiliatedOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the organization that a person is affiliated with or works for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#affiliatedOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">affiliated organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -16408,6 +17064,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#association</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#atrac</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">altrac</Literal>
     </AnnotationAssertion>
@@ -16680,6 +17341,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#boolean</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">boolean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#branch</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">branch</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17068,6 +17734,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conforms to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consultingFirm</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">consulting firm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#contact</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the data of the person/organization/group that can be contacted for information about a language resource</Literal>
@@ -17153,6 +17824,21 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#country</IRI>
+        <IRI>http://schema.org/addressCountry</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#countyOfRegistration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the country in which a company has been first registered as a legal entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#countyOfRegistration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">country of registration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#creationDetails</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides additional information on the creation of a language resource</Literal>
@@ -17228,6 +17914,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dataEvaluator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">data evaluator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#dataFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the format(s) of a data resource</Literal>
@@ -17293,14 +17984,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dental prosthesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#departmentName</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the department or unit (e.g. specific university faculty/department, department/unit of a research organization or private company etc.)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#departmentName</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">department name</Literal>
+        <IRI>#department</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">department</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17413,6 +18099,26 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">diphone</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">area of expertise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>#discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">research area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a field of study or research area that a person or organization is expert in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#discipline</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#discourseMarker</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">discourse marker</Literal>
@@ -17476,6 +18182,26 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#distributionRightsHolder</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distribution rights holder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#divisionCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classifies the division of an organization according to a controlled vocabulary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#divisionCategory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">division category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#divisionName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name of the department or unit (e.g. specific university faculty/department, department/unit of a research organization or private company etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#divisionName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">division name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17963,6 +18689,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">face view</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#facebook</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">facebook</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#facialExpression</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;ModalityType&apos; for facial expressions represented in a language resource</Literal>
@@ -17981,6 +18712,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#factor</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#faculty</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">faculty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18198,6 +18934,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">funder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fundingAuthority</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">funding authority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#fundingCountry</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the name of the funding country, in case of national funding as mentioned in ISO3166</Literal>
@@ -18313,6 +19054,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gesture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#github</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">github</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#gitlab</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gitlab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#givenName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the given name (also known as &quot;first name&quot;) of a person</Literal>
@@ -18383,6 +19134,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GRID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#group</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#guidelines</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to the document used as guidelines for the creation or annotation of a corpus</Literal>
@@ -18446,6 +19202,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasConvertedVersion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to LR B that has been used for creating LR A (the one being described) through a conversion procedure, e.g. a PDF to text conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDivision</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an organization to the division(s) it consists of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDivision</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has division</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18573,6 +19339,36 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#homepage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a URL that includes information on a person (e.g. CV, publications, communication information, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#homepage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">home page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#honorificPrefix</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a honorific prefix (or  title) such as Dr./Mr/Ms. that precedes the name of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#honorificPrefix</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">honorific prefix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#honorificPrefix</IRI>
+        <IRI>http://schema.org/honorificPrefix</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#honorificPrefix</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hour</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hour</Literal>
@@ -18636,6 +19432,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#image2</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#image3</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a URL with an image file (e.g. a photo, or cartoon image) that is used for identifying a person (e.g. on a home page)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#image3</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#image3</IRI>
+        <IRI>http://schema.org/image</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18736,6 +19547,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#installationManual</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">installation manual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#institute</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">institute</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19061,6 +19877,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isDisplayedBy</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is displayed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDivisionOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a division to the organization to which it is associated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDivisionOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is division of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
@@ -19435,7 +20261,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#keyword</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a word or phrase considered important for the description of a language resource and thus used to index or classify it</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a word or phrase considered important for the description of a language resource, person or organization and thus used to index or classify it</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19451,6 +20277,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#keyword1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">keyword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#laboratory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">laboratory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -19528,6 +20359,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">need to see language ontologies vs. BCP47 tags</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#languageServiceProvider</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language service provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#languageVariety</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relates a language resource that contains segments in a language variety (e.g. dialect, jargon) to it</Literal>
@@ -19561,6 +20397,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#languageVarietyType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language variety type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#largeCompany</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">large company</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19769,6 +20610,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#linkedIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">linkedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#linux</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Linux</Literal>
     </AnnotationAssertion>
@@ -19971,6 +20817,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#member</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#memberOfAssociation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to an association or network that the organization or peron is member of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#memberOfAssociation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">member of association</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20339,6 +21195,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#network</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#no</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">no</Literal>
     </AnnotationAssertion>
@@ -20679,6 +21540,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organizationBio</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a short free-text account that provides information on an organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#organizationBio</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">organization description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#organizationDescription</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides description of the organizations that may appear in the image corpus</Literal>
     </AnnotationAssertion>
@@ -20689,6 +21560,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organizationLegalStatus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classifies an organization according to its legal status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#organizationLegalStatus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">organization legal status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#organizationName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The full name of an organization</Literal>
     </AnnotationAssertion>
@@ -20696,6 +21577,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#organizationName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">organization name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organizationRole</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classifies an organization according to its role/mission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#organizationRole</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">organization role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21258,6 +22149,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">prosodic boundary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publicOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">public organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#publication</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;Documentation type&apos; used for published documents about a language resource (mainly meant for documents that describe the resource itself rather than its deployment)</Literal>
@@ -21455,6 +22351,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#region</IRI>
+        <IRI>http://schema.org/addressRegion</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#register</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource</Literal>
@@ -21578,6 +22479,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#researchUse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">add ODRL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#researcher</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">researcher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21785,6 +22691,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">needed for audio?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#school</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">school</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#scopusId</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for personIdentifierSchemeName, referring to the Scopus identifier for authors (https://www.scopus.com)</Literal>
@@ -21916,6 +22827,16 @@ should we also differentiate between distributions? e.g. a csv published at a di
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#serviceOffered</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lists the service(s) offered by an organization or person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#serviceOffered</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">service offered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sex</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the sex of a participant (either of the two major forms of individuals that occur in many species and that are distinguished respectively as female or male especially on the basis of their reproductive organs and structures [https://www.merriam-webster.com/dictionary/sex])</Literal>
     </AnnotationAssertion>
@@ -21968,6 +22889,16 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>#shareAlike</IRI>
         <AnonymousIndividual nodeID="_:genid9"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#shortBio</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a free text that can be used as a short bio for a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#shortBio</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">short bio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22180,6 +23111,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sleep deprivation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SME</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#smokingHabit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on whether the participant smokes and on his/her smoking habits in general</Literal>
@@ -22198,6 +23134,21 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#smoothing</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">smoothing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#socialMediaAccount</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the social media account details of a person or organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#socialMediaAccount</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#society</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">society</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22375,6 +23326,21 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spontaneous</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#standardizationBody</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">standardization body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startup</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether a company is a startup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startup</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">startup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#staticElement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Groups information on the static elements visible on images</Literal>
@@ -22433,6 +23399,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#submitted</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">submitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subsidiary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subsidiary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22573,6 +23544,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#syntax</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">syntax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#systemEvaluator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">system evaluator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22855,6 +23831,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tweet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#twitter</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">twitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#typeOfElement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of objects or people represented in the video or image part of the resource</Literal>
@@ -22922,6 +23903,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#unit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unit1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -23336,6 +24322,21 @@ should we also differentiate between distributions? e.g. a csv published at a di
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#website</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a URL that acts as the primary page (like a table of contents) introducing information about an organization (e.g. products, contact information, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#website</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">website</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#website</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">home page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#weight</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the weight of the participant</Literal>
     </AnnotationAssertion>
@@ -23443,6 +24444,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#zipCode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">zip code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <IRI>#zipCode</IRI>
+        <IRI>http://schema.org/postalCode</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
