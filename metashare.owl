@@ -980,6 +980,9 @@
         <Class IRI="#LanguageDescription"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#sourceOfMetadataRecord"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#second1"/>
     </Declaration>
     <Declaration>
@@ -1269,9 +1272,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ISO-8859-9"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#collectedFrom"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#artifactPart"/>
@@ -10059,10 +10059,6 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#collectedFrom"/>
-        <Class IRI="#MetadataRecord"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#colourSpace"/>
         <ObjectUnionOf>
             <Class IRI="#ImageFormat"/>
@@ -10837,6 +10833,10 @@
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sourceOfMetadataRecord"/>
+        <Class IRI="#MetadataRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#speakingImpairmentOfParticipants"/>
         <ObjectUnionOf>
             <Class IRI="#CorpusAudioPart"/>
@@ -11085,13 +11085,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#characterEncoding"/>
         <Class IRI="#CharacterEncoding"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#collectedFrom"/>
-        <ObjectUnionOf>
-            <Class IRI="#Person"/>
-            <Class abbreviatedIRI="dcat:Catalog"/>
-        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#colourSpace"/>
@@ -11832,6 +11825,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#sourceMetadataRecord"/>
         <Class IRI="#MetadataRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sourceOfMetadataRecord"/>
+        <Class abbreviatedIRI="dcat:Catalog"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#speakingImpairmentOfParticipants"/>
@@ -17690,22 +17687,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">closed public place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#collectedFrom</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the entity (repository, catalogue, archive, etc.) from which the metadata record has been imported into the new catalogue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#collectedFrom</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">collected from</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>#collectedFrom</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">- added in range dcat:catalog but in XSD we have repositoryName and identifier
-- also added the ms:Actor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#collocation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">collocation</Literal>
@@ -23436,6 +23417,21 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#sourceMetadataRecord</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">source metadata record</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sourceOfMetadataRecord</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the entity (repository, catalogue, archive, etc.) from which the metadata record has been imported into the new catalogue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sourceOfMetadataRecord</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sourceOfMetadataRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:note"/>
+        <IRI>#sourceOfMetadataRecord</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">for now dcat:catalog</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
