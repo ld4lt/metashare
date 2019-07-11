@@ -1721,7 +1721,7 @@
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#contactPoint"/>
+        <ObjectProperty IRI="#describedEntity"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#dentalProsthesis"/>
@@ -1773,6 +1773,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#unit1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#demoLocation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#female"/>
@@ -1965,9 +1968,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#placeOfChildhood"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#describes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#output"/>
@@ -3393,6 +3393,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TimeML"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#metadataCurator"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp280"/>
@@ -6712,6 +6715,10 @@
         <NamedIndividual IRI="#elg"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#LicenceIdentifierScheme"/>
+        <NamedIndividual IRI="#elg"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#MetadataRecordIdentifierScheme"/>
         <NamedIndividual IRI="#elg"/>
     </ClassAssertion>
@@ -9772,6 +9779,10 @@
         <ObjectProperty IRI="#isRelatedToActor"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#metadataCurator"/>
+        <ObjectProperty IRI="#isRelatedToActor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#mlModel"/>
         <ObjectProperty IRI="#dependsOn"/>
     </SubObjectPropertyOf>
@@ -10119,7 +10130,7 @@
         <Class IRI="#LanguageResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#describes"/>
+        <ObjectProperty IRI="#describedEntity"/>
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -10534,6 +10545,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#metadataCreator"/>
+        <Class IRI="#MetadataRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#metadataCurator"/>
         <Class IRI="#MetadataRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -11138,7 +11153,7 @@
         <Class IRI="#LanguageResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#describes"/>
+        <ObjectProperty IRI="#describedEntity"/>
         <ObjectUnionOf>
             <Class IRI="#Actor"/>
             <Class IRI="#Document"/>
@@ -11529,6 +11544,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#metadataCreator"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#metadataCurator"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -12190,10 +12209,6 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#contactPoint"/>
-        <Class IRI="#LanguageResource"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#copyrightStatement"/>
         <Class IRI="#Distribution"/>
     </DataPropertyDomain>
@@ -12215,6 +12230,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#defaultValue"/>
         <Class IRI="#Parameter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#demoLocation"/>
+        <Class IRI="#ToolService"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#description"/>
@@ -12700,6 +12719,13 @@
         <Class IRI="#ToolService"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#samplesLocation"/>
+        <ObjectUnionOf>
+            <Class IRI="#DataLanguageResource"/>
+            <Class IRI="#ProcessingResource"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#samplingRate"/>
         <Class IRI="#AudioFormat"/>
     </DataPropertyDomain>
@@ -13040,10 +13066,6 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#contactPoint"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#copyrightStatement"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -13062,6 +13084,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#defaultValue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#demoLocation"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#description"/>
@@ -13129,7 +13155,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#executionLocation"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#eyeMovement"/>
@@ -15459,7 +15485,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MetadataRecord</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of formalised structured information used  to describe the contents, structure, function, etc., of an entity, usually according to a specific set of rules (metadata schema)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of formalized structured information used  to describe the contents, structure, function, etc., of an entity, usually according to a specific set of rules (metadata schema)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17893,16 +17919,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#contactPoint</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Declares the contact point (e.g. email, landing page) where one can find or ask for more information on a language resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#contactPoint</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">contact point</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#content</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;Validation type&apos; indicating that the validation is performed on the contents of the resource</Literal>
     </AnnotationAssertion>
@@ -18112,6 +18128,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">degree</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#demoLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">demo location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#demoResource</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;DocumentationType&apos; used for demos of a resource available usually through the internet (e.g. video demos)</Literal>
@@ -18148,21 +18169,18 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#describes</IRI>
+        <IRI>#describedEntity</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to the entity that is being described by a metadata record</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#describes</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">describes</Literal>
+        <IRI>#describedEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">described entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>#describes</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">foaf:primaryTopic in DCAT
-There&apos;s a structural difference between the XSD and the ontology (but might not be a problem):
-in XSD, metadataRecord includes header + physical resources + language resource
-in ontology, metadataRecord is closer to header and this is separate from the language resoure; link between the two is through the describes/foaf:primaryTopic relation</Literal>
+        <IRI>#describedEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">foaf:primaryTopic in DCAT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20264,7 +20282,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isReviewedBy</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to LR B that contains the review of LR A (the one being described)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a document that contains the review of LR A (the one being described)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21020,6 +21038,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#metadataCreator</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#metadataCurator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A person responsible for the creation, update, enrichment, etc. of a metadata record describing an entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadataCurator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata curator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22821,7 +22849,12 @@ should we also differentiate between distributions? e.g. a csv published at a di
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#samplesLocation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a resource to a url (or url&apos;s) with samples of the input of output resource of a tool/service</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a resource to a url (or url&apos;s) with samples of a data resource or of the input of output resource of a tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#samplesLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">samples location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
