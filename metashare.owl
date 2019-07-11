@@ -230,6 +230,9 @@
         <ObjectProperty IRI="#annotation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GroupIdentifier"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cp970"/>
     </Declaration>
     <Declaration>
@@ -743,10 +746,10 @@
         <NamedIndividual IRI="#isolatedWord"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Cp866"/>
+        <NamedIndividual IRI="#fiction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#fiction"/>
+        <NamedIndividual IRI="#Cp866"/>
     </Declaration>
     <Declaration>
         <Class IRI="#VersionType"/>
@@ -948,6 +951,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#phoneme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compliesWith"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AccessRightsStatementScheme"/>
@@ -1196,10 +1202,10 @@
         <NamedIndividual IRI="#mpeg"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#pennTreeBank"/>
+        <Class IRI="#LicenceCategory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LicenceCategory"/>
+        <NamedIndividual IRI="#pennTreeBank"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#none2"/>
@@ -1446,9 +1452,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cp33722"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#relatedResource"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#isolatedDigit"/>
@@ -2366,6 +2369,9 @@
         <Class IRI="#OperatingSystem"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#relatedLR"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LanguageVarietyType"/>
     </Declaration>
     <Declaration>
@@ -2535,6 +2541,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#recordingDeviceTypeDetails"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#image1"/>
@@ -4850,6 +4859,17 @@
         <Class IRI="#LanguageDescription"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GroupIdentifier"/>
+        <Class abbreviatedIRI="datacite:AgentIdentifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupIdentifier"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:usesIdentifierScheme"/>
+            <Class abbreviatedIRI="datacite:OrganizationIdentifierScheme"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ImageGenre"/>
         <Class IRI="#Genre"/>
     </SubClassOf>
@@ -4905,13 +4925,6 @@
     <SubClassOf>
         <Class IRI="#LanguageModel"/>
         <Class IRI="#LanguageDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LanguageResource"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#conformsTo"/>
-            <Class IRI="#StandardBestPractice"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LanguageResource"/>
@@ -10081,6 +10094,10 @@
         <Class IRI="#LanguageDescription"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compliesWith"/>
+        <Class IRI="#LanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#compressionName"/>
         <ObjectUnionOf>
             <Class IRI="#AudioFormat"/>
@@ -10094,7 +10111,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#conformsTo"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#Classification"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#contact"/>
@@ -10698,12 +10715,12 @@
         <Class IRI="#CorpusTextPart"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relatedLexiconType"/>
-        <Class IRI="#LanguageDescription"/>
+        <ObjectProperty IRI="#relatedLR"/>
+        <Class IRI="#Relation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relatedResource"/>
-        <Class IRI="#Relation"/>
+        <ObjectProperty IRI="#relatedLexiconType"/>
+        <Class IRI="#LanguageDescription"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#relation"/>
@@ -11110,6 +11127,10 @@
         <Class IRI="#LexicalConceptualResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#compliesWith"/>
+        <Class IRI="#StandardBestPractice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#compressionName"/>
         <Class IRI="#CompressionName"/>
     </ObjectPropertyRange>
@@ -11119,10 +11140,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#conformsTo"/>
-        <ObjectUnionOf>
-            <Class IRI="#ClassificationScheme"/>
-            <Class IRI="#StandardBestPractice"/>
-        </ObjectUnionOf>
+        <Class IRI="#ClassificationScheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#contact"/>
@@ -11671,12 +11689,12 @@
         <Class IRI="#Register"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#relatedLexiconType"/>
-        <Class IRI="#RelatedLexiconType"/>
+        <ObjectProperty IRI="#relatedLR"/>
+        <Class IRI="#LanguageResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#relatedResource"/>
-        <Class IRI="#LanguageResource"/>
+        <ObjectProperty IRI="#relatedLexiconType"/>
+        <Class IRI="#RelatedLexiconType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#relation"/>
@@ -14781,6 +14799,26 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Grammatical phenomena coverage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of persons related to some aspect of a language resourcce, that do not have a legal status (e.g. a group of software developers working on the same software)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GroupIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string used to uniquely identify a group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GroupIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HD.1080</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HD.1080</Literal>
@@ -17833,6 +17871,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">complex</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#compliesWith</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the vocabulary/standard/best practice to which a resource is compliant with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#compliesWith</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">complies with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#component1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">component</Literal>
@@ -17895,12 +17943,17 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#conformsTo</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the vocabulary/scheme/standard/best practice to which a value (e.g. as of text genre, domain, etc.) or resource conforms to</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the vocabulary/scheme to which a value (e.g. as of text genre, domain, etc.) conforms to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#conformsTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conforms to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
         <IRI>#conformsTo</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conforms to</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">add to range StandardBestPractice</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22563,6 +22616,16 @@ should we also differentiate between distributions? e.g. a csv published at a di
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relatedLR</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the language resource with which a relation is holding with the one being described</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relatedLR</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">related language resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#relatedLexiconType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the position of the lexica that must or can be used with the grammar</Literal>
     </AnnotationAssertion>
@@ -22570,16 +22633,6 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#relatedLexiconType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">related lexicon type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#relatedResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifies the Language resource with which a relation is holding with the resource being described</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#relatedResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">related resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
