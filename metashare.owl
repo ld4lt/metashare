@@ -554,6 +554,9 @@
         <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/trl"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/interactiveMedia"/>
     </Declaration>
     <Declaration>
@@ -749,6 +752,9 @@
         <NamedIndividual IRI="/closedPublicPlace"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/memberOfAssociation1"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Domain"/>
     </Declaration>
     <Declaration>
@@ -807,6 +813,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/qualiaStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isAlignedVersionOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/publicOrganization"/>
@@ -1133,6 +1142,9 @@
         <NamedIndividual IRI="/emotionalExpressive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/TRL"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/DynamicElement"/>
     </Declaration>
     <Declaration>
@@ -1356,6 +1368,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasConvertedVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/bookTitle"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Wordlist"/>
@@ -1866,6 +1881,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ISO-8859-6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAlignedVersion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/pragmatics"/>
@@ -2522,6 +2540,9 @@
         <NamedIndividual IRI="/kb"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/systemEvaluator"/>
     </Declaration>
     <Declaration>
@@ -2555,10 +2576,10 @@
         <NamedIndividual IRI="/Cp1149"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/sizePerTextFormat"/>
+        <NamedIndividual IRI="/trl2"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/inBook1"/>
+        <ObjectProperty IRI="/sizePerTextFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="/MetadataRecordIdentifierScheme"/>
@@ -2597,6 +2618,9 @@
         <Class abbreviatedIRI="datacite:PersonalIdentifier"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl3"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/EUC-KR"/>
     </Declaration>
     <Declaration>
@@ -2619,6 +2643,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/currency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/trl4"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/userInputText"/>
@@ -2804,6 +2831,9 @@
         <DataProperty IRI="/languageVarietyName"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl9"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/runningEnvironmentDetails"/>
     </Declaration>
     <Declaration>
@@ -2936,6 +2966,9 @@
         <NamedIndividual IRI="/keep"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl5"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/resolution"/>
     </Declaration>
     <Declaration>
@@ -2987,6 +3020,9 @@
         <DataProperty IRI="/sensitiveDataIncluded"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl6"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/operatingSystem"/>
     </Declaration>
     <Declaration>
@@ -3026,6 +3062,9 @@
         <NamedIndividual IRI="/airTrafficControl"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/trl7"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/note1"/>
     </Declaration>
     <Declaration>
@@ -3047,10 +3086,16 @@
         <Class IRI="/LanguageVarietyType"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/membershipInstitution"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/videoFormat"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ean13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/trl8"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/blogText"/>
@@ -3318,6 +3363,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/bodyPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/inBookId"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isPartWith"/>
@@ -4085,6 +4133,9 @@
         <ObjectProperty IRI="/isRelatedToProject"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/academicUser"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/LTIntegrator"/>
     </Declaration>
     <Declaration>
@@ -4313,6 +4364,9 @@
         <NamedIndividual IRI="/TimeML"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/commercialUser"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/ValidationType"/>
     </Declaration>
     <Declaration>
@@ -4326,6 +4380,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/samples"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/translationUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="/TranslationType"/>
@@ -4680,6 +4737,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/MorphologicalLexicon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/userQuery"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp949"/>
@@ -6678,6 +6738,10 @@
         <NamedIndividual IRI="/academicText"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/ConditionOfUse"/>
+        <NamedIndividual IRI="/academicUser"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/AudioType"/>
         <NamedIndividual IRI="/accentuation"/>
     </ClassAssertion>
@@ -6968,6 +7032,10 @@
     <ClassAssertion>
         <Class IRI="/NonSpeechItem"/>
         <NamedIndividual IRI="/commercial1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ConditionOfUse"/>
+        <NamedIndividual IRI="/commercialUser"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="odrl:Set"/>
@@ -7828,6 +7896,10 @@
     <ClassAssertion>
         <Class IRI="/TextType"/>
         <NamedIndividual IRI="/meetingProceedings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ConditionOfUse"/>
+        <NamedIndividual IRI="/memberOfAssociation1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SemanticType"/>
@@ -9002,12 +9074,52 @@
         <NamedIndividual IRI="/translationEquivalent"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/SizeUnit"/>
+        <NamedIndividual IRI="/translationUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/RecordingEnvironment"/>
         <NamedIndividual IRI="/transport"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SizeUnit"/>
         <NamedIndividual IRI="/trigram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TRL"/>
+        <NamedIndividual IRI="/trl9"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SemanticType"/>
@@ -9986,6 +10098,10 @@
         <ObjectProperty IRI="/isDocumentedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasAlignedVersion"/>
+        <ObjectProperty IRI="/hasVersion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasAnnotatedVersion"/>
         <ObjectProperty IRI="/hasVersion"/>
     </SubObjectPropertyOf>
@@ -10020,6 +10136,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isAccessedBy"/>
         <ObjectProperty IRI="/isRelatedToLT"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isAlignedVersionOf"/>
+        <ObjectProperty IRI="/isVersionOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isAnalysedBy"/>
@@ -10297,6 +10417,10 @@
         <ObjectProperty IRI="/validator"/>
         <ObjectProperty IRI="/isRelatedToActor"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasAlignedVersion"/>
+        <ObjectProperty IRI="/isAlignedVersionOf"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="/hasAnnotatedVersion"/>
         <ObjectProperty IRI="/isAnnotatedVersionOf"/>
@@ -10741,6 +10865,10 @@
         <Class IRI="/Annotation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAlignedVersion"/>
+        <Class IRI="/Corpus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/hasAnnotatedVersion"/>
         <Class IRI="/Corpus"/>
     </ObjectPropertyDomain>
@@ -10791,6 +10919,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/imageFormat"/>
         <Class IRI="/DatasetDistribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/inBookId"/>
+        <Class IRI="/Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/inputContentResource"/>
@@ -11037,6 +11169,10 @@
             <Class IRI="/Organization"/>
             <Class IRI="/Person"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/membershipInstitution"/>
+        <Class IRI="/Distribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/metadataCreator"/>
@@ -11445,6 +11581,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/textType"/>
         <Class IRI="/CorpusTextPart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/trl"/>
+        <Class IRI="/ToolService"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/typesystem"/>
@@ -11864,6 +12004,10 @@
         <Class IRI="/Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAlignedVersion"/>
+        <Class IRI="/Corpus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/hasAnnotatedVersion"/>
         <Class IRI="/Corpus"/>
     </ObjectPropertyRange>
@@ -11906,6 +12050,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/imageFormat"/>
         <Class IRI="/ImageFormat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/inBookId"/>
+        <Class IRI="/Document"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/inputContentResource"/>
@@ -12118,6 +12266,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/memberOfAssociation"/>
         <Class IRI="/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/membershipInstitution"/>
+        <Class IRI="/MembershipInstitution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/metadataCreator"/>
@@ -12475,6 +12627,10 @@
         <Class IRI="/TextType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/trl"/>
+        <Class IRI="/TRL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/typesystem"/>
         <Class IRI="/Typesystem"/>
     </ObjectPropertyRange>
@@ -12549,6 +12705,10 @@
     <SubDataPropertyOf>
         <DataProperty IRI="/alternativeTitle"/>
         <DataProperty abbreviatedIRI="dct:alternative"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/bookTitle"/>
+        <DataProperty abbreviatedIRI="dct:title"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/description"/>
@@ -13052,10 +13212,6 @@
         <Class IRI="/ToolService"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="/inBook1"/>
-        <Class IRI="/Document"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="/interaction"/>
         <ObjectUnionOf>
             <Class IRI="/CorpusAudioPart"/>
@@ -13627,6 +13783,10 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/userQuery"/>
+        <Class IRI="/Corpus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/validated"/>
         <Class IRI="/LanguageResource"/>
     </DataPropertyDomain>
@@ -13994,10 +14154,6 @@
     <DataPropertyRange>
         <DataProperty IRI="/implementationLanguage"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="/inBook1"/>
-        <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/interaction"/>
@@ -14462,6 +14618,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/url"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/userQuery"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/validated"/>
@@ -17300,6 +17460,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Translation Memory eXchange</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/TRL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology Readiness Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TRL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/Tagset</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A flat list of valid values (tags) designed to annotate data; it usually corresponds to a specific annotation type or set of annotation types</Literal>
@@ -17718,6 +17888,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/academicText</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">academic text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/academicUser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">academic user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18476,6 +18651,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/bookTitle</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">book title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/booklet</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">booklet</Literal>
     </AnnotationAssertion>
@@ -18733,6 +18913,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/commercial1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">commercial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/commercialUser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">commercial user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
@@ -20392,6 +20577,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hard disk</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/hasAlignedVersion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has aligned version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/hasAnnotatedVersion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a corpus B which contains the annotations of corpus A (the one being described)</Literal>
@@ -20673,7 +20863,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/inBook1</IRI>
+        <IRI>/inBookId</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in book</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -20925,6 +21115,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>/isAccessedBy</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">access tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/isAlignedVersionOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is aligned version of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
@@ -22055,6 +22250,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/memberOfAssociation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">member of association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/memberOfAssociation1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">member of association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/membershipInstitution</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">membership institution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25164,6 +25369,16 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">translation equivalent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/translationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/translationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">translation unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/transport</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">transport</Literal>
@@ -25172,6 +25387,106 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/trigram</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trigram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/trl</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology Readiness Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Basic principles observed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl2</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology concept formulated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl2</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl3</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Experimental proof of concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl3</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl4</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology validated in lab</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl4</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl5</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology  validated  in  relevant  environment  (industrially relevant environment in the case of key enabling technologies)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl5</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl6</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Technology  demonstrated  in  relevant  environment  (industrially relevant environment in the case of key enabling technologies)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl6</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl7</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">System prototype demonstration in operational environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl7</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl8</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">System complete and qualified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl8</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/trl9</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Actual system proven in operational environment (competitive manufacturing in the case of key enabling technologies; or in space)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/trl9</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL9</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25407,6 +25722,11 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/userManual</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">user manual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/userQuery</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">user query</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
