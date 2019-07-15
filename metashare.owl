@@ -4994,6 +4994,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/AccessRightsStatementScheme"/>
+        <Class IRI="/ClassificationScheme"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Actor"/>
         <Class abbreviatedIRI="foaf:Agent"/>
     </SubClassOf>
@@ -10944,6 +10948,10 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isAlignedVersionOf"/>
+        <Class IRI="/Corpus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isAnalysedBy"/>
         <ObjectUnionOf>
             <Class IRI="/DataLanguageResource"/>
@@ -12067,6 +12075,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isAccessedBy"/>
         <Class IRI="/ToolService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isAlignedVersionOf"/>
+        <Class IRI="/Corpus"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isAnalysedBy"/>
