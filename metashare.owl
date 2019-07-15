@@ -3506,6 +3506,9 @@
         <Class IRI="/LanguageVariety"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/additionalHWRequirements"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/evaluationReport"/>
     </Declaration>
     <Declaration>
@@ -12813,6 +12816,10 @@
         <Class IRI="/ActualUse"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/additionalHWRequirements"/>
+        <Class IRI="/SoftwareDistribution"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/address"/>
         <Class IRI="/AddressSet"/>
     </DataPropertyDomain>
@@ -13832,6 +13839,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/actualUseDetails"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/additionalHWRequirements"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/address"/>
@@ -17952,6 +17963,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/actualUseDetails</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">actual use details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/additionalHWRequirements</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">additional hardware requirements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/additionalHWRequirements</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">additional h/w requirements</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
