@@ -8235,10 +8235,6 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ClassificationScheme"/>
-        <NamedIndividual IRI="/other"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/CompressionName"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
