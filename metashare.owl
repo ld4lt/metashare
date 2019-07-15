@@ -752,10 +752,10 @@
         <NamedIndividual IRI="/closedPublicPlace"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/memberOfAssociation1"/>
+        <Class IRI="/Domain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Domain"/>
+        <NamedIndividual IRI="/memberOfAssociation1"/>
     </Declaration>
     <Declaration>
         <Class IRI="/SizeUnit"/>
@@ -3035,9 +3035,6 @@
         <NamedIndividual IRI="/semanticUnit1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/document1"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/availability"/>
     </Declaration>
     <Declaration>
@@ -3528,9 +3525,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/LTSupplier"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/API"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/cliticForm"/>
@@ -4493,13 +4487,13 @@
         <NamedIndividual IRI="/song"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/LRIdentifierScheme"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/incorporate"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ExtraTextualInformationUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/LRIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ISO2022_CN_GB"/>
@@ -4868,10 +4862,10 @@
         <Class IRI="/VersionType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/school"/>
+        <ObjectProperty IRI="/isArchivedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isArchivedBy"/>
+        <NamedIndividual IRI="/school"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/automatic1"/>
@@ -14750,16 +14744,6 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ANC genre classification scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/API</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for software distribution form, used for software objects delivered in the form of APIs (Application Programming Interface)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/API</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">API</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/ART</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Average Response Time</Literal>
@@ -19060,11 +19044,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conforms to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>/conformsTo</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">add to range StandardBestPractice</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/consultingFirm</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">consulting firm</Literal>
@@ -19585,11 +19564,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/dockerImage</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">docker image</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/document1</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">document</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
