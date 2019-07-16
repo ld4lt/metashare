@@ -1967,6 +1967,9 @@
         <DataProperty IRI="/creationDetails"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/editor"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/evaluationType"/>
     </Declaration>
     <Declaration>
@@ -10779,6 +10782,10 @@
         <Class IRI="/Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/editor"/>
+        <Class IRI="/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/encodingLevel"/>
         <ObjectUnionOf>
             <Class IRI="/LanguageDescription"/>
@@ -11923,6 +11930,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/ecMaxContribution"/>
         <Class IRI="/Cost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/editor"/>
+        <Class IRI="/Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/encodingLevel"/>
@@ -19748,6 +19759,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/edition</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">edition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/editor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">editor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
