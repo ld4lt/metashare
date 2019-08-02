@@ -1433,6 +1433,9 @@
         <NamedIndividual IRI="/dialogue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/outputText"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/synchronizedWithText"/>
     </Declaration>
     <Declaration>
@@ -1572,6 +1575,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/syntheticData"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/BNC_textTypeClassification"/>
@@ -8467,6 +8473,10 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/ProcessingResourceType"/>
+        <NamedIndividual IRI="/outputText"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/Interactivity"/>
         <NamedIndividual IRI="/overlapping"/>
     </ClassAssertion>
@@ -13711,6 +13721,10 @@
         <Class IRI="/LinkToOtherMedia"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/syntheticData"/>
+        <Class IRI="/CorpusMediaPart"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/telephoneNumber"/>
         <ObjectUnionOf>
             <Class IRI="/Division"/>
@@ -14578,6 +14592,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/synchronizedWithVideo"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/syntheticData"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -25119,6 +25137,16 @@ should we also differentiate between distributions? e.g. a csv published at a di
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/syntax</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">syntax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/syntheticData</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies whether the contents of a corpus have been artifically generated (e.g. using a Machine Translation or NLG system) rather than having been created by humans (authentic/original data)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/syntheticData</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">synthetic data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
