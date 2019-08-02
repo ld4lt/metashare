@@ -1796,10 +1796,10 @@
         <NamedIndividual IRI="/ISO-8859-4"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/unitOfMeasureMetric"/>
+        <NamedIndividual IRI="/euFunds"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/euFunds"/>
+        <DataProperty IRI="/unitOfMeasureMetric"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/trigram"/>
@@ -23150,6 +23150,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/outputResource</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">output resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/outputText</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">output text</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
