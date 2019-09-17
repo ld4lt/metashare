@@ -167,6 +167,9 @@
         <NamedIndividual IRI="/voice"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/subtitle3"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/amount"/>
     </Declaration>
     <Declaration>
@@ -705,9 +708,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/fundingProject"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/subtitle"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/soundRecording"/>
@@ -5204,13 +5204,6 @@
         <Class IRI="/ContentType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Classification"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/conformsTo"/>
-            <Class IRI="/ClassificationScheme"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Component"/>
         <Class IRI="/ToolService"/>
     </SubClassOf>
@@ -5290,6 +5283,10 @@
     <SubClassOf>
         <Class IRI="/DocumentIdentifierScheme"/>
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Domain"/>
+        <Class IRI="/Classification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Domain"/>
@@ -6891,7 +6888,7 @@
         <NamedIndividual IRI="/academicInstitution"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/academicText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -6915,7 +6912,7 @@
         <NamedIndividual IRI="/accessibleThroughQuery"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/administrativeText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -6923,11 +6920,11 @@
         <NamedIndividual IRI="/adult"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/advertising"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/airTrafficControl"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -6959,7 +6956,7 @@
         <NamedIndividual IRI="/anechoicChamber"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/animalVocalization"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7067,7 +7064,7 @@
         <NamedIndividual IRI="/blackBox"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/blogText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7095,7 +7092,7 @@
         <NamedIndividual IRI="/branch"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/broadcastNews"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7103,7 +7100,7 @@
         <NamedIndividual IRI="/byte"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/callIn"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7131,7 +7128,7 @@
         <NamedIndividual IRI="/case"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/chatText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7231,7 +7228,7 @@
         <NamedIndividual IRI="/content"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/conversation"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7275,7 +7272,7 @@
         <NamedIndividual IRI="/daylight"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/debate"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7331,7 +7328,7 @@
         <NamedIndividual IRI="/discourseMarker"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/discussion"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7423,7 +7420,7 @@
         <NamedIndividual IRI="/elicited"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/emailText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7431,11 +7428,11 @@
         <NamedIndividual IRI="/embeddedMicrophone"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/emotionalExpressive"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/encyclopaedicText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7483,7 +7480,7 @@
         <NamedIndividual IRI="/face"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/faceToFaceConversation"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7503,7 +7500,7 @@
         <NamedIndividual IRI="/farfieldMicrophone"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/feature"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7515,7 +7512,7 @@
         <NamedIndividual IRI="/few"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/fiction"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7683,7 +7680,7 @@
         <NamedIndividual IRI="/human"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/humanNonSpeech"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7763,7 +7760,7 @@
         <NamedIndividual IRI="/informLicensor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/information"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7775,11 +7772,11 @@
         <NamedIndividual IRI="/institute"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/instruction"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/instrumentalMusic"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7799,11 +7796,11 @@
         <NamedIndividual IRI="/internet"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/interview"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/interview1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7847,7 +7844,7 @@
         <NamedIndividual IRI="/jargon"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/journalisticText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7903,7 +7900,7 @@
         <NamedIndividual IRI="/lavalierMicrophone"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/lecture"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7927,7 +7924,7 @@
         <NamedIndividual IRI="/letter"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/letter1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7967,7 +7964,7 @@
         <NamedIndividual IRI="/lissn"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/literaryText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8039,11 +8036,11 @@
         <NamedIndividual IRI="/medium2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/meeting"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/meetingProceedings"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8171,7 +8168,7 @@
         <NamedIndividual IRI="/music"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/narrative"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8223,7 +8220,7 @@
         <NamedIndividual IRI="/noise"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/noise1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8235,7 +8232,7 @@
         <NamedIndividual IRI="/nonCommercialUse"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/nonFiction"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8303,7 +8300,7 @@
         <NamedIndividual IRI="/office"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/official"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8367,11 +8364,11 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreClassificationScheme"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenreClassificationScheme"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8567,11 +8564,11 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreClassificationScheme"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenreClassificationScheme"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8591,19 +8588,19 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
-        <NamedIndividual IRI="/other"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/TextGenreClassificationScheme"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/TextTypeClassificationScheme"/>
+        <NamedIndividual IRI="/other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8743,11 +8740,11 @@
         <NamedIndividual IRI="/predicate"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/presentation"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextGenre"/>
+        <Class IRI="/TextGenreIdentifier"/>
         <NamedIndividual IRI="/private"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8795,7 +8792,7 @@
         <NamedIndividual IRI="/question"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/questionAnswer"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8851,7 +8848,7 @@
         <NamedIndividual IRI="/restrictedAccess"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/review"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8859,7 +8856,7 @@
         <NamedIndividual IRI="/rolePlay"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SpeechGenre"/>
+        <Class IRI="/SpeechGenreIdentifier"/>
         <NamedIndividual IRI="/roundtable"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8883,7 +8880,7 @@
         <NamedIndividual IRI="/scopusId"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/script"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8991,7 +8988,7 @@
         <NamedIndividual IRI="/some"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/song"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9027,7 +9024,7 @@
         <NamedIndividual IRI="/specialHardwareEquipment"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AudioGenre"/>
+        <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/speech"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9071,16 +9068,16 @@
         <NamedIndividual IRI="/subsidiary"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
-        <NamedIndividual IRI="/subtitle"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/TextIncludedInVideo"/>
         <NamedIndividual IRI="/subtitle1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/TextIncludedInImage"/>
         <NamedIndividual IRI="/subtitle2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/TextTypeIdentifier"/>
+        <NamedIndividual IRI="/subtitle3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/BaseItem"/>
@@ -9135,7 +9132,7 @@
         <NamedIndividual IRI="/techReport"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/technicalText"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9151,7 +9148,7 @@
         <NamedIndividual IRI="/telephone"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/telephoneConversation"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9287,7 +9284,7 @@
         <NamedIndividual IRI="/tv"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/TextType"/>
+        <Class IRI="/TextTypeIdentifier"/>
         <NamedIndividual IRI="/tweet"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9867,7 +9864,7 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/conformsTo"/>
-        <NamedIndividual IRI="/subtitle"/>
+        <NamedIndividual IRI="/subtitle3"/>
         <NamedIndividual IRI="/ClarinEL_TextTypeClassification"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -22561,7 +22558,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/informLicensor</IRI>
-        <AnonymousIndividual nodeID="_:genid3"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24546,7 +24543,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/noDerivatives</IRI>
-        <AnonymousIndividual nodeID="_:genid4"/>
+        <AnonymousIndividual nodeID="_:genid3"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24566,7 +24563,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/noRedistribution</IRI>
-        <AnonymousIndividual nodeID="_:genid5"/>
+        <AnonymousIndividual nodeID="_:genid4"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24601,7 +24598,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/nonCommercialUse</IRI>
-        <AnonymousIndividual nodeID="_:genid6"/>
+        <AnonymousIndividual nodeID="_:genid5"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24806,7 +24803,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/onlyMSmembers</IRI>
-        <AnonymousIndividual nodeID="_:genid7"/>
+        <AnonymousIndividual nodeID="_:genid6"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -25753,7 +25750,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/redeposit</IRI>
-        <AnonymousIndividual nodeID="_:genid8"/>
+        <AnonymousIndividual nodeID="_:genid7"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -26348,7 +26345,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/shareAlike</IRI>
-        <AnonymousIndividual nodeID="_:genid9"/>
+        <AnonymousIndividual nodeID="_:genid8"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26977,17 +26974,17 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/subtitle</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subtitle</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/subtitle1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subtitle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/subtitle2</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subtitle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/subtitle3</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">subtitle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -28168,95 +28165,95 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid1"/>
-        <AnonymousIndividual nodeID="_:genid10"/>
+        <AnonymousIndividual nodeID="_:genid9"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid10"/>
-        <AbbreviatedIRI>cc:Attribution</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
         <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
+        <AnonymousIndividual nodeID="_:genid11"/>
         <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
+        <AnonymousIndividual nodeID="_:genid11"/>
         <IRI>/onlyMSmembers</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid13"/>
+        <AnonymousIndividual nodeID="_:genid12"/>
         <IRI>/redeposit</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid14"/>
+        <AnonymousIndividual nodeID="_:genid13"/>
         <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
+        <AnonymousIndividual nodeID="_:genid14"/>
         <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
+        <AnonymousIndividual nodeID="_:genid15"/>
         <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
+        <AnonymousIndividual nodeID="_:genid15"/>
         <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid17"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:purpose"/>
-        <AnonymousIndividual nodeID="_:genid17"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <IRI>/academic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
-        <AnonymousIndividual nodeID="_:genid18"/>
         <AnonymousIndividual nodeID="_:genid17"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid2"/>
+        <AnonymousIndividual nodeID="_:genid18"/>
         <AbbreviatedIRI>cc:CommercialUse</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
-        <AnonymousIndividual nodeID="_:genid3"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
+        <AnonymousIndividual nodeID="_:genid2"/>
+        <AnonymousIndividual nodeID="_:genid10"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid4"/>
+        <AnonymousIndividual nodeID="_:genid3"/>
         <AbbreviatedIRI>cc:DerivativeWorks</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid5"/>
+        <AnonymousIndividual nodeID="_:genid4"/>
         <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid6"/>
+        <AnonymousIndividual nodeID="_:genid5"/>
         <IRI>https://creativecommons.org/ns#CommercialUse</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
+        <AnonymousIndividual nodeID="_:genid6"/>
+        <AnonymousIndividual nodeID="_:genid11"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid7"/>
         <AnonymousIndividual nodeID="_:genid12"/>
     </AnnotationAssertion>
@@ -28266,9 +28263,9 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnonymousIndividual nodeID="_:genid13"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:duty"/>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid9"/>
-        <AnonymousIndividual nodeID="_:genid14"/>
+        <AbbreviatedIRI>cc:Attribution</AbbreviatedIRI>
     </AnnotationAssertion>
 </Ontology>
 
