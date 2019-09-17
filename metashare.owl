@@ -1421,6 +1421,9 @@
         <ObjectProperty IRI="/textIncludedInVideo"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/youtube"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/dependsOn"/>
     </Declaration>
     <Declaration>
@@ -4556,10 +4559,10 @@
         <Class IRI="/LexicalConceptualResourceMediaPart"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/processingResourceType"/>
+        <ObjectProperty IRI="/isRelatedToDocument"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isRelatedToDocument"/>
+        <ObjectProperty IRI="/processingResourceType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/phrase"/>
@@ -9542,6 +9545,10 @@
     <ClassAssertion>
         <Class IRI="/SpeechItem"/>
         <NamedIndividual IRI="/yesNoQuestion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SocialMediaAccountType"/>
+        <NamedIndividual IRI="/youtube"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/ColourSpace"/>
@@ -28146,6 +28153,11 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/yesNoQuestion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">yes/no question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/youtube</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">youtube</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
