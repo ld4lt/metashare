@@ -63,12 +63,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">v2.0.0</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meta-Share ontology v2. The ontology caters for the description of Language resources  (corpora, lexical/conceptual resources, models, grammars, , etc. and language processing tools and services) for Language Technology needs. It should be used with the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation, data format, method, annotation type).</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">John P. McCrae</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Meta-Share ontology v2. The ontology caters for the description of Language resources  (corpora, lexical/conceptual resources, models, grammars, , etc. and language processing tools and services) for Language Technology needs. It should be used with the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation, data format, method, annotation type).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dct:creator"/>
@@ -1235,6 +1235,9 @@
         <NamedIndividual IRI="/languageEngineeringResearchUse"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/categoryLabel"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/RecordingDeviceType"/>
     </Declaration>
     <Declaration>
@@ -2180,9 +2183,6 @@
         <NamedIndividual IRI="/signedInteger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/LemmaType"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/StandardBestPractice"/>
     </Declaration>
     <Declaration>
@@ -2190,6 +2190,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/pearStory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LemmaType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
@@ -3464,9 +3467,6 @@
         <DataProperty IRI="/landingPage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/commericalUse"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/numberOfParticipants"/>
     </Declaration>
     <Declaration>
@@ -4223,10 +4223,10 @@
         <NamedIndividual IRI="/head"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AnnotatedCorpus"/>
+        <DataProperty IRI="/fidelity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/fidelity"/>
+        <Class IRI="/AnnotatedCorpus"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/publicationDate"/>
@@ -5000,10 +5000,10 @@
         <NamedIndividual IRI="/telephoneIP"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp1112"/>
+        <ObjectProperty IRI="/hasCreated"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasCreated"/>
+        <NamedIndividual IRI="/Cp1112"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MTBF"/>
@@ -7189,10 +7189,6 @@
     <ClassAssertion>
         <Class IRI="/ConditionOfUse"/>
         <NamedIndividual IRI="/commercialUser"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="odrl:Set"/>
-        <NamedIndividual IRI="/commericalUse"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:concept"/>
@@ -13750,6 +13746,10 @@
         <DataProperty abbreviatedIRI="dct:title"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="/categoryLabel"/>
+        <DataProperty abbreviatedIRI="dct:title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="/description"/>
         <DataProperty abbreviatedIRI="dct:description"/>
     </SubDataPropertyOf>
@@ -14991,6 +14991,10 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/categoryLabel"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/citationText"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -15268,7 +15272,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/languageVarietyName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/legend"/>
@@ -15764,6 +15768,56 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:ark</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Archival Resource Key</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:ark</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ARK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:arxiv</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier for ArXiv (http://arxiv.org/), a open access repository of preprints, having the format arXiv:1207.2147.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:arxiv</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ArXiv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:bibcode</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is the Astrophysics Data System bibliographic codes, a standardized 19 character identifier according to the syntax &quot;yyyyjjjjjvvvvmppppa&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:bibcode</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">bibcode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:doi</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Digital Object Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:doi</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DOI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:handle</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Handle system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:handle</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Handle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>datacite:hasIdentifier</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Associates an entity to an identifier, i.e. a string used to uniquely identify it</Literal>
     </AnnotationAssertion>
@@ -15774,6 +15828,86 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:isbn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">International Standard Book Number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:isbn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISBN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:openid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OpenID is an open standard that describes how users can be authenticated in a decentralized manner, eliminating the need for centralized registration services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:openid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OpenID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:orcid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open Researcher and Contributor Identifier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:orcid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ORCID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:purl</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Persistent Uniform Resource Locator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:purl</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PURL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:researcherid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ResearcherID is an identifying system for scientific authors created and owned by Thomson Reuters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:researcherid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ResearcherID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:upc</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Universal Product Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:upc</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UPC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:url</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uniform Resource Locator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:url</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>datacite:urn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uniform Resource Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>datacite:urn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">URN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>datacite:usesIdentifierScheme</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the scheme used for a specific identifier</Literal>
     </AnnotationAssertion>
@@ -15781,6 +15915,66 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>datacite:usesIdentifierScheme</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">uses identifier scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/CNE/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Not Evaluated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/InC-EDU/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Educational Use Permitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/InC-NC/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Non-Commercial Use Permitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/InC-OW-EU/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - EU Orphan Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/InC-RUU/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Rights-holder(s) Unlocatable or Unidentifiable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/InC/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/NKC/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Known Copyright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/NoC-CR/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Contractual Restrictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/NoC-NC/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Non-Commercial Use Only</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/NoC-OKLR/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Other Known Legal Restrictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/NoC-US/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - United States</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rightsstatements.org/vocab/UND/1.0/</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Undetermined</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16126,6 +16320,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/CMYK</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CMYK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/COARightsStatementScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COAR access rights vocabulary (http://vocabularies.coar-repositories.org/documentation/access_rights/)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/COARightsStatementScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COAR Rights Statement Scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16651,6 +16855,21 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ELG-SHARE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ELG-SHARE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ELRA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">European Language Resources Association (www.elra.eu)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ELRA</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ELRA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/EMA</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EMA</Literal>
     </AnnotationAssertion>
@@ -16950,6 +17169,16 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO16642</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ISO1987</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO 9001:1987</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <IRI>/ISO1987</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Quality systems -- Model for quality assurance in design/development, production, installation and servicing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/ISO26162</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Systems to manage terminology, knowledge and content</Literal>
@@ -17005,6 +17234,16 @@ add definitions to all instances</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image genre</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ImageGenreClassificationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification scheme devised by an authority for image genres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ImageGenreClassificationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image genre classification scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ImageGenreIdentifier</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image genre identifier</Literal>
@@ -17043,6 +17282,16 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/LAF</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LAF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LDC</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Linguistic Data Consortium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LDC</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LDC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17508,6 +17757,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">META-SHARE speech genre classification scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MS_audioGenreClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">META-SHARE audio genre classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/MS_audioGenreClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">META-SHARE speech genre classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/MTBF</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mean Time Between Failures</Literal>
@@ -17778,6 +18037,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OAXAL</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/OMTDShareRightsStatementScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OMTD-SHARE rights statement scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:source"/>
         <IRI>/Ontology</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.oxforddictionaries.com/definition/ontology</Literal>
@@ -17858,6 +18122,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PAROLE genre classification scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PAROLE_topicClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PAROLE topic classification scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/Parameter</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A a special kind of variable in computer programming language that is used to pass information between functions or procedures [from https://www.techopedia.com/definition/3725/parameter-param]</Literal>
@@ -17916,6 +18185,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/PreviousAnnotationTypesPolicy</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Policy types that a tool/service has with respect to the annotation types included in the annotated resource that it takes as input (i.e. whether it keeps, modifies or drops them in the output resource)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PreviousAnnotationTypesPolicy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Previous annotation types policy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18101,6 +18375,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ResolutionStandard</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Resolution standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RightsStatementOrgScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rights Statements Org scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18395,12 +18674,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/StaticElement</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Static element</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The static elements visible on images</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/StaticElement</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The static elements visible on images</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Static element</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18495,11 +18774,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/TEI_P3</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/TEI_P3</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TEI P3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -18541,6 +18815,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/TRL</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TST-CENTRALE</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TST-Centrale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18778,7 +19057,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The resource coverage in terms of validated data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ValidationExtent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Validation extent</Literal>
     </AnnotationAssertion>
@@ -18826,6 +19105,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/VideoGenre</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Video genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/VideoGenreClassificationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification scheme devised by an authority for video genres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/VideoGenreClassificationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Video genre classification scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18980,7 +19269,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/accepted</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Accepted</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">accepted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -19148,6 +19437,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The age group to which the participant belongs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ageGroup</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">age group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/ageGroupOfParticipants</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The age range of the group of participants</Literal>
@@ -19281,6 +19575,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/annotation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a corpus to its annotated part(s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/annotation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -19869,6 +20168,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/categoryLabel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a human readable name (label) by which a classification category (e.g. text type, text genre, domain, etc.) is known</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/categoryLabel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/characterEncoding</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the character encoding used for a language resource data distribution</Literal>
     </AnnotationAssertion>
@@ -20033,19 +20342,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">commercial user</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
-        <IRI>/commericalUse</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:permission"/>
-        <IRI>/commericalUse</IRI>
-        <AnonymousIndividual nodeID="_:genid2"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/communicate</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Assigner permits/prohibits the Assignees to communicate the Asset to the public</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Assigner permits/prohibits the Assignees to communicate the Asset to the public</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -20786,6 +21084,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a report to the annotation process, tool, method , etc. of a language resource that it describes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/documentsAnnotation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">documents annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/documentsEvaluation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a report to the evaluation process, tool, method , etc. of the tool or service it purports to describe</Literal>
@@ -21001,6 +21304,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">element</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/elg</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">European Language Grid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/elg</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ELG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/elicited</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">elicited</Literal>
@@ -21059,6 +21372,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/euFunds</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EU funds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/euro</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">euro</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21279,6 +21597,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/faceExpression</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">face expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/faceToFaceConversation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">face-to-face conversation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21668,12 +21991,12 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/github</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">github</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GitHub</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/gitlab</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">gitlab</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GitLab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22781,7 +23104,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a project to the language resource(s) that it has funded (e.g.,  creation, enrichment, extension , etc.)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/isFundingProjectOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is funding project of</Literal>
     </AnnotationAssertion>
@@ -22846,7 +23169,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an external metadata record (from another catalogue, repository, , etc.) to the language resource described</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/isMetadataOf</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is metadata of</Literal>
     </AnnotationAssertion>
@@ -26123,9 +26446,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on size for the annotated parts of the resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerAnnotation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerAudioClassification</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The size of the audio subparts of the resource in terms of classification criteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerAudioClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per audio classification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26133,9 +26466,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used to give info on size of parts of a resource that differ as to the format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerAudioFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per audio format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerCharacterEncoding</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the size of the resource parts with different character encoding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerCharacterEncoding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per character encoding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26143,9 +26486,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the size of resource parts per domain</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerDomain</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerGeographicCoverage</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on size per geographically distinct section of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerGeographicCoverage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per geographic coverage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26153,9 +26506,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on size of parts with different image classification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerImageClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per image classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerImageFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used to give info on size of parts of a resource that differ as to the format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerImageFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per image format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26163,14 +26526,29 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the size per language component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerLanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerLanguageVariety</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the size per language variety component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerLanguageVariety</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per language variety</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerModality</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the size per modality component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerModality</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per modality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26188,9 +26566,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on size of resource parts with different text classification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerTextClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per text classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerTextFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on the size of the resource parts with different format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerTextFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per text format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26198,9 +26586,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gives information on the size of textNumerical resource parts with different format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerTextNumericalFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per textNumerical format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerTimeCoverage</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information on size per time period represented in the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerTimeCoverage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per time coverage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26218,9 +26616,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used to give info on size of parts with different video classification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerVideoClassification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per video classification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sizePerVideoFormat</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used to give info on size of parts of a resource that differ as to the format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/sizePerVideoFormat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">size per video format</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26281,6 +26689,11 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/socialMediaAccount</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/socialMediaAccountType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media account type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -26851,6 +27264,11 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/textIncludedInVideo</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">text included in video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/textNumerical</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">numerical text</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -27570,7 +27988,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/voice</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Voice</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">voice</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27758,19 +28176,19 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AbbreviatedIRI>cc:Attribution</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid11"/>
+        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
+        <AnonymousIndividual nodeID="_:genid12"/>
         <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
-        <IRI>/onlyMSmembers</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid12"/>
-        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
+        <IRI>/onlyMSmembers</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
@@ -27780,37 +28198,37 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid14"/>
+        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid15"/>
         <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
+        <AnonymousIndividual nodeID="_:genid17"/>
         <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:purpose"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
+        <AnonymousIndividual nodeID="_:genid17"/>
         <IRI>/academic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
-        <AnonymousIndividual nodeID="_:genid17"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid18"/>
-        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
+        <AnonymousIndividual nodeID="_:genid17"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
@@ -27820,7 +28238,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid3"/>
-        <AnonymousIndividual nodeID="_:genid18"/>
+        <AnonymousIndividual nodeID="_:genid11"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
@@ -27840,7 +28258,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
         <AnonymousIndividual nodeID="_:genid7"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
+        <AnonymousIndividual nodeID="_:genid12"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
@@ -27850,7 +28268,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid9"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
+        <AnonymousIndividual nodeID="_:genid14"/>
     </AnnotationAssertion>
 </Ontology>
 
