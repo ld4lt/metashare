@@ -2945,6 +2945,9 @@
         <DataProperty IRI="/annotationStandoff"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/socialMediaOccupationalAccountType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/signalEncoding"/>
     </Declaration>
     <Declaration>
@@ -4428,9 +4431,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/veryLow"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/socialMediaAccountOccupationalType"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
@@ -12295,10 +12295,6 @@
         <Class IRI="/Size"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/socialMediaAccountOccupationalType"/>
-        <Class IRI="/SocialMediaOccupationalAccount"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/socialMediaOccupationalAccount"/>
         <ObjectUnionOf>
             <Class IRI="/Division"/>
@@ -12307,6 +12303,10 @@
             <Class IRI="/Person"/>
             <Class IRI="/Project"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/socialMediaOccupationalAccountType"/>
+        <Class IRI="/SocialMediaOccupationalAccount"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/sourceChannel"/>
@@ -13644,12 +13644,12 @@
         <Class IRI="/SizeUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/socialMediaAccountOccupationalType"/>
-        <Class IRI="/SocialMediaOccupationalAccountType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/socialMediaOccupationalAccount"/>
         <Class IRI="/SocialMediaOccupationalAccount"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/socialMediaOccupationalAccountType"/>
+        <Class IRI="/SocialMediaOccupationalAccountType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/sourceChannel"/>
@@ -27412,16 +27412,6 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/socialMediaAccountOccupationalType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of the social media or occupational account</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/socialMediaAccountOccupationalType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media occupational account type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/socialMediaOccupationalAccount</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the social media or occupational account details of a person or organization</Literal>
     </AnnotationAssertion>
@@ -27429,6 +27419,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/socialMediaOccupationalAccount</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media occupational account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/socialMediaOccupationalAccountType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the type of the social media or occupational account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/socialMediaOccupationalAccountType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">social media occupational account type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
