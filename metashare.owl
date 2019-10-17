@@ -17595,7 +17595,7 @@ add definitions to all instances</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/Group</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of persons related to some aspect of a language resourcce, that do not have a legal status (e.g.,  a group of software developers working on the same software)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of persons related to some aspect of a language resource, that do not have a legal status (e.g.,  a group of software developers working on the same software)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20073,7 +20073,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/accessRightsStatement</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rights for accessing the distributable form(s) of a language resource (preferrably in accordance to a formalised vocabulary)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rights for accessing the distributable form(s) of a language resource (preferably in accordance to a formalised vocabulary)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20298,7 +20298,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/alias</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a name used for a participant of a mulimedia resource instead of his/her real one</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a name used for a participant of a multimedia resource instead of his/her real one</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20768,7 +20768,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/bibliographicRecord</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies in the form of free text a set of bibliographic data (a bibliographic record) preferrably in bibtex form</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies in the form of free text a set of bibliographic data (a bibliographic record) preferably in bibtex form</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21735,7 +21735,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/displays</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">visualise</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">visualises</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
@@ -21745,7 +21745,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/displays</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a tool/serivce B that is (or can be) used to display LR A (e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus) to the LR A</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links a tool/service B that is (or can be) used to display LR A (e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus) to the LR A</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21810,7 +21810,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/distributionLocation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A URL point from which a language resouce can be directly accessed  (downloaded or executed)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A URL point from which a language resource can be directly accessed  (downloaded or executed)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22355,7 +22355,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/evaluator</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Desccribes the person or organization that evaluated the tool or service</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Describes the person or organization that evaluated the tool or service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22685,7 +22685,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/framework</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the implementation framewok used for developing and running a tool/service</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the implementation framework used for developing and running a tool/service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -23850,7 +23850,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/isDisplayedBy</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a tool/serivce B that is (or can be) used to display LR A (the one being described), e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a tool/service B that is (or can be) used to display LR A (the one being described), e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25925,7 +25925,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/pages</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the range of pages (preferrably with a dash between) on which a document is printed</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces the range of pages (preferably with a dash between) on which a document is printed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -26090,7 +26090,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/personalDataDetails</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If the resource includes personal data, this field can be used for entering more information, e.g.,  whether special handling of the resource is required (e.g.,  anonymisation, further request for use , etc.)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If the resource includes personal data, this field can be used for entering more information, e.g.,  whether special handling of the resource is required (e.g.,  anonymization, further request for use , etc.)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27187,7 +27187,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/sensitiveDataDetails</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If the resource includes sensitive data, this field can be used for entering more information, e.g.,  whether special handling of the resource is required (e.g.,  anonymisation, further request for use , etc.)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If the resource includes sensitive data, this field can be used for entering more information, e.g.,  whether special handling of the resource is required (e.g.,  anonymization, further request for use , etc.)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27792,7 +27792,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/speakingImpairmentOfParticipants</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether the group of participants contains persons with speakingimpairments</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether the group of participants contains persons with speaking impairments</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27997,7 +27997,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/synchronizedWithAudio</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part descrbed is synchronized with audio within the same resource</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part described is synchronized with audio within the same resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28007,7 +28007,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/synchronizedWithImage</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part descrbed is synchronized with image within the same resource</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part described is synchronized with image within the same resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28027,7 +28027,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/synchronizedWithTextNumerical</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part descrbed is synchronized with textNumerical within the same resource</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part described is synchronized with textNumerical within the same resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28037,7 +28037,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/synchronizedWithVideo</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part descrbed is synchronized with video within the same resource</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Whether the media part described is synchronized with video within the same resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28082,7 +28082,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/syntheticData</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies whether the contents of a corpus have been artifically generated (e.g.,  using a Machine Translation or NLG system) rather than having been created by humans (authentic/original data)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies whether the contents of a corpus have been artificially generated (e.g.,  using a Machine Translation or NLG system) rather than having been created by humans (authentic/original data)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28567,7 +28567,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/typesystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the typesystem (preferrably through an identifier or URL) that has been used for the annotation of a resource or that is required for the input resource of a tool/service or that should be used (dependency) for the annotation or used in the training of a ML model</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the typesystem (preferably through an identifier or URL) that has been used for the annotation of a resource or that is required for the input resource of a tool/service or that should be used (dependency) for the annotation or used in the training of a ML model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
