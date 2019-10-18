@@ -1370,6 +1370,9 @@
         <NamedIndividual IRI="/token"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/extratextualInformationUnit"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/userType"/>
     </Declaration>
     <Declaration>
@@ -4232,9 +4235,6 @@
         <Class IRI="/AudioGenre"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/extraTextualInformationUnit"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="omtd:DataFormat"/>
     </Declaration>
     <Declaration>
@@ -4649,9 +4649,6 @@
         <NamedIndividual IRI="/incorporate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ExtraTextualInformationUnit"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/ISO2022_CN_GB"/>
     </Declaration>
     <Declaration>
@@ -4938,6 +4935,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/hardDisk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExtratextualInformationUnit"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/inBook"/>
@@ -7498,7 +7498,7 @@
         <NamedIndividual IRI="/eventType"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/example"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7958,7 +7958,7 @@
         <NamedIndividual IRI="/lemma"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/lemma1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -7978,7 +7978,7 @@
         <NamedIndividual IRI="/lexicalType"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/lexicalUnit"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8466,11 +8466,11 @@
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformation"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtratextualInformation"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8954,7 +8954,7 @@
         <NamedIndividual IRI="/semanticRole"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/semanticUnit"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9146,7 +9146,7 @@
         <NamedIndividual IRI="/synset"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/syntacticUnit"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9526,7 +9526,7 @@
         <NamedIndividual IRI="/word1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/ExtraTextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
         <NamedIndividual IRI="/word2"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -11503,11 +11503,11 @@
         <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/extraTextualInformationUnit"/>
+        <ObjectProperty IRI="/extratextualInformation"/>
         <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/extratextualInformation"/>
+        <ObjectProperty IRI="/extratextualInformationUnit"/>
         <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -12870,12 +12870,12 @@
         <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/extraTextualInformationUnit"/>
-        <Class IRI="/ExtraTextualInformationUnit"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/extratextualInformation"/>
         <Class IRI="/ExtratextualInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/extratextualInformationUnit"/>
+        <Class IRI="/ExtratextualInformationUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/framework"/>
@@ -17464,16 +17464,6 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/ExtraTextualInformationUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The unit on which the extratextual information in a lexical/conceptual resource is attached</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/ExtraTextualInformationUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extratextual information unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/ExtratextualInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The non-textual information contained in a lexical/conceptual resouce (e.g.,  images, videos, audios , etc.); it can be used as an alternative to fully describing them as a proper part of the resource when they are not as important as the textual part (e.g.,  cases of a dictionary with images attached to some lemmas)</Literal>
     </AnnotationAssertion>
@@ -17481,6 +17471,16 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ExtratextualInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extratextual information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExtratextualInformationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The unit on which the extratextual information in a lexical/conceptual resource is attached</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ExtratextualInformationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extratextual information unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22429,16 +22429,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/extraTextualInformationUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the unit on which the extratextual information is attached to in the lexical conceptual resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/extraTextualInformationUnit</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">extratextual information unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/extratextualInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the extratextual information contained in a lexical/conceptual resource; it can be used as an alternative to the representation of the audio, image, video , etc. part(s) of the resource when these are not considered important enough to fully describe</Literal>
     </AnnotationAssertion>
@@ -22446,6 +22436,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/extratextualInformation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">extratextual information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/extratextualInformationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the unit on which the extratextual information is attached to in the lexical conceptual resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/extratextualInformationUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">extratextual information unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
