@@ -3410,10 +3410,10 @@
         <NamedIndividual IRI="/eissn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/veryHigh1"/>
+        <ObjectProperty IRI="/compliesWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/compliesWith"/>
+        <NamedIndividual IRI="/veryHigh1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/UTF-8"/>
@@ -3788,10 +3788,10 @@
         <DataProperty IRI="/placeOfSecondEducation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/soundBlasterCard"/>
+        <NamedIndividual IRI="/onLineHelpURL"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/onLineHelpURL"/>
+        <NamedIndividual IRI="/soundBlasterCard"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/dataEvaluator"/>
@@ -19023,7 +19023,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/RelatedLexiconType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the position for the lexica that must or can be used with the grammar</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the type for the lexica that must or can be used with the grammar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -26737,7 +26737,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/relatedLexiconType</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the position of the lexica that must or can be used with the grammar</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the type of the lexica that must or can be used with the grammar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
