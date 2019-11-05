@@ -3113,6 +3113,9 @@
         <NamedIndividual IRI="/minute"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/NeuralNetwork"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/alcohol"/>
     </Declaration>
     <Declaration>
@@ -3399,6 +3402,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WordEmbedding"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Evaluation"/>
@@ -5563,6 +5569,10 @@
         <Class IRI="/Corpus"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/NeuralNetwork"/>
+        <Class IRI="/MLModel"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Ontology"/>
         <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
@@ -5785,6 +5795,10 @@
             <ObjectProperty IRI="/conformsTo"/>
             <Class IRI="/VideoGenreClassificationScheme"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WordEmbedding"/>
+        <Class IRI="/MLModel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/WordNet"/>
@@ -18331,6 +18345,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MLIF</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/MLModel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ML model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/MLModel</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The model artifact that is created through a training process involving an ML algorithm (that is, the learning algorithm) and the training data to learn from.</Literal>
@@ -18699,6 +18718,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Naturality</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Naturality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NeuralNetwork</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of algorithms, modeled loosely after the human brain, designed to recognize patterns [adapted from https://skymind.ai/wiki/neural-network]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NeuralNetwork</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Neural network</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -19934,6 +19963,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/WebServiceType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Web service type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WordEmbedding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing where words or phrases from the vocabulary are mapped to vectors of real numbers. [wikipedia]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/WordEmbedding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Word embedding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
