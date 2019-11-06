@@ -3404,10 +3404,10 @@
         <Class IRI="/Relation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/WordEmbedding"/>
+        <Class IRI="/Evaluation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Evaluation"/>
+        <Class IRI="/WordEmbedding"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="dct:alternative"/>
@@ -5204,6 +5204,13 @@
     <SubClassOf>
         <Class IRI="/AudioGenre"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/AudioGenreIdentifier"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AudioGenre"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="/genre"/>
             <Class IRI="/CorpusAudioPart"/>
         </ObjectAllValuesFrom>
@@ -5367,6 +5374,13 @@
     <SubClassOf>
         <Class IRI="/ImageGenre"/>
         <Class IRI="/Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ImageGenre"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/ImageGenreIdentifier"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/ImageGenre"/>
@@ -5651,6 +5665,13 @@
     <SubClassOf>
         <Class IRI="/SpeechGenre"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/SpeechGenreIdentifier"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeechGenre"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="/genre"/>
             <Class IRI="/CorpusAudioPart"/>
         </ObjectAllValuesFrom>
@@ -5712,6 +5733,13 @@
     <SubClassOf>
         <Class IRI="/TextGenre"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/TextGenreIdentifier"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TextGenre"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="/genre"/>
             <Class IRI="/CorpusTextPart"/>
         </ObjectAllValuesFrom>
@@ -5734,6 +5762,13 @@
     <SubClassOf>
         <Class IRI="/TextType"/>
         <Class IRI="/Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TextType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/TextTypeIdentifier"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/TextTypeClassificationScheme"/>
@@ -5773,6 +5808,13 @@
     <SubClassOf>
         <Class IRI="/VideoGenre"/>
         <Class IRI="/Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VideoGenre"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/VideoGenreIdentifier"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/VideoGenre"/>
