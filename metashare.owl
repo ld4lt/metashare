@@ -4292,6 +4292,9 @@
         <NamedIndividual IRI="/word1"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/discussionURL"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/VideoFormat"/>
     </Declaration>
     <Declaration>
@@ -14180,6 +14183,10 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/discussionURL"/>
+        <Class IRI="/LanguageResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/distractor"/>
         <Class IRI="/DynamicElement"/>
     </DataPropertyDomain>
@@ -15164,6 +15171,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/discipline"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/discussionURL"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/distractor"/>
@@ -21812,6 +21823,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/discussion</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">discussion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/discussionURL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to a URL where there&apos;s a discussion thread (e.g., user forum) about a resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/discussionURL</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">discussion URL</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
