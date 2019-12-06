@@ -161,9 +161,6 @@
         <NamedIndividual IRI="/dv"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/MorphologicalLexicon"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/voice"/>
     </Declaration>
     <Declaration>
@@ -192,9 +189,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/male"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/RawCorpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/VOIP"/>
@@ -255,9 +249,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Annotation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/MachineReadableDictionary"/>
     </Declaration>
     <Declaration>
         <Class IRI="/SubjectClassificationScheme"/>
@@ -416,10 +407,10 @@
         <ObjectProperty IRI="/validationReport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/TerminologicalResource"/>
+        <NamedIndividual IRI="/academicText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/academicText"/>
+        <DataProperty IRI="/metalanguage"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ModalityType"/>
@@ -593,9 +584,6 @@
         <ObjectProperty IRI="/hasAnnotated"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Wordlist"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/chatText"/>
     </Declaration>
     <Declaration>
@@ -684,6 +672,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/corpusSubclass"/>
     </Declaration>
     <Declaration>
         <Class IRI="/LanguageModel"/>
@@ -785,6 +776,9 @@
         <NamedIndividual IRI="/omtdDocker"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/lcrSubclass"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/Cp866"/>
     </Declaration>
     <Declaration>
@@ -803,6 +797,9 @@
         <DataProperty IRI="/register"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/language"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/requiredHardware"/>
     </Declaration>
     <Declaration>
@@ -810,9 +807,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/definition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Tagset"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="omtd:Operation"/>
@@ -974,6 +968,9 @@
         <DataProperty IRI="/measure"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/annotationScheme"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/annotationType"/>
     </Declaration>
     <Declaration>
@@ -1097,6 +1094,9 @@
         <NamedIndividual IRI="/Cp865"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/lexicon"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/properNoun"/>
     </Declaration>
     <Declaration>
@@ -1116,6 +1116,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/frameNet"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
@@ -1163,12 +1166,6 @@
         <NamedIndividual IRI="/Cp297"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AnnotationScheme"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/languageScript"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/gitlab"/>
     </Declaration>
     <Declaration>
@@ -1200,6 +1197,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp33722"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ontology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/string"/>
@@ -1254,9 +1254,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/metadataCurator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/accessRightsStatement"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/SRX"/>
@@ -1415,9 +1412,6 @@
         <DataProperty IRI="/bookTitle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Wordlist"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/StaticElement"/>
     </Declaration>
     <Declaration>
@@ -1538,6 +1532,9 @@
         <Class IRI="/LicenceCategoryScheme"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/machineReadableDictionary"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/bluRay"/>
     </Declaration>
     <Declaration>
@@ -1551,9 +1548,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/noise"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/FrameNet"/>
     </Declaration>
     <Declaration>
         <Class IRI="/TextGenreClassificationScheme"/>
@@ -1596,6 +1590,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/AudioGenreClassificationScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:publisher"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/durationUnit"/>
@@ -1734,9 +1731,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp871"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ontology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ISO-8859-7"/>
@@ -1916,6 +1910,9 @@
         <NamedIndividual IRI="/data"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/DescribedEntity"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/displays"/>
     </Declaration>
     <Declaration>
@@ -2060,6 +2057,9 @@
         <ObjectProperty IRI="/originOfParticipants"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/rawCorpus"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/versionType"/>
     </Declaration>
     <Declaration>
@@ -2112,9 +2112,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/linux"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Thesaurus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/partOfSpeech"/>
@@ -2225,7 +2222,13 @@
         <NamedIndividual IRI="/signLanguage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/terminologicalResource"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/internet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/dictionary"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp875"/>
@@ -2307,6 +2310,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/creationEndDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/annotationsCorpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/proceedings"/>
@@ -2429,6 +2435,9 @@
         <NamedIndividual IRI="/MAD"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/morphologicalLexicon"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/humanNonSpeech"/>
     </Declaration>
     <Declaration>
@@ -2481,9 +2490,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/grantNumber"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Tagset"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="odrl:Set"/>
@@ -2600,9 +2606,6 @@
         <DataProperty IRI="/intraannotatorAgreement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/nGramFeature"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/nonNative"/>
     </Declaration>
     <Declaration>
@@ -2663,9 +2666,6 @@
         <ObjectProperty IRI="/describes"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/FrameNet"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/SpeechGenreClassificationScheme"/>
     </Declaration>
     <Declaration>
@@ -2691,6 +2691,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/thesaurus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/TIS-620"/>
@@ -2879,16 +2882,10 @@
         <DataProperty IRI="/personalDataIncluded"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ComputationalLexicon"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/hyperonym"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/projectEndDate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Ontology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/standardizationBody"/>
@@ -2943,6 +2940,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/runningEnvironmentDetails"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/wordlist"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/annotationStandoff"/>
@@ -3074,6 +3074,9 @@
         <ObjectProperty IRI="/audience"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/computationalLexicon"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/android"/>
     </Declaration>
     <Declaration>
@@ -3099,6 +3102,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/journal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/typesystem1"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/gesture"/>
@@ -3533,6 +3539,9 @@
         <NamedIndividual IRI="/Cp935"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/wordNet"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Project"/>
     </Declaration>
     <Declaration>
@@ -3588,9 +3597,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp1144"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/WordNet"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/techReport"/>
@@ -3657,6 +3663,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/requiresSoftware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CorpusSubclass"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/intrinsic"/>
@@ -3803,6 +3812,9 @@
         <NamedIndividual IRI="/dataEvaluator"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/LCRSubclass"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/DK-5"/>
     </Declaration>
     <Declaration>
@@ -3900,9 +3912,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/word3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Dictionary"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="skos:concept"/>
@@ -4008,9 +4017,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/noiseLevel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/MappingOfResources"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/underNegotiation"/>
@@ -4151,9 +4157,6 @@
         <DataProperty IRI="/artifactPart"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/languageName"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/isRelatedToActor"/>
     </Declaration>
     <Declaration>
@@ -4226,6 +4229,9 @@
         <NamedIndividual IRI="/spatialConstraint"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/NGramModel"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/resolutionStandard"/>
     </Declaration>
     <Declaration>
@@ -4256,9 +4262,6 @@
         <DataProperty IRI="/fidelity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AnnotatedCorpus"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/publicationDate"/>
     </Declaration>
     <Declaration>
@@ -4284,6 +4287,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/LTIntegrator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/mappingOfResources"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/four-gram"/>
@@ -4326,9 +4332,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isAnnotationResourceOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/NGramCorpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/booklet"/>
@@ -4427,9 +4430,6 @@
         <NamedIndividual IRI="/phonology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Typesystem"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/BodyPart"/>
     </Declaration>
     <Declaration>
@@ -4493,9 +4493,6 @@
         <Class IRI="/Distribution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AnnotationsCorpus"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/ResolutionStandard"/>
     </Declaration>
     <Declaration>
@@ -4514,7 +4511,7 @@
         <Class IRI="/DocumentationType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/WordNet"/>
+        <ObjectProperty IRI="/accessRights"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/frequency"/>
@@ -4763,9 +4760,6 @@
         <NamedIndividual IRI="/image2"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/NGramFeature"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/cordis"/>
     </Declaration>
     <Declaration>
@@ -4895,9 +4889,6 @@
         <NamedIndividual IRI="/ISO2022_CN_CNS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/MorphologicalLexicon"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/userQuery"/>
     </Declaration>
     <Declaration>
@@ -4914,9 +4905,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/lexicalType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Lexicon"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ClassificationScheme"/>
@@ -4953,6 +4941,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_16ec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/tagset1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp280"/>
@@ -5049,6 +5040,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/school"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/annotatedCorpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/automatic1"/>
@@ -5182,19 +5176,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Actor"/>
+        <Class IRI="/DescribedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Actor"/>
         <Class abbreviatedIRI="foaf:Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/AnnotatedCorpus"/>
-        <Class IRI="/Corpus"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/AnnotationScheme"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/AnnotationsCorpus"/>
-        <Class IRI="/Corpus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Application"/>
@@ -5240,10 +5226,6 @@
     <SubClassOf>
         <Class IRI="/Component"/>
         <Class IRI="/ToolService"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/ComputationalLexicon"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Corpus"/>
@@ -5300,8 +5282,8 @@
         <Class IRI="/DistributionForm"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Dictionary"/>
-        <Class IRI="/LexicalConceptualResource"/>
+        <Class IRI="/Document"/>
+        <Class IRI="/DescribedEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/DocumentIdentifier"/>
@@ -5350,10 +5332,6 @@
             <ObjectProperty IRI="/conformsTo"/>
             <Class IRI="/DomainClassificationScheme"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/FrameNet"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Genre"/>
@@ -5455,6 +5433,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/LanguageResource"/>
+        <Class IRI="/DescribedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LanguageResource"/>
         <ObjectAllValuesFrom>
             <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
             <Class IRI="/LRIdentifier"/>
@@ -5503,10 +5485,6 @@
         <Class IRI="/LexicalConceptualResourceMediaPart"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Lexicon"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/LicenceCategory"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="/conformsTo"/>
@@ -5534,6 +5512,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/LicenceTerms"/>
+        <Class IRI="/DescribedEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LicenceTerms"/>
         <ObjectAllValuesFrom>
             <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
             <Class IRI="/LicenceIdentifier"/>
@@ -5542,14 +5524,6 @@
     <SubClassOf>
         <Class IRI="/MLModel"/>
         <Class IRI="/LanguageDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/MachineReadableDictionary"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/MappingOfResources"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/MetadataRecord"/>
@@ -5574,24 +5548,16 @@
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/MorphologicalLexicon"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/MorphologicalType"/>
         <Class IRI="/ContentType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/NGramCorpus"/>
-        <Class IRI="/Corpus"/>
+        <Class IRI="/NGramModel"/>
+        <Class IRI="/LanguageDescription"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/NeuralNetwork"/>
         <Class IRI="/MLModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Ontology"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Organization"/>
@@ -5611,6 +5577,10 @@
             <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
             <Class abbreviatedIRI="datacite:PersonalIdentifier"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Project"/>
+        <Class IRI="/DescribedEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Project"/>
@@ -5637,10 +5607,6 @@
     <SubClassOf>
         <Class IRI="/ProjectIdentifierScheme"/>
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/RawCorpus"/>
-        <Class IRI="/Corpus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SemanticType"/>
@@ -5722,14 +5688,6 @@
         <Class IRI="/ContentType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Tagset"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TerminologicalResource"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/TextGenre"/>
         <Class IRI="/Genre"/>
     </SubClassOf>
@@ -5789,20 +5747,12 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Thesaurus"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/ToolService"/>
         <Class IRI="/LanguageResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/TranslationType"/>
         <Class IRI="/ContentType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Typesystem"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/UsageType"/>
@@ -5844,14 +5794,6 @@
     <SubClassOf>
         <Class IRI="/WordEmbedding"/>
         <Class IRI="/MLModel"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/WordNet"/>
-        <Class IRI="/LexicalConceptualResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Wordlist"/>
-        <Class IRI="/LexicalConceptualResource"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="foaf:Organization"/>
@@ -5899,6 +5841,10 @@
     <ClassAssertion>
         <Class IRI="/LRIdentifierScheme"/>
         <NamedIndividual abbreviatedIRI="datacite:bibcode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="datacite:OrganizationIdentifierScheme"/>
+        <NamedIndividual abbreviatedIRI="datacite:doi"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/DocumentIdentifierScheme"/>
@@ -6477,10 +6423,6 @@
         <NamedIndividual IRI="/EUROVOC"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/FrameNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/Framework"/>
         <NamedIndividual IRI="/GATE"/>
     </ClassAssertion>
@@ -6761,10 +6703,6 @@
         <NamedIndividual IRI="/MeSH_classification"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/MorphologicalLexicon"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/SubjectClassificationScheme"/>
         <NamedIndividual IRI="/NLM_classification"/>
     </ClassAssertion>
@@ -6775,10 +6713,6 @@
     <ClassAssertion>
         <Class IRI="/AccessRightsStatementScheme"/>
         <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/Ontology"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/MetadataRecordIdentifierScheme"/>
@@ -6885,10 +6819,6 @@
         <NamedIndividual IRI="/TST-CENTRALE"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/Tagset"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/VisualModelling"/>
         <NamedIndividual IRI="/ThreeD"/>
     </ClassAssertion>
@@ -6939,18 +6869,6 @@
     <ClassAssertion>
         <Class IRI="/SourceChannelType"/>
         <NamedIndividual IRI="/VOIP"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/WordNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/StandardBestPractice"/>
-        <NamedIndividual IRI="/WordNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/CompatibleLexiconType"/>
-        <NamedIndividual IRI="/Wordlist"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/StandardBestPractice"/>
@@ -7059,6 +6977,18 @@
     <ClassAssertion>
         <Class IRI="/AudioGenreIdentifier"/>
         <NamedIndividual IRI="/animalVocalization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CorpusSubclass"/>
+        <NamedIndividual IRI="/annotatedCorpus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/annotationScheme"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CorpusSubclass"/>
+        <NamedIndividual IRI="/annotationsCorpus"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SemanticType"/>
@@ -7313,6 +7243,10 @@
         <NamedIndividual IRI="/compound"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/computationalLexicon"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/SizeUnit"/>
         <NamedIndividual IRI="/concept"/>
     </ClassAssertion>
@@ -7415,6 +7349,10 @@
     <ClassAssertion>
         <Class IRI="/ConversationalType"/>
         <NamedIndividual IRI="/dialogue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/dictionary"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SegmentationLevel"/>
@@ -7667,6 +7605,14 @@
     <ClassAssertion>
         <Class IRI="/SizeUnit"/>
         <NamedIndividual IRI="/frame1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/frameNet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/frameNet"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SpeechItem"/>
@@ -8041,6 +7987,10 @@
         <NamedIndividual IRI="/lexicalUnit"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/lexicon"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/DomainClassificationScheme"/>
         <NamedIndividual IRI="/libraryOfCongress_domainClassification"/>
     </ClassAssertion>
@@ -8093,6 +8043,10 @@
         <NamedIndividual IRI="/mac-OS"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/machineReadableDictionary"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/Sex"/>
         <NamedIndividual IRI="/male"/>
     </ClassAssertion>
@@ -8107,6 +8061,10 @@
     <ClassAssertion>
         <Class IRI="/ScenarioType"/>
         <NamedIndividual IRI="/mapTask"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/mappingOfResources"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/DocumentType"/>
@@ -8211,6 +8169,14 @@
     <ClassAssertion>
         <Class IRI="/MorphologicalType"/>
         <NamedIndividual IRI="/mood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/morphologicalLexicon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/morphologicalLexicon"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/EncodingLevel"/>
@@ -8437,6 +8403,14 @@
         <NamedIndividual IRI="/onlyMSmembers"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/ontology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/ontology"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/AccessRightsStatement"/>
         <NamedIndividual IRI="/openAccess"/>
     </ClassAssertion>
@@ -8550,6 +8524,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/Interactivity"/>
+        <NamedIndividual IRI="/other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
         <NamedIndividual IRI="/other"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -8909,6 +8887,10 @@
         <NamedIndividual IRI="/raster"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/CorpusSubclass"/>
+        <NamedIndividual IRI="/rawCorpus"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/Naturality"/>
         <NamedIndividual IRI="/readSpeech"/>
     </ClassAssertion>
@@ -9225,6 +9207,14 @@
         <NamedIndividual IRI="/systemEvaluator"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/tagset1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/tagset1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/RecordingDeviceType"/>
         <NamedIndividual IRI="/tapeVHS"/>
     </ClassAssertion>
@@ -9285,6 +9275,10 @@
         <NamedIndividual IRI="/term"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/terminologicalResource"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/MediaType"/>
         <NamedIndividual IRI="/text"/>
     </ClassAssertion>
@@ -9295,6 +9289,10 @@
     <ClassAssertion>
         <Class IRI="/MediaType"/>
         <NamedIndividual IRI="/textNumerical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/thesaurus"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/LDTask"/>
@@ -9395,6 +9393,10 @@
     <ClassAssertion>
         <Class IRI="/SocialMediaOccupationalAccountType"/>
         <NamedIndividual IRI="/twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/typesystem1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/Availability"/>
@@ -9599,6 +9601,26 @@
     <ClassAssertion>
         <Class IRI="/SegmentationLevel"/>
         <NamedIndividual IRI="/wordGroup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/wordNet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/wordNet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/StandardBestPractice"/>
+        <NamedIndividual IRI="/wordNet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CompatibleLexiconType"/>
+        <NamedIndividual IRI="/wordlist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/LCRSubclass"/>
+        <NamedIndividual IRI="/wordlist"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/SoftwareDistributionForm"/>
@@ -10203,11 +10225,6 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/url"/>
-        <NamedIndividual IRI="/WordNet"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://wordnet.princeton.edu/</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/url"/>
         <NamedIndividual IRI="/XCES"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.xces.org/</Literal>
     </DataPropertyAssertion>
@@ -10296,6 +10313,10 @@
         <NamedIndividual IRI="/pragueTreebank"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://ufal.mff.cuni.cz/pdt2.0/</Literal>
     </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="dct:publisher"/>
+        <ObjectProperty IRI="/resourceProvider"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/LΤRelatedTo"/>
         <ObjectProperty IRI="/isRelatedTo"/>
@@ -11154,11 +11175,8 @@
         <Class IRI="/MetadataRecord"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/accessRightsStatement"/>
-        <ObjectUnionOf>
-            <Class IRI="/Distribution"/>
-            <Class IRI="/LicenceTerms"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="/accessRights"/>
+        <Class IRI="/Distribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/accesses"/>
@@ -11273,7 +11291,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/baseItem"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/bodyPart"/>
@@ -11366,6 +11384,10 @@
         <Class IRI="/Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/corpusSubclass"/>
+        <Class IRI="/Corpus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/cost"/>
         <Class IRI="/Project"/>
     </ObjectPropertyDomain>
@@ -11390,6 +11412,17 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/currency"/>
         <Class IRI="/Cost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/dataFormat"/>
+        <ObjectUnionOf>
+            <Class IRI="/AudioFormat"/>
+            <Class IRI="/DistributionTextFeature"/>
+            <Class IRI="/DistributionTextNumericalFeature"/>
+            <Class IRI="/ImageFormat"/>
+            <Class IRI="/Parameter"/>
+            <Class IRI="/VideoFormat"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/dependentLR"/>
@@ -11501,6 +11534,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/durationOfEffectiveSpeech"/>
         <Class IRI="/DatasetDistribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/durationUnit"/>
+        <Class IRI="/Duration"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/dynamicElement"/>
@@ -11747,7 +11784,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/isAnnotationSchemaOf"/>
-        <Class IRI="/AnnotationScheme"/>
+        <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/isAnnotatorOf"/>
@@ -11902,6 +11939,13 @@
         <Class IRI="/Actor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isRelatedTo"/>
+        <ObjectUnionOf>
+            <Class IRI="/DescribedEntity"/>
+            <Class IRI="/MetadataRecord"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isRelatedToActor"/>
         <ObjectUnionOf>
             <Class IRI="/Distribution"/>
@@ -11972,7 +12016,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/isTypesystemOf"/>
-        <Class IRI="/Typesystem"/>
+        <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/isUsageProjectOf"/>
@@ -11991,8 +12035,28 @@
         <Class IRI="/LanguageResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/languageVariety"/>
+        <ObjectUnionOf>
+            <Class IRI="/CorpusAudioPart"/>
+            <Class IRI="/CorpusImagePart"/>
+            <Class IRI="/CorpusTextPart"/>
+            <Class IRI="/CorpusVideoPart"/>
+            <Class IRI="/LanguageDescriptionImagePart"/>
+            <Class IRI="/LanguageDescriptionTextPart"/>
+            <Class IRI="/LanguageDescriptionVideoPart"/>
+            <Class IRI="/LexicalConceptualResourceAudioPart"/>
+            <Class IRI="/LexicalConceptualResourceImagePart"/>
+            <Class IRI="/LexicalConceptualResourceTextPart"/>
+            <Class IRI="/LexicalConceptualResourceVideoPart"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/languageVarietyType"/>
         <Class IRI="/LanguageVariety"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/lcrSubclass"/>
+        <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/ldTask"/>
@@ -12028,6 +12092,13 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/mediaPart"/>
         <Class IRI="/LanguageResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/mediaType"/>
+        <ObjectUnionOf>
+            <Class IRI="/MediaPart"/>
+            <Class IRI="/ProcessingResourceType"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/memberOfAssociation"/>
@@ -12075,10 +12146,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/multilingualityType"/>
         <Class IRI="/MediaPart"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/nGramFeature"/>
-        <Class IRI="/NGramCorpus"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/nationalMaxContribution"/>
@@ -12568,7 +12635,7 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/accessRightsStatement"/>
+        <ObjectProperty IRI="/accessRights"/>
         <Class IRI="/AccessRightsStatement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -12628,7 +12695,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/annotationSchema"/>
-        <Class IRI="/AnnotationScheme"/>
+        <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/annotationType"/>
@@ -12727,6 +12794,10 @@
         <Class IRI="/Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/corpusSubclass"/>
+        <Class IRI="/CorpusSubclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/cost"/>
         <Class IRI="/Cost"/>
     </ObjectPropertyRange>
@@ -12760,13 +12831,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/describedEntity"/>
-        <ObjectUnionOf>
-            <Class IRI="/Actor"/>
-            <Class IRI="/Document"/>
-            <Class IRI="/LanguageResource"/>
-            <Class IRI="/LicenceTerms"/>
-            <Class IRI="/Project"/>
-        </ObjectUnionOf>
+        <Class IRI="/DescribedEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/describes"/>
@@ -13353,6 +13418,10 @@
         <Class IRI="/LanguageVarietyType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/lcrSubclass"/>
+        <Class IRI="/LCRSubclass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/ldTask"/>
         <Class IRI="/LDTask"/>
     </ObjectPropertyRange>
@@ -13427,10 +13496,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/multilingualityType"/>
         <Class IRI="/MultilingualityType"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/nGramFeature"/>
-        <Class IRI="/NGramFeature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/nationalMaxContribution"/>
@@ -13744,10 +13809,6 @@
         <Class IRI="/Subject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/tagset"/>
-        <Class IRI="/Tagset"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/targetMetadataRecord"/>
         <Class IRI="/MetadataRecord"/>
     </ObjectPropertyRange>
@@ -13770,10 +13831,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/trl"/>
         <Class IRI="/TRL"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/typesystem"/>
-        <Class IRI="/Typesystem"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/usageProject"/>
@@ -14069,6 +14126,10 @@
         <Class IRI="/DynamicElement"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/bookTitle"/>
+        <Class IRI="/Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/capturingDetails"/>
         <ObjectUnionOf>
             <Class IRI="/CorpusAudioPart"/>
@@ -14085,6 +14146,10 @@
             <Class IRI="/CorpusTextNumericalPart"/>
             <Class IRI="/CorpusVideoPart"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/categoryLabel"/>
+        <Class IRI="/Classification"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/citationText"/>
@@ -14260,7 +14325,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/factor"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/faxNumber"/>
@@ -14381,7 +14446,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/interpolated"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/intraannotatorAgreement"/>
@@ -14389,7 +14454,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/isFactored"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/journal"/>
@@ -14414,6 +14479,22 @@
     <DataPropertyDomain>
         <DataProperty IRI="/landscapePart"/>
         <Class IRI="/StaticElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/language"/>
+        <ObjectUnionOf>
+            <Class IRI="/CorpusAudioPart"/>
+            <Class IRI="/CorpusImagePart"/>
+            <Class IRI="/CorpusTextPart"/>
+            <Class IRI="/CorpusVideoPart"/>
+            <Class IRI="/LanguageDescriptionImagePart"/>
+            <Class IRI="/LanguageDescriptionTextPart"/>
+            <Class IRI="/LanguageDescriptionVideoPart"/>
+            <Class IRI="/LexicalConceptualResourceAudioPart"/>
+            <Class IRI="/LexicalConceptualResourceImagePart"/>
+            <Class IRI="/LexicalConceptualResourceTextPart"/>
+            <Class IRI="/LexicalConceptualResourceVideoPart"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/languageDependent"/>
@@ -14470,6 +14551,18 @@
         <Class IRI="/MetadataRecord"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/metalanguage"/>
+        <ObjectUnionOf>
+            <Class IRI="/LanguageDescriptionImagePart"/>
+            <Class IRI="/LanguageDescriptionTextPart"/>
+            <Class IRI="/LanguageDescriptionVideoPart"/>
+            <Class IRI="/LexicalConceptualResourceAudioPart"/>
+            <Class IRI="/LexicalConceptualResourceImagePart"/>
+            <Class IRI="/LexicalConceptualResourceTextPart"/>
+            <Class IRI="/LexicalConceptualResourceVideoPart"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/modalityTypeDetails"/>
         <Class IRI="/MediaPart"/>
     </DataPropertyDomain>
@@ -14513,7 +14606,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/order"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/organizationBio"/>
@@ -14571,7 +14664,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/perplexity"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/personDescription"/>
@@ -14793,7 +14886,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/smoothing"/>
-        <Class IRI="/NGramFeature"/>
+        <Class IRI="/NGramModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/sourceChannelDetails"/>
@@ -15089,6 +15182,10 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/bookTitle"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/capturingDetails"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -15365,16 +15462,12 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/language"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/languageDependent"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="/languageName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="/languageScript"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/languageVarietyName"/>
@@ -15415,6 +15508,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/metadataLastDateUpdated"/>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/metalanguage"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/modalityTypeDetails"/>
@@ -16204,16 +16301,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/AnnotatedCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A corpus that has been processed and thus includes the raw data and the automatic or manual annotations that have been added to them.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/AnnotatedCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Annotated corpus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/AnnotatedElement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A type of element that can be annotated and may differ depending on the annotation level</Literal>
     </AnnotationAssertion>
@@ -16231,26 +16318,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Annotation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Annotation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/AnnotationScheme</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of elements and values designed to annotate data. It usually consists in a formal representation. It aims to represent a specific level of information, such as morphological features of words, syntactic dependency relations between phrases, discourse level information , etc. It can consist of a flat structure of elements and values (e.g.,  part-of-speech tags) or it can be more complex with interrelated elements (e.g.,  specific morphological features to be used for each part-of-speech).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/AnnotationScheme</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Annotation scheme</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/AnnotationsCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A corpus of annotations without the raw data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/AnnotationsCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Annotations corpus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -16573,16 +16640,6 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Compression name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/ComputationalLexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexicon which is intended for computational purposes and thus contains words associated with information relevant for the specific purposes</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/ComputationalLexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Computational lexicon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dct:replaces"/>
         <IRI>/ConditionOfUse</IRI>
         <AbbreviatedIRI>msxml:restrictionsOfUse</AbbreviatedIRI>
@@ -16663,6 +16720,16 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/CorpusMediaPart</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Corpus media part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CorpusSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification of corpora into types (used for descriptive reasons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CorpusSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Corpus subclass</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17182,7 +17249,7 @@ add definitions to all instances</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/DatasetDistributionForm</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Τhe form (medium/channel) used for distributing a language resource consisting of data (e.g.,  a corpus, a lexicon, , etc.)</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The form (medium/channel) used for distributing a language resource consisting of data (e.g.,  a corpus, a lexicon, , etc.)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17191,13 +17258,13 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Dictionary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A book or electronic resource that contains a list of words (usually in alphabetical order) and explains their meanings, or gives a word for them in another language and other information (e.g.,  spelling, pronunciation, , etc.)</Literal>
+        <IRI>/DescribedEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The (type of) entity that is being described by a metadata record</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Dictionary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dictionary</Literal>
+        <IRI>/DescribedEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">type of described entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17548,16 +17615,6 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ExtratextualInformationUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extratextual information unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/FrameNet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical database based on annotating examples of how words are used in actual texts in accordance to the notion of &apos;semantic frame&apos; (schematic representation of a situation involving various participants, props and other conceptual roles); originally built for English and extended to other languages according to the same design principles</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/FrameNet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FrameNet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -17956,6 +18013,16 @@ add definitions to all instances</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LCRSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A classification of lexical/conceptual resources into types (used for descriptive reasons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LCRSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LCR subclass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/LDC</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Linguistic Data Consortium</Literal>
     </AnnotationAssertion>
@@ -18228,16 +18295,6 @@ add definitions to all instances</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/LexicalConceptualResourceVideoPart</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lexical/Conceptual resource video part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Lexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">(a list of) all the words used in a particular language or subject, or a dictionary [https://dictionary.cambridge.org/dictionary/english/lexicon]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Lexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lexicon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18573,31 +18630,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MacUkraine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/MachineReadableDictionary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A dictionary usually meant for humans in a form that a computer can process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/MachineReadableDictionary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Machine Readable Dictionary</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-        <IRI>/MachineReadableDictionary</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MRD</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/MappingOfResources</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A resource consisting of mapping values and/or rules between two resources.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/MappingOfResources</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mapping of resources</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/MeSH_classification</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MeSH</Literal>
@@ -18699,16 +18731,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/MorphologicalLexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexicon with morphological information associated with its entries</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/MorphologicalLexicon</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Morphological lexicon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/MorphologicalType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A type of content included in a language resource pertaining to the morphological level</Literal>
     </AnnotationAssertion>
@@ -18729,28 +18751,13 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/NGramCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A corpus consisting of n-grams, i.e. specific sequences of a number of words</Literal>
+        <IRI>/NGramModel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A language model consisting of n-grams, i.e., specific sequences of a number of words</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/NGramCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">N-gram corpus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/NGramFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A descriptive feature specific to n-gram resources (e.g.,  range of n-grams, base item , etc.)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/NGramFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">N-gram feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>/NGramFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Might not be needed; keep for now cause it has together all info on n-grams</Literal>
+        <IRI>/NGramModel</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">N-gram model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -18816,21 +18823,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/OMTDShareRightsStatementScheme</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OMTD-SHARE rights statement scheme</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dct:source"/>
-        <IRI>/Ontology</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.oxforddictionaries.com/definition/ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Ontology</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of concepts and categories in a subject area or domain that shows their properties and the relations between them</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Ontology</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19061,16 +19053,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/RasterOrVectorGraphics</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Raster or vector graphics</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/RawCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The form of the corpus that has not been enriched with annotations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/RawCorpus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Raw corpus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -19639,31 +19621,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Tagset</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A flat list of valid values (tags) designed to annotate data; it usually corresponds to a specific annotation type or set of annotation types</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Tagset</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tagset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
-        <IRI>/TerminologicalResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Term list</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/TerminologicalResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical resource that lists concepts pertaining to a specific domain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/TerminologicalResource</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Teminological resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/TextGenre</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A category of text characterized by a particular style, form, or content according to a specific classification scheme</Literal>
     </AnnotationAssertion>
@@ -19753,21 +19710,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Text type identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dct:source"/>
-        <IRI>/Thesaurus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/Thesaurus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Thesaurus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A reference work that lists words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Thesaurus</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thesaurus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ThreeD</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">3D</Literal>
@@ -19821,16 +19763,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/TwoD</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2D</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Typesystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of elements designed to annotate data; it typically contains only a list of annotation types, i.e. specific labels that are used for the annotation (e.g.,  part-of-speech, person, organization, , etc.), and is usually inbuilt in the annotation software.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Typesystem</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Typesystem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20028,26 +19960,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Word embedding</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/WordNet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical database originally created for English and extended to other languages, which groups words into sets of synonyms called synsets, provides short definitions and usage examples, and records a number of relations among these synonym sets or their members</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/WordNet</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">WordNet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/Wordlist</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A written collection of all words derived from a particular source, or sharing some other characteristic [https://www.yourdictionary.com/wordlist]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Wordlist</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wordlist</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/XCES</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Corpus Encoding Standard for XML</Literal>
@@ -20164,13 +20076,13 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/accessRightsStatement</IRI>
+        <IRI>/accessRights</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the rights for accessing the distributable form(s) of a language resource (preferably in accordance to a formalised vocabulary)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/accessRightsStatement</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">access rights statement</Literal>
+        <IRI>/accessRights</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">access rights</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20449,6 +20361,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/annotatedCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A corpus that has been processed and thus includes the raw data and the automatic or manual annotations that have been added to them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/annotatedCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotated corpus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/annotatedElement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the elements annotated at each annotation level</Literal>
     </AnnotationAssertion>
@@ -20529,6 +20451,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/annotationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of elements and values designed to annotate data. It usually consists in a formal representation. It aims to represent a specific level of information, such as morphological features of words, syntactic dependency relations between phrases, discourse level information , etc. It can consist of a flat structure of elements and values (e.g.,  part-of-speech tags) or it can be more complex with interrelated elements (e.g.,  specific morphological features to be used for each part-of-speech).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/annotationScheme</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/annotationStandoff</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether the annotation is created inline or in a stand-off fashion</Literal>
     </AnnotationAssertion>
@@ -20556,6 +20488,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/annotationType</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotation type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/annotationsCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A corpus of annotations without the raw data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/annotationsCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">annotations corpus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21333,6 +21275,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">compression name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/computationalLexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexicon which is intended for computational purposes and thus contains words associated with information relevant for the specific purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/computationalLexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">computational lexicon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/concept</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">concept</Literal>
@@ -21476,6 +21428,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/corpus</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">corpus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/corpusSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a classification of corpora into types (used for descriptive reasons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/corpusSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">corpus subclass</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -21773,6 +21735,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/dialogue</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dialogue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/dictionary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A book or electronic resource that contains a list of words (usually in alphabetical order) and explains their meanings, or gives a word for them in another language and other information (e.g.,  spelling, pronunciation, , etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/dictionary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dictionary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -22773,6 +22745,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/frame1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/frameNet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical database based on annotating examples of how words are used in actual texts in accordance to the notion of &apos;semantic frame&apos; (schematic representation of a situation involving various participants, props and other conceptual roles); originally built for English and extended to other languages according to the same design principles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/frameNet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FrameNet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24591,6 +24573,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/language</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the language that is used in the resource or supported by the tool/service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/language</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <IRI>/language</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in the xsd, we have the full BCP47 recommendation combination, in ontology as a uri (to link with an ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/languageDependent</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates whether the operation of the tool or service is language dependent or not</Literal>
     </AnnotationAssertion>
@@ -24618,36 +24615,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/languageEngineeringResearchUse</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language engineering research use</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/languageName</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A human understandable name of the language that is used in the resource or supported by the tool/service</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/languageName</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>/languageName</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">need to see language ontologies vs. BCP47 tags</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/languageScript</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the writing system used to represent the language in form of a four letter code as it is defined in ISO-15924</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/languageScript</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">language script</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <IRI>/languageScript</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">need to see language ontologies vs. BCP47 tags</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24718,6 +24685,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/lavalierMicrophone</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lavalier microphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/lcrSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces a classification of lexical/conceptual resources into types (used for descriptive reasons)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/lcrSubclass</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lcr subclass</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -24793,6 +24770,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/lexicalUnit</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lexical unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/lexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">(a list of) all the words used in a particular language or subject, or a dictionary [https://dictionary.cambridge.org/dictionary/english/lexicon]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/lexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lexicon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24980,6 +24967,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MAC-OS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/machineReadableDictionary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MRD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/machineReadableDictionary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a dictionary usually meant for humans in a form that a computer can process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/machineReadableDictionary</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Machine Readable Dictionary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/mailingListName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indicates the name of a mailing list used in relation to a language resource</Literal>
@@ -25013,6 +25015,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/mapTask</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">map task</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/mappingOfResources</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a resource consisting of mapping values and/or rules between two resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/mappingOfResources</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mapping of resources</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25196,6 +25208,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/metalanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the language that is used as support for the resource (e.g., a grammar of French described in English or a French dictionary with English definitions)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/metalanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metalanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:comment"/>
+        <IRI>/metalanguage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in the xsd, this is expressed with a BCP47 combination while in the ontology as a URI (to link with an ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/method</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the method used for the development of a tool/service or the ML model</Literal>
     </AnnotationAssertion>
@@ -25346,6 +25373,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/morphologicalLexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a lexicon with morphological information associated with its entries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/morphologicalLexicon</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">morphological lexicon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/morphology</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;EncodingLevel&apos; for the particular linguistic level that relates to the study of word formation (such as inflection, derivation and compounding)</Literal>
     </AnnotationAssertion>
@@ -25468,16 +25505,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/music</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">music</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/nGramFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Provides information specific to n-gram resources (e.g.,  range of n-grams, base item , etc.)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/nGramFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">n-gram feature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25818,6 +25845,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/onlyMSmembers</IRI>
         <AnonymousIndividual nodeID="_:genid6"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ontology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a set of concepts and categories in a subject area or domain that shows their properties and the relations between them [https://en.oxforddictionaries.com/definition/ontology]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ontology</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26702,6 +26739,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">raster or vector graphics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/rawCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The form of the corpus that has not been enriched with annotations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/rawCorpus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">raw corpus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/readSpeech</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">read speech</Literal>
@@ -27014,7 +27061,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/resourceProvider</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The person/organization responsible for providing, curating and maintaining the resource</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The person/organization responsible for providing, curating, maintaining and making available (publishing) the resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28207,6 +28254,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tagset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/tagset1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a flat list of valid values (tags) designed to annotate data; it usually corresponds to a specific annotation type or set of annotation types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/tagset1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tagset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/tapeVHS</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">VHS tape</Literal>
@@ -28302,6 +28359,21 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/terminologicalResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term list</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/terminologicalResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical resource that lists concepts pertaining to a specific domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/terminologicalResource</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">terminological resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/text</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for &apos;MediaType&apos; for the written or printed form of a language resource (part)</Literal>
@@ -28370,6 +28442,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/theoreticModel</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">theoretic model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/thesaurus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A reference work that lists words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms) [https://en.wikipedia.org/wiki/Thesaurus]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/thesaurus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">thesaurus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -28674,6 +28756,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/typesystem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">typesystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/typesystem1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A set of elements designed to annotate data; it typically contains only a list of annotation types, i.e. specific labels that are used for the annotation (e.g.,  part-of-speech, person, organization, , etc.), and is usually inbuilt in the annotation software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/typesystem1</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">typesystem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -29258,6 +29350,26 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/wordNet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A lexical database originally created for English and extended to other languages, which groups words into sets of synonyms called synsets, provides short definitions and usage examples, and records a number of relations among these synonym sets or their members</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/wordNet</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">WordNet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/wordlist</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A written collection of all words derived from a particular source, or sharing some other characteristic [https://www.yourdictionary.com/wordlist]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/wordlist</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">wordlist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/workflowFile</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Value for software distribution form, used for software workflows that are made available in the form of the workflow description file</Literal>
     </AnnotationAssertion>
@@ -29354,7 +29466,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid10"/>
-        <IRI>/redeposit</IRI>
+        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
@@ -29369,52 +29481,52 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid12"/>
-        <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
-        <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
+        <IRI>/redeposit</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid13"/>
-        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
+        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid14"/>
+        <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid14"/>
+        <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid15"/>
         <AbbreviatedIRI>cc:CommercialUse</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:purpose"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
+        <AnonymousIndividual nodeID="_:genid16"/>
         <IRI>/academic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid17"/>
-        <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
+        <AnonymousIndividual nodeID="_:genid16"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
         <AnonymousIndividual nodeID="_:genid18"/>
-        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
+        <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid2"/>
-        <AnonymousIndividual nodeID="_:genid13"/>
+        <AnonymousIndividual nodeID="_:genid10"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
@@ -29439,12 +29551,12 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid7"/>
-        <AnonymousIndividual nodeID="_:genid10"/>
+        <AnonymousIndividual nodeID="_:genid12"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
         <AnonymousIndividual nodeID="_:genid8"/>
-        <AnonymousIndividual nodeID="_:genid18"/>
+        <AnonymousIndividual nodeID="_:genid13"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
