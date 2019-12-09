@@ -224,9 +224,6 @@
         <NamedIndividual IRI="/music"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/MLModelFeature"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/caption"/>
     </Declaration>
     <Declaration>
@@ -641,10 +638,10 @@
         <NamedIndividual IRI="/ANC_genreClassification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/medium"/>
+        <ObjectProperty IRI="/sizePerImageClassification"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/sizePerImageClassification"/>
+        <NamedIndividual IRI="/medium"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isRelatedTo"/>
@@ -737,10 +734,10 @@
         <NamedIndividual IRI="/accessibleThroughQuery"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/unigram"/>
+        <NamedIndividual IRI="/ppAttachment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ppAttachment"/>
+        <NamedIndividual IRI="/unigram"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/organizationDescription"/>
@@ -977,6 +974,9 @@
         <NamedIndividual IRI="/openPublicPlace"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/mlFramework"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/researchOrganization"/>
     </Declaration>
     <Declaration>
@@ -1199,10 +1199,10 @@
         <NamedIndividual IRI="/Cp33722"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ontology"/>
+        <NamedIndividual IRI="/string"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/string"/>
+        <NamedIndividual IRI="/ontology"/>
     </Declaration>
     <Declaration>
         <Class IRI="/CapturingDeviceType"/>
@@ -3488,9 +3488,6 @@
         <NamedIndividual IRI="/ISO-2022-JP"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/mlModelFeature"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/nonFiction"/>
     </Declaration>
     <Declaration>
@@ -4673,10 +4670,10 @@
         <NamedIndividual IRI="/linkedIn"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/EvaluationLevel"/>
+        <NamedIndividual IRI="/windows-1257"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/windows-1257"/>
+        <Class IRI="/EvaluationLevel"/>
     </Declaration>
     <Declaration>
         <Class IRI="/LDTask"/>
@@ -5018,10 +5015,10 @@
         <NamedIndividual IRI="/telephoneIP"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasCreated"/>
+        <NamedIndividual IRI="/Cp1112"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp1112"/>
+        <ObjectProperty IRI="/hasCreated"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MTBF"/>
@@ -11240,8 +11237,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/annotationResource"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -11249,8 +11245,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/annotationSchema"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -12123,7 +12118,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/method"/>
         <ObjectUnionOf>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -12134,10 +12129,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/mlModel"/>
         <Class IRI="/ToolService"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/mlModelFeature"/>
-        <Class IRI="/MLModel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/modalityType"/>
@@ -12390,28 +12381,8 @@
         <Class IRI="/DatasetDistribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/sizePerAudioClassification"/>
-        <Class IRI="/Subset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/sizePerImageFormat"/>
-        <Class IRI="/ImageFormat"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/sizePerSubset"/>
         <Class IRI="/Subset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/sizePerTextNumericalFormat"/>
-        <Class IRI="/TextNumericalFormat"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/sizePerValidation"/>
-        <Class IRI="/Validation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/sizePerVideoFormat"/>
-        <Class IRI="/VideoFormat"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/sizeUnit"/>
@@ -12500,8 +12471,7 @@
         <ObjectProperty IRI="/tagset"/>
         <ObjectUnionOf>
             <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
-            <Class IRI="/ProcessingResource"/>
+            <Class IRI="/MLModel"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -12539,8 +12509,7 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/typesystem"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -13169,8 +13138,7 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isAnnotationResourceOf"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -13178,8 +13146,7 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isAnnotationSchemaOf"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -13387,8 +13354,7 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isTypesystemOf"/>
         <ObjectUnionOf>
-            <Class IRI="/Annotation"/>
-            <Class IRI="/MLModelFeature"/>
+            <Class IRI="/MLModel"/>
             <Class IRI="/ProcessingResource"/>
             <Class IRI="/ToolService"/>
         </ObjectUnionOf>
@@ -13484,10 +13450,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/mlModel"/>
         <Class IRI="/MLModel"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/mlModelFeature"/>
-        <Class IRI="/MLModelFeature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/modalityType"/>
@@ -13809,6 +13771,10 @@
         <Class IRI="/Subject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/tagset"/>
+        <Class IRI="/LexicalConceptualResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/targetMetadataRecord"/>
         <Class IRI="/MetadataRecord"/>
     </ObjectPropertyRange>
@@ -13831,6 +13797,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/trl"/>
         <Class IRI="/TRL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/typesystem"/>
+        <Class IRI="/LexicalConceptualResource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/usageProject"/>
@@ -14052,11 +14022,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/algorithm"/>
-        <Class IRI="/MLModelFeature"/>
+        <Class IRI="/MLModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/algorithmDetails"/>
-        <Class IRI="/MLModelFeature"/>
+        <Class IRI="/MLModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/alias"/>
@@ -14563,12 +14533,16 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/mlFramework"/>
+        <Class IRI="/MLModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/modalityTypeDetails"/>
         <Class IRI="/MediaPart"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/modelVariant"/>
-        <Class IRI="/MLModelFeature"/>
+        <Class IRI="/MLModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/multiValue"/>
@@ -14991,7 +14965,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/trainingCorpusDetails"/>
-        <Class IRI="/MLModelFeature"/>
+        <Class IRI="/MLModel"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/typeOfElement"/>
@@ -15512,6 +15486,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/metalanguage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/mlFramework"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/modalityTypeDetails"/>
@@ -18471,21 +18449,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
-        <IRI>/MLModelFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Machine Learning model feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/MLModelFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any feature that can be used for describing distinct distributable forms of text resources/parts</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/MLModelFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ML model feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
         <IRI>/MMI</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Multi-Modal Interaction framework</Literal>
     </AnnotationAssertion>
@@ -20627,7 +20590,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/attribution</IRI>
-        <AnonymousIndividual nodeID="_:genid1"/>
+        <AnonymousIndividual nodeID="_:genid19"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23534,7 +23497,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/informLicensor</IRI>
-        <AnonymousIndividual nodeID="_:genid2"/>
+        <AnonymousIndividual nodeID="_:genid20"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25292,6 +25255,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mixed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
+        <IRI>/mlFramework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Machine Learning framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/mlFramework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the framework that has been used for developing a model (e.g. keras, tensorflow, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/mlFramework</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ML framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/mlModel</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specifies the ML model that must be used together with the tool/service to perform the desired task</Literal>
@@ -25300,16 +25278,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/mlModel</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ML model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/mlModelFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links to any feature that can be used for describing Machine Learning models</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/mlModelFeature</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ML model feature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -25584,7 +25552,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/noDerivatives</IRI>
-        <AnonymousIndividual nodeID="_:genid3"/>
+        <AnonymousIndividual nodeID="_:genid21"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25604,7 +25572,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/noRedistribution</IRI>
-        <AnonymousIndividual nodeID="_:genid4"/>
+        <AnonymousIndividual nodeID="_:genid22"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25639,7 +25607,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:prohibition"/>
         <IRI>/nonCommercialUse</IRI>
-        <AnonymousIndividual nodeID="_:genid5"/>
+        <AnonymousIndividual nodeID="_:genid23"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25844,7 +25812,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/onlyMSmembers</IRI>
-        <AnonymousIndividual nodeID="_:genid6"/>
+        <AnonymousIndividual nodeID="_:genid24"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -26831,7 +26799,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/redeposit</IRI>
-        <AnonymousIndividual nodeID="_:genid7"/>
+        <AnonymousIndividual nodeID="_:genid25"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27446,7 +27414,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:permission"/>
         <IRI>/shareAlike</IRI>
-        <AnonymousIndividual nodeID="_:genid8"/>
+        <AnonymousIndividual nodeID="_:genid26"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -29460,108 +29428,108 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
-        <AnonymousIndividual nodeID="_:genid1"/>
-        <AnonymousIndividual nodeID="_:genid9"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid10"/>
-        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
-        <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
-        <IRI>/onlyMSmembers</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
-        <IRI>/redeposit</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid13"/>
-        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid14"/>
-        <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid14"/>
-        <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid15"/>
-        <AbbreviatedIRI>cc:CommercialUse</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
-        <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:purpose"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
-        <IRI>/academic</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
-        <AnonymousIndividual nodeID="_:genid17"/>
-        <AnonymousIndividual nodeID="_:genid16"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid18"/>
-        <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
+        <AnonymousIndividual nodeID="_:genid19"/>
+        <AnonymousIndividual nodeID="_:genid27"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
-        <AnonymousIndividual nodeID="_:genid2"/>
-        <AnonymousIndividual nodeID="_:genid10"/>
+        <AnonymousIndividual nodeID="_:genid20"/>
+        <AnonymousIndividual nodeID="_:genid28"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid3"/>
+        <AnonymousIndividual nodeID="_:genid21"/>
         <AbbreviatedIRI>cc:DerivativeWorks</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid4"/>
+        <AnonymousIndividual nodeID="_:genid22"/>
         <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid5"/>
+        <AnonymousIndividual nodeID="_:genid23"/>
         <IRI>https://creativecommons.org/ns#CommercialUse</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
-        <AnonymousIndividual nodeID="_:genid6"/>
-        <AnonymousIndividual nodeID="_:genid11"/>
+        <AnonymousIndividual nodeID="_:genid24"/>
+        <AnonymousIndividual nodeID="_:genid29"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
-        <AnonymousIndividual nodeID="_:genid7"/>
-        <AnonymousIndividual nodeID="_:genid12"/>
+        <AnonymousIndividual nodeID="_:genid25"/>
+        <AnonymousIndividual nodeID="_:genid30"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:duty"/>
-        <AnonymousIndividual nodeID="_:genid8"/>
-        <AnonymousIndividual nodeID="_:genid13"/>
+        <AnonymousIndividual nodeID="_:genid26"/>
+        <AnonymousIndividual nodeID="_:genid31"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="odrl:action"/>
-        <AnonymousIndividual nodeID="_:genid9"/>
+        <AnonymousIndividual nodeID="_:genid27"/>
         <AbbreviatedIRI>cc:Attribution</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid28"/>
+        <AbbreviatedIRI>cc:Notify</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
+        <AnonymousIndividual nodeID="_:genid29"/>
+        <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:recipient"/>
+        <AnonymousIndividual nodeID="_:genid29"/>
+        <IRI>/onlyMSmembers</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid30"/>
+        <IRI>/redeposit</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid31"/>
+        <AbbreviatedIRI>cc:ShareALike</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid32"/>
+        <AbbreviatedIRI>cc:CommericalUse</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid32"/>
+        <AbbreviatedIRI>cc:Distribution</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid33"/>
+        <AbbreviatedIRI>cc:CommercialUse</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:operator"/>
+        <AnonymousIndividual nodeID="_:genid34"/>
+        <AbbreviatedIRI>odrl:eq</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:purpose"/>
+        <AnonymousIndividual nodeID="_:genid34"/>
+        <IRI>/academic</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:constraint"/>
+        <AnonymousIndividual nodeID="_:genid35"/>
+        <AnonymousIndividual nodeID="_:genid34"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="odrl:action"/>
+        <AnonymousIndividual nodeID="_:genid36"/>
+        <AbbreviatedIRI>cc:Reproduction</AbbreviatedIRI>
     </AnnotationAssertion>
 </Ontology>
 
