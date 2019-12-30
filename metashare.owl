@@ -272,6 +272,9 @@
         <Class abbreviatedIRI="omtd:TdmMethod"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/DDC351"/>
     </Declaration>
     <Declaration>
@@ -623,6 +626,9 @@
         <ObjectProperty IRI="/nonSpeechItem"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/embargoedAccess"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/hasAnnotated"/>
     </Declaration>
     <Declaration>
@@ -857,10 +863,10 @@
         <ObjectProperty IRI="/lcrSubclass"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Clarin_Domain001"/>
+        <NamedIndividual IRI="/Cp866"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp866"/>
+        <NamedIndividual IRI="/Clarin_Domain001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/PAROLE_G005"/>
@@ -879,6 +885,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/faculty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/register"/>
@@ -1235,6 +1244,9 @@
         <NamedIndividual IRI="/T-HPair"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/noCopyrightNC"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/entry"/>
     </Declaration>
     <Declaration>
@@ -1475,6 +1487,9 @@
         <DataProperty IRI="/formalism"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/US-ASCII"/>
     </Declaration>
     <Declaration>
@@ -1577,10 +1592,10 @@
         <NamedIndividual IRI="/none4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
+        <NamedIndividual IRI="/architecture"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/architecture"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/literatureRhetoricAndCriticism"/>
@@ -1727,6 +1742,9 @@
         <ObjectProperty IRI="/isRequiredLRBy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/omtdAccess2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/RelatedLexiconType"/>
     </Declaration>
     <Declaration>
@@ -1859,6 +1877,9 @@
         <DataProperty IRI="/address"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/omtdAccess1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/BNC_textTypeClassification"/>
     </Declaration>
     <Declaration>
@@ -1920,6 +1941,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/openAccess1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp870"/>
@@ -2088,6 +2112,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/unsignedInteger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/semanticUnit"/>
@@ -2570,6 +2597,9 @@
         <NamedIndividual IRI="/unknown"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/updateFrequency"/>
     </Declaration>
     <Declaration>
@@ -2595,6 +2625,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/proceedings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/noCopyright"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/administrativeText"/>
@@ -2673,6 +2706,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/multilingualityType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/restrictedAccess1"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/licenceCategory"/>
@@ -2798,6 +2834,9 @@
         <ObjectProperty IRI="/accesses"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/divisionName"/>
     </Declaration>
     <Declaration>
@@ -2837,10 +2876,10 @@
         <NamedIndividual IRI="/instrumentalMusic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/pharmaceutics"/>
+        <ObjectProperty IRI="/requiresLR"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/requiresLR"/>
+        <NamedIndividual IRI="/pharmaceutics"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MeSH_classification"/>
@@ -2859,6 +2898,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/noDerivatives"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/laryngograph1"/>
@@ -3176,10 +3218,10 @@
         <NamedIndividual IRI="/ANC_domainClassification"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/sizePerGeographicCoverage"/>
+        <NamedIndividual IRI="/troponym"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/troponym"/>
+        <ObjectProperty IRI="/sizePerGeographicCoverage"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isSimilarTo"/>
@@ -3312,6 +3354,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/video1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/automatic"/>
@@ -3918,6 +3963,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/landingPage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/noKnownCopyright"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/numberOfParticipants"/>
@@ -4901,6 +4949,9 @@
         <NamedIndividual IRI="/mixed"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/rolePlay"/>
     </Declaration>
     <Declaration>
@@ -4923,6 +4974,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/windows-1252"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyright"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasDivision"/>
@@ -5322,6 +5376,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MS_SG013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/noCopyrightUS"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/DDC900"/>
@@ -5765,6 +5822,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/AccessRightsStatement"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+            <Class IRI="/AccessRightsStatementIdentifier"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
+        <Class abbreviatedIRI="datacite:Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="/conformsTo"/>
             <Class IRI="/AccessRightsStatementScheme"/>
@@ -6396,19 +6464,19 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_16ec"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_abf2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -6524,51 +6592,51 @@
         <NamedIndividual abbreviatedIRI="datacite:urn"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-NC/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-OW-EU/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-RUU/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-OKLR/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/UND/1.0/"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -9664,6 +9732,14 @@
         <NamedIndividual IRI="/omtd"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
+        <NamedIndividual IRI="/omtdAccess1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatementIdentifier"/>
+        <NamedIndividual IRI="/omtdAccess2"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/LRIdentifierScheme"/>
         <NamedIndividual IRI="/omtdDocker"/>
     </ClassAssertion>
@@ -11060,6 +11136,70 @@
         <NamedIndividual IRI="/youtube"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/embargoedAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightNC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightUS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noKnownCopyright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/openAccess1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/restrictedAccess1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/ColourSpace"/>
         <NamedIndividual IRI="/4:2:24four_2_2"/>
     </ClassAssertion>
@@ -12120,8 +12260,78 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/conformsTo"/>
-        <NamedIndividual IRI="/openAccess"/>
+        <NamedIndividual IRI="/omtdAccess1"/>
         <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/conformsTo"/>
+        <NamedIndividual IRI="/omtdAccess2"/>
+        <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/openAccess"/>
+        <NamedIndividual IRI="/omtdAccess2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-NC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightNC"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-OW-EU/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-RUU/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/UND/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noKnownCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightUS"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-OKLR/1.0/"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12219,9 +12429,9 @@
         <NamedIndividual IRI="/ClarinLicenceCategoryScheme"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/conformsTo"/>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/restrictedAccess"/>
-        <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
+        <NamedIndividual IRI="/omtdAccess1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12322,6 +12532,26 @@
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/tweet"/>
         <NamedIndividual IRI="/ClarinEl_TT007"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/embargoedAccess"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/openAccess1"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_abf2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/restrictedAccess1"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_16ec"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/url"/>
@@ -16555,6 +16785,10 @@
         <Class IRI="/Distribution"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/divisionAlternativeName"/>
+        <Class IRI="/Division"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/divisionName"/>
         <Class IRI="/Division"/>
     </DataPropertyDomain>
@@ -16811,6 +17045,10 @@
         <Class IRI="/LicenceTerms"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/licenceTermsShortName"/>
+        <Class IRI="/LicenceTerms"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/licenceTermsURL"/>
         <Class IRI="/LicenceTerms"/>
     </DataPropertyDomain>
@@ -16906,6 +17144,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="/order"/>
         <Class IRI="/NGramModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/organizationAlternativeName"/>
+        <Class IRI="/Organization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/organizationBio"/>
@@ -17581,6 +17823,10 @@
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/divisionAlternativeName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/divisionName"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -17781,6 +18027,10 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/licenceTermsShortName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/licenceTermsURL"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
@@ -17851,6 +18101,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/order"/>
         <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/organizationAlternativeName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/organizationBio"/>
@@ -18234,46 +18488,6 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/coar/access_right/c_14cb</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but neither is directly available through the system or platform nor can be referenced to an open access copy in an external journal or trustworthy archive.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/coar/access_right/c_14cb</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata only access</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/coar/access_right/c_16ec</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g.,  limited to a university community)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/coar/access_right/c_16ec</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted access</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/coar/access_right/c_abf2</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.The resource is either stored in the repository or referenced to an external journal or trustworthy archive.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/coar/access_right/c_abf2</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">open access</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/coar/access_right/c_f1cf</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/coar/access_right/c_f1cf</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">embargoed access</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>datacite:ark</AbbreviatedIRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Archival Resource Key</Literal>
     </AnnotationAssertion>
@@ -18424,66 +18638,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/CNE/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Not Evaluated</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/InC-EDU/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Educational Use Permitted</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/InC-NC/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Non-Commercial Use Permitted</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/InC-OW-EU/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - EU Orphan Work</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/InC-RUU/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Rights-holder(s) Unlocatable or Unidentifiable</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/InC/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/NKC/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Known Copyright</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/NoC-CR/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Contractual Restrictions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/NoC-NC/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Non-Commercial Use Only</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/NoC-OKLR/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Other Known Legal Restrictions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/NoC-US/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - United States</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://rightsstatements.org/vocab/UND/1.0/</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Undetermined</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/ADPCM</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ADPCM</Literal>
     </AnnotationAssertion>
@@ -18531,6 +18685,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/AccessRightsStatement</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access rights statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AccessRightsStatementIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A string used to uniquely identify an access rights statement according to a specific scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AccessRightsStatementIdentifier</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Access rights statement identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -32175,6 +32339,106 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/zipCode</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">zip code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/copyrightNotEvaluated</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Not Evaluated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/copyrightUndetermined</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Copyright Undetermined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/2.0.0/embargoedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/embargoedAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">embargoed access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/inCopyright</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/inCopyrightEUOrphan</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - EU Orphan Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/inCopyrightEdu</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Educational Use Permitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/inCopyrightNCPermitted</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Non-Commercial Use Permitted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/inCopyrightRightsHoldersUnlocatable</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Copyright - Rights-holder(s) Unlocatable or Unidentifiable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/2.0.0/metadataOnlyAccess</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but neither is directly available through the system or platform nor can be referenced to an open access copy in an external journal or trustworthy archive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/metadataOnlyAccess</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metadata only access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/noCopyright</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Other Known Legal Restrictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/noCopyrightContract</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Contractual Restrictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/noCopyrightNC</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - Non-Commercial Use Only</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/noCopyrightUS</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Copyright - United States</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/noKnownCopyright</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">No Known Copyright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/2.0.0/openAccess1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.The resource is either stored in the repository or referenced to an external journal or trustworthy archive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/openAccess1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">open access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/2.0.0/restrictedAccess1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g.,  limited to a university community)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/2.0.0/restrictedAccess1</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted access</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
