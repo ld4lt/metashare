@@ -272,9 +272,6 @@
         <Class abbreviatedIRI="omtd:TdmMethod"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/metadataOnlyAccess"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/DDC351"/>
     </Declaration>
     <Declaration>
@@ -432,6 +429,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/validationReport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/academicText"/>
@@ -624,9 +624,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/nonSpeechItem"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/embargoedAccess"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasAnnotated"/>
@@ -854,6 +851,9 @@
         <NamedIndividual IRI="/omtdDocker"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/noKnownCopyright"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/ClarinEl_TT012"/>
     </Declaration>
     <Declaration>
@@ -887,9 +887,6 @@
         <NamedIndividual IRI="/faculty"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/copyrightNotEvaluated"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/register"/>
     </Declaration>
     <Declaration>
@@ -908,10 +905,10 @@
         <NamedIndividual IRI="/definition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/sourceMetadataRecord"/>
+        <NamedIndividual IRI="/attached"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/attached"/>
+        <ObjectProperty IRI="/sourceMetadataRecord"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/fundingType"/>
@@ -1244,9 +1241,6 @@
         <NamedIndividual IRI="/T-HPair"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/noCopyrightNC"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/entry"/>
     </Declaration>
     <Declaration>
@@ -1485,9 +1479,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/formalism"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/noCopyrightContract"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/US-ASCII"/>
@@ -1775,6 +1766,9 @@
         <NamedIndividual IRI="/submitted"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/nonCommercialUse"/>
     </Declaration>
     <Declaration>
@@ -1943,9 +1937,6 @@
         <Class abbreviatedIRI="datacite:ResourceIdentifierScheme"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/openAccess1"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/Cp870"/>
     </Declaration>
     <Declaration>
@@ -2112,9 +2103,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/unsignedInteger"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/semanticUnit"/>
@@ -2429,6 +2417,9 @@
         <ObjectProperty IRI="/dataFormat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/SpeechGenreIdentifier"/>
     </Declaration>
     <Declaration>
@@ -2597,9 +2588,6 @@
         <NamedIndividual IRI="/unknown"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/updateFrequency"/>
     </Declaration>
     <Declaration>
@@ -2625,9 +2613,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/proceedings"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/noCopyright"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/administrativeText"/>
@@ -2706,9 +2691,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/multilingualityType"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/restrictedAccess1"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/licenceCategory"/>
@@ -2810,6 +2792,9 @@
         <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/noCopyrightUS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/meetingProceedings"/>
     </Declaration>
     <Declaration>
@@ -2832,9 +2817,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/accesses"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/divisionName"/>
@@ -2900,9 +2882,6 @@
         <NamedIndividual IRI="/noDerivatives"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/copyrightUndetermined"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/laryngograph1"/>
     </Declaration>
     <Declaration>
@@ -2928,6 +2907,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasArchived"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
@@ -3152,6 +3134,9 @@
         <NamedIndividual IRI="/wholeBody"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/inCopyright"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
@@ -3356,9 +3341,6 @@
         <NamedIndividual IRI="/video1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/inCopyrightEdu"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/automatic"/>
     </Declaration>
     <Declaration>
@@ -3428,6 +3410,9 @@
         <DataProperty IRI="/digest"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/openAccess1"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/GroupIdentifier"/>
     </Declaration>
     <Declaration>
@@ -3461,10 +3446,10 @@
         <ObjectProperty abbreviatedIRI="foaf:primaryTopic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp970"/>
+        <NamedIndividual IRI="/biology"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/biology"/>
+        <NamedIndividual IRI="/Cp970"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/educationLevel"/>
@@ -3965,9 +3950,6 @@
         <DataProperty IRI="/landingPage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/noKnownCopyright"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/numberOfParticipants"/>
     </Declaration>
     <Declaration>
@@ -4016,6 +3998,9 @@
         <DataProperty IRI="/robustness"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/Cp1141"/>
     </Declaration>
     <Declaration>
@@ -4050,6 +4035,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/ProcessMode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/noCopyrightNC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/meeting"/>
@@ -4547,7 +4535,13 @@
         <NamedIndividual IRI="/flash"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/embargoedAccess"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/twitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/profession"/>
@@ -4976,9 +4970,6 @@
         <NamedIndividual IRI="/windows-1252"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/inCopyright"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/hasDivision"/>
     </Declaration>
     <Declaration>
@@ -5016,6 +5007,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/raster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/noCopyright"/>
     </Declaration>
     <Declaration>
         <Class IRI="/SceneIllumination"/>
@@ -5184,6 +5178,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/participant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/accepted"/>
@@ -5378,9 +5375,6 @@
         <NamedIndividual IRI="/MS_SG013"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/noCopyrightUS"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/DDC900"/>
     </Declaration>
     <Declaration>
@@ -5471,16 +5465,19 @@
         <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/earthSciencesGeology"/>
+        <NamedIndividual IRI="/parsing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/parsing"/>
+        <NamedIndividual IRI="/earthSciencesGeology"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isCitedBy"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/keyword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/restrictedAccess1"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="rdf:langString"/>
@@ -5715,6 +5712,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/distributionTextFeature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
     </Declaration>
     <Declaration>
         <Class IRI="/MLModel"/>
@@ -8492,6 +8492,14 @@
         <NamedIndividual IRI="/coordination"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/ProjectIdentifierScheme"/>
         <NamedIndividual IRI="/cordis"/>
     </ClassAssertion>
@@ -8702,6 +8710,10 @@
     <ClassAssertion>
         <Class IRI="/TextType"/>
         <NamedIndividual IRI="/emailText"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/embargoedAccess"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/CapturingDeviceType"/>
@@ -9070,6 +9082,26 @@
     <ClassAssertion>
         <Class IRI="/DocumentType"/>
         <NamedIndividual IRI="/inCollection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/DocumentType"/>
@@ -9452,6 +9484,10 @@
         <NamedIndividual IRI="/metaShare"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/RequiredHardware"/>
         <NamedIndividual IRI="/microphone"/>
     </ClassAssertion>
@@ -9616,6 +9652,22 @@
         <NamedIndividual IRI="/no"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightNC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noCopyrightUS"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="/ConditionOfUse"/>
         <NamedIndividual IRI="/noDerivatives"/>
     </ClassAssertion>
@@ -9626,6 +9678,10 @@
     <ClassAssertion>
         <Class IRI="/HearingImpairmentOfParticipants"/>
         <NamedIndividual IRI="/noH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/noKnownCopyright"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/ConditionOfUse"/>
@@ -9770,6 +9826,10 @@
     <ClassAssertion>
         <Class IRI="/AccessRightsStatement"/>
         <NamedIndividual IRI="/openAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/openAccess1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/RecordingEnvironment"/>
@@ -10350,6 +10410,10 @@
     <ClassAssertion>
         <Class IRI="/AccessRightsStatement"/>
         <NamedIndividual IRI="/restrictedAccess"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/AccessRightsStatement"/>
+        <NamedIndividual IRI="/restrictedAccess1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/TextType"/>
@@ -11136,70 +11200,6 @@
         <NamedIndividual IRI="/youtube"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/copyrightNotEvaluated"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/copyrightUndetermined"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/embargoedAccess"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/inCopyright"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/inCopyrightEdu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/metadataOnlyAccess"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/noCopyright"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/noCopyrightContract"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/noCopyrightNC"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/noCopyrightUS"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/noKnownCopyright"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/openAccess1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/AccessRightsStatement"/>
-        <NamedIndividual IRI="/restrictedAccess1"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/ColourSpace"/>
         <NamedIndividual IRI="/4:2:24four_2_2"/>
     </ClassAssertion>
@@ -11975,6 +11975,16 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/copyrightNotEvaluated"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/copyrightUndetermined"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/UND/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/culture"/>
         <NamedIndividual IRI="/Clarin_Domain004"/>
     </ObjectPropertyAssertion>
@@ -12017,6 +12027,11 @@
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/emailText"/>
         <NamedIndividual IRI="/ClarinEl_TT016"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/embargoedAccess"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12112,6 +12127,31 @@
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/humanNonSpeech"/>
         <NamedIndividual IRI="/MS_AG001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-OW-EU/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightEdu"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-NC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-RUU/1.0/"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12225,6 +12265,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/metadataOnlyAccess"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/music1"/>
         <NamedIndividual IRI="/DDC780"/>
     </ObjectPropertyAssertion>
@@ -12242,6 +12287,31 @@
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/newsMediaJournalismAndPublishing"/>
         <NamedIndividual IRI="/DDC070"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-OKLR/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightContract"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightNC"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noCopyrightUS"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/noKnownCopyright"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12275,63 +12345,8 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/inCopyright"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/inCopyrightNCPermitted"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-NC/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/noCopyrightNC"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-NC/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/copyrightNotEvaluated"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/inCopyrightEUOrphan"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-OW-EU/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/noCopyrightContract"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/inCopyrightEdu"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-EDU/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/inCopyrightRightsHoldersUnlocatable"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/InC-RUU/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/copyrightUndetermined"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/UND/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/noKnownCopyright"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NKC/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/noCopyrightUS"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-US/1.0/"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/noCopyright"/>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-OKLR/1.0/"/>
+        <NamedIndividual IRI="/openAccess1"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_abf2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
@@ -12435,6 +12450,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
+        <NamedIndividual IRI="/restrictedAccess1"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_16ec"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/review"/>
         <NamedIndividual IRI="/ClarinEl_TT017"/>
     </ObjectPropertyAssertion>
@@ -12532,26 +12552,6 @@
         <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
         <NamedIndividual IRI="/tweet"/>
         <NamedIndividual IRI="/ClarinEl_TT007"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/embargoedAccess"/>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/metadataOnlyAccess"/>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_14cb"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/openAccess1"/>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_abf2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="datacite:hasIdentifier"/>
-        <NamedIndividual IRI="/restrictedAccess1"/>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_16ec"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/url"/>
@@ -24466,7 +24466,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/distributionLocation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distributionLocation</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">distribution location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
