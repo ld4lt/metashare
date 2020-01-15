@@ -2591,6 +2591,9 @@
         <NamedIndividual IRI="/unknown"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/projectAlternativeName"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="/updateFrequency"/>
     </Declaration>
     <Declaration>
@@ -3554,10 +3557,10 @@
         <NamedIndividual IRI="/graphicCard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/semanticUnit1"/>
+        <DataProperty IRI="/typeOfImageContent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/typeOfImageContent"/>
+        <NamedIndividual IRI="/semanticUnit1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/DDC200"/>
@@ -5070,6 +5073,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ClarinEl_TT002"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/licenceTermsAlternativeName"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp855"/>
@@ -16462,6 +16468,10 @@
         <DataProperty IRI="/url"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="/licenceTermsAlternativeName"/>
+        <DataProperty abbreviatedIRI="dct:alternative"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="/licenceTermsName"/>
         <DataProperty abbreviatedIRI="dct:title"/>
     </SubDataPropertyOf>
@@ -16487,6 +16497,10 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/organizationShortName"/>
+        <DataProperty abbreviatedIRI="dct:alternative"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/projectAlternativeName"/>
         <DataProperty abbreviatedIRI="dct:alternative"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -17041,6 +17055,10 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="/licenceTermsAlternativeName"/>
+        <Class IRI="/LicenceTerms"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="/licenceTermsName"/>
         <Class IRI="/LicenceTerms"/>
     </DataPropertyDomain>
@@ -17246,6 +17264,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="/profession"/>
         <Class IRI="/Participant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/projectAlternativeName"/>
+        <Class IRI="/Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/projectEndDate"/>
@@ -18023,6 +18045,10 @@
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/licenceTermsAlternativeName"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/licenceTermsName"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
@@ -18188,6 +18214,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/profession"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/projectAlternativeName"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -27505,6 +27535,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/licenceTermsAlternativeName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces an alternative name (other than the short name) used for a licence or terms of use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/licenceTermsAlternativeName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">licence/terms of use/service name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/licenceTermsName</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The name by which a licence/terms of use/service is known</Literal>
     </AnnotationAssertion>
@@ -29312,6 +29352,16 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/profession</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">profession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/projectAlternativeName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Introduces an alternative name (other than the short name) used for a project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/projectAlternativeName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">project alternative name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
