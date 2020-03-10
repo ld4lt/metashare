@@ -146,22 +146,22 @@
         <NamedIndividual IRI="/none5"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/ELG_Domain009"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Corpus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/person1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ELG_Domain009"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/DDC572"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AccessRightsStatementScheme"/>
+        <NamedIndividual IRI="/LMF"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/LMF"/>
+        <Class IRI="/AccessRightsStatementScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/dv"/>
@@ -173,10 +173,10 @@
         <NamedIndividual IRI="/subtitle3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ELG_Domain008"/>
+        <DataProperty IRI="/amount"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/amount"/>
+        <NamedIndividual IRI="/ELG_Domain008"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/pennTreeBank"/>
@@ -215,10 +215,10 @@
         <DataProperty IRI="/executionLocation"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/posesPerSubject"/>
+        <NamedIndividual IRI="/diagnostic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/diagnostic"/>
+        <DataProperty IRI="/posesPerSubject"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/DDC570"/>
@@ -602,10 +602,10 @@
         <DataProperty IRI="/interactiveMedia"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/KOI8-R"/>
+        <ObjectProperty IRI="/linkToOtherMedia"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/linkToOtherMedia"/>
+        <NamedIndividual IRI="/KOI8-R"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ELG_domainClassification"/>
@@ -656,10 +656,10 @@
         <NamedIndividual IRI="/low"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ELG_Domain005"/>
+        <NamedIndividual IRI="/DDC310"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/DDC310"/>
+        <NamedIndividual IRI="/ELG_Domain005"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/chemistry"/>
@@ -782,10 +782,10 @@
         <Class IRI="/Participant"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/homepage"/>
+        <NamedIndividual IRI="/os-independent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/os-independent"/>
+        <DataProperty IRI="/homepage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/largeCompany"/>
@@ -806,10 +806,10 @@
         <NamedIndividual IRI="/accessibleThroughQuery"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ppAttachment"/>
+        <NamedIndividual IRI="/unigram"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/unigram"/>
+        <NamedIndividual IRI="/ppAttachment"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ELG_Domain002"/>
@@ -863,10 +863,10 @@
         <ObjectProperty IRI="/lcrSubclass"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Clarin_Domain001"/>
+        <NamedIndividual IRI="/Cp866"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp866"/>
+        <NamedIndividual IRI="/Clarin_Domain001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/PAROLE_G005"/>
@@ -917,10 +917,10 @@
         <NamedIndividual IRI="/narrative"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/PAROLE_G006"/>
+        <NamedIndividual IRI="/ClarinEl_TT014"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ClarinEl_TT014"/>
+        <NamedIndividual IRI="/PAROLE_G006"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/qualiaStructure"/>
@@ -944,10 +944,10 @@
         <NamedIndividual IRI="/yesNoQuestion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isRelatedToLR"/>
+        <ObjectProperty IRI="/hasOutcome"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasOutcome"/>
+        <ObjectProperty IRI="/isRelatedToLR"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/documentsAnnotation"/>
@@ -974,10 +974,10 @@
         <DataProperty IRI="/title"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp868"/>
+        <NamedIndividual IRI="/PAROLE_G003"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/PAROLE_G003"/>
+        <NamedIndividual IRI="/Cp868"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MS_AG004"/>
@@ -1019,13 +1019,13 @@
         <ObjectProperty IRI="/isRelatedToLT"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/ThreeG"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/EML"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MS_AG003"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/ThreeG"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/ClarinEl_TT016"/>
@@ -1079,13 +1079,13 @@
         <ObjectProperty IRI="/isCombinedWith"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/PAROLE_G009"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp862"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <NamedIndividual IRI="/PAROLE_G009"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MS_AG002"/>
@@ -1127,10 +1127,10 @@
         <ObjectProperty IRI="/guidelines"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/scenarioType"/>
+        <NamedIndividual IRI="/encyclopaedicText"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/encyclopaedicText"/>
+        <ObjectProperty IRI="/scenarioType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/inProceedings"/>
@@ -1169,9 +1169,6 @@
         <NamedIndividual IRI="/MS_AG001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ClarinEl_TT018"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/finance"/>
     </Declaration>
     <Declaration>
@@ -1179,6 +1176,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ClarinEl_TT018"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasPart"/>
@@ -1217,16 +1217,16 @@
         <ObjectProperty IRI="/isElicitedBy"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/isEvaluatorOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Clarin_Domain003"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:altLabel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp864"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Clarin_Domain003"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/PAROLE_G007"/>
@@ -1319,10 +1319,10 @@
         <Class IRI="/Subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/UserType"/>
+        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/coar/access_right/c_f1cf"/>
+        <Class IRI="/UserType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/airflow"/>
@@ -1541,10 +1541,10 @@
         <NamedIndividual IRI="/clippingRate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ClarinEl_TT010"/>
+        <NamedIndividual IRI="/ThreeD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ThreeD"/>
+        <NamedIndividual IRI="/ClarinEl_TT010"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/implementationLanguage"/>
@@ -1586,16 +1586,16 @@
         <NamedIndividual IRI="/none4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/architecture"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isUsageProjectOf"/>
+        <NamedIndividual IRI="http://rightsstatements.org/vocab/CNE/1.0/"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/literatureRhetoricAndCriticism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isUsageProjectOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/none"/>
@@ -1607,10 +1607,10 @@
         <DataProperty IRI="/copyrightStatement"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/issn"/>
+        <NamedIndividual IRI="/medication"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/medication"/>
+        <NamedIndividual IRI="/issn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/MUMIN"/>
@@ -1853,10 +1853,10 @@
         <NamedIndividual IRI="/DDC384"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="datacite:ark"/>
+        <NamedIndividual IRI="/public"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/public"/>
+        <NamedIndividual abbreviatedIRI="datacite:ark"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/memberOfAssociation"/>
@@ -2042,10 +2042,10 @@
         <ObjectProperty IRI="/metric"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/CORE"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
+        <NamedIndividual IRI="/CORE"/>
     </Declaration>
     <Declaration>
         <Class IRI="/DistributionVideoFeature"/>
@@ -2069,10 +2069,10 @@
         <Class IRI="/MediaPart"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/DDC650"/>
+        <NamedIndividual IRI="/TMX"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/TMX"/>
+        <NamedIndividual IRI="/DDC650"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/sizePerLanguageVariety"/>
@@ -2135,10 +2135,10 @@
         <NamedIndividual IRI="/consultingFirm"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/group"/>
+        <ObjectProperty IRI="/parameter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/parameter"/>
+        <NamedIndividual IRI="/group"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="odrl:operator"/>
@@ -2201,10 +2201,10 @@
         <DataProperty IRI="/distractor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasAnalysed"/>
+        <DataProperty IRI="/validated"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/validated"/>
+        <ObjectProperty IRI="/hasAnalysed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/contributor"/>
@@ -2231,10 +2231,10 @@
         <ObjectProperty IRI="/relatedLR"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/mov"/>
+        <NamedIndividual IRI="/windows"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/windows"/>
+        <NamedIndividual IRI="/mov"/>
     </Declaration>
     <Declaration>
         <Class IRI="/DatasetDistributionForm"/>
@@ -2360,10 +2360,10 @@
         <NamedIndividual IRI="/multiWordUnit1"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/organizationBio"/>
+        <NamedIndividual IRI="/Cp964"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp964"/>
+        <DataProperty IRI="/organizationBio"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/modalityType"/>
@@ -2444,10 +2444,10 @@
         <AnnotationProperty abbreviatedIRI="skos:example"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/article1"/>
+        <NamedIndividual IRI="/oggVorbis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/oggVorbis"/>
+        <NamedIndividual IRI="/article1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/plants"/>
@@ -2462,19 +2462,19 @@
         <DataProperty IRI="/validationDetails"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Parameter"/>
+        <DataProperty IRI="/version"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/version"/>
+        <Class IRI="/Parameter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/mac-OS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/RasterOrVectorGraphics"/>
+        <NamedIndividual IRI="/Cp874"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Cp874"/>
+        <Class IRI="/RasterOrVectorGraphics"/>
     </Declaration>
     <Declaration>
         <Class IRI="/AudioType"/>
@@ -2507,10 +2507,10 @@
         <ObjectProperty IRI="/fundingCountry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/StandardBestPractice"/>
+        <NamedIndividual IRI="/pearStory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/pearStory"/>
+        <Class IRI="/StandardBestPractice"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rightsstatements.org/vocab/NoC-CR/1.0/"/>
@@ -2786,10 +2786,10 @@
         <ObjectProperty IRI="/recorder"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="dct:issued"/>
+        <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/OMTDShareRightsStatementScheme"/>
+        <DataProperty abbreviatedIRI="dct:issued"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/domain1"/>
@@ -2801,10 +2801,10 @@
         <NamedIndividual IRI="/noCopyrightUS"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isReviewedBy"/>
+        <NamedIndividual IRI="/meetingProceedings"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/meetingProceedings"/>
+        <ObjectProperty IRI="/isReviewedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/complex"/>
@@ -2861,19 +2861,22 @@
         <NamedIndividual IRI="/sourceAndExecutableCode"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/pharmaceutics"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/instrumentalMusic"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/requiresLR"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/pharmaceutics"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/MeSH_classification"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/interview1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/serviceAdapterDownloadLocation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isFundingProjectOf"/>
@@ -2996,13 +2999,13 @@
         <NamedIndividual IRI="/systemEvaluator"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/morphology"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/socialProblemsAndSocialServices"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/clause"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/morphology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/UTF-16"/>
@@ -3083,13 +3086,13 @@
         <NamedIndividual IRI="/fiction"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="datacite:PersonalIdentifier"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/politics"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/trl3"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="datacite:PersonalIdentifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/EUC-KR"/>
@@ -3209,10 +3212,10 @@
         <NamedIndividual IRI="/ANC_domainClassification"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/sizePerGeographicCoverage"/>
+        <NamedIndividual IRI="/troponym"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/troponym"/>
+        <ObjectProperty IRI="/sizePerGeographicCoverage"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isSimilarTo"/>
@@ -3221,22 +3224,22 @@
         <DataProperty abbreviatedIRI="dct:title"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="/annotationEndDate"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/interview"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/academic1"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/annotationEndDate"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/annotationReport"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/crossReference"/>
+        <ObjectProperty IRI="/intendedApplication"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/intendedApplication"/>
+        <NamedIndividual IRI="/crossReference"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/captureTime"/>
@@ -3395,10 +3398,10 @@
         <NamedIndividual IRI="/HD.1080"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/frame1"/>
+        <NamedIndividual IRI="/presentation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/presentation"/>
+        <NamedIndividual IRI="/frame1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/bodyGesture"/>
@@ -3521,10 +3524,10 @@
         <Class IRI="/NeuralNetwork"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/externalReference"/>
+        <NamedIndividual IRI="/alcohol"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/alcohol"/>
+        <ObjectProperty IRI="/externalReference"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isQueriedBy"/>
@@ -3557,10 +3560,10 @@
         <NamedIndividual IRI="/graphicCard"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/semanticUnit1"/>
+        <DataProperty IRI="/typeOfImageContent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/typeOfImageContent"/>
+        <NamedIndividual IRI="/semanticUnit1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/DDC200"/>
@@ -3806,22 +3809,22 @@
         <NamedIndividual IRI="/homeAndFamilyManagement"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="/publication"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/LicenceTerms"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp930"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/publication"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/mastersThesis"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/discipline"/>
+        <NamedIndividual IRI="/paleontology"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/paleontology"/>
+        <DataProperty IRI="/discipline"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/face"/>
@@ -3887,10 +3890,10 @@
         <NamedIndividual IRI="/aac"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/organizationRole"/>
+        <NamedIndividual IRI="/multiWordUnit"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/multiWordUnit"/>
+        <ObjectProperty IRI="/organizationRole"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="datacite:purl"/>
@@ -3965,10 +3968,10 @@
         <DataProperty IRI="/fundingSchemeCategory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/GATE"/>
+        <Class abbreviatedIRI="omtd:AnnotationType"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="omtd:AnnotationType"/>
+        <NamedIndividual IRI="/GATE"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/dialect"/>
@@ -4037,10 +4040,10 @@
         <ObjectProperty IRI="/dependentLR"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/noCopyrightNC"/>
+        <Class IRI="/ProcessMode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/ProcessMode"/>
+        <NamedIndividual IRI="/noCopyrightNC"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/meeting"/>
@@ -4139,10 +4142,10 @@
         <DataProperty IRI="/requiresSoftware"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/CorpusSubclass"/>
+        <NamedIndividual IRI="/intrinsic"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/intrinsic"/>
+        <Class IRI="/CorpusSubclass"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/LTSupplier"/>
@@ -4211,13 +4214,13 @@
         <NamedIndividual IRI="/faceToFaceConversation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/CorpusAudioPart"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="/fundingAuthority"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:source"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/CorpusAudioPart"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp933"/>
@@ -4226,10 +4229,10 @@
         <NamedIndividual IRI="/ELRA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/frogStory"/>
+        <DataProperty IRI="/projectShortName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/projectShortName"/>
+        <NamedIndividual IRI="/frogStory"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/comparable"/>
@@ -4412,10 +4415,10 @@
         <NamedIndividual IRI="/variable"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/aLaw"/>
+        <NamedIndividual IRI="/mixedH"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/mixedH"/>
+        <NamedIndividual IRI="/aLaw"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/semanticClass"/>
@@ -4523,10 +4526,10 @@
         <DataProperty IRI="/hearingImpairment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/plain"/>
+        <NamedIndividual IRI="/signal"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/signal"/>
+        <NamedIndividual IRI="/plain"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="datacite:url"/>
@@ -4679,10 +4682,10 @@
         <ObjectProperty IRI="/isRelatedToActor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/downloadable"/>
+        <ObjectProperty IRI="/hasVersion"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasVersion"/>
+        <NamedIndividual IRI="/downloadable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/webcam"/>
@@ -4739,10 +4742,10 @@
         <NamedIndividual IRI="/sentence"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/MacTurkish"/>
+        <NamedIndividual IRI="/letter1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/letter1"/>
+        <NamedIndividual IRI="/MacTurkish"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/GB18030"/>
@@ -4763,10 +4766,10 @@
         <NamedIndividual IRI="/ELG_Domain011"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Resolution"/>
+        <NamedIndividual IRI="/HD.720"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/HD.720"/>
+        <Class IRI="/Resolution"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/goldStandardLocation"/>
@@ -4781,10 +4784,10 @@
         <DataProperty IRI="/personalDataDetails"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/music1"/>
+        <DataProperty IRI="/edition"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/edition"/>
+        <NamedIndividual IRI="/music1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/head"/>
@@ -4874,10 +4877,10 @@
         <NamedIndividual IRI="/pmcid"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/windows-1250"/>
+        <ObjectProperty IRI="/isAnnotationResourceOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isAnnotationResourceOf"/>
+        <NamedIndividual IRI="/windows-1250"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/booklet"/>
@@ -4952,10 +4955,10 @@
         <Class IRI="/AccessRightsStatementIdentifier"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/legend"/>
+        <NamedIndividual IRI="/rolePlay"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/rolePlay"/>
+        <DataProperty IRI="/legend"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/syllable2"/>
@@ -5042,10 +5045,10 @@
         <NamedIndividual IRI="/windows-1253"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/MacRoman"/>
+        <NamedIndividual IRI="/Big5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/Big5"/>
+        <NamedIndividual IRI="/MacRoman"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/foot"/>
@@ -5060,10 +5063,10 @@
         <ObjectProperty IRI="/isMLModelOf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Distribution"/>
+        <NamedIndividual IRI="/LDC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/LDC"/>
+        <Class IRI="/Distribution"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ResolutionStandard"/>
@@ -5174,10 +5177,10 @@
         <ObjectProperty IRI="/processingResourceType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ClarinEl_TT004"/>
+        <ObjectProperty IRI="/isRelatedToDocument"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isRelatedToDocument"/>
+        <NamedIndividual IRI="/ClarinEl_TT004"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/phrase"/>
@@ -5228,10 +5231,10 @@
         <NamedIndividual IRI="/MTSA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/LingualityType"/>
+        <NamedIndividual IRI="/yesH"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/yesH"/>
+        <Class IRI="/LingualityType"/>
     </Declaration>
     <Declaration>
         <Class IRI="/SpeechGenre"/>
@@ -5246,10 +5249,10 @@
         <NamedIndividual IRI="/song"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/LRIdentifierScheme"/>
+        <NamedIndividual IRI="/incorporate"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/incorporate"/>
+        <Class IRI="/LRIdentifierScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/multilingual"/>
@@ -5297,10 +5300,10 @@
         <NamedIndividual IRI="/applicationWord"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/describedEntity"/>
+        <NamedIndividual IRI="/npRecognition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/npRecognition"/>
+        <ObjectProperty IRI="/describedEntity"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/Cp500"/>
@@ -5561,10 +5564,10 @@
         <ObjectProperty IRI="/quality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/collocation"/>
+        <ObjectProperty IRI="/durationOfAudio"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/durationOfAudio"/>
+        <NamedIndividual IRI="/collocation"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/factor"/>
@@ -5600,10 +5603,10 @@
         <NamedIndividual IRI="/Cp280"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/mb"/>
+        <NamedIndividual IRI="/restricted"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/restricted"/>
+        <NamedIndividual IRI="/mb"/>
     </Declaration>
     <Declaration>
         <Class IRI="/ImageGenreClassificationScheme"/>
@@ -5687,19 +5690,19 @@
         <NamedIndividual IRI="/politicalScience"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/updated"/>
+        <DataProperty IRI="/dialectAccent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/dialectAccent"/>
+        <NamedIndividual IRI="/updated"/>
     </Declaration>
     <Declaration>
         <Class IRI="/VersionType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isArchivedBy"/>
+        <NamedIndividual IRI="/school"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/school"/>
+        <ObjectProperty IRI="/isArchivedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/annotatedCorpus"/>
@@ -16535,6 +16538,10 @@
         <DataProperty IRI="/url"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="/serviceAdapterDownloadLocation"/>
+        <DataProperty IRI="/downloadLocation"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="/shortBio"/>
         <DataProperty abbreviatedIRI="dct:description"/>
     </SubDataPropertyOf>
@@ -17428,6 +17435,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="/series"/>
         <Class IRI="/Document"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/serviceAdapterDownloadLocation"/>
+        <Class IRI="/ToolService"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/serviceOffered"/>
@@ -18354,6 +18365,10 @@
     <DataPropertyRange>
         <DataProperty IRI="/series"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/serviceAdapterDownloadLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="/serviceOffered"/>
@@ -30309,6 +30324,16 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/series</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/serviceAdapterDownloadLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Τhe URL where the docker image of the service adapter can be downloaded from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/serviceAdapterDownloadLocation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">service adapter download location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
