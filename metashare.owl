@@ -32,7 +32,6 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -10338,7 +10337,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -19860,6 +19861,86 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/unspecified -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/unspecified">
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/FunderIdentifierScheme"/>
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/OrganizationIdentifierScheme"/>
+        <rdf:type rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AnnotatedElement"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AudioGenre"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AudioGenreClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AudioQualityMeasureIncluded"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/BaseItem"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CapturingDeviceType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CompatibleLexiconType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CompressionName"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ConditionOfUse"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentationType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/EncodingLevel"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ExtratextualInformation"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ExtratextualInformationUnit"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/FundingType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/GrammaticalPhenomenaCoverage"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ImageGenreClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Interactivity"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LDTask"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModalityType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MultilingualityType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Naturality"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NonSpeechItem"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OperatingSystem"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OrganizationLegalStatus"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OrganizationRole"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ParameterType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResourceType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingDeviceType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RequiredHardware"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ScenarioType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SceneIllumination"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SegmentationLevel"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SignalEncoding"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SocialMediaOccupationalAccountType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SourceChannel"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SourceChannelType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechGenre"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechGenreClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechInfluence"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextTypeClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/VideoGenreClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/VocalTractCondition"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/WebServiceType"/>
+        <rdfs:label xml:lang="en">unspecified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/updated -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/updated">
@@ -20393,9 +20474,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
@@ -20404,11 +20482,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
