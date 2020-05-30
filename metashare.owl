@@ -32,11 +32,11 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
         <dct:modified>2020-03-20</dct:modified>
-        <dct:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/legalcode</dct:license>
         <dct:creator>Penny Labropoulou</dct:creator>
         <dc:description xml:lang="en">Meta-Share ontology v2. The ontology caters for the description of Language resources  (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs. 
 It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation/area, data format, method, annotation type).</dc:description>
@@ -10041,6 +10041,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://purl.org/NET/rdflicense/cc-by4.0 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    
+
+
     <!-- http://purl.org/coar/access_right/c_14cb -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/coar/access_right/c_14cb">
@@ -10327,6 +10333,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/RightsStatementOrgScheme"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -12614,6 +12626,19 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/LanguageTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LanguageTechnology">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <rdfs:altLabel xml:lang="en">HLT</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en">Human Language Technology</rdfs:altLabel>
+        <rdfs:altLabel xml:lang="en">LT</rdfs:altLabel>
+        <rdfs:comment xml:lang="en">Language technology, often called human language technology, studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. It consists of natural language processing and computational linguistics on the one hand, and speech technology on the other. [Wikipedia]</rdfs:comment>
+        <rdfs:label xml:lang="en">Language Technology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/MAD -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MAD">
@@ -13736,6 +13761,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/agriculture">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/DDC630"/>
+        <rdfs:comment xml:lang="en">The science, art, or practice of cultivating the soil, producing crops, and raising livestock and in varying degrees the preparation and marketing of the resulting products [https://www.merriam-webster.com/dictionary/agriculture]</rdfs:comment>
         <rdfs:label xml:lang="en">Agriculture</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16588,6 +16614,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/lifeSciences -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/lifeSciences">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <rdfs:comment xml:lang="en">A branch of science (such as biology, medicine, and sometimes anthropology or sociology) that deals with living organisms and life processes —usually used in plural</rdfs:comment>
+        <rdfs:label xml:lang="en">life sciences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/linearPCM -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/linearPCM">
@@ -18601,6 +18637,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/scholarlyCommunication -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/scholarlyCommunication">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <rdfs:comment xml:lang="en">Scholarly communication can be defined as “the system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use. The system includes both formal means of communication, such as publication in peer-reviewed journals, and informal channels, such as electronic listservs.” (Association of College &amp; Research Libraries, “Principles and Strategies for the Reform of Scholarly Communication 1,” 2003)</rdfs:comment>
+        <rdfs:label xml:lang="en">scholarly communication</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/school -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/school">
@@ -18886,6 +18932,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/socialSciences">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/DDC300"/>
+        <rdfs:comment xml:lang="en">The social sciences are academic disciplines concerned with the study of the social life of human groups and individuals including anthropology, economics, geography, history, political science, psychology, social studies, and sociology. The social sciences consist of the scientific study of the human aspects of the world.[https://en.wikipedia.org/wiki/Category:Social_sciences</rdfs:comment>
         <rdfs:label xml:lang="en">Social Sciences</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20346,6 +20393,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
@@ -20359,9 +20409,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
