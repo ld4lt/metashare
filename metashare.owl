@@ -32,6 +32,7 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -7765,7 +7766,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/AudioFormat">
         <rdfs:comment xml:lang="en">The format of the audio part of a multimedia resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Audio format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed audio format</rdfs:label>
     </owl:Class>
     
 
@@ -8506,7 +8507,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ImageFormat">
         <rdfs:comment xml:lang="en">The format used for the image part of a resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Image format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed image format</rdfs:label>
     </owl:Class>
     
 
@@ -9309,6 +9310,29 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/RepositoryIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RepositoryIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+        <rdfs:label xml:lang="en">Repository identifier scheme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/RequiredHardware -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RequiredHardware">
@@ -9847,8 +9871,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/VideoFormat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/VideoFormat">
-        <rdfs:comment xml:lang="en">The format(s) of a video (part of a) resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Video format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed video format</rdfs:label>
+        <owl:backwardCompatibleWith xml:lang="en">The format of a video (part of a) resource</owl:backwardCompatibleWith>
     </owl:Class>
     
 
@@ -10127,7 +10151,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
-        <rdfs:comment xml:lang="en">The Handle system</rdfs:comment>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+        <rdfs:comment xml:lang="en">the Handle system</rdfs:comment>
         <rdfs:label xml:lang="en">Handle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10331,9 +10356,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -15111,6 +15134,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdfs:comment xml:lang="en">European Language Grid</rdfs:comment>
         <rdfs:label xml:lang="en">ELG</rdfs:label>
     </owl:NamedIndividual>
@@ -17832,6 +17856,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingDeviceType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RequiredHardware"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ScenarioType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SceneIllumination"/>
@@ -18444,6 +18469,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
         <rdfs:comment xml:lang="en">The form of the corpus that has not been enriched with annotations</rdfs:comment>
         <rdfs:label xml:lang="en">raw corpus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/re3data -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/re3data">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+        <rdfs:label xml:lang="en">re3data</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -19910,6 +19944,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingDeviceType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RequiredHardware"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ScenarioType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SceneIllumination"/>
@@ -20471,6 +20506,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
@@ -20479,14 +20517,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
