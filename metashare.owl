@@ -32,7 +32,6 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -610,7 +609,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AudioFormat"/>
         <rdfs:comment xml:lang="en">Specifies the features of the format of the audio part of a language resource</rdfs:comment>
-        <rdfs:label xml:lang="en">audio format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed audio format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1951,7 +1950,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ImageFormat"/>
         <rdfs:comment xml:lang="en">Provides information on each of the format(s) of the image part of a resource</rdfs:comment>
-        <rdfs:label xml:lang="en">image format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed image format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4317,7 +4316,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/CorpusTextNumericalPart"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Groups information on the format(s) of the textNumerical part of the resource</rdfs:comment>
-        <rdfs:label xml:lang="en">textNumerical format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed numerical text format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4505,7 +4504,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/VideoFormat"/>
         <rdfs:comment xml:lang="en">Groups information on the format(s) of a resource; repeated if parts of the resource are in different formats</rdfs:comment>
-        <rdfs:label xml:lang="en">video format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed video format</rdfs:label>
         <skos:note xml:lang="en">see how data formats, audio &amp; video formats will be handled; must be on distribution</skos:note>
     </owl:ObjectProperty>
     
@@ -10356,7 +10355,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -20506,9 +20507,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
@@ -20517,11 +20515,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
