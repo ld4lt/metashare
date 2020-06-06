@@ -32,6 +32,7 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -10355,9 +10356,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -16146,6 +16145,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/ingestedRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ingestedRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">ingested record</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/installationManual -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/installationManual">
@@ -16219,6 +16227,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/interactive1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Interactivity"/>
         <rdfs:label xml:lang="en">interactive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/internalRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/internalRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">internal record</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18408,6 +18425,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/publishedRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/publishedRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">published record</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/publishing -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/publishing">
@@ -20515,14 +20541,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
