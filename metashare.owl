@@ -32,6 +32,7 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -4243,6 +4244,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/supportType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/supportType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:comment xml:lang="en">Specifies whether some type of support (commercial, free, etc.) is provided for the resource installation or use</rdfs:comment>
+        <rdfs:label xml:lang="en">support type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/tagset -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/tagset">
@@ -8029,7 +8041,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/CorpusMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a corpus based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Corpus media part</rdfs:label>
+        <rdfs:label xml:lang="en">Corpus part</rdfs:label>
     </owl:Class>
     
 
@@ -8646,7 +8658,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a language description based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Language description media part</rdfs:label>
+        <rdfs:label xml:lang="en">Language description part</rdfs:label>
     </owl:Class>
     
 
@@ -8774,7 +8786,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a lexical/conceptual resource based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Lexical conceptual resource media part</rdfs:label>
+        <rdfs:label xml:lang="en">Lexical/ Conceptual resource part</rdfs:label>
     </owl:Class>
     
 
@@ -8861,7 +8873,7 @@ add definitions to all instances</skos:note>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A legal document (licence or terms of use/service) with which the language resource is distributed</rdfs:comment>
-        <rdfs:label xml:lang="en-uk">Licence/Terms of use/service</rdfs:label>
+        <rdfs:label xml:lang="en-uk">Licence</rdfs:label>
         <skos:note xml:lang="en">Until now, this included an enumerated list of individuals; I think it&apos;s better to treat them as proper entities with name, identifier , etc. 
 
 This means that for the editors we need to 
@@ -9644,6 +9656,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/SupportType -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SupportType">
+        <rdfs:comment xml:lang="en">The type of support provided for the use of a resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Support type</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/SyntacticType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SyntacticType">
@@ -10350,14 +10371,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://rightsstatements.org/vocab/UND/1.0/">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/RightsStatementOrgScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
     </owl:NamedIndividual>
     
 
@@ -12691,6 +12704,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/META-SHARE -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/META-SHARE">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
+        <rdfs:label xml:lang="en">META-SHARE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/MLIF -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MLIF">
@@ -14544,6 +14566,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/commercialSupport -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/commercialSupport">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">commercial support</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/commercialUser -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/commercialUser">
@@ -14983,6 +15014,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/PAROLE_G005"/>
         <rdfs:label xml:lang="en">discussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/discussionForum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/discussionForum">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">discussion forum</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -15584,6 +15624,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/freeSpeech">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
         <rdfs:label xml:lang="en">free speech</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/freeSupport -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/freeSupport">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">free support</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -17893,6 +17942,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
@@ -19990,6 +20040,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
@@ -20543,14 +20594,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
