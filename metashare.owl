@@ -19141,6 +19141,26 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/library -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/library">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of libraries (e.g. Java, python libraries)</rdfs:comment>
+        <rdfs:label xml:lang="en">library</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/plugin -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/plugin">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of plugins (e.g. Chrome browser extension)</rdfs:comment>
+        <rdfs:label xml:lang="en">plugin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/spatialConstraint -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/spatialConstraint">
