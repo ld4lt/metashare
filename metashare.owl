@@ -120,12 +120,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#altLabel -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#altLabel"/>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#equivalentProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty"/>
@@ -302,9 +296,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/Operation"/>
-        <rdfs:altLabel xml:lang="en">Language Technology area</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces a Language Technology-related area that a person or organization is involved or active in</rdfs:comment>
         <rdfs:label xml:lang="en">LT area</rdfs:label>
+        <skos:altLabel xml:lang="en">Language Technology area</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -615,7 +609,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AudioFormat"/>
         <rdfs:comment xml:lang="en">Specifies the features of the format of the audio part of a language resource</rdfs:comment>
-        <rdfs:label xml:lang="en">audio format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed audio format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -892,9 +886,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/coordinator">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
-        <rdfs:altLabel xml:lang="en">co-ordinator</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces the details for an organization that coordinates the project being described</rdfs:comment>
         <rdfs:label xml:lang="en">coordinator</rdfs:label>
+        <skos:altLabel xml:lang="en">co-ordinator</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1024,6 +1018,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:comment xml:lang="en">Links to LR B that is required for the operation of LR A (the one being described) or that has been used in its processing</rdfs:comment>
         <rdfs:label xml:lang="en">depends on</rdfs:label>
+        <skos:altLabel xml:lang="en">supporting resource</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1067,10 +1062,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:altLabel xml:lang="en">visualises</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">visualizes</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links a tool/service B that is (or can be) used to display LR A (e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus) to the LR A</rdfs:comment>
         <rdfs:label xml:lang="en">displays</rdfs:label>
+        <skos:altLabel xml:lang="en">visualises</skos:altLabel>
+        <skos:altLabel xml:lang="en">visualizes</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1093,7 +1088,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DistributionAudioFeature"/>
         <rdfs:comment xml:lang="en">Links to a feature that can be used for describing distinct distributable forms of audio resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">distribution audio feature</rdfs:label>
+        <rdfs:label xml:lang="en">audio feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1115,7 +1110,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DistributionImageFeature"/>
         <rdfs:comment xml:lang="en">Links to a feature that can be used for describing distinct distributable forms of image resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">distribution image feature</rdfs:label>
+        <rdfs:label xml:lang="en">image feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1139,7 +1134,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DistributionTextFeature"/>
         <rdfs:comment xml:lang="en">Links to a feature that can be used for describing distinct distributable forms of text resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">distribution text feature</rdfs:label>
+        <rdfs:label xml:lang="en">text feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1150,7 +1145,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DistributionTextNumericalFeature"/>
         <rdfs:comment xml:lang="en">Links to a feature that can be used for describing distinct distributable forms of numerical text resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">distribution text numerical feature</rdfs:label>
+        <rdfs:label xml:lang="en">numerical text feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1161,7 +1156,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DistributionVideoFeature"/>
         <rdfs:comment xml:lang="en">Links to a feature that can be used for describing distinct distributable forms of video resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">distribution video feature</rdfs:label>
+        <rdfs:label xml:lang="en">video feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1567,10 +1562,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/function">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/Operation"/>
-        <rdfs:altLabel>operation</rdfs:altLabel>
-        <rdfs:altLabel>task</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies the operation/function/task that a software object performs</rdfs:comment>
         <rdfs:label xml:lang="en">function</rdfs:label>
+        <skos:altLabel>operation</skos:altLabel>
+        <skos:altLabel>task</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1607,7 +1602,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:comment xml:lang="en">Links a language resource to the project that has funded its creation, enrichment, extension , etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">funding project</rdfs:label>
+        <rdfs:label xml:lang="en">funded by</rdfs:label>
+        <skos:altLabel xml:lang="en">funding project</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1851,9 +1847,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToLR"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ActualUse"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-        <rdfs:altLabel xml:lang="en">is source of</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to LR B which is created / extracted from LR A (the one being described), i.e. LR A has been used as the basis/initial/source material for LR B</rdfs:comment>
         <rdfs:label xml:lang="en">has outcome</rdfs:label>
+        <skos:altLabel xml:lang="en">is source of</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -1956,7 +1952,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ImageFormat"/>
         <rdfs:comment xml:lang="en">Provides information on each of the format(s) of the image part of a resource</rdfs:comment>
-        <rdfs:label xml:lang="en">image format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed image format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2008,10 +2004,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/isIprHolderOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Actor"/>
-        <rdfs:altLabel xml:lang="en">intellectual property rights holder</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">rights holder</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A person or an organization who holds the full Intellectual Property Rights (Copyright, trademark , etc.) that subsist in the resource. The IPR holder could be different from the creator that may have assigned the rights to the IPR holder (e.g.,  an author as a creator assigns her rights to the publisher who is the IPR holder) and the distributor that holds a specific licence (i.e. a permission) to distribute the work via a specific distributor.</rdfs:comment>
         <rdfs:label xml:lang="en">IPR holder</rdfs:label>
+        <skos:altLabel xml:lang="en">intellectual property rights holder</skos:altLabel>
+        <skos:altLabel xml:lang="en">rights holder</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2029,9 +2025,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">access tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be) used for accessing LR A (the one being described), e.g.,  a corpus workbench, s/w for lexicon access</rdfs:comment>
         <rdfs:label xml:lang="en">is accessed by</rdfs:label>
+        <skos:altLabel xml:lang="en">access tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2061,9 +2057,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">analysis tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be or has been) used for analysing LR A (the one being described), e.g.,  a statistical tool</rdfs:comment>
         <rdfs:label xml:lang="en">is analysed by</rdfs:label>
+        <skos:altLabel xml:lang="en">analysis tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2074,9 +2070,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToLT"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Annotation"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">annotation tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that has been used for annotating LR A (the one being described), e.g.,  a tagger, NER , etc.</rdfs:comment>
         <rdfs:label xml:lang="en">is annotated by</rdfs:label>
+        <skos:altLabel xml:lang="en">annotation tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2151,9 +2147,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToLT"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DataLanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">archiving tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be or has been) used for archiving LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is archived by</rdfs:label>
+        <skos:altLabel xml:lang="en">archiving tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2258,10 +2254,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">creation tool</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">derivation tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that has been used for creating LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is created by</rdfs:label>
+        <skos:altLabel xml:lang="en">creation tool</skos:altLabel>
+        <skos:altLabel xml:lang="en">derivation tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2291,10 +2287,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">display tool</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">visualization tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be) used to display LR A (the one being described), e.g.,  a tool for visualizing relations in a lexicon, or annotations in a corpus</rdfs:comment>
         <rdfs:label xml:lang="en">is displayed by</rdfs:label>
+        <skos:altLabel xml:lang="en">display tool</skos:altLabel>
+        <skos:altLabel xml:lang="en">visualization tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2328,9 +2324,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToDocument"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Document"/>
-        <rdfs:altLabel xml:lang="en">documentation report</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links a language resource to a document (e.g.,  research paper describing its contents or its use in a project, user manual, etc.) or any other form of documentation (e.g.,  a URL with support information) that is related to the resource</rdfs:comment>
         <rdfs:label xml:lang="en">is documented by</rdfs:label>
+        <skos:altLabel xml:lang="en">documentation report</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2348,9 +2344,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">editing tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be) used for editing LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is edited by</rdfs:label>
+        <skos:altLabel xml:lang="en">editing tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2368,9 +2364,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">elicitation tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be or has been) used for eliciting LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is elicited by</rdfs:label>
+        <skos:altLabel xml:lang="en">elicitation tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2381,9 +2377,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToLT"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Evaluation"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">evaluation tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that has been used to evaluate LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is evaluated by</rdfs:label>
+        <skos:altLabel xml:lang="en">evaluation tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2407,10 +2403,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-        <rdfs:altLabel xml:lang="en">is identical with</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">is same as</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to LR B that has the same contents with LR A; they may have different names or the same name and be stored on different locations</rdfs:comment>
         <rdfs:label xml:lang="en">is exact match with</rdfs:label>
+        <skos:altLabel xml:lang="en">is identical with</skos:altLabel>
+        <skos:altLabel xml:lang="en">is same as</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2471,9 +2467,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/mlModel"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">is Machine Learning model of</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies the tool/service with which the ML model can be combined in order to perform the desired task</rdfs:comment>
         <rdfs:label xml:lang="en">is ML model of</rdfs:label>
+        <skos:altLabel xml:lang="en">is Machine Learning model of</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2561,9 +2557,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/queries"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DataLanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">query tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be) used for querying LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is queried by</rdfs:label>
+        <skos:altLabel xml:lang="en">query tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2582,10 +2578,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">recording platform software</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">recording tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service that has been used for recording a video or audio corpus part</rdfs:comment>
         <rdfs:label xml:lang="en">is recorded by</rdfs:label>
+        <skos:altLabel xml:lang="en">recording platform software</skos:altLabel>
+        <skos:altLabel xml:lang="en">recording tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2818,9 +2814,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/reviews"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Document"/>
-        <rdfs:altLabel xml:lang="en">review</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a document that contains the review of LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is reviewed by</rdfs:label>
+        <skos:altLabel xml:lang="en">review</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2832,9 +2828,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-        <rdfs:altLabel xml:lang="en">is similar with</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to LR B that bears resemblances to LR A (the one being described), e.g.,  they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools</rdfs:comment>
         <rdfs:label xml:lang="en">is similar to</rdfs:label>
+        <skos:altLabel xml:lang="en">is similar with</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2879,9 +2875,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToLT"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Validation"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
-        <rdfs:altLabel xml:lang="en">validation tool</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a tool/service B that is (or can be) used for validating LR A (the one being described)</rdfs:comment>
         <rdfs:label xml:lang="en">is validated by</rdfs:label>
+        <skos:altLabel xml:lang="en">validation tool</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -2956,7 +2952,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
         <rdfs:comment xml:lang="en">Introduces a classification of lexical/conceptual resources into types (used for descriptive reasons)</rdfs:comment>
-        <rdfs:label xml:lang="en">lcr subclass</rdfs:label>
+        <rdfs:label xml:lang="en">LCR subclass</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2990,7 +2986,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Distribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LicenceTerms"/>
         <rdfs:comment xml:lang="en">Links the distribution (distributable form) of a language resource to the licence or terms of use/service (a specific legal document) with which it is distributed</rdfs:comment>
-        <rdfs:label xml:lang="en">licence/terms of use/service</rdfs:label>
+        <rdfs:label xml:lang="en">licence</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3649,7 +3645,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">LInks to LR B that is required for the operation of a tool/service or computational grammar (the one that is described)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to LR B that is required for the operation of a tool/service or computational grammar (the one that is described)</rdfs:comment>
         <rdfs:label xml:lang="en">requires language resource</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3830,7 +3826,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/size">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Size"/>
-        <rdfs:comment xml:lang="en">Specifies the size of the resource with regard to the SizeUnit measurement in form of a number</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the size of a countable entity with regard to the SizeUnit measurement in form of a number</rdfs:comment>
         <rdfs:label xml:lang="en">size</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4241,9 +4237,20 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Subject"/>
-        <rdfs:altLabel xml:lang="en">topic</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies the subject/topic of a language resource</rdfs:comment>
         <rdfs:label xml:lang="en">subject</rdfs:label>
+        <skos:altLabel xml:lang="en">topic</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/supportType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/supportType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:comment xml:lang="en">Specifies whether some type of support (commercial, free, etc.) is provided for the resource installation or use</rdfs:comment>
+        <rdfs:label xml:lang="en">support type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4322,7 +4329,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/CorpusTextNumericalPart"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Groups information on the format(s) of the textNumerical part of the resource</rdfs:comment>
-        <rdfs:label xml:lang="en">textNumerical format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed numerical text format</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4343,9 +4350,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/trl">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/TRL"/>
-        <rdfs:altLabel xml:lang="en">Technology Readiness Level</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies the TRL (Technology Readiness Level) of the technology according to the measurement system defined by the EC</rdfs:comment>
         <rdfs:label xml:lang="en">TRL</rdfs:label>
+        <skos:altLabel xml:lang="en">Technology Readiness Level</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -4510,7 +4517,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/VideoFormat"/>
         <rdfs:comment xml:lang="en">Groups information on the format(s) of a resource; repeated if parts of the resource are in different formats</rdfs:comment>
-        <rdfs:label xml:lang="en">video format</rdfs:label>
+        <rdfs:label xml:lang="en">detailed video format</rdfs:label>
         <skos:note xml:lang="en">see how data formats, audio &amp; video formats will be handled; must be on distribution</skos:note>
     </owl:ObjectProperty>
     
@@ -4645,9 +4652,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/additionalHWRequirements">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:altLabel xml:lang="en">additional hardware requirements</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies hardware requirements that are needed for running a tool/service</rdfs:comment>
         <rdfs:label xml:lang="en">additional h/w requirements</rdfs:label>
+        <skos:altLabel xml:lang="en">additional hardware requirements</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -5229,10 +5236,10 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">area of expertise</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">research area</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces a field of study or research area that a person or organization is expert in</rdfs:comment>
         <rdfs:label xml:lang="en">discipline</rdfs:label>
+        <skos:altLabel xml:lang="en">area of expertise</skos:altLabel>
+        <skos:altLabel xml:lang="en">research area</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -5618,10 +5625,10 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/givenName">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">first name</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">forename</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces the given name (also known as &quot;first name&quot;) of a person</rdfs:comment>
         <rdfs:label xml:lang="en">given name</rdfs:label>
+        <skos:altLabel xml:lang="en">first name</skos:altLabel>
+        <skos:altLabel xml:lang="en">forename</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -5721,9 +5728,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/honorificPrefix">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">title</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces a honorific prefix (or  title) such as Dr./Mr/Ms. that precedes the name of a person</rdfs:comment>
         <rdfs:label xml:lang="en">honorific prefix</rdfs:label>
+        <skos:altLabel xml:lang="en">title</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -5851,9 +5858,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">keyphrase</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces a word or phrase considered important for the description of a language resource, person or organization and thus used to index or classify it</rdfs:comment>
         <rdfs:label xml:lang="en">keyword</rdfs:label>
+        <skos:altLabel xml:lang="en">keyphrase</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -6104,9 +6111,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/mlFramework">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:altLabel xml:lang="en">Machine Learning framework</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Specifies the framework that has been used for developing a model (e.g. keras, tensorflow, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">ML framework</rdfs:label>
+        <skos:altLabel xml:lang="en">Machine Learning framework</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -6534,9 +6541,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">project title</rdfs:altLabel>
         <rdfs:comment xml:lang="en">The full name (title) of a project</rdfs:comment>
         <rdfs:label xml:lang="en">project name</rdfs:label>
+        <skos:altLabel xml:lang="en">project title</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -6761,9 +6768,9 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">resource title</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces a human-readable name or title by which the resource is known</rdfs:comment>
         <rdfs:label xml:lang="en">resource name</rdfs:label>
+        <skos:altLabel xml:lang="en">resource title</skos:altLabel>
         <skos:example xml:lang="en">British National Corpus</skos:example>
     </owl:DatatypeProperty>
     
@@ -7116,10 +7123,10 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/surname">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:altLabel xml:lang="en">family name</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">last name</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Introduces the surname (i.e. the name shared by members of a family, also known as &quot;family name&quot; or &quot;last name&quot;) of a person</rdfs:comment>
         <rdfs:label xml:lang="en">surname</rdfs:label>
+        <skos:altLabel xml:lang="en">family name</skos:altLabel>
+        <skos:altLabel xml:lang="en">last name</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -7474,9 +7481,9 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:altLabel xml:lang="en">home page</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Links to a URL that acts as the primary page (like a table of contents) introducing information about an organization (e.g.,  products, contact information, etc.) or project</rdfs:comment>
         <rdfs:label xml:lang="en">website</rdfs:label>
+        <skos:altLabel xml:lang="en">home page</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -7771,7 +7778,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/AudioFormat">
         <rdfs:comment xml:lang="en">The format of the audio part of a multimedia resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Audio format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed audio format</rdfs:label>
     </owl:Class>
     
 
@@ -8034,7 +8041,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/CorpusMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a corpus based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Corpus media part</rdfs:label>
+        <rdfs:label xml:lang="en">Corpus part</rdfs:label>
     </owl:Class>
     
 
@@ -8164,7 +8171,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DistributionAudioFeature">
         <rdfs:comment xml:lang="en">A feature that can be used for describing distinct distributable forms of audio resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">Distribution audio feature</rdfs:label>
+        <rdfs:label xml:lang="en">Audio feature</rdfs:label>
     </owl:Class>
     
 
@@ -8182,7 +8189,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DistributionImageFeature">
         <rdfs:comment xml:lang="en">A feature that can be used for describing distinct distributable forms of image resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">Distribution image feature</rdfs:label>
+        <rdfs:label xml:lang="en">Image feature</rdfs:label>
     </owl:Class>
     
 
@@ -8191,7 +8198,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextFeature">
         <rdfs:comment xml:lang="en">A feature that can be used for describing distinct distributable forms of text resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">Distribution text feature</rdfs:label>
+        <rdfs:label xml:lang="en">Text feature</rdfs:label>
     </owl:Class>
     
 
@@ -8200,7 +8207,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextNumericalFeature">
         <rdfs:comment xml:lang="en">A feature that can be used for describing distinct distributable forms of numerical text resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">Distribution text numerical feature</rdfs:label>
+        <rdfs:label xml:lang="en">Numerical text feature</rdfs:label>
     </owl:Class>
     
 
@@ -8209,7 +8216,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DistributionVideoFeature">
         <rdfs:comment xml:lang="en">A feature that can be used for describing distinct distributable forms of video resources/parts</rdfs:comment>
-        <rdfs:label xml:lang="en">Distribution video feature</rdfs:label>
+        <rdfs:label xml:lang="en">Video feature</rdfs:label>
     </owl:Class>
     
 
@@ -8512,7 +8519,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ImageFormat">
         <rdfs:comment xml:lang="en">The format used for the image part of a resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Image format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed image format</rdfs:label>
     </owl:Class>
     
 
@@ -8613,9 +8620,9 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LRIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/ResourceIdentifierScheme"/>
-        <rdfs:altLabel xml:lang="en">Language Resource identifier scheme</rdfs:altLabel>
         <rdfs:comment xml:lang="en">The name of the scheme according to which the LRT identifier is assigned by the authority that issues it (e.g.,  DOI, ISLRN , etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">LR identifier scheme</rdfs:label>
+        <skos:altLabel xml:lang="en">Language Resource identifier scheme</skos:altLabel>
     </owl:Class>
     
 
@@ -8651,7 +8658,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a language description based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Language description media part</rdfs:label>
+        <rdfs:label xml:lang="en">Language description part</rdfs:label>
     </owl:Class>
     
 
@@ -8680,9 +8687,9 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LanguageModel">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
-        <rdfs:altLabel xml:lang="en">Statistical language model</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A statistical language model is a probability distribution over sequences of words. Given such a sequence, say of length m, it assigns a probability P (w1, ..., wm) to the whole sequence. [from Wikipedia (https://en.wikipedia.org/wiki/Language_model)]</rdfs:comment>
         <rdfs:label xml:lang="en">Language model</rdfs:label>
+        <skos:altLabel xml:lang="en">Statistical language model</skos:altLabel>
     </owl:Class>
     
 
@@ -8697,9 +8704,9 @@ add definitions to all instances</skos:note>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:altLabel xml:lang="en">LR</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A resource composed of linguistic material used in the construction, improvement and/or evaluation of language processing applications, but also, in a broader sense, in language and language-mediated research studies and applications; the term is used with a broader meaning, encompassing (a) data sets (textual, multimodal/multimedia and lexical data, grammars, language models, etc.) in machine readable form, and (b) tools/technologies/services used for their processing and management.</rdfs:comment>
         <rdfs:label xml:lang="en">Language Resource</rdfs:label>
+        <skos:altLabel xml:lang="en">LR</skos:altLabel>
     </owl:Class>
     
 
@@ -8779,7 +8786,7 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceMediaPart">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
         <rdfs:comment xml:lang="en">A part/segment of a lexical/conceptual resource based on its media type classification</rdfs:comment>
-        <rdfs:label xml:lang="en">Lexical conceptual resource media part</rdfs:label>
+        <rdfs:label xml:lang="en">Lexical/ Conceptual resource part</rdfs:label>
     </owl:Class>
     
 
@@ -8866,7 +8873,7 @@ add definitions to all instances</skos:note>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A legal document (licence or terms of use/service) with which the language resource is distributed</rdfs:comment>
-        <rdfs:label xml:lang="en-uk">Licence/Terms of use/service</rdfs:label>
+        <rdfs:label xml:lang="en-uk">Licence</rdfs:label>
         <skos:note xml:lang="en">Until now, this included an enumerated list of individuals; I think it&apos;s better to treat them as proper entities with name, identifier , etc. 
 
 This means that for the editors we need to 
@@ -8902,9 +8909,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/MLModel">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
-        <rdfs:altLabel xml:lang="en">ML model</rdfs:altLabel>
         <rdfs:comment xml:lang="en">The model artifact that is created through a training process involving an ML algorithm (that is, the learning algorithm) and the training data to learn from.</rdfs:comment>
         <rdfs:label xml:lang="en">Machine Learning model</rdfs:label>
+        <skos:altLabel xml:lang="en">ML model</skos:altLabel>
     </owl:Class>
     
 
@@ -9084,9 +9091,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Organization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:altLabel xml:lang="en-uk">Organisation</rdfs:altLabel>
         <rdfs:comment xml:lang="en-uk">A company or other group of people that works together for a particular purpose [https://dictionary.cambridge.org/dictionary/english/organization]</rdfs:comment>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
+        <skos:altLabel xml:lang="en-uk">Organisation</skos:altLabel>
     </owl:Class>
     
 
@@ -9311,6 +9318,29 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Relation">
         <rdfs:comment xml:lang="en">A relation holding between two language resources (e.g.,  a raw corpus and its annotated version, the annotation tool used for it, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Relation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/RepositoryIdentifier -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RepositoryIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/datacite/usesIdentifierScheme"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+        <rdfs:label xml:lang="en">Repository identifier scheme</rdfs:label>
     </owl:Class>
     
 
@@ -9584,9 +9614,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Subject">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/Classification"/>
-        <rdfs:altLabel xml:lang="en">Topic</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A situation, event, thing, etc. that is discussed in the contents of a language resource</rdfs:comment>
         <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <skos:altLabel xml:lang="en">Topic</skos:altLabel>
     </owl:Class>
     
 
@@ -9626,6 +9656,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/SupportType -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SupportType">
+        <rdfs:comment xml:lang="en">The type of support provided for the use of a resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Support type</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/SyntacticType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SyntacticType">
@@ -9649,9 +9688,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/TRL -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/TRL">
-        <rdfs:altLabel xml:lang="en">Technology Readiness Level</rdfs:altLabel>
         <rdfs:comment xml:lang="en">An indicator of the maturity level of particular technologies according to a measurement system defined by EC [adapted from https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/faq/2890]</rdfs:comment>
         <rdfs:label xml:lang="en">TRL</rdfs:label>
+        <skos:altLabel xml:lang="en">Technology Readiness Level</skos:altLabel>
     </owl:Class>
     
 
@@ -9777,9 +9816,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ToolService">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-        <rdfs:altLabel xml:lang="en">LT tool/service</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A tool/service/any piece of software that performs language processing and/or any Language Technology related operation.</rdfs:comment>
         <rdfs:label xml:lang="en">Language Technology tool/service</rdfs:label>
+        <skos:altLabel xml:lang="en">LT tool/service</skos:altLabel>
     </owl:Class>
     
 
@@ -9853,8 +9892,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/VideoFormat -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/VideoFormat">
-        <rdfs:comment xml:lang="en">The format(s) of a video (part of a) resource</rdfs:comment>
-        <rdfs:label xml:lang="en">Video format</rdfs:label>
+        <rdfs:label xml:lang="en">Detailed video format</rdfs:label>
+        <owl:backwardCompatibleWith xml:lang="en">The format of a video (part of a) resource</owl:backwardCompatibleWith>
     </owl:Class>
     
 
@@ -10133,7 +10172,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
-        <rdfs:comment xml:lang="en">The Handle system</rdfs:comment>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+        <rdfs:comment xml:lang="en">the Handle system</rdfs:comment>
         <rdfs:label xml:lang="en">Handle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10347,8 +10387,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ADPCM">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SignalEncoding"/>
-        <rdfs:altLabel xml:lang="en">Adaptive differential pulse-code modulation</rdfs:altLabel>
         <rdfs:label xml:lang="en">ADPCM</rdfs:label>
+        <skos:altLabel xml:lang="en">Adaptive differential pulse-code modulation</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10357,8 +10397,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ANC_domainClassification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
-        <rdfs:altLabel xml:lang="en">American National Corpus domain classification system</rdfs:altLabel>
         <rdfs:label xml:lang="en">ANC domain classification system</rdfs:label>
+        <skos:altLabel xml:lang="en">American National Corpus domain classification system</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10367,8 +10407,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ANC_genreClassification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
-        <rdfs:altLabel xml:lang="en">American National Corpus genre classification scheme</rdfs:altLabel>
         <rdfs:label xml:lang="en">ANC genre classification scheme</rdfs:label>
+        <skos:altLabel xml:lang="en">American National Corpus genre classification scheme</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10377,8 +10417,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ART">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Average Response Time</rdfs:altLabel>
         <rdfs:label xml:lang="en">ART</rdfs:label>
+        <skos:altLabel xml:lang="en">Average Response Time</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10397,9 +10437,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/BML">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.mindmakers.org/projects/bml-1-0/wiki#Introduction</ms:url>
-        <rdfs:altLabel xml:lang="en">Behavior Markup Language</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Behaviour Markup Language</rdfs:altLabel>
         <rdfs:label xml:lang="en">BML</rdfs:label>
+        <skos:altLabel xml:lang="en">Behavior Markup Language</skos:altLabel>
+        <skos:altLabel xml:lang="en">Behaviour Markup Language</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10408,8 +10448,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/BNC_domainClassification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
-        <rdfs:altLabel xml:lang="en">British National Corpus domain classification system</rdfs:altLabel>
         <rdfs:label xml:lang="en">BNC domain classification system</rdfs:label>
+        <skos:altLabel xml:lang="en">British National Corpus domain classification system</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -10474,8 +10514,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/CES">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.cs.vassar.edu/CES/</ms:url>
-        <rdfs:altLabel xml:lang="en">Corpus Encoding Standard</rdfs:altLabel>
         <rdfs:label xml:lang="en">CES</rdfs:label>
+        <skos:altLabel xml:lang="en">Corpus Encoding Standard</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -11903,8 +11943,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/DDC_classification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
         <ms:url>https://www.oclc.org/en/dewey/resources/summaries.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Dewey Decimal Classification</rdfs:altLabel>
         <rdfs:label xml:lang="en">DDC</rdfs:label>
+        <skos:altLabel xml:lang="en">Dewey Decimal Classification</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -11914,8 +11954,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/DK-5">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
         <ms:url>http://metadata.dk/dk5-as-linked-data</ms:url>
-        <rdfs:altLabel xml:lang="en">Danish Decimal Classification 5th edition</rdfs:altLabel>
         <rdfs:label xml:lang="en">DK-5</rdfs:label>
+        <skos:altLabel xml:lang="en">Danish Decimal Classification 5th edition</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12171,9 +12211,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/EML">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.w3.org/TR/2009/WD-emotionml-20091029/</ms:url>
-        <rdfs:altLabel xml:lang="en">EML</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Emotion Markup Language</rdfs:altLabel>
         <rdfs:label xml:lang="en">EmotionML</rdfs:label>
+        <skos:altLabel xml:lang="en">EML</skos:altLabel>
+        <skos:altLabel xml:lang="en">Emotion Markup Language</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12183,8 +12223,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/EMMA">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.w3.org/TR/emma/</ms:url>
-        <rdfs:altLabel xml:lang="en">Extensible MultiModal Annotation markup language</rdfs:altLabel>
         <rdfs:label xml:lang="en">EMMA</rdfs:label>
+        <skos:altLabel xml:lang="en">Extensible MultiModal Annotation markup language</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12249,8 +12289,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/GMX">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://xtm.cloud/manuals/gmx-v/GMX-V-2.0.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Global information management Metrics eXchange</rdfs:altLabel>
         <rdfs:label xml:lang="en">GMX</rdfs:label>
+        <skos:altLabel xml:lang="en">Global information management Metrics eXchange</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12278,8 +12318,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/GrAF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.xces.org/ns/GrAF/1.0/</ms:url>
-        <rdfs:altLabel xml:lang="en">Graph Annotation Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">GrAF</rdfs:label>
+        <skos:altLabel xml:lang="en">Graph Annotation Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12307,8 +12347,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/HamNoSys">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.sign-lang.uni-hamburg.de/dgs-korpus/index.php/hamnosys-97.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Hamburg Sign Language Notation System</rdfs:altLabel>
         <rdfs:label xml:lang="en">HamNoSys</rdfs:label>
+        <skos:altLabel xml:lang="en">Hamburg Sign Language Notation System</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12454,9 +12494,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.datcatinfo.net/#/</ms:url>
         <ms:url>http://www.iso.org/sites/dcr-redirect/dcr.html</ms:url>
-        <rdfs:altLabel xml:lang="en">DCR</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Data Category Repository</rdfs:altLabel>
         <rdfs:label xml:lang="en">ISO12620</rdfs:label>
+        <skos:altLabel xml:lang="en">DCR</skos:altLabel>
+        <skos:altLabel xml:lang="en">Data Category Repository</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12466,9 +12506,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ISO16642">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://xml.coverpages.org/ISO16642-200207.pdf</ms:url>
-        <rdfs:altLabel xml:lang="en">TMF</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Terminological Markup Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">ISO16642</rdfs:label>
+        <skos:altLabel xml:lang="en">TMF</skos:altLabel>
+        <skos:altLabel xml:lang="en">Terminological Markup Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12506,8 +12546,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ISO26162">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/43427.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Systems to manage terminology, knowledge and content</rdfs:altLabel>
         <rdfs:label xml:lang="en">ISO 26162</rdfs:label>
+        <skos:altLabel xml:lang="en">Systems to manage terminology, knowledge and content</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12517,9 +12557,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ISO30042">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/45797.html</ms:url>
-        <rdfs:altLabel xml:lang="en">TBX</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">TermBase eXchange</rdfs:altLabel>
         <rdfs:label xml:lang="en">ISO 30042</rdfs:label>
+        <skos:altLabel xml:lang="en">TBX</skos:altLabel>
+        <skos:altLabel xml:lang="en">TermBase eXchange</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12529,8 +12569,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ISO704">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/38109.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Terminology work</rdfs:altLabel>
         <rdfs:label xml:lang="en">ISO704</rdfs:label>
+        <skos:altLabel xml:lang="en">Terminology work</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12540,8 +12580,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/InkML">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.w3.org/TR/InkML/</ms:url>
-        <rdfs:altLabel xml:lang="en">Ink Markup Language</rdfs:altLabel>
         <rdfs:label xml:lang="en">Ink ML</rdfs:label>
+        <skos:altLabel xml:lang="en">Ink Markup Language</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12569,9 +12609,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LAF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/37326.html</ms:url>
-        <rdfs:altLabel xml:lang="en">ISO 24612</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Linguistic Annotation Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">LAF</rdfs:label>
+        <skos:altLabel xml:lang="en">ISO 24612</skos:altLabel>
+        <skos:altLabel xml:lang="en">Linguistic Annotation Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12591,8 +12631,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LMF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.lexicalmarkupframework.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">Lexical Markup Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">LMF</rdfs:label>
+        <skos:altLabel xml:lang="en">Lexical Markup Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12601,8 +12641,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LTIntegrator">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OrganizationRole"/>
-        <rdfs:altLabel xml:lang="en">Language Technology integrator</rdfs:altLabel>
         <rdfs:label xml:lang="en">LT integrator</rdfs:label>
+        <skos:altLabel xml:lang="en">Language Technology integrator</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12611,8 +12651,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LTSupplier">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OrganizationRole"/>
-        <rdfs:altLabel xml:lang="en">Language Technology supplier</rdfs:altLabel>
         <rdfs:label xml:lang="en">LT supplier</rdfs:label>
+        <skos:altLabel xml:lang="en">Language Technology supplier</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12621,8 +12661,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LTUser">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/OrganizationRole"/>
-        <rdfs:altLabel xml:lang="en">Language Technology user</rdfs:altLabel>
         <rdfs:label xml:lang="en">LT user</rdfs:label>
+        <skos:altLabel xml:lang="en">Language Technology user</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12631,11 +12671,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LanguageTechnology">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
-        <rdfs:altLabel xml:lang="en">HLT</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Human Language Technology</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">LT</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Language technology, often called human language technology, studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. It consists of natural language processing and computational linguistics on the one hand, and speech technology on the other. [Wikipedia]</rdfs:comment>
         <rdfs:label xml:lang="en">Language Technology</rdfs:label>
+        <skos:altLabel xml:lang="en">HLT</skos:altLabel>
+        <skos:altLabel xml:lang="en">Human Language Technology</skos:altLabel>
+        <skos:altLabel xml:lang="en">LT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12644,8 +12684,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MAD">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Mean Annotations per Document</rdfs:altLabel>
         <rdfs:label xml:lang="en">MAD</rdfs:label>
+        <skos:altLabel xml:lang="en">Mean Annotations per Document</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12655,9 +12695,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MAF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/51934.html</ms:url>
-        <rdfs:altLabel xml:lang="en">ISO 24611</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Morpho-syntactic Annotation Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">MAF</rdfs:label>
+        <skos:altLabel xml:lang="en">ISO 24611</skos:altLabel>
+        <skos:altLabel xml:lang="en">Morpho-syntactic Annotation Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12666,8 +12706,17 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MDTV">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Mean Time per Document Volume</rdfs:altLabel>
         <rdfs:label xml:lang="en">MDTV</rdfs:label>
+        <skos:altLabel xml:lang="en">Mean Time per Document Volume</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/META-SHARE -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/META-SHARE">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
+        <rdfs:label xml:lang="en">META-SHARE</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12677,9 +12726,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MLIF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/37330.html</ms:url>
-        <rdfs:altLabel xml:lang="en">ISO 24616</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Multilingual Information Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">MLIF</rdfs:label>
+        <skos:altLabel xml:lang="en">ISO 24616</skos:altLabel>
+        <skos:altLabel xml:lang="en">Multilingual Information Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12689,8 +12738,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MMI">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.w3.org/TR/mmi-framework/</ms:url>
-        <rdfs:altLabel xml:lang="en">Multi-Modal Interaction framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">MMI</rdfs:label>
+        <skos:altLabel xml:lang="en">Multi-Modal Interaction framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12895,8 +12944,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MTBF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Mean Time Between Failures</rdfs:altLabel>
         <rdfs:label xml:lang="en">MTBF</rdfs:label>
+        <skos:altLabel xml:lang="en">Mean Time Between Failures</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12905,8 +12954,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MTSA">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Mean Time Seek Annotations</rdfs:altLabel>
         <rdfs:label xml:lang="en">MTSA</rdfs:label>
+        <skos:altLabel xml:lang="en">Mean Time Seek Annotations</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12915,8 +12964,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MTTR">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
-        <rdfs:altLabel xml:lang="en">Mean Time To Repair</rdfs:altLabel>
         <rdfs:label xml:lang="en">MTTR</rdfs:label>
+        <skos:altLabel xml:lang="en">Mean Time To Repair</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -12936,8 +12985,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MUMIN">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://cst.dk/mumin/</ms:url>
-        <rdfs:altLabel xml:lang="en">MUltiModal INterfaces</rdfs:altLabel>
         <rdfs:label xml:lang="en">MUMIN</rdfs:label>
+        <skos:altLabel xml:lang="en">MUltiModal INterfaces</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13073,8 +13122,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MeSH_classification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
         <ms:url>http://www.openclinical.org/medTermMesh.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Medical Subject Headings</rdfs:altLabel>
         <rdfs:label xml:lang="en">MeSH</rdfs:label>
+        <skos:altLabel xml:lang="en">Medical Subject Headings</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13094,8 +13143,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/OAXAL">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=oaxal</ms:url>
-        <rdfs:altLabel xml:lang="en">OASIS Open Architecture for XML Authoring and Localization Reference Model</rdfs:altLabel>
         <rdfs:label xml:lang="en">OAXAL</rdfs:label>
+        <skos:altLabel xml:lang="en">OASIS Open Architecture for XML Authoring and Localization Reference Model</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13113,6 +13162,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/OpenAIRE">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
         <rdfs:label xml:lang="en">OpenAIRE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13278,8 +13328,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SRX">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.gala-global.org/srx-20-april-7-2008</ms:url>
-        <rdfs:altLabel xml:lang="en">Segmentation Rules eXchange</rdfs:altLabel>
         <rdfs:label xml:lang="en">SRX</rdfs:label>
+        <skos:altLabel xml:lang="en">Segmentation Rules eXchange</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13298,8 +13348,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SemAF-DA">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/76443.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Semantic Annotation Framework - Dialogue Acts</rdfs:altLabel>
         <rdfs:label xml:lang="en">SemAF-DA</rdfs:label>
+        <skos:altLabel xml:lang="en">Semantic Annotation Framework - Dialogue Acts</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13309,8 +13359,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SemAF-DS">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/obp/ui/#iso:std:iso:ts:24617:-5:ed-1:v1:en</ms:url>
-        <rdfs:altLabel xml:lang="en">Semantic Annotation Framework - Discourse Structure</rdfs:altLabel>
         <rdfs:label xml:lang="en">SemAF-DS</rdfs:label>
+        <skos:altLabel xml:lang="en">Semantic Annotation Framework - Discourse Structure</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13320,8 +13370,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SemAF-NE">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://semanticweb.kaist.ac.kr/research/tc37sc4/new_doc/iso_tc37_sc4_N796_wg2_proposed_WD_24617-3_SemAF-NE.pdf</ms:url>
-        <rdfs:altLabel xml:lang="en">Semantic Annotation Framework - Named Entities</rdfs:altLabel>
         <rdfs:label xml:lang="en">SemAF-NE</rdfs:label>
+        <skos:altLabel xml:lang="en">Semantic Annotation Framework - Named Entities</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13331,8 +13381,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SemAF-SR">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/56866.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Semantic Annotation Framework - Semantic Roles</rdfs:altLabel>
         <rdfs:label xml:lang="en">SemAF-SR</rdfs:label>
+        <skos:altLabel xml:lang="en">Semantic Annotation Framework - Semantic Roles</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13351,8 +13401,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SynAF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.iso.org/standard/62508.html</ms:url>
-        <rdfs:altLabel xml:lang="en">Syntactic Annotation Framework</rdfs:altLabel>
         <rdfs:label xml:lang="en">SynAF</rdfs:label>
+        <skos:altLabel xml:lang="en">Syntactic Annotation Framework</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13371,8 +13421,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TBX">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.tbxinfo.net/tbx-about/</ms:url>
-        <rdfs:altLabel xml:lang="en">TermBase eXchange</rdfs:altLabel>
         <rdfs:label xml:lang="en">TBX</rdfs:label>
+        <skos:altLabel xml:lang="en">TermBase eXchange</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13382,8 +13432,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TEI">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://tei-c.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">Text Encoding Initiative</rdfs:altLabel>
         <rdfs:label xml:lang="en">TEI</rdfs:label>
+        <skos:altLabel xml:lang="en">Text Encoding Initiative</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13393,8 +13443,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TEI_P3">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://www.tei-c.org/Vault/GL/P3/index.htm</ms:url>
-        <rdfs:altLabel xml:lang="en">Text Encoding Initiative P3</rdfs:altLabel>
         <rdfs:label xml:lang="en">TEI P3</rdfs:label>
+        <skos:altLabel xml:lang="en">Text Encoding Initiative P3</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13404,8 +13454,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TEI_P4">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://tei-c.org/Vault/P4/doc/html/</ms:url>
-        <rdfs:altLabel xml:lang="en">Text Encoding Initiative P4</rdfs:altLabel>
         <rdfs:label xml:lang="en">TEI P4</rdfs:label>
+        <skos:altLabel xml:lang="en">Text Encoding Initiative P4</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13415,8 +13465,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TEI_P5">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>https://tei-c.org/guidelines/p5/</ms:url>
-        <rdfs:altLabel xml:lang="en">Text Encoding Initiative P5</rdfs:altLabel>
         <rdfs:label xml:lang="en">TEI P5</rdfs:label>
+        <skos:altLabel xml:lang="en">Text Encoding Initiative P5</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13435,8 +13485,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TMX">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.opentag.com/tmx.htm</ms:url>
-        <rdfs:altLabel xml:lang="en">Translation Memory eXchange</rdfs:altLabel>
         <rdfs:label xml:lang="en">TMX</rdfs:label>
+        <skos:altLabel xml:lang="en">Translation Memory eXchange</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13473,8 +13523,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TimeML">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.timeml.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">Time Markup Language</rdfs:altLabel>
         <rdfs:label xml:lang="en">TimeML</rdfs:label>
+        <skos:altLabel xml:lang="en">Time Markup Language</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13493,8 +13543,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/UDC_classification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
         <ms:url>http://www.udcc.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">Universal Decimal Classification</rdfs:altLabel>
         <rdfs:label xml:lang="en">UDC</rdfs:label>
+        <skos:altLabel xml:lang="en">Universal Decimal Classification</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13576,8 +13626,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/XCES">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://www.xces.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">Corpus Encoding Standard for XML</rdfs:altLabel>
         <rdfs:label xml:lang="en">XCES</rdfs:label>
+        <skos:altLabel xml:lang="en">Corpus Encoding Standard for XML</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13587,8 +13637,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/XLIFF">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://docs.oasis-open.org/xliff/v1.2/os/xliff-core.html</ms:url>
-        <rdfs:altLabel xml:lang="en">XML Localization Interchange File Format</rdfs:altLabel>
         <rdfs:label xml:lang="en">XLIFF</rdfs:label>
+        <skos:altLabel xml:lang="en">XML Localization Interchange File Format</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13615,8 +13665,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/aac">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CompressionName"/>
-        <rdfs:altLabel xml:lang="en">Advanced Audio Coding</rdfs:altLabel>
         <rdfs:label xml:lang="en">AAC</rdfs:label>
+        <skos:altLabel xml:lang="en">Advanced Audio Coding</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -13645,8 +13695,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/academic1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinLicenceCategoryScheme"/>
-        <rdfs:altLabel xml:lang="en">ACA</rdfs:altLabel>
         <rdfs:label xml:lang="en">academic</rdfs:label>
+        <skos:altLabel xml:lang="en">ACA</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -14451,8 +14501,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/cliticForm">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
-        <rdfs:altLabel xml:lang="en">inflectional form</rdfs:altLabel>
         <rdfs:label xml:lang="en">clitic form</rdfs:label>
+        <skos:altLabel xml:lang="en">inflectional form</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -14520,6 +14570,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NonSpeechItem"/>
         <rdfs:comment xml:lang="en">Value for non-speech item, used for commercials (advertisements)</rdfs:comment>
         <rdfs:label xml:lang="en">commercial</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/commercialSupport -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/commercialSupport">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">commercial support</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -14708,8 +14767,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/cordis">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
-        <rdfs:altLabel xml:lang="en">rcn</rdfs:altLabel>
         <rdfs:label xml:lang="en">cordis</rdfs:label>
+        <skos:altLabel xml:lang="en">rcn</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -14821,8 +14880,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/definition">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
-        <rdfs:altLabel xml:lang="en">gloss</rdfs:altLabel>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <skos:altLabel xml:lang="en">gloss</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -14967,6 +15026,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/discussionForum -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/discussionForum">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">discussion forum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/dockerImage -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/dockerImage">
@@ -15038,9 +15106,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ean13">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>https://en.wikipedia.org/wiki/International_Article_Number</ms:url>
-        <rdfs:altLabel xml:lang="en">European Article Number 13 standard</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to EAN (International Article Number, also known as European Article Number) and more specifically to the EAN 13 standard (cf. https://en.wikipedia.org/wiki/International_Article_Number)</rdfs:comment>
         <rdfs:label xml:lang="en">EAN 13</rdfs:label>
+        <skos:altLabel xml:lang="en">European Article Number 13 standard</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -15116,6 +15184,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdfs:comment xml:lang="en">European Language Grid</rdfs:comment>
         <rdfs:label xml:lang="en">ELG</rdfs:label>
     </owl:NamedIndividual>
@@ -15327,8 +15396,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/faceToFaceConversation">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/ClarinEl_TT013"/>
-        <rdfs:altLabel xml:lang="en">face-to-face conversation</rdfs:altLabel>
         <rdfs:label xml:lang="en">face to face conversation</rdfs:label>
+        <skos:altLabel xml:lang="en">face-to-face conversation</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -15458,8 +15527,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/flac">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CompressionName"/>
-        <rdfs:altLabel xml:lang="en">Free Lossless Audio Codec</rdfs:altLabel>
         <rdfs:label xml:lang="en">FLAC</rdfs:label>
+        <skos:altLabel xml:lang="en">Free Lossless Audio Codec</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -15567,6 +15636,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/freeSupport -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/freeSupport">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
+        <rdfs:label xml:lang="en">free support</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/frequency -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/frequency">
@@ -15617,8 +15695,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/gb">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">gigabyte</rdfs:altLabel>
         <rdfs:label xml:lang="en">gb</rdfs:label>
+        <skos:altLabel xml:lang="en">gigabyte</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16126,6 +16204,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/ingestedRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ingestedRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">ingested record</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/installationManual -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/installationManual">
@@ -16199,6 +16286,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/interactive1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Interactivity"/>
         <rdfs:label xml:lang="en">interactive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/internalRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/internalRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">internal record</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -16284,9 +16380,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/issn">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>http://www.issn.org</ms:url>
-        <rdfs:altLabel xml:lang="en">International Standard Serial Number</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the ISSN (International Standard Serial Number, http://www.issn.org/)</rdfs:comment>
         <rdfs:label xml:lang="en">ISSN</rdfs:label>
+        <skos:altLabel xml:lang="en">International Standard Serial Number</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16306,9 +16402,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/istc">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>http://www.istc-international.org/</ms:url>
-        <rdfs:altLabel xml:lang="en">International Standard Text Code</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the ISTC (International Standard Text Code, http://www.istc-international.org/)</rdfs:comment>
         <rdfs:label xml:lang="en">ISTC</rdfs:label>
+        <skos:altLabel xml:lang="en">International Standard Text Code</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16346,8 +16442,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/kb">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">kb</rdfs:altLabel>
         <rdfs:label xml:lang="en">kilobyte</rdfs:label>
+        <skos:altLabel xml:lang="en">kb</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16599,8 +16695,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/libraryOfCongress_Classification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
-        <rdfs:altLabel xml:lang="en">Library of Congress classification system</rdfs:altLabel>
         <rdfs:label xml:lang="en">LCC</rdfs:label>
+        <skos:altLabel xml:lang="en">Library of Congress classification system</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16609,8 +16705,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/libraryofCongressSubjectHeadings_classification">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
-        <rdfs:altLabel xml:lang="en">Library of Congress Subject Headings</rdfs:altLabel>
         <rdfs:label xml:lang="en">LCSH</rdfs:label>
+        <skos:altLabel xml:lang="en">Library of Congress Subject Headings</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16666,9 +16762,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/lissn">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
-        <rdfs:altLabel xml:lang="en">ISSN-L</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the linking ISSN or ISSN-L</rdfs:comment>
         <rdfs:label xml:lang="en">LISSN</rdfs:label>
+        <skos:altLabel xml:lang="en">ISSN-L</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16734,9 +16830,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/lsid">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>http://www.webcitation.org/getfile?fileid=27fcd073ea70199946ace15c6868520be2cab2ab</ms:url>
-        <rdfs:altLabel xml:lang="en">Life Sciences Identifier</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the LSID (Life Sciences Identifier, http://www.webcitation.org/getfile?fileid=27fcd073ea70199946ace15c6868520be2cab2ab)</rdfs:comment>
         <rdfs:label xml:lang="en">LSID</rdfs:label>
+        <skos:altLabel xml:lang="en">Life Sciences Identifier</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16754,9 +16850,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/machineReadableDictionary">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
-        <rdfs:altLabel xml:lang="en">MRD</rdfs:altLabel>
         <rdfs:comment xml:lang="en">a dictionary usually meant for humans in a form that a computer can process</rdfs:comment>
         <rdfs:label xml:lang="en">Machine Readable Dictionary</rdfs:label>
+        <skos:altLabel xml:lang="en">MRD</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -16862,8 +16958,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/mb">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">megabyte</rdfs:altLabel>
         <rdfs:label xml:lang="en">mb</rdfs:label>
+        <skos:altLabel xml:lang="en">megabyte</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -17190,8 +17286,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/multiWordUnit">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">multi-word expression</rdfs:altLabel>
         <rdfs:label xml:lang="en">multi-word unit</rdfs:label>
+        <skos:altLabel xml:lang="en">multi-word expression</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -17200,8 +17296,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/multiWordUnit1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
-        <rdfs:altLabel xml:lang="en">multi-word expression</rdfs:altLabel>
         <rdfs:label xml:lang="en">multi-word unit</rdfs:label>
+        <skos:altLabel xml:lang="en">multi-word expression</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -17590,8 +17686,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/npStructure">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/GrammaticalPhenomenaCoverage"/>
-        <rdfs:altLabel xml:lang="en">Structure of noun phrases</rdfs:altLabel>
         <rdfs:label xml:lang="en">NP structure</rdfs:label>
+        <skos:altLabel xml:lang="en">Structure of noun phrases</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -17802,6 +17898,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CompressionName"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ConditionOfUse"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Currency"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
@@ -17836,6 +17933,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingDeviceType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RequiredHardware"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ScenarioType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SceneIllumination"/>
@@ -17852,6 +17950,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
@@ -18170,9 +18269,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/pmcid">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/</ms:url>
-        <rdfs:altLabel xml:lang="en">PubMed Central Identifier</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the PMCID (PubMed Central Identifier, https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/)</rdfs:comment>
         <rdfs:label xml:lang="en">PMCID</rdfs:label>
+        <skos:altLabel xml:lang="en">PubMed Central Identifier</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18182,9 +18281,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/pmid">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <ms:url>https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/</ms:url>
-        <rdfs:altLabel xml:lang="en">PubMed Identifier</rdfs:altLabel>
         <rdfs:comment xml:lang="en">Value for resourceIdentifierSchemeName, referring to the PMID (PubMed Identifier, https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/)</rdfs:comment>
         <rdfs:label xml:lang="en">PMID</rdfs:label>
+        <skos:altLabel xml:lang="en">PubMed Identifier</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18213,8 +18312,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ppAttachment">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/GrammaticalPhenomenaCoverage"/>
-        <rdfs:altLabel xml:lang="en">Attachment of Prepositional phrases</rdfs:altLabel>
         <rdfs:label xml:lang="en">PP attachment</rdfs:label>
+        <skos:altLabel xml:lang="en">Attachment of Prepositional phrases</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18234,9 +18333,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/pragueTreebank">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <ms:url>http://ufal.mff.cuni.cz/pdt2.0/</ms:url>
-        <rdfs:altLabel xml:lang="en">PDT</rdfs:altLabel>
-        <rdfs:altLabel xml:lang="en">Prague Dependency Treebank</rdfs:altLabel>
         <rdfs:label xml:lang="en">Prague treebank</rdfs:label>
+        <skos:altLabel xml:lang="en">PDT</skos:altLabel>
+        <skos:altLabel xml:lang="en">Prague Dependency Treebank</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18321,8 +18420,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/public">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinLicenceCategoryScheme"/>
-        <rdfs:altLabel xml:lang="en">PUB</rdfs:altLabel>
         <rdfs:label xml:lang="en">public</rdfs:label>
+        <skos:altLabel xml:lang="en">PUB</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18382,6 +18481,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/VersionType"/>
         <rdfs:comment xml:lang="en">Value for &apos;Version type&apos; used for versions as published in digital or print form</rdfs:comment>
         <rdfs:label xml:lang="en">published</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/publishedRecord -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/publishedRecord">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">published record</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18448,6 +18556,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
         <rdfs:comment xml:lang="en">The form of the corpus that has not been enriched with annotations</rdfs:comment>
         <rdfs:label xml:lang="en">raw corpus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/re3data -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/re3data">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
+        <rdfs:label xml:lang="en">re3data</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18553,8 +18670,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/restricted">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinLicenceCategoryScheme"/>
-        <rdfs:altLabel xml:lang="en">RES</rdfs:altLabel>
         <rdfs:label xml:lang="en">restricted</rdfs:label>
+        <skos:altLabel xml:lang="en">RES</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -18728,8 +18845,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticFeature">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
-        <rdfs:altLabel xml:lang="en">semantic trait</rdfs:altLabel>
         <rdfs:label xml:lang="en">semantic feature</rdfs:label>
+        <skos:altLabel xml:lang="en">semantic trait</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -19020,6 +19137,26 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
         <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of source code, i.e. as files with the commands ready to be compiled or assembled into an executable computer program</rdfs:comment>
         <rdfs:label xml:lang="en">source code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/library -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/library">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of libraries (e.g. Java, python libraries)</rdfs:comment>
+        <rdfs:label xml:lang="en">library</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/plugin -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/plugin">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of plugins (e.g. Chrome browser extension)</rdfs:comment>
+        <rdfs:label xml:lang="en">plugin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -19317,8 +19454,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/tb">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">tb</rdfs:altLabel>
         <rdfs:label xml:lang="en">terabyte</rdfs:label>
+        <skos:altLabel xml:lang="en">tb</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -19465,9 +19602,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/terminologicalResource">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
-        <rdfs:altLabel xml:lang="en">term list</rdfs:altLabel>
         <rdfs:comment xml:lang="en">A lexical resource that lists concepts pertaining to a specific domain</rdfs:comment>
         <rdfs:label xml:lang="en">terminological resource</rdfs:label>
+        <skos:altLabel xml:lang="en">term list</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -19580,8 +19717,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/translationUnit">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
-        <rdfs:altLabel xml:lang="en">tu</rdfs:altLabel>
         <rdfs:label xml:lang="en">translation unit</rdfs:label>
+        <skos:altLabel xml:lang="en">tu</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -19878,6 +20015,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ConditionOfUse"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Currency"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
@@ -19913,6 +20051,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingDeviceType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RequiredHardware"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ScenarioType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SceneIllumination"/>
@@ -19929,6 +20068,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechItem"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SupportType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenre"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TextType"/>
