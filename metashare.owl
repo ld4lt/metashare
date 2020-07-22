@@ -32,6 +32,7 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -123,6 +124,12 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://www.w3.org/2002/07/owl#equivalentProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
     
 
 
@@ -10377,9 +10384,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -14229,7 +14234,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/biochemistry">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
-        <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/DDC570"/>
+        <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/DDC572"/>
         <rdfs:label xml:lang="en">Biochemistry</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16691,6 +16696,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/library -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/library">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of libraries (e.g. Java, python libraries)</rdfs:comment>
+        <rdfs:label xml:lang="en">library</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/libraryOfCongress_Classification -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/libraryOfCongress_Classification">
@@ -17849,8 +17864,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/omtdAccess2"/>
         <rdfs:comment xml:lang="en">The free and online availability of literature, which allows to read, download, copy, distribute, print, search, or link to the ful text, crawl articles for indexing, pass them as data to software, or use them for any other useful purpose. An availability that is granted without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself, and those related to giving authors control over the integrity of their work and the right to be properly acknowledged and cited.</rdfs:comment>
         <rdfs:label xml:lang="en">open access</rdfs:label>
-        <skos:closeMatch rdf:resource="http://purl.org/coar/access_right/c_abf2"/>
-        <skos:closeMatch rdf:resource="http://purl.org/eprint/accessRights/OpenAccess"/>
+        <owl:sameAs rdf:resource="http://purl.org/coar/access_right/c_abf2"/>
+        <owl:sameAs rdf:resource="http://purl.org/eprint/accessRights/OpenAccess"/>
     </owl:NamedIndividual>
     
 
@@ -18260,6 +18275,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/DDC580"/>
         <rdfs:label xml:lang="en">Plants</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/plugin -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/plugin">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
+        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of plugins (e.g. Chrome browser extension)</rdfs:comment>
+        <rdfs:label xml:lang="en">plugin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18683,8 +18708,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/omtdAccess1"/>
         <rdfs:comment xml:lang="en">Access is subject to restrictions or controls regarding users (e.g.,  limited to researchers or members of a specific group) or use (e.g.,  for research only, noncommercial use , etc.); subscription or registration may also be required and access may incur financial costs</rdfs:comment>
         <rdfs:label xml:lang="en">restricted access</rdfs:label>
-        <skos:closeMatch rdf:resource="http://purl.org/coar/access_right/c_16ec"/>
-        <skos:closeMatch rdf:resource="http://purl.org/eprint/accessRights/RestrictedAccess"/>
+        <owl:sameAs rdf:resource="http://purl.org/coar/access_right/c_16ec"/>
+        <owl:sameAs rdf:resource="http://purl.org/eprint/accessRights/RestrictedAccess"/>
     </owl:NamedIndividual>
     
 
@@ -19137,26 +19162,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
         <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of source code, i.e. as files with the commands ready to be compiled or assembled into an executable computer program</rdfs:comment>
         <rdfs:label xml:lang="en">source code</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/library -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/library">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
-        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of libraries (e.g. Java, python libraries)</rdfs:comment>
-        <rdfs:label xml:lang="en">library</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/plugin -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/plugin">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
-        <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of plugins (e.g. Chrome browser extension)</rdfs:comment>
-        <rdfs:label xml:lang="en">plugin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -20622,14 +20627,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
