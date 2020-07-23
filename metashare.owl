@@ -12672,19 +12672,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/LanguageTechnology -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LanguageTechnology">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
-        <rdfs:comment xml:lang="en">Language technology, often called human language technology, studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. It consists of natural language processing and computational linguistics on the one hand, and speech technology on the other. [Wikipedia]</rdfs:comment>
-        <rdfs:label xml:lang="en">Language Technology</rdfs:label>
-        <skos:altLabel xml:lang="en">HLT</skos:altLabel>
-        <skos:altLabel xml:lang="en">Human Language Technology</skos:altLabel>
-        <skos:altLabel xml:lang="en">LT</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/MAD -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MAD">
