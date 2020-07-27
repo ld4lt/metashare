@@ -32,7 +32,6 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -10105,6 +10104,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://purl.org/coar/access_right/c_16ec">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"/>
+        <owl:sameAs rdf:resource="http://w3id.org/meta-share/meta-share/restrictedAccess"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/COARightsStatementScheme"/>
     </owl:NamedIndividual>
     
@@ -10114,6 +10114,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://purl.org/coar/access_right/c_abf2">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"/>
+        <owl:sameAs rdf:resource="http://w3id.org/meta-share/meta-share/openAccess"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/COARightsStatementScheme"/>
     </owl:NamedIndividual>
     
@@ -10124,6 +10125,22 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://purl.org/coar/access_right/c_f1cf">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/COARightsStatementScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/eprint/accessRights/OpenAccess -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/eprint/accessRights/OpenAccess">
+        <owl:sameAs rdf:resource="http://w3id.org/meta-share/meta-share/openAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/eprint/accessRights/RestrictedAccess -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/eprint/accessRights/RestrictedAccess">
+        <owl:sameAs rdf:resource="http://w3id.org/meta-share/meta-share/restrictedAccess"/>
     </owl:NamedIndividual>
     
 
@@ -10384,7 +10401,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -10772,6 +10791,24 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/Clarin_Domain004 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Clarin_Domain004">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainIdentifier"/>
+        <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinEL_domainClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Clarin_Domain005 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Clarin_Domain005">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainIdentifier"/>
+        <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinEL_domainClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Clarin_Domain006 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Clarin_Domain006">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainIdentifier"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinEL_domainClassification"/>
     </owl:NamedIndividual>
@@ -16717,6 +16754,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/lifeSciences">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/Clarin_Domain005"/>
         <rdfs:comment xml:lang="en">A branch of science (such as biology, medicine, and sometimes anthropology or sociology) that deals with living organisms and life processes —usually used in plural</rdfs:comment>
         <rdfs:label xml:lang="en">life sciences</rdfs:label>
     </owl:NamedIndividual>
@@ -17851,8 +17889,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/omtdAccess2"/>
         <rdfs:comment xml:lang="en">The free and online availability of literature, which allows to read, download, copy, distribute, print, search, or link to the ful text, crawl articles for indexing, pass them as data to software, or use them for any other useful purpose. An availability that is granted without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself, and those related to giving authors control over the integrity of their work and the right to be properly acknowledged and cited.</rdfs:comment>
         <rdfs:label xml:lang="en">open access</rdfs:label>
-        <owl:sameAs rdf:resource="http://purl.org/coar/access_right/c_abf2"/>
-        <owl:sameAs rdf:resource="http://purl.org/eprint/accessRights/OpenAccess"/>
     </owl:NamedIndividual>
     
 
@@ -18695,8 +18731,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/omtdAccess1"/>
         <rdfs:comment xml:lang="en">Access is subject to restrictions or controls regarding users (e.g.,  limited to researchers or members of a specific group) or use (e.g.,  for research only, noncommercial use , etc.); subscription or registration may also be required and access may incur financial costs</rdfs:comment>
         <rdfs:label xml:lang="en">restricted access</rdfs:label>
-        <owl:sameAs rdf:resource="http://purl.org/coar/access_right/c_16ec"/>
-        <owl:sameAs rdf:resource="http://purl.org/eprint/accessRights/RestrictedAccess"/>
     </owl:NamedIndividual>
     
 
@@ -18771,6 +18805,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/scholarlyCommunication">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
+        <datacite:hasIdentifier rdf:resource="http://w3id.org/meta-share/meta-share/Clarin_Domain006"/>
         <rdfs:comment xml:lang="en">Scholarly communication can be defined as “the system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use. The system includes both formal means of communication, such as publication in peer-reviewed journals, and informal channels, such as electronic listservs.” (Association of College &amp; Research Libraries, “Principles and Strategies for the Reform of Scholarly Communication 1,” 2003)</rdfs:comment>
         <rdfs:label xml:lang="en">scholarly communication</rdfs:label>
     </owl:NamedIndividual>
@@ -20614,14 +20649,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
