@@ -32,6 +32,7 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -1932,6 +1933,27 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/headOfficeAddress -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/headOfficeAddress">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/addressSet"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
+        <rdfs:comment xml:lang="en">Links to a set of elements that describe the full address of the head office of an or organization (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">address (head office)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/hearingImpairmentOfParticipants -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/hearingImpairmentOfParticipants">
@@ -3339,6 +3361,27 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/MediaType"/>
         <rdfs:comment xml:lang="en">Specifies the media types that are linked to the media type described within the same resource</rdfs:comment>
         <rdfs:label xml:lang="en">other media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/otherOfficeAddress -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/otherOfficeAddress">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/addressSet"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
+        <rdfs:comment xml:lang="en">Links to a set of elements that describe the full address of offices (other than the head office) of an or organization (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">address (other offices)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -10401,9 +10444,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -10568,6 +10609,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/CORE">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdfs:label xml:lang="en">CORE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Caffe -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Caffe">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">Caffe</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12366,6 +12416,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/H2O -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/H2O">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">H2O</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/HD.1080 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/HD.1080">
@@ -12642,6 +12701,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/KOI8-R">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CharacterEncoding"/>
         <rdfs:label xml:lang="en">KOI8-R</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Keras -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Keras">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">Keras</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13020,6 +13088,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/MXNet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MXNet">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">MXNet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/MacArabic -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MacArabic">
@@ -13153,6 +13230,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <ms:url>http://www.openclinical.org/medTermMesh.html</ms:url>
         <rdfs:label xml:lang="en">MeSH</rdfs:label>
         <skos:altLabel xml:lang="en">Medical Subject Headings</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/MicrosoftCognitiveToolkit -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MicrosoftCognitiveToolkit">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">Microsoft Cognitive Toolkit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13296,6 +13382,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/PyTorch -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/PyTorch">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">PyTorch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/REST -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/REST">
@@ -13359,6 +13454,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <ms:url>https://www.gala-global.org/srx-20-april-7-2008</ms:url>
         <rdfs:label xml:lang="en">SRX</rdfs:label>
         <skos:altLabel xml:lang="en">Segmentation Rules eXchange</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Scikit-Learn -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Scikit-Learn">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">Scikit-Learn</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13525,6 +13629,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TST-CENTRALE">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdfs:label xml:lang="en">TST-Centrale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/TensorFlow -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorFlow">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdfs:label xml:lang="en">TensorFlow</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -20649,14 +20762,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
