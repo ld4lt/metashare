@@ -29,15 +29,6 @@
         <dct:creator>Jorge Gracia</dct:creator>
         <dct:creator rdf:resource="http://john.mccr.ae/"/>
         <dct:creator>Marta Villegas</dct:creator>
-<<<<<<< HEAD
-        <dct:creator>Penny Labropoulou</dct:creator>
-        <dct:creator>Philipp Cimiano</dct:creator>
-        <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dct:modified>2020-03-20</dct:modified>
-        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
-=======
->>>>>>> e90a597b2e389bf4e7b307d51daf1bd7907d1716
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
