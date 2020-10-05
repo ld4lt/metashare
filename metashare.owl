@@ -5344,7 +5344,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">The name of the department or unit (e.g.,  specific university faculty/department, department/unit of a research organization or private company , etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of the department or unit (e.g., specific university faculty/department, department/unit of a research organization or private company, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">division name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6360,7 +6360,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">Introduces the short name (abbreviation, acronym , etc.) used for an organization</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the short name (abbreviation, acronym, etc.) used for an organization</rdfs:comment>
         <rdfs:label xml:lang="en">organization short name</rdfs:label>
     </owl:DatatypeProperty>
     
