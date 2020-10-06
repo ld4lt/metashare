@@ -32,7 +32,6 @@
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -303,7 +302,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/Operation"/>
-        <rdfs:comment xml:lang="en">Introduces a Language Technology-related area that a person or organization is involved or active in</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces a Language Technology-related area associated with the activities or  domain of interest of an entity</rdfs:comment>
         <rdfs:label xml:lang="en">LT area</rdfs:label>
         <skos:altLabel xml:lang="en">Language Technology area</skos:altLabel>
     </owl:ObjectProperty>
@@ -413,7 +412,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
-        <rdfs:comment xml:lang="en">Links to a set of elements that describe the full address of a person or organization (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to the physical address of an organization, group or person expressed in the form of distinct elements (street address, zip code, city, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">address</rdfs:label>
     </owl:ObjectProperty>
     
@@ -945,7 +944,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Country"/>
-        <rdfs:comment xml:lang="en">Introduces the country in which a company has been first registered as a legal entity</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the country in which an organization was officially registered for the first time as a legal entity</rdfs:comment>
         <rdfs:label xml:lang="en">country of registration</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1776,7 +1775,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/isDivisionOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
-        <rdfs:comment xml:lang="en">Links an organization to the division(s) it consists of</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links an organization to the division(s) (e.g., company branch, university faculty or department, etc.) it consists of</rdfs:comment>
         <rdfs:label xml:lang="en">has division</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1948,7 +1947,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
-        <rdfs:comment xml:lang="en">Links to a set of elements that describe the full address of the head office of an or organization (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to the physical address of the head office of an organization or group expressed in the form of distinct elements (street address, zip code, city, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">address (head office)</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2340,7 +2339,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isDivisionOf">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
-        <rdfs:comment xml:lang="en">Links a division to the organization to which it is associated</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a division (e.g., company branch, university department or faculty) to the organization to which it belongs</rdfs:comment>
         <rdfs:label xml:lang="en">is division of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2572,8 +2571,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/participatingOrganization"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
-        <rdfs:comment xml:lang="en">Identifies the project(s) where an organization has officially participated or is participating</rdfs:comment>
-        <rdfs:label xml:lang="en">is participating organization in</rdfs:label>
+        <rdfs:comment xml:lang="en">Identifies the project(s) where an organization has officially participated or participates in</rdfs:comment>
+        <rdfs:label xml:lang="en">participant in</rdfs:label>
+        <skos:example xml:lang="en">European Language Technology Project, Machine Translation for Elderly People, ...</skos:example>
     </owl:ObjectProperty>
     
 
@@ -2718,7 +2718,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-        <rdfs:comment xml:lang="en">Links to a language resource that is related in any way to the entity being described</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to a language resource that holds a relation with the entity being described (without further specification of the relation type)</rdfs:comment>
         <rdfs:label xml:lang="en">is related to Language Resource</rdfs:label>
     </owl:ObjectProperty>
     
@@ -3380,7 +3380,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
-        <rdfs:comment xml:lang="en">Links to a set of elements that describe the full address of offices (other than the head office) of an or organization (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to the physical address of an office (other than the principal one) of an organization or group expressed in the form of distinct elements (street address, zip code, city, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">address (other offices)</rdfs:label>
     </owl:ObjectProperty>
     
@@ -5285,10 +5285,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">Introduces a field of study or research area that a person or organization is expert in</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces an academic field of study or research area that a person, group or organization is expert in</rdfs:comment>
         <rdfs:label xml:lang="en">discipline</rdfs:label>
         <skos:altLabel xml:lang="en">area of expertise</skos:altLabel>
         <skos:altLabel xml:lang="en">research area</skos:altLabel>
+        <skos:example xml:lang="en">computer programming, translation and interpreting, linguistics, ...</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -5426,6 +5427,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Points to the email address of a person, organization or group</rdfs:comment>
         <rdfs:label xml:lang="en">email</rdfs:label>
+        <skos:example xml:lang="en">john.smith@example.com, ...</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -5548,8 +5550,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The fax number of a person or an organization; recommended format: +_international code_city code_number</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the fax number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
         <rdfs:label xml:lang="en">fax number</rdfs:label>
+        <skos:example xml:lang="en">+123456789012</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -5907,9 +5910,10 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">Introduces a word or phrase considered important for the description of a language resource, person or organization and thus used to index or classify it</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces a word or phrase considered important for the description of an entity and thus used to index or classify it</rdfs:comment>
         <rdfs:label xml:lang="en">keyword</rdfs:label>
         <skos:altLabel xml:lang="en">keyphrase</skos:altLabel>
+        <skos:example xml:lang="en">crisis management, speech synthesis, subtitling, ...</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -6070,8 +6074,9 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Links to a URL with an image file containing a symbol or graphic object used to identify the entity</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links to a symbol or graphic object used to identify an entity; please, add a URL with an image file</rdfs:comment>
         <rdfs:label xml:lang="en">logo</rdfs:label>
+        <skos:example xml:lang="en">https://www.logo.eu</skos:example>
     </owl:DatatypeProperty>
     
 
@@ -7762,7 +7767,7 @@ should we also differentiate between distributions? e.g.,  a csv published at a 
     <!-- http://w3id.org/meta-share/meta-share/AddressSet -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/AddressSet">
-        <rdfs:comment xml:lang="en">A set of elements that describe the full address (i.e. including street address, zip code, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The physical address of an organization, group or person expressed in the form of distinct elements (street address, zip code, city, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Address</rdfs:label>
     </owl:Class>
     
@@ -8273,7 +8278,7 @@ add definitions to all instances</skos:note>
     <!-- http://w3id.org/meta-share/meta-share/Division -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Division">
-        <rdfs:comment xml:lang="en">A section of a larger organization (e.g.,  school, faculty, department of a university, department or branch of a company, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Section of a larger organization (e.g.,  school, faculty, department of a university, department or branch of a company, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">Division</rdfs:label>
     </owl:Class>
     
@@ -10444,7 +10449,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -20757,19 +20764,19 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
@@ -20810,8 +20817,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/telephoneNumber">
-        <rdfs:comment xml:lang="en">The telephone number of a person or an organization; recommended format: +_international code_city code_number</rdfs:comment>
         <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <skos:example xml:lang="en">+123456789012</skos:example>
+        <rdfs:comment xml:lang="en">Introduces the telephone number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/copyrightNotEvaluated">
         <rdfs:label xml:lang="en">Copyright Not Evaluated</rdfs:label>
