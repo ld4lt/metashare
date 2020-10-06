@@ -2,43 +2,44 @@
 <rdf:RDF xmlns="http://w3id.org/meta-share/meta-share"
      xml:base="http://w3id.org/meta-share/meta-share"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:swrc="http://swrc.ontoware.org/ontology#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ms="http://w3id.org/meta-share/meta-share/"
-     xmlns:msxml="http://www.ilsp.gr/META-XMLSchema#"
-     xmlns:datacite="http://purl.org/spar/datacite/"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
-     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrc="http://swrc.ontoware.org/ontology#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:msxml="http://www.ilsp.gr/META-XMLSchema#"
+     xmlns:datacite="http://purl.org/spar/datacite/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/meta-share">
         <owl:versionIRI rdf:resource="http://w3id.org/meta-share/meta-share/2.0.0"/>
-        <owl:priorVersion rdf:resource="http://purl.org/ms-lod/MetaShareRights.ttl#"/>
-        <dct:creator>Philipp Cimiano</dct:creator>
-        <dct:creator>Dimitris Galanis</dct:creator>
-        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
-        <dct:creator>John P. McCrae</dct:creator>
-        <dct:creator>Jorge Gracia</dct:creator>
-        <dct:creator rdf:resource="http://john.mccr.ae/"/>
-        <dct:creator>Marta Villegas</dct:creator>
-        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
-        <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
-        <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
-        <dct:creator>Katerina Gkirtzou</dct:creator>
-        <dct:modified>2020-03-20</dct:modified>
-        <dct:creator>Penny Labropoulou</dct:creator>
         <dc:description xml:lang="en">Meta-Share ontology v2. The ontology caters for the description of Language resources  (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs. 
 It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation/area, data format, method, annotation type).</dc:description>
+        <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:creator rdf:resource="http://john.mccr.ae/"/>
+        <dct:creator>Dimitris Galanis</dct:creator>
+        <dct:creator>John P. McCrae</dct:creator>
+        <dct:creator>Jorge Gracia</dct:creator>
+        <dct:creator>Katerina Gkirtzou</dct:creator>
+        <dct:creator>Marta Villegas</dct:creator>
+        <dct:creator>Penny Labropoulou</dct:creator>
+        <dct:creator>Philipp Cimiano</dct:creator>
+        <dct:creator>Victor Rodriguez Doncel</dct:creator>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <dct:modified>2020-03-20</dct:modified>
+        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
+        <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
+        <owl:priorVersion rdf:resource="http://purl.org/ms-lod/MetaShareRights.ttl#"/>
+        <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -892,7 +893,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/coordinator">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
-        <rdfs:comment xml:lang="en">Introduces the details for an organization that coordinates the project being described</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the organization that coordinates the project being described</rdfs:comment>
         <rdfs:label xml:lang="en">coordinator</rdfs:label>
         <skos:altLabel xml:lang="en">co-ordinator</skos:altLabel>
     </owl:ObjectProperty>
@@ -915,7 +916,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/cost">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Cost"/>
-        <rdfs:comment xml:lang="en">Introduces the cost for accessing a resource, formally described as a set of amount and currency unit</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the cost for accessing a resource, formally described as a set of amount and currency unit or the overall budget of a project</rdfs:comment>
         <rdfs:label xml:lang="en">cost</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1320,7 +1321,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Domain"/>
-        <rdfs:comment xml:lang="en">Identifies the domain according to which a resource is classified</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifies the domain according to which an entity is classified</rdfs:comment>
         <rdfs:label xml:lang="en">domain</rdfs:label>
     </owl:ObjectProperty>
     
@@ -10449,9 +10450,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -20761,12 +20760,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
-    <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
@@ -20777,6 +20770,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
                 <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
             </rdf:Description>
         </odrl:constraint>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
@@ -20877,5 +20876,5 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
