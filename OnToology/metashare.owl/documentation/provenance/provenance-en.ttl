@@ -1,0 +1,28 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://w3id.org/meta-share/meta-share/2.0.0> a prov:Entity;
+	 dc:title "META-SHARE ontology";
+	 prov:wasAttributedTo <http://john.mccr.ae/>;
+	 dc:creator <http://john.mccr.ae/>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <http://purl.org/ms-lod/MetaShareRights.ttl#>;
+	 prov:wasGeneratedAt "2020-03-20";
+.
+:agent0 a prov:Agent; foaf:name "Dimitris Galanis".
+:agent1 a prov:Agent; foaf:name "John P. McCrae".
+:agent2 a prov:Agent; foaf:name "Jorge Gracia".
+:agent3 a prov:Agent; foaf:name "Katerina Gkirtzou".
+:agent4 a prov:Agent; foaf:name "Marta Villegas".
+:agent5 a prov:Agent; foaf:name "Penny Labropoulou".
+:agent6 a prov:Agent; foaf:name "Philipp Cimiano".
+:agent7 a prov:Agent; foaf:name "Victor Rodriguez Doncel".
