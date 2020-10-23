@@ -34,7 +34,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -7635,6 +7634,8 @@ should we also differentiate between distributions? e.g., a csv published at a d
 
     <owl:Class rdf:about="http://purl.org/spar/datacite/FunderIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+        <rdfs:comment xml:lang="en">The name of the scheme used to identify a funder</rdfs:comment>
+        <rdfs:label xml:lang="en">Funder identfier scheme</rdfs:label>
     </owl:Class>
     
 
@@ -7672,7 +7673,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
 
     <owl:Class rdf:about="http://purl.org/spar/datacite/OrganizationIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
-        <rdfs:comment xml:lang="en">The name of the identifier scheme used to identify an organization</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of the scheme used to identify an organization</rdfs:comment>
         <rdfs:label xml:lang="en">Organization identifier scheme</rdfs:label>
     </owl:Class>
     
@@ -7696,6 +7697,8 @@ should we also differentiate between distributions? e.g., a csv published at a d
 
     <owl:Class rdf:about="http://purl.org/spar/datacite/PersonalIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+        <rdfs:comment xml:lang="en">The name of the scheme used to identify a person</rdfs:comment>
+        <rdfs:label xml:lang="en">Person identfier scheme</rdfs:label>
     </owl:Class>
     
 
@@ -7712,6 +7715,8 @@ should we also differentiate between distributions? e.g., a csv published at a d
 
     <owl:Class rdf:about="http://purl.org/spar/datacite/ResourceIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/IdentifierScheme"/>
+        <rdfs:comment xml:lang="en">The name of the scheme used to identify a resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Resource identifier scheme</rdfs:label>
     </owl:Class>
     
 
@@ -9411,6 +9416,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme">
         <rdfs:subClassOf rdf:resource="http://purl.org/spar/datacite/AgentIdentifierScheme"/>
+        <rdfs:comment xml:lang="en">The name of the scheme used to identify a repository</rdfs:comment>
         <rdfs:label xml:lang="en">Repository identifier scheme</rdfs:label>
     </owl:Class>
     
@@ -10466,7 +10472,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -20778,22 +20786,22 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
