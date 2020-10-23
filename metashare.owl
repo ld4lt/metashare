@@ -34,6 +34,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -7689,6 +7690,8 @@ should we also differentiate between distributions? e.g., a csv published at a d
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/datacite/PersonalIdentifierScheme"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A string (e.g., PID, DOI, internal to an organization, etc.) used to uniquely identify a person</rdfs:comment>
+        <rdfs:label xml:lang="en">Person identifier</rdfs:label>
     </owl:Class>
     
 
@@ -9408,6 +9411,8 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
                 <owl:allValuesFrom rdf:resource="http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A string (e.g., PID, DOI, internal to an organization, etc.) used to uniquely identify a repository</rdfs:comment>
+        <rdfs:label xml:lang="en">Repository identifier</rdfs:label>
     </owl:Class>
     
 
@@ -10472,9 +10477,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -20786,22 +20789,22 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
-    </rdf:Description>
-    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
                 <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
             </rdf:Description>
         </odrl:constraint>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
