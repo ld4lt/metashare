@@ -7664,7 +7664,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A string used to uniquely identify an organization</rdfs:comment>
         <rdfs:label xml:lang="en">Organization identifier</rdfs:label>
-        <skos:altLabel xml:lang="en_uk">Organisation identifier</skos:altLabel>
+        <skos:altLabel xml:lang="en-uk">Organisation identifier</skos:altLabel>
     </owl:Class>
     
 
