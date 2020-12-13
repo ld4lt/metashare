@@ -34,7 +34,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -6161,7 +6160,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Specifies the language that is used as support for the resource (e.g., a grammar of French described in English or a French dictionary with English definitions)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the language that is used as support for the resource (e.g., English for a grammar of French described in English or for a French dictionary with English definitions)</rdfs:comment>
         <rdfs:label xml:lang="en">metalanguage</rdfs:label>
         <skos:note xml:lang="en">in the xsd, this is expressed with a BCP47 combination while in the ontology as a URI (to link with an ontology)</skos:note>
     </owl:DatatypeProperty>
@@ -10477,7 +10476,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -15856,16 +15857,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/galaxyWorkflow -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/galaxyWorkflow">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
-        <rdfs:comment xml:lang="en">Value for software distribution form, used for software workflows created with the Galaxy workflow engine</rdfs:comment>
-        <rdfs:label xml:lang="en">galaxy workflow</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/gb -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/gb">
@@ -18411,6 +18402,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/phrase1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/phrase1">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">phrase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/physics -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/physics">
@@ -19026,6 +19026,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/segment -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/segment">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
+        <rdfs:label xml:lang="en">segment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/semanticClass -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticClass">
@@ -19123,6 +19132,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/sentence1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
         <rdfs:label xml:lang="en">sentence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/serviceContract -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/serviceContract">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/FundingType"/>
+        <rdfs:comment xml:lang="en">Value for &apos;Funding type&apos; for projects financed under service contracts</rdfs:comment>
+        <rdfs:label xml:lang="en">service contract</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -20789,22 +20808,22 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
