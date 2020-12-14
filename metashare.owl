@@ -1565,7 +1565,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
         <rdfs:comment xml:lang="en">Specifies the implementation framework used for developing and running a tool/service</rdfs:comment>
-        <rdfs:label xml:lang="en">framework</rdfs:label>
+        <rdfs:label xml:lang="en">wrapping framework</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3186,6 +3186,26 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
         <rdfs:comment xml:lang="en">Identifies the metric used for the evaluation of the tool/service</rdfs:comment>
         <rdfs:label xml:lang="en">metric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/mlFramework1 -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/mlFramework1">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <dct:replaces rdf:resource="http://w3id.org/meta-share/meta-share/mlFramework"/>
+        <rdfs:comment xml:lang="en">Specifies the framework that has been used for developing a model (e.g. keras, tensorflow, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">ML framework</rdfs:label>
+        <skos:altLabel xml:lang="en">Machine Learning framework</skos:altLabel>
     </owl:ObjectProperty>
     
 
@@ -6174,6 +6194,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Specifies the framework that has been used for developing a model (e.g. keras, tensorflow, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">ML framework</rdfs:label>
+        <owl:deprecated></owl:deprecated>
         <skos:altLabel xml:lang="en">Machine Learning framework</skos:altLabel>
     </owl:DatatypeProperty>
     
@@ -8515,7 +8536,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Framework">
         <rdfs:comment xml:lang="en">The implementation framework used for developing and running a tool/service</rdfs:comment>
-        <rdfs:label xml:lang="en">Framework</rdfs:label>
+        <rdfs:label xml:lang="en">Wrapping framework</rdfs:label>
     </owl:Class>
     
 
@@ -8979,6 +9000,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LinkToOtherMedia">
         <rdfs:comment xml:lang="en">The links between different media parts of a multimedia resource</rdfs:comment>
         <rdfs:label xml:lang="en">Link to other media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/MLFramework -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/MLFramework">
+        <rdfs:comment xml:lang="en">The framework (e.g. keras, tensorflow, etc.) that has been used for developing a Machine Learning model and the tool/service that uses it</rdfs:comment>
+        <rdfs:label xml:lang="en">ML framework</rdfs:label>
+        <skos:altLabel xml:lang="en">Machine Learning framework</skos:altLabel>
     </owl:Class>
     
 
@@ -10650,7 +10681,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/Caffe -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Caffe">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">Caffe</rdfs:label>
     </owl:NamedIndividual>
     
@@ -12453,7 +12484,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/H2O -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/H2O">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">H2O</rdfs:label>
     </owl:NamedIndividual>
     
@@ -12742,7 +12773,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/Keras -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Keras">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">Keras</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13125,7 +13156,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/MXNet -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MXNet">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">MXNet</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13271,7 +13302,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/MicrosoftCognitiveToolkit -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MicrosoftCognitiveToolkit">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">Microsoft Cognitive Toolkit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13419,7 +13450,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/PyTorch -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/PyTorch">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">PyTorch</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13495,7 +13526,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/Scikit-Learn -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Scikit-Learn">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">Scikit-Learn</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13670,7 +13701,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/TensorFlow -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorFlow">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">TensorFlow</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18093,6 +18124,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
@@ -20229,6 +20261,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
