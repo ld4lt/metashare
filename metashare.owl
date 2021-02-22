@@ -34,7 +34,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -10509,7 +10508,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -14068,6 +14069,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/alcohol">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SpeechInfluence"/>
         <rdfs:label xml:lang="en">alcohol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/allowsAccessWithSignature -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/allowsAccessWithSignature">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
+        <rdfs:comment xml:lang="en">Value for licence category; for licences that allow access to resources only after signing the agreement</rdfs:comment>
+        <rdfs:label xml:lang="en">allows access with signature</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18775,6 +18786,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/publication">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentationType"/>
         <rdfs:comment xml:lang="en">Value for &apos;Documentation type&apos; used for published documents about a language resource (mainly meant for documents that describe the resource itself rather than its deployment)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Value for licence category; for licences that allow access to resources only for logged in users that have fulfilled further requirements (e.g. paid the fees for a commercial licence)</rdfs:comment>
         <rdfs:label xml:lang="en">publication</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18956,6 +18968,24 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ConditionOfUse"/>
         <rdfs:comment xml:lang="en">Value for &apos;ConditionOfUse&apos; that states that the licensor requires the submission of a research plan in order to grant access to the language resource</rdfs:comment>
         <rdfs:label xml:lang="en">request plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/requiresUserAuthentication -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/requiresUserAuthentication">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
+        <rdfs:comment xml:lang="en">Value for licence category; for licences for resources that can be access only by logged in users</rdfs:comment>
+        <rdfs:label xml:lang="en">requires user authentication</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/requiresUserAuthorization -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/requiresUserAuthorization">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceCategory"/>
     </owl:NamedIndividual>
     
 
@@ -20929,22 +20959,22 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+                <odrl:purpose rdf:resource="http://w3id.org/meta-share/meta-share/academic"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
