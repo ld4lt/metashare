@@ -5,10 +5,10 @@
     <uri id="Imports Wizard Entry" name="http://webprotege.stanford.edu/project/8PqyPFFm3nKjhWae2B5Poj" uri="file:/C:/Users/penny/Dropbox/working/MS%20ontologies/OMTD-SHAREextendedinISD/omtd-tdm-ontology-ontologies-owl-REVISION-HEAD/root-ontology.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/ms-lod/MetaShareRights.ttl#" uri="file:/C:/Users/penny/Dropbox/working/MS%20ontologies/ld4ldtrights-final.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1618232204080" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashare.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1618232204080" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareBak.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1618232204080" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareBak1007.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1618232204080" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareKanella.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1618232204080" name="shadowed:http://w3id.org/meta-share/meta-share" uri="documentation/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1618927216459" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashare.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618927216459" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareBak.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618927216459" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareBak1007.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618927216459" name="duplicate:http://w3id.org/meta-share/meta-share" uri="metashareKanella.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1618927216459" name="shadowed:http://w3id.org/meta-share/meta-share" uri="documentation/ontology.xml"/>
     </group>
 </catalog>
