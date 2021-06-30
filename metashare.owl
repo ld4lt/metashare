@@ -1447,6 +1447,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/enumerationValue -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/enumerationValue">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Parameter"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/EnumerationValue"/>
+        <rdfs:comment xml:lang="en">Introduces a value of a list used inside parameters</rdfs:comment>
+        <rdfs:label xml:lang="en">enumeration value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/evaluation -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/evaluation">
@@ -3902,7 +3913,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Sex"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/SexOfParticipants"/>
         <rdfs:comment xml:lang="en">Specifies the sex of the participants (either of the two major forms of individuals that occur in many species and that are distinguished respectively as female or male especially on the basis of their reproductive organs and structures [https://www.merriam-webster.com/dictionary/sex])</rdfs:comment>
         <rdfs:label xml:lang="en">sex of participants</rdfs:label>
         <skos:note xml:lang="en">check with sociologists?</skos:note>
@@ -5854,8 +5865,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/image3">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">Links to a URL with an image file (e.g., a photo, or cartoon image) that is used for identifying a person (e.g., on a home page)</rdfs:comment>
-        <rdfs:label xml:lang="en">image</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7568,6 +7577,39 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/valueDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/valueDescription">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/EnumerationValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="en">Introduces a short free text used to show to the user as a tip for the value of a list used in parameters</rdfs:label>
+        <rdfs:label xml:lang="en">value description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/valueLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/valueLabel">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/EnumerationValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Introduces a short free text used to show to the user for the value of a list used in parameters</rdfs:comment>
+        <rdfs:label xml:lang="en">value label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/valueName -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/valueName">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/EnumerationValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Introduces a free text used to identify the value of a list inside parameters</rdfs:comment>
+        <rdfs:label xml:lang="en">value name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/version -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/version">
@@ -8519,6 +8561,15 @@ add definitions to all instances</skos:note>
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/EncodingLevel">
         <rdfs:comment xml:lang="en">The linguistic level of analysis a lexical/conceptual resource or language description caters for as represented in its contents</rdfs:comment>
         <rdfs:label xml:lang="en">Encoding level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/EnumerationValue -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/EnumerationValue">
+        <rdfs:comment xml:lang="en">The value of a list used inside parameters</rdfs:comment>
+        <rdfs:label xml:lang="en">Enumeration value</rdfs:label>
     </owl:Class>
     
 
@@ -9580,6 +9631,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Sex">
         <rdfs:comment xml:lang="en">Either of the two major forms of individuals that occur in many species and that are distinguished respectively as female or male especially on the basis of their reproductive organs and structures [https://www.merriam-webster.com/dictionary/sex]</rdfs:comment>
         <rdfs:label xml:lang="en">Sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/SexOfParticipants -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SexOfParticipants">
+        <rdfs:comment xml:lang="en">The constitution of a group as regards the sex of the members</rdfs:comment>
+        <rdfs:label xml:lang="en">Sex of participants</rdfs:label>
     </owl:Class>
     
 
@@ -14721,6 +14781,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/chart -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/chart">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResourceType"/>
+        <rdfs:label xml:lang="en">chart</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/chatText -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/chatText">
@@ -14829,6 +14898,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/closedPublicPlace">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/RecordingEnvironment"/>
         <rdfs:label xml:lang="en">closed public place</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/cognates -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/cognates">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
+        <rdfs:label xml:lang="en">cognates</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -15258,6 +15336,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/diagram -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/diagram">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResourceType"/>
+        <rdfs:label xml:lang="en">diagram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/dialect -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/dialect">
@@ -15605,6 +15692,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/enumeration -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/enumeration">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ParameterType"/>
+        <rdfs:label xml:lang="en">enumeration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/environment -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/environment">
@@ -15771,6 +15867,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/female">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Sex"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SexOfParticipants"/>
         <rdfs:label xml:lang="en">female</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16093,6 +16190,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/graph -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/graph">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResourceType"/>
+        <rdfs:label xml:lang="en">graph</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/graphicArtsAndDecorativeArts -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/graphicArtsAndDecorativeArts">
@@ -16351,6 +16457,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
         <rdfs:label xml:lang="en">image</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/image3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/image3"/>
     
 
 
@@ -17199,6 +17311,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/male">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Sex"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SexOfParticipants"/>
         <rdfs:label xml:lang="en">male</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17477,6 +17590,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessMode"/>
         <rdfs:comment xml:lang="en">Value for &apos;Process mode&apos; and its subclasses used for mixed processes, usually involving an automatic processing followed by human edits</rdfs:comment>
         <rdfs:label xml:lang="en">mixed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/mixed1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/mixed1">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SexOfParticipants"/>
     </owl:NamedIndividual>
     
 
@@ -20369,6 +20490,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/unknown1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Sex"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SexOfParticipants"/>
         <rdfs:label xml:lang="en">unknown</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20639,6 +20761,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/video1">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ExtratextualInformation"/>
         <rdfs:label xml:lang="en">video</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/visualizationOutput -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/visualizationOutput">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResourceType"/>
+        <rdfs:label xml:lang="en">visualization output</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -21061,6 +21192,10 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/guidelines">
         <rdfs:comment xml:lang="en">Links to the document used as guidelines for the creation or annotation of a corpus</rdfs:comment>
         <rdfs:label xml:lang="en">guidelines</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/image3">
+        <rdfs:comment xml:lang="en">Links to a URL with an image file (e.g., a photo, or cartoon image) that is used for identifying a person (e.g., on a home page)</rdfs:comment>
+        <rdfs:label xml:lang="en">image</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/licenseInfo">
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
