@@ -1062,6 +1062,23 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/developmentFramework -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/developmentFramework">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">Introduces a framework used in the development of the resource</rdfs:comment>
+        <rdfs:label xml:lang="en">development framework</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/displays -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/displays">
@@ -3838,6 +3855,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/sample -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/sample">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Sample"/>
+        <rdfs:comment xml:lang="en">Introduces a combination of the sample text(s) or sample file(s) and optional tags that can be used for feeding a processing service for testing purposes</rdfs:comment>
+        <rdfs:label xml:lang="en">sample</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/scenarioType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/scenarioType">
@@ -5270,7 +5298,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/defaultValue">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Used for parameters that take a list of values in order to indicate the default value(s)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the initial value that user interfaces should use when prompting the user for a parameter taking a list of values</rdfs:comment>
         <rdfs:label xml:lang="en">default value</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6345,7 +6373,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/optional">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">Specifies whether the parameter is mandatory or optional</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies whether the parameter should be treated as mandatory or optional by user interfaces</rdfs:comment>
         <rdfs:label xml:lang="en">optional</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6500,7 +6528,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/parameterLabel">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">Introduces a short free text used to show to the user for the parameter</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces a short name for a parameter suitable for use as a field label in a user interface</rdfs:comment>
         <rdfs:label xml:lang="en">parameter label</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6511,7 +6539,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/parameterName">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Introduces a free text used to identify the parameter</rdfs:comment>
+        <rdfs:comment xml:lang="en">Introduces the name of the paramter as sent to a processing service</rdfs:comment>
         <rdfs:label xml:lang="en">parameter name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -6991,6 +7019,17 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/sampleText -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/sampleText">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Introduces a short text that can be used to feed a service in order to test it</rdfs:comment>
+        <rdfs:label xml:lang="en">sample text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/samplesLocation -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/samplesLocation">
@@ -7000,6 +7039,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DataLanguageResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Sample"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -7338,6 +7378,17 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Specifies whether the contents of a corpus have been artificially generated (e.g., using a Machine Translation or NLG system) rather than having been created by humans (authentic/original data)</rdfs:comment>
         <rdfs:label xml:lang="en">synthetic data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/tag -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/tag">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Introduces a tag that can be used as a criterion for selecting different samples for testing (e.g. the language value for Machine Translation services that operate on multiple languages)</rdfs:comment>
+        <rdfs:label xml:lang="en">tag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8349,6 +8400,15 @@ add definitions to all instances</skos:note>
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/DevelopmentFramework -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DevelopmentFramework">
+        <rdfs:comment xml:lang="en">A framework or toolkit (Machine Learning model, NLP toolkit) used in the development of a resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Development framework</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/Distribution -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Distribution">
@@ -9112,6 +9172,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/MLFramework -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/MLFramework">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
         <rdfs:comment xml:lang="en">The framework (e.g. keras, tensorflow, etc.) that has been used for developing a Machine Learning model and the tool/service that uses it</rdfs:comment>
         <rdfs:label xml:lang="en">ML framework</rdfs:label>
         <skos:altLabel xml:lang="en">Machine Learning framework</skos:altLabel>
@@ -9251,6 +9312,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
         <rdfs:comment xml:lang="en">A language model consisting of n-grams, i.e., specific sequences of a number of words</rdfs:comment>
         <rdfs:label xml:lang="en">N-gram model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/NLPFramework -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/NLPFramework">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
+        <rdfs:label xml:lang="en">NLP framework</rdfs:label>
     </owl:Class>
     
 
@@ -9585,6 +9655,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ResolutionStandard">
         <rdfs:comment xml:lang="en">The standard to which the resolution conforms</rdfs:comment>
         <rdfs:label xml:lang="en">Resolution standard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Sample -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Sample">
+        <rdfs:comment xml:lang="en">A combination of the sample text(s) or sample file(s) and optional tags that can be used for feeding a processing service for testing purposes</rdfs:comment>
+        <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
 
@@ -10045,6 +10124,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:comment xml:lang="en">A tool/service/any piece of software that performs language processing and/or any Language Technology related operation.</rdfs:comment>
         <rdfs:label xml:lang="en">Language Technology tool/service</rdfs:label>
         <skos:altLabel xml:lang="en">LT tool/service</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Toolkit -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Toolkit">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
+        <rdfs:label xml:lang="en">Tooolkit</rdfs:label>
     </owl:Class>
     
 
@@ -10665,11 +10753,31 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/AllenNLP -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/AllenNLP">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NLPFramework"/>
+        <rdfs:comment xml:lang="en">NLP framework based on deep learning; it includes reference implementations of high quality models for both core NLP problems (e.g. semantic role labeling) and NLP applications (e.g. textual entailment); built on PyTorch</rdfs:comment>
+        <rdfs:label xml:lang="en">AllenNLP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/AlvisNLP -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/AlvisNLP">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Framework"/>
         <rdfs:label xml:lang="en">AlvisNLP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Asteroid -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Asteroid">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">A speech processing toolkit based on PyTorch</rdfs:comment>
+        <rdfs:label xml:lang="en">Asteroid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -10758,6 +10866,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <ms:url>https://www.cs.vassar.edu/CES/</ms:url>
         <rdfs:label xml:lang="en">CES</rdfs:label>
         <skos:altLabel xml:lang="en">Corpus Encoding Standard</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/CLARIN-SHARE -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/CLARIN-SHARE">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/StandardBestPractice"/>
+        <rdfs:label xml:lang="en">CLARIN-SHARE</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12498,6 +12615,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/ESPnet -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ESPnet">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">A speech processing toolkit, mainly focusing on end-to-end speech recognition and end-to-end text-to-speech using Chainer and PyTorch as a main deep learning engine</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/EUC-JP -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/EUC-JP">
@@ -12522,6 +12648,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainClassificationScheme"/>
         <ms:url>https://eur-lex.europa.eu/browse/eurovoc.html</ms:url>
         <rdfs:label xml:lang="en">EUROVOC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Flair -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Flair">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NLPFramework"/>
+        <rdfs:label xml:lang="en">Flair</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12864,11 +12999,30 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/JAX -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/JAX">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:label xml:lang="en">JAX</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/JISAutoDetect -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/JISAutoDetect">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CharacterEncoding"/>
         <rdfs:label xml:lang="en">JISAutoDetect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Joblib -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Joblib">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
+        <rdfs:comment xml:lang="en">A python framework for running pipelines</rdfs:comment>
+        <rdfs:label xml:lang="en">Joblib</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13577,6 +13731,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/Pyannote -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Pyannote">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">Framework for multimedia processing</rdfs:comment>
+        <rdfs:label xml:lang="en">Pyannote</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/REST -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/REST">
@@ -13600,6 +13764,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/RightsStatementOrgScheme">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AccessRightsStatementScheme"/>
         <rdfs:label xml:lang="en">Rights_Statements_Org scheme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Rust -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Rust">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
+        <rdfs:comment xml:lang="en">Programming language designed for performance and safety, especially safe concurrency</rdfs:comment>
+        <rdfs:label xml:lang="en">Rust</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13715,6 +13889,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/Speechbrain -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Speechbrain">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">A speech processing toolkit</rdfs:comment>
+        <rdfs:label xml:lang="en">Speechbrain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/SynAF -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SynAF">
@@ -13790,6 +13974,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/TFLite -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TFLite">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:label xml:lang="en">Tensor Flow lite</rdfs:label>
+        <skos:altLabel xml:lang="en">TF lite</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/TIS-620 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TIS-620">
@@ -13819,11 +14013,31 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/TensorBoard -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorBoard">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">Visualization toolkit based on TensorFlow</rdfs:comment>
+        <rdfs:label xml:lang="en">TensorBoard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/TensorFlow -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorFlow">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdfs:label xml:lang="en">TensorFlow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/TensorFlowTTS -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorFlowTTS">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
+        <rdfs:comment xml:lang="en">A speech processing toolkit based on TensorFlow</rdfs:comment>
+        <rdfs:label xml:lang="en">TensorFlowTTS</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13853,6 +14067,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <ms:url>http://www.timeml.org/</ms:url>
         <rdfs:label xml:lang="en">TimeML</rdfs:label>
         <skos:altLabel xml:lang="en">Time Markup Language</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/Timm -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Timm">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:comment xml:lang="en">A deep learning framework/library for vision; a deep-learning library created by Ross Wightman; it is a collection of SOTA computer vision models, layers, utilities, optimizers, schedulers, data-loaders, augmentations and also training/validating scripts with ability to reproduce ImageNet training results</rdfs:comment>
+        <rdfs:label xml:lang="en">timm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -14102,6 +14326,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
         <rdfs:comment xml:lang="en">Value for dataset distribution medium, used for lexical/conceptual resources that can be accessed via a SPARQL endpoint</rdfs:comment>
         <rdfs:label xml:lang="en">accessible through query</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/adapterTransformer -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/adapterTransformer">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:label xml:lang="en">adapter transformer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -18385,7 +18618,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
@@ -19458,6 +19690,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/sentenceTransformer -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/sentenceTransformer">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:comment xml:lang="en">Special case of transformers tuned for sentences</rdfs:comment>
+        <rdfs:label xml:lang="en">sentence transformer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/serviceContract -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/serviceContract">
@@ -19672,6 +19914,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"/>
         <rdfs:comment xml:lang="en">Value for software distribution form, used for software objects in the form of source code, i.e. as files with the commands ready to be compiled or assembled into an executable computer program</rdfs:comment>
         <rdfs:label xml:lang="en">source code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/spaCy -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/spaCy">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NLPFramework"/>
     </owl:NamedIndividual>
     
 
@@ -20219,6 +20469,18 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/transformer -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/transformer">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
+        <rdfs:comment xml:lang="en">A transformer is a deep learning model that adopts the mechanism of attention, 
+differentially weighing the significance of each part of the input data. It is used primarily in the field of natural language processing (NLP) and in computer vision (CV)</rdfs:comment>
+        <rdfs:label xml:lang="en">transformer</rdfs:label>
+        <skos:note xml:lang="en">https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)</skos:note>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/translationEquivalent -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/translationEquivalent">
@@ -20272,6 +20534,14 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/trigram">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
         <rdfs:label xml:lang="en">trigram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/triple -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/triple">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SizeUnit"/>
     </owl:NamedIndividual>
     
 
@@ -20533,6 +20803,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Currency"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DocumentType"/>
@@ -20552,7 +20823,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"/>
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MLFramework"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
@@ -21141,11 +21411,11 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:label xml:lang="en">4:2:2</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:constraint>
