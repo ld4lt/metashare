@@ -34,7 +34,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -8609,7 +8608,6 @@ add definitions to all instances</skos:note>
     <!-- http://w3id.org/meta-share/meta-share/DynamicElement -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DynamicElement">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/Duration"/>
         <rdfs:comment xml:lang="en">Element represented in the video part of a resource</rdfs:comment>
         <rdfs:label xml:lang="en">Dynamic element</rdfs:label>
     </owl:Class>
@@ -10709,7 +10707,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -21414,8 +21414,7 @@ differentially weighing the significance of each part of the input data. It is u
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:constraint>
@@ -21426,7 +21425,8 @@ differentially weighing the significance of each part of the input data. It is u
         </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     
 
