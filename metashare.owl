@@ -34,6 +34,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
         <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
         <dct:creator>Katerina Gkirtzou</dct:creator>
@@ -9224,6 +9225,7 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LemmaType">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#concept"/>
         <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the lemma</rdfs:comment>
         <rdfs:label xml:lang="en">Lemma type</rdfs:label>
     </owl:Class>
@@ -11023,9 +11025,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -21832,21 +21832,21 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label>youtube</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
