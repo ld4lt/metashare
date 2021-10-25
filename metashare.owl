@@ -2,44 +2,43 @@
 <rdf:RDF xmlns="http://w3id.org/meta-share/meta-share"
      xml:base="http://w3id.org/meta-share/meta-share"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:swrc="http://swrc.ontoware.org/ontology#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ms="http://w3id.org/meta-share/meta-share/"
-     xmlns:msxml="http://www.ilsp.gr/META-XMLSchema#"
-     xmlns:datacite="http://purl.org/spar/datacite/"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
-     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:omtd="http://w3id.org/meta-share/omtd-share/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrc="http://swrc.ontoware.org/ontology#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:msxml="http://www.ilsp.gr/META-XMLSchema#"
+     xmlns:datacite="http://purl.org/spar/datacite/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/meta-share">
         <owl:versionIRI rdf:resource="http://w3id.org/meta-share/meta-share/2.0.0"/>
-        <owl:priorVersion rdf:resource="http://purl.org/ms-lod/MetaShareRights.ttl#"/>
-        <dct:creator>Philipp Cimiano</dct:creator>
-        <dct:creator>Dimitris Galanis</dct:creator>
-        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
-        <dct:creator>John P. McCrae</dct:creator>
-        <dct:creator>Jorge Gracia</dct:creator>
         <dc:description xml:lang="en">Meta-Share ontology v2. The ontology caters for the description of Language resources (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs. 
 It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation/area, data format, method, annotation type).</dc:description>
-        <dct:creator rdf:resource="http://john.mccr.ae/"/>
-        <dct:creator>Marta Villegas</dct:creator>
-        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
-        <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
-        <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
+        <dct:creator rdf:resource="http://john.mccr.ae/"/>
+        <dct:creator>Dimitris Galanis</dct:creator>
+        <dct:creator>John P. McCrae</dct:creator>
+        <dct:creator>Jorge Gracia</dct:creator>
         <dct:creator>Katerina Gkirtzou</dct:creator>
-        <dct:modified>2020-03-20</dct:modified>
+        <dct:creator>Marta Villegas</dct:creator>
         <dct:creator>Penny Labropoulou</dct:creator>
+        <dct:creator>Philipp Cimiano</dct:creator>
+        <dct:creator>Victor Rodriguez Doncel</dct:creator>
+        <dct:modified>2020-03-20</dct:modified>
+        <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
+        <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
+        <owl:priorVersion rdf:resource="http://purl.org/ms-lod/MetaShareRights.ttl#"/>
+        <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -255,6 +254,42 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
         <owl:equivalentProperty rdf:resource="http://w3id.org/meta-share/meta-share/resourceProvider"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Subset"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/temporal">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Subset"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
     </owl:ObjectProperty>
     
 
@@ -1000,6 +1035,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/DataFormat"/>
         <rdfs:comment xml:lang="en">Indicates the format(s) of a data resource</rdfs:comment>
         <rdfs:label xml:lang="en">data format</rdfs:label>
     </owl:ObjectProperty>
@@ -4847,6 +4883,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://www.w3.org/ns/locn#geographicName -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/locn#geographicName">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:note xml:lang="en">geographicIdentifier is also a property for location represented as &quot;rdfs:seeAls&quot;</skos:note>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/odrl/2/function -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/function"/>
@@ -7903,6 +7949,24 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
+    <!-- http://www.w3.org/ns/dcat#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#endDate">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#startDate">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -7917,6 +7981,18 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://creativecommons.org/ns#License -->
 
     <owl:Class rdf:about="http://creativecommons.org/ns#License"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime"/>
     
 
 
@@ -8253,16 +8329,6 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/AudioType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/AudioType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the audio level</rdfs:comment>
-        <rdfs:label xml:lang="en">Audio type</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/Authorize -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Authorize">
@@ -8414,6 +8480,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/ContentType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ContentType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A more detailed account of the linguistic information contained in the lexical/conceptual resource</rdfs:comment>
         <rdfs:label xml:lang="en">Content type</rdfs:label>
         <skos:note xml:lang="en">could we organise them hierarchically?
@@ -9221,17 +9288,6 @@ add definitions to all instances</skos:note>
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/LemmaType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LemmaType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#concept"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the lemma</rdfs:comment>
-        <rdfs:label xml:lang="en">Lemma type</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/LexicalConceptualResource -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">
@@ -9513,16 +9569,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ModalityType">
         <rdfs:comment xml:lang="en">A classification of modalities represented in the resource or processed by a tool/service</rdfs:comment>
         <rdfs:label xml:lang="en">Modality type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/MorphologicalType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/MorphologicalType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the morphological level</rdfs:comment>
-        <rdfs:label xml:lang="en">Morphological type</rdfs:label>
     </owl:Class>
     
 
@@ -9990,16 +10036,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/SemanticType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SemanticType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the semantic level</rdfs:comment>
-        <rdfs:label xml:lang="en">Semantic type</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/SensitiveDataIncluded -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SensitiveDataIncluded">
@@ -10294,26 +10330,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/SyntacticType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SyntacticType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the syntactic level</rdfs:comment>
-        <rdfs:label xml:lang="en">Syntactic type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/SyntacticoSemanticType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/SyntacticoSemanticType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the syntactico-semantic level</rdfs:comment>
-        <rdfs:label xml:lang="en">Syntactico-semantic type</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/TRL -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/TRL">
@@ -10458,26 +10474,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Toolkit">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/DevelopmentFramework"/>
         <rdfs:label xml:lang="en">Tooolkit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/TranslationType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/TranslationType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource relevant to the translation procedure</rdfs:comment>
-        <rdfs:label xml:lang="en">Translation type</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/UsageType -->
-
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/UsageType">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-        <rdfs:comment xml:lang="en">A type of content included in a language resource encoding usage information</rdfs:comment>
-        <rdfs:label xml:lang="en">Usage type</rdfs:label>
     </owl:Class>
     
 
@@ -10629,6 +10625,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/DataFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/DataFormat"/>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Operation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Operation"/>
@@ -10641,9 +10643,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#concept -->
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#concept"/>
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
     
 
 
@@ -11025,7 +11027,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -11094,6 +11098,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
         <rdfs:comment xml:lang="en">A speech processing toolkit based on PyTorch</rdfs:comment>
         <rdfs:label xml:lang="en">Asteroid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/AudioType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/AudioType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the audio level</rdfs:comment>
+        <rdfs:label xml:lang="en">Audio type</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13442,6 +13456,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/LemmaType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LemmaType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the lemma</rdfs:comment>
+        <rdfs:label xml:lang="en">Lemma type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/LemonOntolex -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/LemonOntolex">
@@ -13917,6 +13941,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/MorphologicalType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/MorphologicalType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the morphological level</rdfs:comment>
+        <rdfs:label xml:lang="en">Morphological type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/NLM_classification -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/NLM_classification">
@@ -14214,6 +14248,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/SemanticType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SemanticType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the semantic level</rdfs:comment>
+        <rdfs:label xml:lang="en">Semantic type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/Shift_JIS -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Shift_JIS">
@@ -14240,6 +14284,26 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <ms:url>https://www.iso.org/standard/62508.html</ms:url>
         <rdfs:label xml:lang="en">SynAF</rdfs:label>
         <skos:altLabel xml:lang="en">Syntactic Annotation Framework</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/SyntacticType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SyntacticType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the syntactic level</rdfs:comment>
+        <rdfs:label xml:lang="en">Syntactic type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/SyntacticoSemanticType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/SyntacticoSemanticType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the syntactico-semantic level</rdfs:comment>
+        <rdfs:label xml:lang="en">Syntactico-semantic type</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -14415,6 +14479,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/TranslationType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TranslationType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource relevant to the translation procedure</rdfs:comment>
+        <rdfs:label xml:lang="en">Translation type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/TwoD -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TwoD">
@@ -14485,6 +14559,16 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/UTF-8">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/CharacterEncoding"/>
         <rdfs:label xml:lang="en">UTF-8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/UsageType -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/UsageType">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
+        <rdfs:comment xml:lang="en">A type of content included in a language resource encoding usage information</rdfs:comment>
+        <rdfs:label xml:lang="en">Usage type</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -14560,8 +14644,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/abbreviation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/abbreviation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">abbreviation</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -14628,8 +14713,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/accentuation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/accentuation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AudioType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">accentuation</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/AudioType"/>
     </owl:NamedIndividual>
     
 
@@ -14879,8 +14965,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/antonym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/antonym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">antonym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -14965,8 +15052,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/aspect -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/aspect">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">aspect</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -15069,8 +15157,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/auxiliary -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/auxiliary">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">auxiliary</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -15342,8 +15431,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/case -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/case">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">case</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -15444,9 +15534,10 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/cliticForm -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/cliticForm">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">clitic form</rdfs:label>
         <skos:altLabel xml:lang="en">inflectional form</skos:altLabel>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -15481,8 +15572,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/collocation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/collocation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">collocation</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
     </owl:NamedIndividual>
     
 
@@ -15548,7 +15640,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/communicate -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/communicate">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The Assigner permits/prohibits the Assignees to communicate the Asset to the public</rdfs:comment>
         <rdfs:label xml:lang="en">communicate</rdfs:label>
         <skos:closeMatch rdf:resource="http://www.w3.org/ns/odrl/2/present"/>
@@ -15606,8 +15698,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/compound -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/compound">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">compound</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -15757,8 +15850,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/crossReference -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/crossReference">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">cross-reference</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -15832,9 +15926,10 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/definition -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/definition">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <skos:altLabel xml:lang="en">gloss</skos:altLabel>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -15851,8 +15946,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/degree -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/degree">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">degree</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -15888,8 +15984,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/derivation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/derivation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">derivation</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -16029,8 +16126,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/domain1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/domain1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">domain</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -16311,8 +16409,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/eventType -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/eventType">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">event type</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -16329,8 +16428,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/example1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/example1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">example</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
     </owl:NamedIndividual>
     
 
@@ -16639,8 +16739,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/frequency -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/frequency">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">frequency</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
     </owl:NamedIndividual>
     
 
@@ -16685,8 +16786,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/gender -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/gender">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">gender</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -16975,8 +17077,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/hyperonym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/hyperonym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">hyperonym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -16984,8 +17087,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/hyponym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/hyponym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">hyponym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -17144,7 +17248,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/incorporate -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/incorporate">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The Assigner permits/prohibits the Assignees to incorporate the Asset unmodified into a Collective Work.</rdfs:comment>
         <rdfs:label xml:lang="en">incorporate</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://www.w3.org/ns/odrl/2/use"/>
@@ -17164,8 +17268,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/inflection -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/inflection">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">inflection</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -17355,8 +17460,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/irregularForm -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/irregularForm">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">irregular form</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -17634,8 +17740,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/lemma -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/lemma">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">lemma</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -18079,8 +18186,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/meronym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/meronym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">meronym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -18245,8 +18353,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/mood -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/mood">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">mood</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -18339,9 +18448,10 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/multiWordUnit1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/multiWordUnit1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">multi-word unit</rdfs:label>
         <skos:altLabel xml:lang="en">multi-word expression</skos:altLabel>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -18747,8 +18857,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/note1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/note1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">note</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
     </owl:NamedIndividual>
     
 
@@ -18775,8 +18886,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/number -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/number">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">number</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -19131,8 +19243,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/partOfSpeech -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/partOfSpeech">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">part of speech</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -19168,8 +19281,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/person1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/person1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">person</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -19616,8 +19730,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/qualiaStructure -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/qualiaStructure">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">qualia structure</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -19719,8 +19834,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/reflexivity -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/reflexivity">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">reflexivity</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -19728,8 +19844,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/register1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/register1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">register</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/UsageType"/>
     </owl:NamedIndividual>
     
 
@@ -19970,8 +20087,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/semanticClass -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticClass">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">semantic class</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -19979,9 +20097,10 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/semanticFeature -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticFeature">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">semantic feature</rdfs:label>
         <skos:altLabel xml:lang="en">semantic trait</skos:altLabel>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -19989,8 +20108,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/semanticRelation -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticRelation">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">semantic relation</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -19998,8 +20118,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/semanticRole -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/semanticRole">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">semantic role</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -20429,8 +20550,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/subcatFrame -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/subcatFrame">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SyntacticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">subcategorization frame</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SyntacticType"/>
     </owl:NamedIndividual>
     
 
@@ -20512,8 +20634,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/synonym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/synonym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">synonym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -20548,8 +20671,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/syntacticoSemanticLink -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/syntacticoSemanticLink">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SyntacticoSemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">syntactico-semantic link</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SyntacticoSemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -20726,8 +20850,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/tense -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/tense">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">tense</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -20841,8 +20966,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/transcription -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/transcription">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/AudioType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">phonetic transcription</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/AudioType"/>
     </owl:NamedIndividual>
     
 
@@ -20862,8 +20988,9 @@ differentially weighing the significance of each part of the input data. It is u
     <!-- http://w3id.org/meta-share/meta-share/translationEquivalent -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/translationEquivalent">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/TranslationType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">translation equivalent</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/TranslationType"/>
     </owl:NamedIndividual>
     
 
@@ -21017,8 +21144,9 @@ differentially weighing the significance of each part of the input data. It is u
     <!-- http://w3id.org/meta-share/meta-share/troponym -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/troponym">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">troponym</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/SemanticType"/>
     </owl:NamedIndividual>
     
 
@@ -21360,8 +21488,9 @@ differentially weighing the significance of each part of the input data. It is u
     <!-- http://w3id.org/meta-share/meta-share/variant1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/variant1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">variant</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
     </owl:NamedIndividual>
     
 
@@ -21461,8 +21590,9 @@ differentially weighing the significance of each part of the input data. It is u
     <!-- http://w3id.org/meta-share/meta-share/voice1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/voice1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
         <rdfs:label xml:lang="en">voice</rdfs:label>
+        <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/MorphologicalType"/>
     </owl:NamedIndividual>
     
 
@@ -21835,18 +21965,18 @@ differentially weighing the significance of each part of the input data. It is u
         <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
@@ -21951,5 +22081,5 @@ differentially weighing the significance of each part of the input data. It is u
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
