@@ -162,6 +162,12 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
@@ -272,6 +278,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource</rdfs:comment>
+        <rdfs:label xml:lang="en">spatial</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -290,6 +298,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <rdfs:comment xml:lang="en">Temporal characteristics of the resource</rdfs:comment>
+        <rdfs:label xml:lang="en">temporal</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3363,10 +3373,13 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextNumericalFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionVideoFeature"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/MediaType"/>
+        <rdfs:comment xml:lang="en">The format of the resource expressed with one of the values from the IANA mimetypes (https://www.iana.org/assignments/media-types/media-types.xhtml).</rdfs:comment>
+        <rdfs:label xml:lang="en">format (as mimetype value)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3414,11 +3427,13 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/modelSubclass -->
+    <!-- http://w3id.org/meta-share/meta-share/modelType -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/modelSubclass">
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/modelType">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
+        <rdfs:comment xml:lang="en">A classificaiton of models based on their algorithm</rdfs:comment>
+        <rdfs:label xml:lang="en">modelType</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3625,6 +3640,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
         <rdfs:comment xml:lang="en">Specifies the format of the package (zipped file) that contains the resource files</rdfs:comment>
         <rdfs:label xml:lang="en">package format</rdfs:label>
     </owl:ObjectProperty>
@@ -7995,6 +8011,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#endDate">
         <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The end date of an activity</rdfs:comment>
         <rdfs:label xml:lang="en">end date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -8005,6 +8022,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#startDate">
         <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">The start date of an activity</rdfs:comment>
         <rdfs:label xml:lang="en">start date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -8536,6 +8554,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">A more detailed account of the linguistic information contained in the lexical/conceptual resource</rdfs:comment>
         <rdfs:label xml:lang="en">Content type</rdfs:label>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypes"/>
         <skos:note xml:lang="en">could we organise them hierarchically?
 for those that are used for annotation, align with annotationType values? or can we use annotationType together with these values as range for the property?
 add definitions to all instances</skos:note>
@@ -8679,7 +8698,6 @@ add definitions to all instances</skos:note>
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/DatasetDistribution">
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/Distribution"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/meta-share/meta-share/distributionForm"/>
@@ -9659,12 +9677,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/ModelSubclass -->
+    <!-- http://w3id.org/meta-share/meta-share/ModelType -->
 
-    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ModelSubclass">
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ModelType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">A classification of models into types (used for descriptive reasons)</rdfs:comment>
-        <rdfs:label xml:lang="en">Model subclass</rdfs:label>
+        <rdfs:comment xml:lang="en">A classification of models into types based on their algorithm</rdfs:comment>
+        <rdfs:label xml:lang="en">Model type</rdfs:label>
     </owl:Class>
     
 
@@ -10733,6 +10751,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/PackageFormat -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/TdmMethod -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/TdmMethod"/>
@@ -10742,6 +10766,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     
 
 
@@ -11581,6 +11611,15 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/Clarin_Domain006">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DomainIdentifier"/>
         <ms:conformsTo rdf:resource="http://w3id.org/meta-share/meta-share/ClarinEL_domainClassification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/ContentTypes -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ContentTypes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:label xml:lang="en">Content types</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -12812,7 +12851,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/DeepLearningModel -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/DeepLearningModel">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">Deep Learning model</rdfs:label>
         <skos:altLabel xml:lang="en">DL model</skos:altLabel>
     </owl:NamedIndividual>
@@ -15330,7 +15369,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/bayesianNetwork -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/bayesianNetwork">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">bayesian network</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
     </owl:NamedIndividual>
@@ -15340,7 +15379,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/biDirectionalRNN -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/biDirectionalRNN">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">bidirectional recurrent neural network</rdfs:label>
         <skos:altLabel xml:lang="en">bidirectional RNN</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/recurrentNeuralNetwork"/>
@@ -15912,7 +15951,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/convolutionalNeuralNetwork -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/convolutionalNeuralNetwork">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">convolutional neural network</rdfs:label>
         <skos:altLabel xml:lang="en">CNN</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/DeepLearningModel"/>
@@ -16914,7 +16953,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/gatedRecurrentUnits -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/gatedRecurrentUnits">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">gated recurrent units</rdfs:label>
         <skos:altLabel xml:lang="en">GRUs</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/recurrentNeuralNetwork"/>
@@ -17142,7 +17181,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/hiddenMarkovModels -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/hiddenMarkovModels">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">Hidden Markov Models</rdfs:label>
         <skos:altLabel xml:lang="en">HMM</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
@@ -17731,7 +17770,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/kNearestNeighbours -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/kNearestNeighbours">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">k-nearest neighbours</rdfs:label>
         <skos:altLabel xml:lang="en">k-NN</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
@@ -18114,7 +18153,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/logisticRegression -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/logisticRegression">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">logistic regression</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
     </owl:NamedIndividual>
@@ -18124,7 +18163,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/longShortTermMemory -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/longShortTermMemory">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">Long short-term memory</rdfs:label>
         <skos:altLabel xml:lang="en">LSTM</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/recurrentNeuralNetwork"/>
@@ -18726,7 +18765,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/naiveBayes -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/naiveBayes">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">naive Bayes</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
     </owl:NamedIndividual>
@@ -18821,7 +18860,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/ngramModel -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ngramModel">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">n-gram model</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
     </owl:NamedIndividual>
@@ -18997,7 +19036,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/nonContextualEmbeddings -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/nonContextualEmbeddings">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">non-contextual embeddings</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/DeepLearningModel"/>
     </owl:NamedIndividual>
@@ -19007,7 +19046,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/nonDeepLearningModel -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/nonDeepLearningModel">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">non-deep learning model</rdfs:label>
         <skos:altLabel xml:lang="en">shallow learning model</skos:altLabel>
     </owl:NamedIndividual>
@@ -19364,7 +19403,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModalityType"/>
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MultilingualityType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Naturality"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NonSpeechItem"/>
@@ -20021,7 +20060,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/randomForest -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/randomForest">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">random forest</rdfs:label>
         <skos:altLabel xml:lang="en">random decision forest</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/nonDeepLearningModel"/>
@@ -20078,7 +20117,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/recurrentNeuralNetwork -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/recurrentNeuralNetwork">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">recurrent neural network</rdfs:label>
         <skos:altLabel xml:lang="en">RNN</skos:altLabel>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/DeepLearningModel"/>
@@ -20882,7 +20921,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <!-- http://w3id.org/meta-share/meta-share/supportVectorMachine -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/supportVectorMachine">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">support vector machine</rdfs:label>
         <skos:altLabel xml:lang="en">SVM</skos:altLabel>
         <skos:altLabel xml:lang="en">support vector network</skos:altLabel>
@@ -21275,7 +21314,7 @@ differentially weighing the significance of each part of the input data. It is u
     <!-- http://w3id.org/meta-share/meta-share/transformer1 -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/transformer1">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdfs:label xml:lang="en">transformer</rdfs:label>
         <skos:broaderTransitive rdf:resource="http://w3id.org/meta-share/meta-share/DeepLearningModel"/>
     </owl:NamedIndividual>
@@ -21658,7 +21697,7 @@ differentially weighing the significance of each part of the input data. It is u
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Metric"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModalityType"/>
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelSubclass"/>
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ModelType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MultilingualityType"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Naturality"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/NonSpeechItem"/>
@@ -22263,21 +22302,21 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label>youtube</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:constraint>
-            <rdf:Description>
-                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
-            </rdf:Description>
-        </odrl:constraint>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:constraint>
+            <rdf:Description>
+                <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
+            </rdf:Description>
+        </odrl:constraint>
     </rdf:Description>
     
 
@@ -22375,8 +22414,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label xml:lang="en">open access</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/restrictedAccess1">
-        <rdfs:label xml:lang="en">restricted access</rdfs:label>
         <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
