@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -3428,6 +3427,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/modelFunction -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/modelFunction">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+        <rdfs:comment xml:lang="en">The function/task/operation a model performs</rdfs:comment>
+        <rdfs:label xml:lang="en">model function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/modelType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/modelType">
@@ -5056,8 +5066,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Specifies hardware requirements that are needed for running a tool/service or model</rdfs:comment>
-        <rdfs:label xml:lang="en">additional hardware requirements</rdfs:label>
-        <skos:altLabel xml:lang="en">additional hardware requirements</skos:altLabel>
+        <rdfs:label xml:lang="en">hardware requirements</rdfs:label>
+        <skos:altLabel xml:lang="en">h/w requirements</skos:altLabel>
     </owl:DatatypeProperty>
     
 
@@ -10756,6 +10766,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/ModelFunction -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/ModelFunction"/>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/Operation -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/omtd-share/Operation"/>
@@ -11164,7 +11180,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -14561,16 +14579,6 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TST-CENTRALE">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/MembershipInstitution"/>
         <rdfs:label xml:lang="en">TST-Centrale</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/TensorBoard -->
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/TensorBoard">
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Toolkit"/>
-        <rdfs:comment xml:lang="en">Visualization toolkit based on TensorFlow</rdfs:comment>
-        <rdfs:label xml:lang="en">TensorBoard</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -22423,8 +22431,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label xml:lang="en">open access</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/restrictedAccess1">
-        <rdfs:label xml:lang="en">restricted access</rdfs:label>
         <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
