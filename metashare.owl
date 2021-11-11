@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -1274,6 +1273,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/divisionCategory -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/divisionCategory">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/durationOfAudio"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
         <rdfs:comment xml:lang="en">Classifies the division of an organization according to a controlled vocabulary</rdfs:comment>
@@ -3735,6 +3735,33 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/pivotLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/pivotLanguage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceVideoPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <rdfs:label xml:lang="en">The language acting as an intermediary for translations between many languages</rdfs:label>
+        <rdfs:label xml:lang="en">pivot language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/previousAnnotationTypesPolicy -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/previousAnnotationTypesPolicy">
@@ -4499,6 +4526,33 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/sourceLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/sourceLanguage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceVideoPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <rdfs:comment xml:lang="en">The language from which a translation is made.</rdfs:comment>
+        <rdfs:label xml:lang="en">source language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/sourceMetadataRecord -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/sourceMetadataRecord">
@@ -4648,6 +4702,33 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
         <rdfs:comment xml:lang="en">The tagset used for annotating a resource or for the input resource (if annotated) of a tool/service or that should be used (dependency) for the annotation</rdfs:comment>
         <rdfs:label xml:lang="en">tagset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/targetLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/targetLanguage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceVideoPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <rdfs:comment xml:lang="en">The language into which a translation is made</rdfs:comment>
+        <rdfs:label xml:lang="en">target language</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8067,6 +8148,12 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
+    <!-- http://purl.org/dc/terms/LinguisticSystem -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
+    
+
+
     <!-- http://purl.org/dc/terms/Location -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Location">
@@ -11183,7 +11270,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -22320,6 +22409,9 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label>youtube</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     <rdf:Description>
@@ -22332,9 +22424,6 @@ differentially weighing the significance of each part of the input data. It is u
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
             </rdf:Description>
         </odrl:constraint>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
@@ -22379,8 +22468,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/telephoneNumber">
-        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:comment xml:lang="en">Introduces the telephone number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/copyrightNotEvaluated">
