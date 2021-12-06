@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -11271,7 +11270,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -21804,7 +21805,6 @@ differentially weighing the significance of each part of the input data. It is u
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/ImageGenreClassificationScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/Interactivity"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LCRSubclass"/>
-        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LDSubclass"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LDTask"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LRIdentifierScheme"/>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
@@ -22477,8 +22477,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/telephoneNumber">
-        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:comment xml:lang="en">Introduces the telephone number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/copyrightNotEvaluated">
