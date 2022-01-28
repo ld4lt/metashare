@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -936,6 +935,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/coordinator -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/coordinator">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedToActor"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/isCoordinatorOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:comment xml:lang="en">Introduces the organization that coordinates the project being described</rdfs:comment>
@@ -1918,6 +1919,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/hasDivision -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/hasDivision">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedTo"/>
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/isDivisionOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
@@ -2416,6 +2418,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/isCoordinatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isCoordinatorOf">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/actorRelatedTo"/>
+        <rdfs:comment xml:lang="en">Introduces the project that an organization coordinates</rdfs:comment>
+        <rdfs:label xml:lang="en">is coordinator of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/isCreatedBy -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isCreatedBy">
@@ -2486,6 +2498,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/isDivisionOf -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isDivisionOf">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedTo"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:comment xml:lang="en">Links a division (e.g., company branch, university department or faculty) to the organization to which it belongs</rdfs:comment>
@@ -3016,6 +3029,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:comment xml:lang="en">Links to LR B that bears resemblances to LR A (the one being described), e.g., they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools</rdfs:comment>
         <rdfs:label xml:lang="en">is similar to</rdfs:label>
         <skos:altLabel xml:lang="en">is similar with</skos:altLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/isTagsetOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isTagsetOf">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/dependentLR"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/tagset"/>
+        <rdfs:comment xml:lang="en">Links a tagset to the resource where it has been used for annotating or to a tool/service or that should be used (dependency) for the annotation</rdfs:comment>
+        <rdfs:label xml:lang="en">is tagset for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4692,6 +4716,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/tagset -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/tagset">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/dependsOn"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -11271,7 +11296,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
