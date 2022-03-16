@@ -33,6 +33,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -3682,6 +3683,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Naturality"/>
         <rdfs:comment xml:lang="en">Specifies the level of naturality for multimodal/multimedia resources</rdfs:comment>
         <rdfs:label xml:lang="en">naturality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/newTestProperty -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/newTestProperty">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
+        <rdfs:label xml:lang="en">new test property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -8886,12 +8897,6 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
-    <!-- http://w3id.org/meta-share/meta-share/ContentType -->
-
-    <!-- owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ContentType"/-->
-    
-
-
     <!-- http://w3id.org/meta-share/meta-share/ConversationalType -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/ConversationalType">
@@ -11518,9 +11523,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
     
 
 
@@ -11985,6 +11988,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/ContentType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A more detailed account of the linguistic information contained in the lexical/conceptual resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Content type</rdfs:label>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
+        <skos:note xml:lang="en">could we organise them hierarchically?
+for those that are used for annotation, align with annotationType values? or can we use annotationType together with these values as range for the property?
+add definitions to all instances</skos:note>
     </owl:NamedIndividual>
     
 
@@ -14003,7 +14012,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdfs:comment xml:lang="en">A type of content included in a language resource pertaining to the lemma</rdfs:comment>
         <rdfs:label xml:lang="en">Lemma type</rdfs:label>
         <skos:broader rdf:resource="http://w3id.org/meta-share/meta-share/ContentType"/>
-		        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
     </owl:NamedIndividual>
     
 
@@ -15194,7 +15203,7 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="en">abbreviation</rdfs:label>
         <skos:broader rdf:resource="http://w3id.org/meta-share/meta-share/LemmaType"/>
-		<skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
+        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
     </owl:NamedIndividual>
     
 
@@ -22863,17 +22872,17 @@ differentially weighing the significance of each part of the input data. It is u
     
 
 
+    <!-- http://w3id.org/meta-share/omtd-share/OperationTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/OperationTypeScheme"/>
+    
+
+
     <!-- http://w3id.org/meta-share/omtd-share/TdmMethodScheme -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/omtd-share/TdmMethodScheme">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
@@ -22884,6 +22893,12 @@ differentially weighing the significance of each part of the input data. It is u
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
             </rdf:Description>
         </odrl:constraint>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
@@ -22898,14 +22913,6 @@ differentially weighing the significance of each part of the input data. It is u
 
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CharacterEncodingSet">
         <dct:replaces rdf:resource="http://www.ilsp.gr/META-XMLSchema#characterEncoding"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ContentType">
-        <rdfs:label xml:lang="en">Content type</rdfs:label>
-        <skos:inScheme rdf:resource="http://w3id.org/meta-share/meta-share/ContentTypeScheme"/>
-        <skos:note xml:lang="en">could we organise them hierarchically?
-for those that are used for annotation, align with annotationType values? or can we use annotationType together with these values as range for the property?
-add definitions to all instances</skos:note>
-        <rdfs:comment xml:lang="en">A more detailed account of the linguistic information contained in the lexical/conceptual resource</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DomainClassification">
         <dct:replaces rdf:resource="http://www.ilsp.gr/META-XMLSchema#domainInfo"/>
@@ -22936,8 +22943,8 @@ add definitions to all instances</skos:note>
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/telephoneNumber">
-        <rdfs:label xml:lang="en">telephone number</rdfs:label>
         <skos:example xml:lang="en">+123456789012</skos:example>
+        <rdfs:label xml:lang="en">telephone number</rdfs:label>
         <rdfs:comment xml:lang="en">Introduces the telephone number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/copyrightNotEvaluated">
@@ -22989,8 +22996,8 @@ add definitions to all instances</skos:note>
         <rdfs:label xml:lang="en">open access</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/restrictedAccess1">
-        <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
         <rdfs:label xml:lang="en">restricted access</rdfs:label>
+        <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
