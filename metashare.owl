@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -2397,7 +2396,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -2417,7 +2417,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -2777,8 +2778,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isMLModelOf">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/dependentLR"/>
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/mlModel"/>
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Specifies the tool/service with which the ML model can be combined in order to perform the desired task</rdfs:comment>
         <rdfs:label xml:lang="en">is ML model of</rdfs:label>
         <skos:altLabel xml:lang="en">is Machine Learning model of</skos:altLabel>
@@ -3185,8 +3194,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -3217,7 +3227,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -3729,16 +3740,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Naturality"/>
         <rdfs:comment xml:lang="en">Specifies the level of naturality for multimodal/multimedia resources</rdfs:comment>
         <rdfs:label xml:lang="en">naturality</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/meta-share/meta-share/newTestProperty -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/newTestProperty">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/CorpusSubclass"/>
-        <rdfs:label xml:lang="en">new test property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -11599,7 +11600,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -22960,6 +22963,9 @@ differentially weighing the significance of each part of the input data. It is u
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
@@ -22972,9 +22978,6 @@ differentially weighing the significance of each part of the input data. It is u
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
@@ -23072,8 +23075,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label xml:lang="en">open access</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/restrictedAccess1">
-        <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
         <rdfs:label xml:lang="en">restricted access</rdfs:label>
+        <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
