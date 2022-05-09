@@ -595,7 +595,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -616,7 +617,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -632,7 +634,14 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/annotationType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/annotationType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Annotation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -874,7 +883,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/compatibleLexiconType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/compatibleLexiconType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/CompatibleLexiconType"/>
         <rdfs:comment xml:lang="en">Specifies the type of (external) lexicon that can be used with the grammar</rdfs:comment>
         <rdfs:label xml:lang="en">compatible lexicon type</rdfs:label>
@@ -1185,7 +1194,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1594,7 +1603,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Grammar"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1736,6 +1745,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionAudioFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionImageFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextFeature"/>
@@ -1857,7 +1867,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/grammaticalPhenomenaCoverage -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/grammaticalPhenomenaCoverage">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/GrammaticalPhenomenaCoverage"/>
         <rdfs:comment xml:lang="en">Gives an indication of the grammatical phenomena covered by the grammar</rdfs:comment>
         <rdfs:label xml:lang="en">grammatical phenomena coverage</rdfs:label>
@@ -3334,7 +3344,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/ldTask -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/ldTask">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LDTask"/>
         <rdfs:comment xml:lang="en">Specifies the task performed by the language description</rdfs:comment>
         <rdfs:label xml:lang="en">language description task</rdfs:label>
@@ -3380,7 +3390,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/lingualityType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/lingualityType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MediaPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LingualityType"/>
         <rdfs:comment xml:lang="en">Indicates whether the resource includes one, two or more languages</rdfs:comment>
         <rdfs:label xml:lang="en">linguality type</rdfs:label>
@@ -3596,7 +3615,15 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/mlModel">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/dependsOn"/>
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
         <rdfs:comment xml:lang="en">Specifies the ML model that must be used together with the tool/service to perform the desired task</rdfs:comment>
         <rdfs:label xml:lang="en">ML model</rdfs:label>
@@ -3607,7 +3634,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/modalityType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/modalityType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MediaPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/ModalityType"/>
         <rdfs:comment xml:lang="en">Specifies the type of the modality represented in the resource or processed by a tool/service</rdfs:comment>
         <rdfs:label xml:lang="en">modality type</rdfs:label>
@@ -3650,7 +3687,16 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/multilingualityType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/multilingualityType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MediaPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/MultilingualityType"/>
         <rdfs:comment xml:lang="en">Indicates whether the resource (part) is parallel, comparable or mixed</rdfs:comment>
         <rdfs:label xml:lang="en">multilinguality type</rdfs:label>
@@ -3736,7 +3782,14 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/operatingSystem -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/operatingSystem">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/ToolService"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/SoftwareDistribution"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/OperatingSystem"/>
         <rdfs:comment xml:lang="en">Specifies the operating system on which a software object can run</rdfs:comment>
         <rdfs:label xml:lang="en">operating system</rdfs:label>
@@ -3851,14 +3904,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/packageFormat -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/packageFormat">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/SoftwareDistribution"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Distribution"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/omtd-share/PackageFormat"/>
         <rdfs:comment xml:lang="en">Specifies the format of the package (zipped file) that contains the resource files</rdfs:comment>
         <rdfs:label xml:lang="en">package format</rdfs:label>
@@ -4142,7 +4188,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/relatedLexiconType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/relatedLexiconType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/RelatedLexiconType"/>
         <rdfs:comment xml:lang="en">Indicates the type of the lexica that must or can be used with the grammar</rdfs:comment>
         <rdfs:label xml:lang="en">related lexicon type</rdfs:label>
@@ -4358,7 +4404,14 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/segmentationLevel -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/segmentationLevel">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Annotation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/SegmentationLevel"/>
         <rdfs:comment xml:lang="en">Specifies the segmentation unit in terms of which the resource has been segmented or the level of segmentation a tool/service requires/outputs</rdfs:comment>
         <rdfs:label xml:lang="en">segmentation level</rdfs:label>
@@ -4435,10 +4488,10 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/size -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/size">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/DistributionTextFeature"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionAudioFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionImageFeature"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DistributionTextFeature"/>
@@ -4914,7 +4967,9 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -5043,7 +5098,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MLModel"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Model"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
@@ -5448,7 +5504,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/algorithm -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/algorithm">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Identifies the training algorithm used for the model (e.g., maximum entropy, svm, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">algorithm</rdfs:label>
@@ -5459,7 +5515,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/algorithmDetails -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/algorithmDetails">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Provides a detailed description of the algorithm, incl. info on whether it&apos;s supervised or not</rdfs:comment>
         <rdfs:label xml:lang="en">algorithm details</rdfs:label>
@@ -5578,7 +5634,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/attachedLexiconPosition -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/attachedLexiconPosition">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Indicates the position of the lexicon, if attached to the grammar</rdfs:comment>
         <rdfs:label xml:lang="en">attached lexicon position</rdfs:label>
@@ -6263,7 +6319,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Grammar"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ToolService"/>
                 </owl:unionOf>
             </owl:Class>
@@ -6623,17 +6679,21 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusAudioPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusImagePart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -6817,9 +6877,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"/>
@@ -6851,7 +6913,17 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <!-- http://w3id.org/meta-share/meta-share/modalityTypeDetails -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/modalityTypeDetails">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MediaPart"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/MediaPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Provides further information on the modalities represented in a language resource</rdfs:comment>
         <rdfs:label xml:lang="en">modality type details</rdfs:label>
@@ -7080,7 +7152,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <!-- http://w3id.org/meta-share/meta-share/output -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/output">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Indicates whether the output of the operation of the grammar is a statement of grammaticality (grammatical/ungrammatical) or structures (interpretation of the input)</rdfs:comment>
         <rdfs:label xml:lang="en">output</rdfs:label>
@@ -7234,14 +7306,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
     <!-- http://w3id.org/meta-share/meta-share/privateResource -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/privateResource">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/DatasetDistribution"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/SoftwareDistribution"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Specifies whether the resource is private so that its access/download location remains hidden</rdfs:comment>
         <rdfs:label xml:lang="en">private</rdfs:label>
@@ -7439,7 +7504,18 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/register -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/register">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Corpus"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusAudioPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusImagePart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextNumericalPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusTextPart"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/CorpusVideoPart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Specifies the type of register (any of the varieties of a language that a speaker uses in a particular social context [Merriam-Webster]) of the contents of a language resource</rdfs:comment>
         <rdfs:label xml:lang="en">register</rdfs:label>
@@ -7558,7 +7634,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/robustness -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/robustness">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Introduces a free text statement on the robustness of the grammar (how well the grammar can cope with misspelt/unknown, etc. input, i.e. whether it can produce even partial interpretations of the input)</rdfs:comment>
         <rdfs:label xml:lang="en">robustness</rdfs:label>
@@ -7715,7 +7791,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/shallowness -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/shallowness">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Introduces a free text statement on the shallowness of the grammar (how deep the syntactic analysis performed by the grammar can be)</rdfs:comment>
         <rdfs:label xml:lang="en">shallowness</rdfs:label>
@@ -7995,7 +8071,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Annotation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Grammar"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
                 </owl:unionOf>
             </owl:Class>
@@ -8064,7 +8140,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/trainingCorpusDetails -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/trainingCorpusDetails">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Provides a detailed description of the training corpus (e.g., size, number of features, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">training corpus details</rdfs:label>
@@ -8075,7 +8151,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/trainingProcessDetails -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/trainingProcessDetails">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/MLModel"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Model"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Provides a detailed description of the training process (pre-processing, pretraining, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">training process details</rdfs:label>
@@ -8319,7 +8395,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/weightedGrammar -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/weightedGrammar">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageDescription"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Grammar"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Indicates whether the grammar contains numerical weights (incl. probabilities)</rdfs:comment>
         <rdfs:label xml:lang="en">weighted grammar</rdfs:label>
@@ -22996,8 +23072,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:label xml:lang="en">open access</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/restrictedAccess1">
-        <rdfs:label xml:lang="en">restricted access</rdfs:label>
         <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g., limited to a university community)</rdfs:comment>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
