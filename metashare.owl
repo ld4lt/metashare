@@ -351,7 +351,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Document"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
@@ -473,7 +472,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -1039,7 +1037,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/country">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/AddressSet"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Country"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
         <rdfs:comment xml:lang="en">Introduces the name of the country mentioned in the postal address of a person or organization as defined in the list of values of ISO 3166</rdfs:comment>
         <rdfs:label xml:lang="en">country</rdfs:label>
     </owl:ObjectProperty>
@@ -1049,15 +1047,8 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/countryOfRegistration -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/countryOfRegistration">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Country"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
         <rdfs:comment xml:lang="en">Introduces the country in which an organization was officially registered for the first time as a legal entity</rdfs:comment>
         <rdfs:label xml:lang="en">country of registration</rdfs:label>
     </owl:ObjectProperty>
@@ -1344,7 +1335,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/divisionCategory -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/divisionCategory">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/DivisionCategory"/>
         <rdfs:comment xml:lang="en">Classifies the division of an organization according to a controlled vocabulary</rdfs:comment>
         <rdfs:label xml:lang="en">division category</rdfs:label>
@@ -1485,7 +1476,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Actor"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Document"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/ProcessingResource"/>
@@ -1827,7 +1817,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/fundingCountry">
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Project"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Country"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
         <rdfs:comment xml:lang="en">Specifies the name of the funding country, in case of national funding as mentioned in ISO3166</rdfs:comment>
         <rdfs:label xml:lang="en">funding country</rdfs:label>
     </owl:ObjectProperty>
@@ -2027,7 +2017,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedTo"/>
         <owl:inverseOf rdf:resource="http://w3id.org/meta-share/meta-share/isDivisionOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
-        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:comment xml:lang="en">Links an organization to the division(s) (e.g., company branch, university faculty or department, etc.) it consists of</rdfs:comment>
         <rdfs:label xml:lang="en">has division</rdfs:label>
     </owl:ObjectProperty>
@@ -2207,7 +2197,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                 </owl:unionOf>
@@ -2630,7 +2619,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/isDivisionOf">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/meta-share/meta-share/isRelatedTo"/>
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Division"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:comment xml:lang="en">Links a division (e.g., company branch, university department or faculty) to the organization to which it belongs</rdfs:comment>
         <rdfs:label xml:lang="en">is division of</rdfs:label>
@@ -3016,7 +3005,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Document"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
@@ -3492,7 +3480,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
                 </owl:unionOf>
@@ -3815,7 +3802,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                 </owl:unionOf>
@@ -3878,7 +3864,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                 </owl:unionOf>
@@ -4734,7 +4719,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -6008,7 +5992,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -6066,6 +6049,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Introduces an alternative name (other than the short name) used for a division</rdfs:comment>
         <rdfs:label xml:lang="en">division alternative name</rdfs:label>
+        <owl:deprecated></owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -6078,6 +6062,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">The official title of a unit of an organization (e.g., faculty or department of a university, department of a research organization or private company, etc.)</rdfs:comment>
         <rdfs:label xml:lang="en">division name</rdfs:label>
+        <owl:deprecated></owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -6090,6 +6075,7 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">Introduces the short name (abbreviation, acronym, etc.) used for the division of an organization</rdfs:comment>
         <rdfs:label xml:lang="en">division short name</rdfs:label>
+        <owl:deprecated></owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -6148,11 +6134,11 @@ But note that there is no class datacite:Description; descriptionType is in rang
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Affiliation"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
+                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Project"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -6274,7 +6260,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -6627,7 +6612,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Document"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
@@ -6796,7 +6780,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LanguageResource"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/LicenceTerms"/>
@@ -7063,7 +7046,6 @@ But note that there is no class datacite:Description; descriptionType is in rang
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                 </owl:unionOf>
@@ -7765,7 +7747,6 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -7909,14 +7890,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/startup -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/startup">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Indicates whether a company is a startup</rdfs:comment>
         <rdfs:label xml:lang="en">startup</rdfs:label>
@@ -8043,7 +8017,6 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Person"/>
@@ -8355,7 +8328,6 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Division"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Group"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Organization"/>
                     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/Project"/>
@@ -9070,6 +9042,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Country">
         <rdfs:comment xml:lang="en">The name of a country preferrably according to ISO 639</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
+        <owl:deprecated></owl:deprecated>
         <skos:note xml:lang="en">add here the dataset from EU NAL</skos:note>
     </owl:Class>
     
