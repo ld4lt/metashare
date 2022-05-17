@@ -33,7 +33,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -8621,6 +8620,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/Actor -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Actor">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/DescribedEntity"/>
         <rdfs:comment xml:lang="en">A person, organization or group that participates in an event or process</rdfs:comment>
         <rdfs:label xml:lang="en">Actor</rdfs:label>
@@ -9574,6 +9574,7 @@ should we also differentiate between distributions? e.g., a csv published at a d
     <!-- http://w3id.org/meta-share/meta-share/Group -->
 
     <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/Group">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/meta-share/meta-share/Actor"/>
         <rdfs:comment xml:lang="en">A set of persons related to some aspect of a language resource, that do not have a legal status (e.g., a group of software developers working on the same software)</rdfs:comment>
         <rdfs:label xml:lang="en">Group</rdfs:label>
     </owl:Class>
@@ -11338,6 +11339,12 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
     
 
 
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Project -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
@@ -11671,7 +11678,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -15975,6 +15984,15 @@ add definitions to all instances</skos:note>
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LingualityType"/>
         <rdfs:comment xml:lang="en">Value for &apos;Linguality type&apos; for resource (parts) which include material in two languages</rdfs:comment>
         <rdfs:label xml:lang="en">bilingual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/bilingualized -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/bilingualized">
+        <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/LingualityType"/>
+        <rdfs:label xml:lang="en">bilingualized</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -23029,14 +23047,11 @@ differentially weighing the significance of each part of the input data. It is u
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommericalUse"/>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
         <odrl:constraint>
@@ -23044,6 +23059,9 @@ differentially weighing the significance of each part of the input data. It is u
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
             </rdf:Description>
         </odrl:constraint>
+    </rdf:Description>
+    <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
     </rdf:Description>
     
 
@@ -23094,8 +23112,8 @@ differentially weighing the significance of each part of the input data. It is u
         <rdfs:comment xml:lang="en">Links a resource to the licence under which it is distributed; values are taken from a list of standard licences</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/telephoneNumber">
-        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <skos:example xml:lang="en">+123456789012</skos:example>
         <rdfs:comment xml:lang="en">Introduces the telephone number of a person, group or organization; recommended format: +_international code_city code_number without spaces</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/meta-share/2.0.0/copyrightNotEvaluated">
