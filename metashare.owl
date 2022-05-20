@@ -17,6 +17,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrc="http://swrc.ontoware.org/ontology#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:lexvo="http://lexvo.org/ontology#"
      xmlns:msxml="http://www.ilsp.gr/META-XMLSchema#"
      xmlns:datacite="http://purl.org/spar/datacite/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/meta-share">
@@ -33,7 +34,6 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Penny Labropoulou</dct:creator>
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
-        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <dct:modified>2020-03-20</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
@@ -3383,7 +3383,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     <!-- http://w3id.org/meta-share/meta-share/languageVarietyType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/languageVarietyType">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVariety"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVarietyType"/>
         <rdfs:comment xml:lang="en">Specifies the type of the language variety</rdfs:comment>
         <rdfs:label xml:lang="en">language variety type</rdfs:label>
@@ -3619,6 +3619,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
         <rdfs:comment xml:lang="en">Specifies the language that is used as support for the resource (e.g., English for a grammar of French described in English or for a French dictionary with English definitions)</rdfs:comment>
         <rdfs:label xml:lang="en">metalanguage</rdfs:label>
     </owl:ObjectProperty>
@@ -5252,6 +5253,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/usedInRegion -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/usedInRegion">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">Specifies the geographic region where a language is spoken</rdfs:comment>
+        <rdfs:label xml:lang="en">used in region</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/userType -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/userType">
@@ -5336,6 +5348,17 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/Actor"/>
         <rdfs:comment xml:lang="en">Links a validation to the person(s), group(s) or organization(s) that have performed a specific validation of a language resource</rdfs:comment>
         <rdfs:label xml:lang="en">validator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/variant -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/variant">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVariant"/>
+        <rdfs:comment xml:lang="en">Specifies the variant of a language, according to the IETF BCP47 guidelines</rdfs:comment>
+        <rdfs:label xml:lang="en">variant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -6512,6 +6535,17 @@ But note that there is no class datacite:Description; descriptionType is in rang
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/glottologCode -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/glottologCode">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The glottolog code (languoid, cf. https://glottolog.org/glottolog/language) used for a language</rdfs:comment>
+        <rdfs:label xml:lang="en">glottolog code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/goldStandardLocation -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/goldStandardLocation">
@@ -6777,10 +6811,32 @@ But note that there is no class datacite:Description; descriptionType is in rang
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/languageId -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/languageId">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The identifier of the language subtag according to the IETF BCP47 guidelines (i.e. ISO 639-3 codes when existing supplemented with ISO 639-3 codes for new entries)</rdfs:comment>
+        <rdfs:label xml:lang="en">language id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/languageTag -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/languageTag">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The identifier of a language, according to the IETF BCP47 guidelines</rdfs:comment>
+        <rdfs:label xml:lang="en">language tag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/languageVarietyName -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/languageVarietyName">
-        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LanguageVariety"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:comment xml:lang="en">A textual string used for referring to a language variety</rdfs:comment>
         <rdfs:label xml:lang="en">language variety name</rdfs:label>
@@ -7532,6 +7588,17 @@ should we also differentiate between distributions? e.g., a csv published at a d
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/regionId -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/regionId">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The identifier of the region subtag according to the IETF BCP47 guidelines (i.e. ISO 3166 codes)</rdfs:comment>
+        <rdfs:label xml:lang="en">region id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/register -->
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/register">
@@ -7737,6 +7804,17 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Specifies the format of files contained in the resource in Hertz</rdfs:comment>
         <rdfs:label xml:lang="en">sampling rate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/scriptId -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/scriptId">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The identifier of the script subtag according to the IETF BCP47 guidelines (i.e. ISO 15924 codes)</rdfs:comment>
+        <rdfs:label xml:lang="en">script id</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8337,6 +8415,17 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Introduces a free text used to identify the value of a list inside parameters</rdfs:comment>
         <rdfs:label xml:lang="en">value name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/variantId -->
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/meta-share/variantId">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The identifier of the variant subtag according to the IETF BCP47 guidelines</rdfs:comment>
+        <rdfs:label xml:lang="en">variant id</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9881,6 +9970,16 @@ should we also differentiate between distributions? e.g., a csv published at a d
         <rdfs:comment xml:lang="en">A resource composed of linguistic material used in the construction, improvement and/or evaluation of language processing applications, but also, in a broader sense, in language and language-mediated research studies and applications; the term is used with a broader meaning, encompassing (a) data sets (textual, multimodal/multimedia and lexical data, grammars, language models, etc.) in machine readable form, and (b) tools/technologies/services used for their processing and management.</rdfs:comment>
         <rdfs:label xml:lang="en">Language Resource</rdfs:label>
         <skos:altLabel xml:lang="en">LR</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/LanguageVariant -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LanguageVariant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A variant for languages, as defined in the variant subtag of the IETF BCP47 guidelines</rdfs:comment>
+        <rdfs:label xml:lang="en">Variant</rdfs:label>
     </owl:Class>
     
 
@@ -11746,7 +11845,9 @@ Note: I have created a file with the CC-rdf licences and its ontology so that I 
 
     <!-- http://w3id.org/meta-share/meta-share -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share">
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    </owl:NamedIndividual>
     
 
 
@@ -23117,6 +23218,9 @@ differentially weighing the significance of each part of the input data. It is u
         <odrl:action rdf:resource="http://creativecommons.org/ns#Distribution"/>
     </rdf:Description>
     <rdf:Description>
+        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    </rdf:Description>
+    <rdf:Description>
         <odrl:constraint>
             <rdf:Description>
                 <odrl:operator rdf:resource="http://www.w3.org/ns/odrl/2/eq"/>
@@ -23125,9 +23229,6 @@ differentially weighing the significance of each part of the input data. It is u
     </rdf:Description>
     <rdf:Description>
         <odrl:action rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    </rdf:Description>
-    <rdf:Description>
-        <odrl:action rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
     </rdf:Description>
     
 
