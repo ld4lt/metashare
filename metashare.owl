@@ -22,7 +22,7 @@
      xmlns:datacite="http://purl.org/spar/datacite/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/meta-share">
         <owl:versionIRI rdf:resource="http://w3id.org/meta-share/meta-share/2.0.0"/>
-        <dc:description xml:lang="en">Meta-Share ontology v2. The ontology caters for the description of Language resources (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs. 
+        <dc:description xml:lang="en">Meta-Share ontology v2 prelease beta. The ontology caters for the description of Language resources (corpora, lexical/conceptual resources, models, grammars, etc. and language processing tools and services) for Language Technology needs. 
 It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-share/) which caters for specific features (LT operation/area, data format, method, annotation type).</dc:description>
         <dc:title xml:lang="en">META-SHARE ontology</dc:title>
         <dct:creator rdf:resource="http://john.mccr.ae/"/>
@@ -35,12 +35,11 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:creator>Philipp Cimiano</dct:creator>
         <dct:creator>Victor Rodriguez Doncel</dct:creator>
         <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dct:modified>2020-03-20</dct:modified>
+        <dct:modified>2022-05-27</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
-        <owl:priorVersion rdf:resource="http://lodserver.iula.upf.edu/Metashare/ontology/"/>
-        <owl:priorVersion rdf:resource="http://purl.org/ms-lod/MetaShareRights.ttl#"/>
-        <owl:versionInfo xml:lang="en">v2.0.0 pre-release</owl:versionInfo>
+        <owl:priorVersion xml:lang="en">v2.0.0 pre-release</owl:versionInfo
+        <owl:versionInfo xml:lang="en">v2.0.0 pre-release beta</owl:versionInfo>
     </owl:Ontology>
     
 
