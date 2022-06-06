@@ -1,0 +1,3242 @@
+{
+  "@context" : {
+    "isCombinedWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isCombinedWith",
+      "@type" : "@id"
+    },
+    "headOfficeAddress" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/headOfficeAddress",
+      "@type" : "@id"
+    },
+    "DistributionTextFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionTextFeature"
+    },
+    "LexicalConceptualResourceImagePart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResourceImagePart"
+    },
+    "documentsGuidelines" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentsGuidelines",
+      "@type" : "@id"
+    },
+    "queries" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/queries",
+      "@type" : "@id"
+    },
+    "actorRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/actorRelatedTo",
+      "@type" : "@id"
+    },
+    "RightOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/RightOperand"
+    },
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial",
+      "@type" : "@id"
+    },
+    "isMetadataCuratorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isMetadataCuratorOf",
+      "@type" : "@id"
+    },
+    "sceneIllumination" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sceneIllumination",
+      "@type" : "@id"
+    },
+    "validationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validationType",
+      "@type" : "@id"
+    },
+    "EvaluationLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EvaluationLevel"
+    },
+    "SegmentationLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SegmentationLevel"
+    },
+    "abstract" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/abstract",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Application" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Application"
+    },
+    "AudioQualityMeasureIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AudioQualityMeasureIncluded"
+    },
+    "personalDataDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/personalDataDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ProjectIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ProjectIdentifierScheme"
+    },
+    "languageId" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "annotationSchema" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationSchema",
+      "@type" : "@id"
+    },
+    "SupportType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SupportType"
+    },
+    "resourceCreator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resourceCreator",
+      "@type" : "@id"
+    },
+    "rasterOrVectorGraphics" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/rasterOrVectorGraphics",
+      "@type" : "@id"
+    },
+    "mailingListName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mailingListName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Annotation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Annotation"
+    },
+    "BaseItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/BaseItem"
+    },
+    "placeOfLiving" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/placeOfLiving",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "sourceChannelType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceChannelType",
+      "@type" : "@id"
+    },
+    "isValidatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isValidatorOf",
+      "@type" : "@id"
+    },
+    "sourceLanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceLanguage",
+      "@type" : "@id"
+    },
+    "annotationEndDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "divisionAlternativeName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/divisionAlternativeName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LexicalConceptualResourceAudioPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResourceAudioPart"
+    },
+    "dockerDownloadLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dockerDownloadLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "typeOfTextNumericalContent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/typeOfTextNumericalContent",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "affiliation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/affiliation",
+      "@type" : "@id"
+    },
+    "geographicCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/geographicCoverage",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "SensitiveDataIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SensitiveDataIncluded"
+    },
+    "isVersionOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isVersionOf",
+      "@type" : "@id"
+    },
+    "DomainIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DomainIdentifier"
+    },
+    "CompressionName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CompressionName"
+    },
+    "targetMetadataRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/targetMetadataRecord",
+      "@type" : "@id"
+    },
+    "RelatedLexiconType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RelatedLexiconType"
+    },
+    "speakingImpairmentOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/speakingImpairmentOfParticipants",
+      "@type" : "@id"
+    },
+    "downloadLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/downloadLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "typeOfImageContent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/typeOfImageContent",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "sizeUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizeUnit",
+      "@type" : "@id"
+    },
+    "LexicalConceptualResourceVideoPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResourceVideoPart"
+    },
+    "synchronizedWithAudio" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/synchronizedWithAudio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "pivotLanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/pivotLanguage",
+      "@type" : "@id"
+    },
+    "organizationShortName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LRIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LRIdentifierScheme"
+    },
+    "PreviousAnnotationTypesPolicy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/PreviousAnnotationTypesPolicy"
+    },
+    "relatedLR" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relatedLR",
+      "@type" : "@id"
+    },
+    "Authorize" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Authorize"
+    },
+    "licenceTermsURL" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceTermsURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "resourceName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resourceName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "creationDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/creationDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "biasDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/biasDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "licenceTermsShortName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceTermsShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "CatalogRecord" : {
+      "@id" : "http://www.w3.org/ns/dcat#CatalogRecord"
+    },
+    "placeOfBirth" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/placeOfBirth",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "corpusSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/corpusSubclass",
+      "@type" : "@id"
+    },
+    "ConditionOfUse" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ConditionOfUse"
+    },
+    "RequiredHardware" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RequiredHardware"
+    },
+    "publicationDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/publicationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "categoryLabel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/categoryLabel",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LanguageDescriptionTextPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageDescriptionTextPart"
+    },
+    "qualifiedAttribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/qualifiedAttribution",
+      "@type" : "@id"
+    },
+    "hasConvertedVersion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasConvertedVersion",
+      "@type" : "@id"
+    },
+    "documentsValidation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentsValidation",
+      "@type" : "@id"
+    },
+    "MetadataSchema" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MetadataSchema"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "profession" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/profession",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "multilingualityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/multilingualityType",
+      "@type" : "@id"
+    },
+    "usageProject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/usageProject",
+      "@type" : "@id"
+    },
+    "userQuery" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/userQuery",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "enumerationValue" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/enumerationValue",
+      "@type" : "@id"
+    },
+    "sizePerCharacterEncoding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerCharacterEncoding",
+      "@type" : "@id"
+    },
+    "RasterOrVectorGraphics" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RasterOrVectorGraphics"
+    },
+    "landscapePart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/landscapePart",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "interactivity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/interactivity",
+      "@type" : "@id"
+    },
+    "isRelatedToDocument" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToDocument",
+      "@type" : "@id"
+    },
+    "isContinuedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isContinuedBy",
+      "@type" : "@id"
+    },
+    "isDisplayedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isDisplayedBy",
+      "@type" : "@id"
+    },
+    "interactiveMedia" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/interactiveMedia",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "synchronizedWithImage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/synchronizedWithImage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "primaryTopic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type" : "@id"
+    },
+    "distributionTextFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionTextFeature",
+      "@type" : "@id"
+    },
+    "origin" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/origin",
+      "@type" : "@id"
+    },
+    "performanceIndicator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/performanceIndicator",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "url" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "isEvaluatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isEvaluatorOf",
+      "@type" : "@id"
+    },
+    "isEditedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isEditedBy",
+      "@type" : "@id"
+    },
+    "StandardBestPractice" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/StandardBestPractice"
+    },
+    "ParameterType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ParameterType"
+    },
+    "DescribedEntity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DescribedEntity"
+    },
+    "isSimilarTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isSimilarTo",
+      "@type" : "@id"
+    },
+    "projectEndDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isDivisionOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isDivisionOf",
+      "@type" : "@id"
+    },
+    "isIprHolderOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isIprHolderOf",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Country"
+    },
+    "output" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/output",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "bibliographicRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/bibliographicRecord",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "interaction" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/interaction",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "parameter" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/parameter",
+      "@type" : "@id"
+    },
+    "LRIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LRIdentifier"
+    },
+    "LDTask" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LDTask"
+    },
+    "describes" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/describes",
+      "@type" : "@id"
+    },
+    "isUsageProjectOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isUsageProjectOf",
+      "@type" : "@id"
+    },
+    "timeCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/timeCoverage",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "startDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#startDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "country" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/country",
+      "@type" : "@id"
+    },
+    "optional" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/optional",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ModelType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ModelType"
+    },
+    "dependentLR" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dependentLR",
+      "@type" : "@id"
+    },
+    "DynamicElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DynamicElement"
+    },
+    "DocumentIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DocumentIdentifier"
+    },
+    "SocialMediaOccupationalAccount" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SocialMediaOccupationalAccount"
+    },
+    "modelVariant" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/modelVariant",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "VersionType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VersionType"
+    },
+    "StaticElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/StaticElement"
+    },
+    "MediaType" : {
+      "@id" : "http://purl.org/dc/terms/MediaType"
+    },
+    "Organization" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Organization"
+    },
+    "ProjectIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ProjectIdentifier"
+    },
+    "MetadataRecordIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MetadataRecordIdentifierScheme"
+    },
+    "Distribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Distribution"
+    },
+    "creationEndDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/creationEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "mlFramework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mlFramework",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "accessLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/accessLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "ldSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ldSubclass",
+      "@type" : "@id"
+    },
+    "recordingDeviceTypeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recordingDeviceTypeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "OrganizationIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/OrganizationIdentifierScheme"
+    },
+    "ecMaxContribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ecMaxContribution",
+      "@type" : "@id"
+    },
+    "Combine" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Combine"
+    },
+    "iprHolder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/iprHolder",
+      "@type" : "@id"
+    },
+    "mlFramework1" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mlFramework1",
+      "@type" : "@id"
+    },
+    "command" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/command",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "bodyMovement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/bodyMovement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "bookTitle" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/bookTitle",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "textType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/textType",
+      "@type" : "@id"
+    },
+    "fundingCountry" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fundingCountry",
+      "@type" : "@id"
+    },
+    "city" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/city",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "VideoGenreIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VideoGenreIdentifier"
+    },
+    "SizeUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SizeUnit"
+    },
+    "age" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SpeechGenreIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeechGenreIdentifier"
+    },
+    "numberOfTracks" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/numberOfTracks",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "ProcessingResourceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ProcessingResourceType"
+    },
+    "algorithmDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/algorithmDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "height" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/height",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "shallowness" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/shallowness",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Evaluation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Evaluation"
+    },
+    "LexicalConceptualResourceTextPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResourceTextPart"
+    },
+    "distribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distribution",
+      "@type" : "@id"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "MetadataRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MetadataRecord"
+    },
+    "conversationalType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/conversationalType",
+      "@type" : "@id"
+    },
+    "capturingDeviceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/capturingDeviceType",
+      "@type" : "@id"
+    },
+    "evaluationDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "pages" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/pages",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SubjectClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SubjectClassificationScheme"
+    },
+    "DistributionForm" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionForm"
+    },
+    "isFactored" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isFactored",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "fundingType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fundingType",
+      "@type" : "@id"
+    },
+    "metadataLastDateUpdated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metadataLastDateUpdated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "mediaTypeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mediaTypeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "DocumentIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DocumentIdentifierScheme"
+    },
+    "relatedSubprogramme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relatedSubprogramme",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "organizationLegalStatus" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationLegalStatus",
+      "@type" : "@id"
+    },
+    "TdmMethod" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/TdmMethod"
+    },
+    "otherOfficeAddress" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/otherOfficeAddress",
+      "@type" : "@id"
+    },
+    "capturingEnvironment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/capturingEnvironment",
+      "@type" : "@id"
+    },
+    "parameterType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/parameterType",
+      "@type" : "@id"
+    },
+    "byteOrder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/byteOrder",
+      "@type" : "@id"
+    },
+    "VideoGenreClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VideoGenreClassificationScheme"
+    },
+    "textIncludedInVideo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/textIncludedInVideo",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "AnnotatedElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AnnotatedElement"
+    },
+    "frameRate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/frameRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isAnnotatedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnnotatedBy",
+      "@type" : "@id"
+    },
+    "conditionOfUse" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/conditionOfUse",
+      "@type" : "@id"
+    },
+    "AccessRightsStatement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AccessRightsStatement"
+    },
+    "sizePerVideoFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerVideoFormat",
+      "@type" : "@id"
+    },
+    "replacesOrganization" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/replacesOrganization",
+      "@type" : "@id"
+    },
+    "isTypesystemOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isTypesystemOf",
+      "@type" : "@id"
+    },
+    "SpeechGenreClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeechGenreClassificationScheme"
+    },
+    "SignalEncoding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SignalEncoding"
+    },
+    "hasValidated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasValidated",
+      "@type" : "@id"
+    },
+    "VocalTractCondition" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VocalTractCondition"
+    },
+    "ResearchPlan" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ResearchPlan"
+    },
+    "modelType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/modelType",
+      "@type" : "@id"
+    },
+    "SignIn" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SignIn"
+    },
+    "textNumericalFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/textNumericalFormat",
+      "@type" : "@id"
+    },
+    "operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/operator"
+    },
+    "sizePerLanguageVariety" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerLanguageVariety",
+      "@type" : "@id"
+    },
+    "sizePerVideoClassification" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerVideoClassification",
+      "@type" : "@id"
+    },
+    "landingPage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/landingPage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "gesture" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/gesture",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "projectShortName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isFundingProjectOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isFundingProjectOf",
+      "@type" : "@id"
+    },
+    "resourceShortName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resourceShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "honorificPrefix" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/honorificPrefix",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "currency" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/currency",
+      "@type" : "@id"
+    },
+    "evaluated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "SceneIllumination" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SceneIllumination"
+    },
+    "RepositoryIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RepositoryIdentifier"
+    },
+    "sexOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sexOfParticipants",
+      "@type" : "@id"
+    },
+    "numberOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/numberOfParticipants",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "DocumentType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DocumentType"
+    },
+    "SignLicence" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SignLicence"
+    },
+    "NLPFramework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/NLPFramework"
+    },
+    "actualUseDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/actualUseDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "speechItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/speechItem",
+      "@type" : "@id"
+    },
+    "faxNumber" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/faxNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "ldTask" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ldTask",
+      "@type" : "@id"
+    },
+    "licensor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licensor",
+      "@type" : "@id"
+    },
+    "compressionLoss" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/compressionLoss",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "capturingDeviceTypeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/capturingDeviceTypeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "requiredHardware" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/requiredHardware",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "regionId" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/regionId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "factor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/factor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Corpus" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Corpus"
+    },
+    "hasIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/hasIdentifier",
+      "@type" : "@id"
+    },
+    "additionalHWRequirements" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/additionalHWRequirements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "framework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/framework",
+      "@type" : "@id"
+    },
+    "method" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/method",
+      "@type" : "@id"
+    },
+    "ProcessMode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ProcessMode"
+    },
+    "hasMetadata" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasMetadata",
+      "@type" : "@id"
+    },
+    "author" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/author",
+      "@type" : "@id"
+    },
+    "requiresLR" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/requiresLR",
+      "@type" : "@id"
+    },
+    "guidelines" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/guidelines",
+      "@type" : "@id"
+    },
+    "serviceOffered" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/serviceOffered",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "validationMode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validationMode",
+      "@type" : "@id"
+    },
+    "geographicName" : {
+      "@id" : "http://www.w3.org/ns/locn#geographicName",
+      "@type" : "@id"
+    },
+    "sizePerTextNumericalFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerTextNumericalFormat",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isPartOf",
+      "@type" : "@id"
+    },
+    "telephoneNumber" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/telephoneNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "artifactPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/artifactPart",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "speakingImpairment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/speakingImpairment",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "hasPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasPart",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "recipient" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/recipient"
+    },
+    "ProcessingResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ProcessingResource"
+    },
+    "interannotatorAgreement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/interannotatorAgreement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "weightedGrammar" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/weightedGrammar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "measure" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/measure",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "CorpusMediaPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusMediaPart"
+    },
+    "compliesWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/compliesWith",
+      "@type" : "@id"
+    },
+    "NeuralNetwork" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/NeuralNetwork"
+    },
+    "replacesProject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/replacesProject",
+      "@type" : "@id"
+    },
+    "availabilityEndDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/availabilityEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasOriginalSource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasOriginalSource",
+      "@type" : "@id"
+    },
+    "isParticipatingOrganizationIn" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isParticipatingOrganizationIn",
+      "@type" : "@id"
+    },
+    "naturality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/naturality",
+      "@type" : "@id"
+    },
+    "robustness" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/robustness",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "validation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validation",
+      "@type" : "@id"
+    },
+    "geographicDistributionOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/geographicDistributionOfParticipants",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "AudioGenre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AudioGenre"
+    },
+    "ResourceIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/ResourceIdentifierScheme"
+    },
+    "EvaluationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EvaluationType"
+    },
+    "SignConvention" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SignConvention"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/dc/terms/Location"
+    },
+    "LexicalConceptualResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+    },
+    "isRecordedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRecordedBy",
+      "@type" : "@id"
+    },
+    "website" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/website",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "distributionForm" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionForm",
+      "@type" : "@id"
+    },
+    "Resolution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Resolution"
+    },
+    "LanguageResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageResource"
+    },
+    "UserType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/UserType"
+    },
+    "LeftOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
+    },
+    "noiseLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/noiseLevel",
+      "@type" : "@id"
+    },
+    "isMLModelOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isMLModelOf",
+      "@type" : "@id"
+    },
+    "isDocumentedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isDocumentedBy",
+      "@type" : "@id"
+    },
+    "TextType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextType"
+    },
+    "relatedLexiconType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relatedLexiconType",
+      "@type" : "@id"
+    },
+    "characterEncoding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/characterEncoding",
+      "@type" : "@id"
+    },
+    "eyeMovement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/eyeMovement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Operation" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/Operation"
+    },
+    "availability" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/availability",
+      "@type" : "@id"
+    },
+    "equivalentProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentProperty"
+    },
+    "reviews" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/reviews",
+      "@type" : "@id"
+    },
+    "sourceChannel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceChannel",
+      "@type" : "@id"
+    },
+    "distributionFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionFeature",
+      "@type" : "@id"
+    },
+    "annotationReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationReport",
+      "@type" : "@id"
+    },
+    "Origin" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Origin"
+    },
+    "ageGroup" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ageGroup",
+      "@type" : "@id"
+    },
+    "LinguisticSystem" : {
+      "@id" : "http://purl.org/dc/terms/LinguisticSystem"
+    },
+    "EvaluationMeasure" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EvaluationMeasure"
+    },
+    "isTagsetOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isTagsetOf",
+      "@type" : "@id"
+    },
+    "isRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedTo",
+      "@type" : "@id"
+    },
+    "annotationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationType",
+      "@type" : "@id"
+    },
+    "startup" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/startup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "annotatedElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotatedElement",
+      "@type" : "@id"
+    },
+    "evaluator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluator",
+      "@type" : "@id"
+    },
+    "LanguageVariety" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageVariety"
+    },
+    "LanguageDescriptionMediaPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageDescriptionMediaPart"
+    },
+    "hasSubset" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasSubset",
+      "@type" : "@id"
+    },
+    "PersonalDataIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/PersonalDataIncluded"
+    },
+    "LanguageEngineeringResearch" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageEngineeringResearch"
+    },
+    "projectReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectReport",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "SpeechItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeechItem"
+    },
+    "ageRangeStartOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ageRangeStartOfParticipants",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "homepage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/homepage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "email" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "userType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/userType",
+      "@type" : "@id"
+    },
+    "legend" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/legend",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "TextNumericalFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextNumericalFormat"
+    },
+    "synchronizedWithTextNumerical" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/synchronizedWithTextNumerical",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Sex" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Sex"
+    },
+    "sizeHeight" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizeHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "compatibleLexiconType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/compatibleLexiconType",
+      "@type" : "@id"
+    },
+    "RoleIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RoleIdentifierScheme"
+    },
+    "AgentIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/AgentIdentifier"
+    },
+    "sourceOfMetadataRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceOfMetadataRecord",
+      "@type" : "@id"
+    },
+    "linguisticInformation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/linguisticInformation",
+      "@type" : "@id"
+    },
+    "socialMediaOccupationalAccountType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/socialMediaOccupationalAccountType",
+      "@type" : "@id"
+    },
+    "revision" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/revision",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "DistributionTextNumericalFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionTextNumericalFeature"
+    },
+    "EvaluationCriterion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EvaluationCriterion"
+    },
+    "licenceCategory" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceCategory",
+      "@type" : "@id"
+    },
+    "languageDependent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageDependent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "distractor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distractor",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "distributionVideoFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionVideoFeature",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Person"
+    },
+    "Validation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Validation"
+    },
+    "trainedSpeaker" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/trainedSpeaker",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "licenceTerms" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceTerms",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "Interactivity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Interactivity"
+    },
+    "distributionTextNumericalFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionTextNumericalFeature",
+      "@type" : "@id"
+    },
+    "socialMediaOccupationalAccount" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/socialMediaOccupationalAccount",
+      "@type" : "@id"
+    },
+    "trl" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/trl",
+      "@type" : "@id"
+    },
+    "languageVariety" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageVariety",
+      "@type" : "@id"
+    },
+    "durationOfEffectiveSpeech" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/durationOfEffectiveSpeech",
+      "@type" : "@id"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch"
+    },
+    "privateResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/privateResource",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MDRecordRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MDRecordRelatedTo",
+      "@type" : "@id"
+    },
+    "SourceChannelType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SourceChannelType"
+    },
+    "Relation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Relation"
+    },
+    "TextGenre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextGenre"
+    },
+    "ActualUse" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ActualUse"
+    },
+    "documentsEvaluation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentsEvaluation",
+      "@type" : "@id"
+    },
+    "AnnotationType" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/AnnotationType"
+    },
+    "Actor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Actor"
+    },
+    "algorithm" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/algorithm",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "parameterLabel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/parameterLabel",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "affiliatedOrganization" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/affiliatedOrganization",
+      "@type" : "@id"
+    },
+    "Quality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Quality"
+    },
+    "tagset" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/tagset",
+      "@type" : "@id"
+    },
+    "Participant" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Participant"
+    },
+    "webServiceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/webServiceType",
+      "@type" : "@id"
+    },
+    "evaluationLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationLevel",
+      "@type" : "@id"
+    },
+    "Report" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Report"
+    },
+    "LicenceTerms" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LicenceTerms"
+    },
+    "projectStartDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasCreated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasCreated",
+      "@type" : "@id"
+    },
+    "isContinuationOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isContinuationOf",
+      "@type" : "@id"
+    },
+    "Anonymized" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Anonymized"
+    },
+    "bodyPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/bodyPart",
+      "@type" : "@id"
+    },
+    "sizeWidth" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizeWidth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "ImageFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ImageFormat"
+    },
+    "placeOfSecondEducation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/placeOfSecondEducation",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "hasRecorded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasRecorded",
+      "@type" : "@id"
+    },
+    "versionType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/versionType",
+      "@type" : "@id"
+    },
+    "annotationMode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationMode",
+      "@type" : "@id"
+    },
+    "GroupIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/GroupIdentifier"
+    },
+    "TextGenreIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextGenreIdentifier"
+    },
+    "MLFramework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MLFramework"
+    },
+    "textIncludedInImage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/textIncludedInImage",
+      "@type" : "@id"
+    },
+    "recordingPlatformSoftware" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recordingPlatformSoftware",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LicenceIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LicenceIdentifier"
+    },
+    "position" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/position",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ImageGenre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ImageGenre"
+    },
+    "Domain" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Domain"
+    },
+    "SpeechInfluence" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeechInfluence"
+    },
+    "typeOfElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/typeOfElement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "TextGenreClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextGenreClassificationScheme"
+    },
+    "developmentFramework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/developmentFramework",
+      "@type" : "@id"
+    },
+    "HearingImpairmentOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/HearingImpairmentOfParticipants"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "extratextualInformationUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/extratextualInformationUnit",
+      "@type" : "@id"
+    },
+    "isMetadataOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isMetadataOf",
+      "@type" : "@id"
+    },
+    "VisualModelling" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VisualModelling"
+    },
+    "cost" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/cost",
+      "@type" : "@id"
+    },
+    "AddressSet" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AddressSet"
+    },
+    "givenName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/givenName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "FunderIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/FunderIdentifier"
+    },
+    "distributionAudioFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionAudioFeature",
+      "@type" : "@id"
+    },
+    "metadataCurator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metadataCurator",
+      "@type" : "@id"
+    },
+    "attributionText" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/attributionText",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LicenceCategory" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LicenceCategory"
+    },
+    "name" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/name",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Role" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Role"
+    },
+    "sizePerGeographicCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerGeographicCoverage",
+      "@type" : "@id"
+    },
+    "faceView" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/faceView",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "languageVarietyName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageVarietyName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "hasAlignedVersion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasAlignedVersion",
+      "@type" : "@id"
+    },
+    "LCRSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LCRSubclass"
+    },
+    "packageFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/packageFormat",
+      "@type" : "@id"
+    },
+    "Toolkit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Toolkit"
+    },
+    "isReplacedWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isReplacedWith",
+      "@type" : "@id"
+    },
+    "actualUse" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/actualUse",
+      "@type" : "@id"
+    },
+    "capturingDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/capturingDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isAccessedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAccessedBy",
+      "@type" : "@id"
+    },
+    "demoLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/demoLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Attribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Attribution"
+    },
+    "tag" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/tag",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "funder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/funder",
+      "@type" : "@id"
+    },
+    "digest" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/digest",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "multiValue" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/multiValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "relationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relationType",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "validationDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validationDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "relatedProgramme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relatedProgramme",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OrganizationRole" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/OrganizationRole"
+    },
+    "RecordingEnvironment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RecordingEnvironment"
+    },
+    "hasOutcome" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasOutcome",
+      "@type" : "@id"
+    },
+    "isFunderOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isFunderOf",
+      "@type" : "@id"
+    },
+    "describedEntity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/describedEntity",
+      "@type" : "@id"
+    },
+    "trainingCorpusDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/trainingCorpusDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isRelatedToLT" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToLT",
+      "@type" : "@id"
+    },
+    "LΤRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LΤRelatedTo",
+      "@type" : "@id"
+    },
+    "LingualityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LingualityType"
+    },
+    "surname" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/surname",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "modelFunction" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/modelFunction",
+      "@type" : "@id"
+    },
+    "Model" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Model"
+    },
+    "projectRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectRelatedTo",
+      "@type" : "@id"
+    },
+    "staticElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/staticElement",
+      "@type" : "@id"
+    },
+    "DurationUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DurationUnit"
+    },
+    "participant" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/participant",
+      "@type" : "@id"
+    },
+    "sensorTechnology" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sensorTechnology",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "evaluation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluation",
+      "@type" : "@id"
+    },
+    "isSupplementTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isSupplementTo",
+      "@type" : "@id"
+    },
+    "DistributionVideoFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionVideoFeature"
+    },
+    "nationalMaxContribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/nationalMaxContribution",
+      "@type" : "@id"
+    },
+    "recordingEnvironment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recordingEnvironment",
+      "@type" : "@id"
+    },
+    "anonymizationDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/anonymizationDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "CapturingDeviceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CapturingDeviceType"
+    },
+    "isLicensorOr" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isLicensorOr",
+      "@type" : "@id"
+    },
+    "ImageGenreIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ImageGenreIdentifier"
+    },
+    "VideoGenre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VideoGenre"
+    },
+    "annotationStandoff" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationStandoff",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "resolutionStandard" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resolutionStandard",
+      "@type" : "@id"
+    },
+    "sourceChannelName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceChannelName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "runningEnvironmentDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/runningEnvironmentDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "mimetype" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mimetype",
+      "@type" : "@id"
+    },
+    "ExtratextualInformationUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ExtratextualInformationUnit"
+    },
+    "SubjectIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SubjectIdentifier"
+    },
+    "Catalog" : {
+      "@id" : "http://www.w3.org/ns/dcat#Catalog"
+    },
+    "address" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/address",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "DivisionCategory" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DivisionCategory"
+    },
+    "isArchivedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isArchivedBy",
+      "@type" : "@id"
+    },
+    "MLModel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MLModel"
+    },
+    "recordingDeviceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recordingDeviceType",
+      "@type" : "@id"
+    },
+    "ModalityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ModalityType"
+    },
+    "unitOfMeasureMetric" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/unitOfMeasureMetric",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "extratextualInformation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/extratextualInformation",
+      "@type" : "@id"
+    },
+    "isRelatedToActor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToActor",
+      "@type" : "@id"
+    },
+    "thingDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/thingDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "status" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/status",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Subject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Subject"
+    },
+    "typeOfVideoContent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/typeOfVideoContent",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "hasEvaluated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasEvaluated",
+      "@type" : "@id"
+    },
+    "personalDataIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/personalDataIncluded",
+      "@type" : "@id"
+    },
+    "TRL" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TRL"
+    },
+    "documentRelatedTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentRelatedTo",
+      "@type" : "@id"
+    },
+    "numberOfTrainedSpeakers" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/numberOfTrainedSpeakers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SoftwareDistribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SoftwareDistribution"
+    },
+    "divisionCategory" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/divisionCategory",
+      "@type" : "@id"
+    },
+    "perplexity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/perplexity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "theoreticModel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/theoreticModel",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "durationOfAudio" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/durationOfAudio",
+      "@type" : "@id"
+    },
+    "Audience" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Audience"
+    },
+    "region" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/region",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "otherMedia" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/otherMedia",
+      "@type" : "@id"
+    },
+    "SourceChannel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SourceChannel"
+    },
+    "sizeText" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizeText",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "keyword" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/keyword",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "RoleIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RoleIdentifier"
+    },
+    "isAnnotatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnnotatorOf",
+      "@type" : "@id"
+    },
+    "linkToOtherMedia" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/linkToOtherMedia",
+      "@type" : "@id"
+    },
+    "MembershipInstitution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MembershipInstitution"
+    },
+    "genre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/genre",
+      "@type" : "@id"
+    },
+    "sensitiveDataIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sensitiveDataIncluded",
+      "@type" : "@id"
+    },
+    "creationStartDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/creationStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "conference" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/conference",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "formalism" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/formalism",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "durationUnit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/durationUnit",
+      "@type" : "@id"
+    },
+    "CorpusAudioPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusAudioPart"
+    },
+    "isSupplementedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isSupplementedBy",
+      "@type" : "@id"
+    },
+    "modalityTypeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/modalityTypeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "divisionShortName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/divisionShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "parameterDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/parameterDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "discussionURL" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/discussionURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/action"
+    },
+    "audioQualityMeasureIncluded" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/audioQualityMeasureIncluded",
+      "@type" : "@id"
+    },
+    "discipline" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/discipline",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "fee" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fee",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/permission"
+    },
+    "subject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/subject",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "usageReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/usageReport",
+      "@type" : "@id"
+    },
+    "intendedApplication" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/intendedApplication",
+      "@type" : "@id"
+    },
+    "hasAnnotatedVersion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasAnnotatedVersion",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/domain",
+      "@type" : "@id"
+    },
+    "recorder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recorder",
+      "@type" : "@id"
+    },
+    "sizePerImageFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerImageFormat",
+      "@type" : "@id"
+    },
+    "subtitle" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/subtitle",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "displays" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/displays",
+      "@type" : "@id"
+    },
+    "PersonalIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/PersonalIdentifierScheme"
+    },
+    "isAnnotationResourceOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnnotationResourceOf",
+      "@type" : "@id"
+    },
+    "addressSet" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/addressSet",
+      "@type" : "@id"
+    },
+    "posesPerSubject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/posesPerSubject",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hadRole" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hadRole",
+      "@type" : "@id"
+    },
+    "Duration" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Duration"
+    },
+    "organizationName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "sizePerModality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerModality",
+      "@type" : "@id"
+    },
+    "TextTypeClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextTypeClassificationScheme"
+    },
+    "signConvention" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/signConvention",
+      "@type" : "@id"
+    },
+    "modalityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/modalityType",
+      "@type" : "@id"
+    },
+    "register" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/register",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "fundingSchemeCategory" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fundingSchemeCategory",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Download" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Download"
+    },
+    "implementationLanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/implementationLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "alternativeTitle" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/alternativeTitle",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LexicalConceptualResourceMediaPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResourceMediaPart"
+    },
+    "SocialMediaOccupationalAccountType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SocialMediaOccupationalAccountType"
+    },
+    "Framework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Framework"
+    },
+    "mlModel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mlModel",
+      "@type" : "@id"
+    },
+    "audioFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/audioFormat",
+      "@type" : "@id"
+    },
+    "NGramModel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/NGramModel"
+    },
+    "CharacterEncoding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CharacterEncoding"
+    },
+    "Parameter" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Parameter"
+    },
+    "Size" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Size"
+    },
+    "SoftwareDistributionForm" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SoftwareDistributionForm"
+    },
+    "documentsUsage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentsUsage",
+      "@type" : "@id"
+    },
+    "synchronizedWithText" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/synchronizedWithText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "operatingSystem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/operatingSystem",
+      "@type" : "@id"
+    },
+    "evaluationReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationReport",
+      "@type" : "@id"
+    },
+    "scenarioType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/scenarioType",
+      "@type" : "@id"
+    },
+    "grammaticalPhenomenaCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/grammaticalPhenomenaCoverage",
+      "@type" : "@id"
+    },
+    "isEvaluatedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isEvaluatedBy",
+      "@type" : "@id"
+    },
+    "sizePerAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerAnnotation",
+      "@type" : "@id"
+    },
+    "function" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/function",
+      "@type" : "@id"
+    },
+    "AgeGroup" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AgeGroup"
+    },
+    "projectAlternativeName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectAlternativeName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "sampleText" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sampleText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LDSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LDSubclass"
+    },
+    "AgentIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/AgentIdentifierScheme"
+    },
+    "supportType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/supportType",
+      "@type" : "@id"
+    },
+    "isExactMatchWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isExactMatchWith",
+      "@type" : "@id"
+    },
+    "Grammar" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Grammar"
+    },
+    "metadataCreationDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metadataCreationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "ageRangeEndOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ageRangeEndOfParticipants",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Project" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Project"
+    },
+    "divisionName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/divisionName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "fidelity" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fidelity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "fundingProject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/fundingProject",
+      "@type" : "@id"
+    },
+    "evaluationMeasure" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationMeasure",
+      "@type" : "@id"
+    },
+    "annotationModeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationModeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "edits" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/edits",
+      "@type" : "@id"
+    },
+    "signalEncoding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/signalEncoding",
+      "@type" : "@id"
+    },
+    "order" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "DatasetDistributionForm" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistributionForm"
+    },
+    "isPartWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isPartWith",
+      "@type" : "@id"
+    },
+    "ImageGenreClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ImageGenreClassificationScheme"
+    },
+    "availabilityStartDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/availabilityStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "CorpusVideoPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusVideoPart"
+    },
+    "isReviewedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isReviewedBy",
+      "@type" : "@id"
+    },
+    "encodingLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/encodingLevel",
+      "@type" : "@id"
+    },
+    "AudioFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AudioFormat"
+    },
+    "Evaluation1" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Evaluation1"
+    },
+    "organizationDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Classification" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Classification"
+    },
+    "FundingType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/FundingType"
+    },
+    "Metric" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Metric"
+    },
+    "LanguageDescriptionImagePart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageDescriptionImagePart"
+    },
+    "handManipulation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/handManipulation",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LinkToOtherMedia" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LinkToOtherMedia"
+    },
+    "depositingParty" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/depositingParty",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "TextIncludedInImage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextIncludedInImage"
+    },
+    "ResourceIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/ResourceIdentifier"
+    },
+    "colourSpace" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/colourSpace",
+      "@type" : "@id"
+    },
+    "sizePerAudioClassification" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerAudioClassification",
+      "@type" : "@id"
+    },
+    "sizePerLanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerLanguage",
+      "@type" : "@id"
+    },
+    "ColourSpace" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ColourSpace"
+    },
+    "documents" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documents",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "faceExpression" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/faceExpression",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "annotationResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationResource",
+      "@type" : "@id"
+    },
+    "organizationAlternativeName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationAlternativeName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "licenceTermsAlternativeName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceTermsAlternativeName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "segmentationLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/segmentationLevel",
+      "@type" : "@id"
+    },
+    "DataLanguageResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DataLanguageResource"
+    },
+    "edition" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/edition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "amount" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/amount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "AcademicUse" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AcademicUse"
+    },
+    "imageFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/imageFormat",
+      "@type" : "@id"
+    },
+    "ToolService" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ToolService"
+    },
+    "GrammaticalPhenomenaCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/GrammaticalPhenomenaCoverage"
+    },
+    "publisher" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/publisher",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "FunderIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/FunderIdentifierScheme"
+    },
+    "mediaType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mediaType",
+      "@type" : "@id"
+    },
+    "trainingProcessDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/trainingProcessDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isDistributionRightsHolderOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isDistributionRightsHolderOf",
+      "@type" : "@id"
+    },
+    "originOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/originOfParticipants",
+      "@type" : "@id"
+    },
+    "AccessRightsStatementIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AccessRightsStatementIdentifier"
+    },
+    "isToBeCitedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isToBeCitedBy",
+      "@type" : "@id"
+    },
+    "DistributionImageFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionImageFeature"
+    },
+    "sizePerDomain" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerDomain",
+      "@type" : "@id"
+    },
+    "hasAnnotated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasAnnotated",
+      "@type" : "@id"
+    },
+    "DistributionAudioFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DistributionAudioFeature"
+    },
+    "PerformanceIndicator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/PerformanceIndicator"
+    },
+    "glottologCode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/glottologCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "zipCode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/zipCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DomainClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DomainClassificationScheme"
+    },
+    "metric" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metric",
+      "@type" : "@id"
+    },
+    "metadataCreator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metadataCreator",
+      "@type" : "@id"
+    },
+    "LTArea" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LTArea",
+      "@type" : "@id"
+    },
+    "dialectAccent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dialectAccent",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "valueName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/valueName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "version" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/version",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isValidatedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isValidatedBy",
+      "@type" : "@id"
+    },
+    "series" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/series",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "dynamicElement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dynamicElement",
+      "@type" : "@id"
+    },
+    "validator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validator",
+      "@type" : "@id"
+    },
+    "intraannotatorAgreement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/intraannotatorAgreement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "parameterName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/parameterName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isQueriedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isQueriedBy",
+      "@type" : "@id"
+    },
+    "licenceTermsName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/licenceTermsName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isAnnotationSchemaOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnnotationSchemaOf",
+      "@type" : "@id"
+    },
+    "scriptId" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/scriptId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WordEmbedding" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/WordEmbedding"
+    },
+    "samplingRate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/samplingRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "headMovement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/headMovement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "distributionLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "volume" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/volume",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LanguageDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageDescription"
+    },
+    "ResolutionStandard" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ResolutionStandard"
+    },
+    "valueDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/valueDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "synchronizedWithVideo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/synchronizedWithVideo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "EncodingLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EncodingLevel"
+    },
+    "annotation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotation",
+      "@type" : "@id"
+    },
+    "hasArchived" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasArchived",
+      "@type" : "@id"
+    },
+    "projectSummary" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectSummary",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "accessRights" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/accessRights",
+      "@type" : "@id"
+    },
+    "duty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/duty"
+    },
+    "Cost" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Cost"
+    },
+    "isResourceProviderOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isResourceProviderOf",
+      "@type" : "@id"
+    },
+    "handArmMovement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/handArmMovement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "organizationRole" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationRole",
+      "@type" : "@id"
+    },
+    "distributionRightsHolder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionRightsHolder",
+      "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/logo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "lcrSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/lcrSubclass",
+      "@type" : "@id"
+    },
+    "broaderTransitive" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive"
+    },
+    "Component" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Component"
+    },
+    "usesIdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/usesIdentifierScheme",
+      "@type" : "@id"
+    },
+    "replaces" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/replaces",
+      "@type" : "@id"
+    },
+    "LicenceCategoryScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LicenceCategoryScheme"
+    },
+    "OrganizationLegalStatus" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/OrganizationLegalStatus"
+    },
+    "AccessRightsStatementScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AccessRightsStatementScheme"
+    },
+    "Process" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Process"
+    },
+    "sourceMetadataRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceMetadataRecord",
+      "@type" : "@id"
+    },
+    "ClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ClassificationScheme"
+    },
+    "eventDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/eventDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "nonSpeechItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/nonSpeechItem",
+      "@type" : "@id"
+    },
+    "sizePerAudioFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerAudioFormat",
+      "@type" : "@id"
+    },
+    "alias" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/alias",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "LanguageVariant" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageVariant"
+    },
+    "DatasetDistribution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistribution"
+    },
+    "dialectAccentOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dialectAccentOfParticipants",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Language" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Language"
+    },
+    "hasDivision" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasDivision",
+      "@type" : "@id"
+    },
+    "resourceProvider" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resourceProvider",
+      "@type" : "@id"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+    },
+    "baseItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/baseItem",
+      "@type" : "@id"
+    },
+    "attributedAgent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/attributedAgent",
+      "@type" : "@id"
+    },
+    "cites" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/cites",
+      "@type" : "@id"
+    },
+    "defaultValue" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/defaultValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "syntheticData" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/syntheticData",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "sex" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sex",
+      "@type" : "@id"
+    },
+    "annotationStartDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotationStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Sample" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Sample"
+    },
+    "MultilingualityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MultilingualityType"
+    },
+    "AudioGenreClassificationScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AudioGenreClassificationScheme"
+    },
+    "ByteOrder" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ByteOrder"
+    },
+    "documentationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentationType",
+      "@type" : "@id"
+    },
+    "size" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/size",
+      "@type" : "@id"
+    },
+    "CorpusImagePart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusImagePart"
+    },
+    "SexOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SexOfParticipants"
+    },
+    "isRelatedToLR" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToLR",
+      "@type" : "@id"
+    },
+    "audience" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/audience",
+      "@type" : "@id"
+    },
+    "Currency" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Currency"
+    },
+    "dependsOn" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dependsOn",
+      "@type" : "@id"
+    },
+    "serviceAdapterDownloadLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/serviceAdapterDownloadLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isElicitedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isElicitedBy",
+      "@type" : "@id"
+    },
+    "OrganizationIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/OrganizationIdentifier"
+    },
+    "hearingImpairment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hearingImpairment",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isAlignedVersionOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAlignedVersionOf",
+      "@type" : "@id"
+    },
+    "evaluationCriterion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationCriterion",
+      "@type" : "@id"
+    },
+    "sizePerImageClassification" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerImageClassification",
+      "@type" : "@id"
+    },
+    "isCitedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isCitedBy",
+      "@type" : "@id"
+    },
+    "processMode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/processMode",
+      "@type" : "@id"
+    },
+    "EnumerationValue" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/EnumerationValue"
+    },
+    "isRelatedToProject" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToProject",
+      "@type" : "@id"
+    },
+    "compressed" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/compressed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "compressionName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/compressionName",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs"
+    },
+    "isCompatibleWith" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isCompatibleWith",
+      "@type" : "@id"
+    },
+    "ValidationExtent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ValidationExtent"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "sizePerTimeCoverage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerTimeCoverage",
+      "@type" : "@id"
+    },
+    "DocumentationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DocumentationType"
+    },
+    "DevelopmentFramework" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/DevelopmentFramework"
+    },
+    "IdentifierScheme" : {
+      "@id" : "http://purl.org/spar/datacite/IdentifierScheme"
+    },
+    "externalReference" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/externalReference",
+      "@type" : "@id"
+    },
+    "Document" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Document"
+    },
+    "isCoordinatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isCoordinatorOf",
+      "@type" : "@id"
+    },
+    "Genre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Genre"
+    },
+    "License" : {
+      "@id" : "http://creativecommons.org/ns#License"
+    },
+    "language" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/language",
+      "@type" : "@id"
+    },
+    "quality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/quality",
+      "@type" : "@id"
+    },
+    "originalSourceDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/originalSourceDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "lingualityType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/lingualityType",
+      "@type" : "@id"
+    },
+    "Group" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Group"
+    },
+    "versionDate" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/versionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "citationText" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/citationText",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "image3" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/image3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "mediaPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/mediaPart",
+      "@type" : "@id"
+    },
+    "AudioGenreIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/AudioGenreIdentifier"
+    },
+    "contributor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/contributor",
+      "@type" : "@id"
+    },
+    "shortBio" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/shortBio",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "colourDepth" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/colourDepth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Subset" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Subset"
+    },
+    "placeOfChildhood" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/placeOfChildhood",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "smokingHabit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/smokingHabit",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "sizePerValidation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerValidation",
+      "@type" : "@id"
+    },
+    "languageVarietyType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageVarietyType",
+      "@type" : "@id"
+    },
+    "WebServiceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/WebServiceType"
+    },
+    "validationExtent" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validationExtent",
+      "@type" : "@id"
+    },
+    "speechInfluence" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/speechInfluence",
+      "@type" : "@id"
+    },
+    "sizePerTextClassification" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerTextClassification",
+      "@type" : "@id"
+    },
+    "projectName" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/projectName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "documentsAnnotation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentsAnnotation",
+      "@type" : "@id"
+    },
+    "visualModelling" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/visualModelling",
+      "@type" : "@id"
+    },
+    "metalanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/metalanguage",
+      "@type" : "@id"
+    },
+    "Naturality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Naturality"
+    },
+    "MediaPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MediaPart"
+    },
+    "annotator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/annotator",
+      "@type" : "@id"
+    },
+    "updateFrequency" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/updateFrequency",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ScenarioType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ScenarioType"
+    },
+    "Research" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Research"
+    },
+    "goldStandardLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/goldStandardLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "SpeakingImpairmentOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeakingImpairmentOfParticipants"
+    },
+    "grantNumber" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/grantNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Division" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Division"
+    },
+    "isRelatedToMDRecord" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRelatedToMDRecord",
+      "@type" : "@id"
+    },
+    "RepositoryIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RepositoryIdentifierScheme"
+    },
+    "creationMode" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/creationMode",
+      "@type" : "@id"
+    },
+    "evaluationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/evaluationType",
+      "@type" : "@id"
+    },
+    "dataFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/dataFormat",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Action"
+    },
+    "memberOfAssociation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/memberOfAssociation",
+      "@type" : "@id"
+    },
+    "usedInRegion" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/usedInRegion",
+      "@type" : "@id"
+    },
+    "vocalTractCondition" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/vocalTractCondition",
+      "@type" : "@id"
+    },
+    "LicenceIdentifierScheme" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LicenceIdentifierScheme"
+    },
+    "endDate" : {
+      "@id" : "http://www.w3.org/ns/dcat#endDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "conformsTo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/conformsTo",
+      "@type" : "@id"
+    },
+    "alternative" : {
+      "@id" : "http://purl.org/dc/terms/alternative"
+    },
+    "isConvertedVersionOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isConvertedVersionOf",
+      "@type" : "@id"
+    },
+    "sensitiveDataDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sensitiveDataDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "typesystem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/typesystem",
+      "@type" : "@id"
+    },
+    "ExtratextualInformation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ExtratextualInformation"
+    },
+    "sizePerTextFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerTextFormat",
+      "@type" : "@id"
+    },
+    "NoiseLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/NoiseLevel"
+    },
+    "runningTime" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/runningTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "samplesLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/samplesLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Availability" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Availability"
+    },
+    "hearingImpairmentOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hearingImpairmentOfParticipants",
+      "@type" : "@id"
+    },
+    "validationReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validationReport",
+      "@type" : "@id"
+    },
+    "processingResourceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/processingResourceType",
+      "@type" : "@id"
+    },
+    "coordinator" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/coordinator",
+      "@type" : "@id"
+    },
+    "TextIncludedInVideo" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextIncludedInVideo"
+    },
+    "LanguageDescriptionVideoPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageDescriptionVideoPart"
+    },
+    "sourceChannelDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sourceChannelDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "membershipInstitution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/membershipInstitution",
+      "@type" : "@id"
+    },
+    "accesses" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/accesses",
+      "@type" : "@id"
+    },
+    "validated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/validated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "CorpusTextPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusTextPart"
+    },
+    "valueLabel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/valueLabel",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "hasAnalysed" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasAnalysed",
+      "@type" : "@id"
+    },
+    "variantId" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/variantId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "executionLocation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/executionLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/prohibition"
+    },
+    "Identifier" : {
+      "@id" : "http://purl.org/spar/datacite/Identifier"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "isRecorderOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRecorderOf",
+      "@type" : "@id"
+    },
+    "videoFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/videoFormat",
+      "@type" : "@id"
+    },
+    "contact" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/contact",
+      "@type" : "@id"
+    },
+    "isContactFor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isContactFor",
+      "@type" : "@id"
+    },
+    "distributionImageFeature" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/distributionImageFeature",
+      "@type" : "@id"
+    },
+    "languageTag" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/languageTag",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "recordingQuality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/recordingQuality",
+      "@type" : "@id"
+    },
+    "previousAnnotationTypesPolicy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/previousAnnotationTypesPolicy",
+      "@type" : "@id"
+    },
+    "isRequiredLRBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isRequiredLRBy",
+      "@type" : "@id"
+    },
+    "PeriodOfTime" : {
+      "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+    },
+    "documentType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/documentType",
+      "@type" : "@id"
+    },
+    "weight" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/weight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "countryOfRegistration" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/countryOfRegistration",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "CapturingEnvironment" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CapturingEnvironment"
+    },
+    "ConversationalType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ConversationalType"
+    },
+    "variant" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/variant",
+      "@type" : "@id"
+    },
+    "outputResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/outputResource",
+      "@type" : "@id"
+    },
+    "LanguageModel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageModel"
+    },
+    "quantization" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/quantization",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "journal" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/journal",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "anonymized" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/anonymized",
+      "@type" : "@id"
+    },
+    "copyrightStatement" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/copyrightStatement",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "OperatingSystem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/OperatingSystem"
+    },
+    "hasElicited" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/hasElicited",
+      "@type" : "@id"
+    },
+    "usedInApplication" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/usedInApplication",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "requiresSoftware" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/requiresSoftware",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isResourceCreatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isResourceCreatorOf",
+      "@type" : "@id"
+    },
+    "inputContentResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/inputContentResource",
+      "@type" : "@id"
+    },
+    "RecordingDeviceType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RecordingDeviceType"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isDescribedBy",
+      "@type" : "@id"
+    },
+    "ValidationType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ValidationType"
+    },
+    "format" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/format",
+      "@type" : "@id"
+    },
+    "CorpusTextNumericalPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusTextNumericalPart"
+    },
+    "SpeechGenre" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/SpeechGenre"
+    },
+    "sample" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sample",
+      "@type" : "@id"
+    },
+    "ageGroupOfParticipants" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ageGroupOfParticipants",
+      "@type" : "@id"
+    },
+    "multilingualityTypeDetails" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/multilingualityTypeDetails",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "relatedCall" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relatedCall",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "relation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/relation",
+      "@type" : "@id"
+    },
+    "personDescription" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/personDescription",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "NonSpeechItem" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/NonSpeechItem"
+    },
+    "isMetadataCreatorOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isMetadataCreatorOf",
+      "@type" : "@id"
+    },
+    "isAnalysedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnalysedBy",
+      "@type" : "@id"
+    },
+    "RecordingQuality" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/RecordingQuality"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal",
+      "@type" : "@id"
+    },
+    "LanguageVarietyType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LanguageVarietyType"
+    },
+    "targetLanguage" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/targetLanguage",
+      "@type" : "@id"
+    },
+    "resolution" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/resolution",
+      "@type" : "@id"
+    },
+    "organizationBio" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/organizationBio",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "PackageFormat" : {
+      "@id" : "http://w3id.org/meta-share/omtd-share/PackageFormat"
+    },
+    "constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/constraint"
+    },
+    "BodyPart" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/BodyPart"
+    },
+    "MetadataRecordIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/MetadataRecordIdentifier"
+    },
+    "participatingOrganization" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/participatingOrganization",
+      "@type" : "@id"
+    },
+    "ObjectOfReport" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/ObjectOfReport"
+    },
+    "interpolated" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/interpolated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Set" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Set"
+    },
+    "CorpusSubclass" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CorpusSubclass"
+    },
+    "TextTypeIdentifier" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/TextTypeIdentifier"
+    },
+    "VideoFormat" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/VideoFormat"
+    },
+    "PersonalIdentifier" : {
+      "@id" : "http://purl.org/spar/datacite/PersonalIdentifier"
+    },
+    "educationLevel" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/educationLevel",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Affiliation" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Affiliation"
+    },
+    "smoothing" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/smoothing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "editor" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/editor",
+      "@type" : "@id"
+    },
+    "isCreatedBy" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isCreatedBy",
+      "@type" : "@id"
+    },
+    "sizePerSubset" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/sizePerSubset",
+      "@type" : "@id"
+    },
+    "CompatibleLexiconType" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/CompatibleLexiconType"
+    },
+    "attachedLexiconPosition" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/attachedLexiconPosition",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "isAnnotatedVersionOf" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/isAnnotatedVersionOf",
+      "@type" : "@id"
+    },
+    "Deposit" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/Deposit"
+    }
+  }
+}
