@@ -38,7 +38,7 @@ It is also related to the OMTD-SHARE ontology (http://w3id.org/meta-share/omtd-s
         <dct:modified>2022-05-27</dct:modified>
         <vann:preferredNamespacePrefix>ms</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/meta-share/"/>
-        <owl:priorVersion xml:lang="en">v2.0.0 pre-release</owl:versionInfo
+        <owl:priorVersion rdf:resource="http://www.meta-share.org/ontologies/meta-share/meta-share-ontology.owl.v2.0.0.prelease/documentation/ontology.xml"/>
         <owl:versionInfo xml:lang="en">v2.0.0 pre-release beta</owl:versionInfo>
     </owl:Ontology>
     
